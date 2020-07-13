@@ -1,3 +1,4 @@
-[submodule "MCS/bb-runtimes"]
-	path = MCS/bb-runtimes
-	url = https://github.com/BottCode/bb-runtimes
+
+[submodule "MCS/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems"]
+	path = MCS/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems
+	url = https://gitlab.com/thesisBottaroMattia/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems.git
