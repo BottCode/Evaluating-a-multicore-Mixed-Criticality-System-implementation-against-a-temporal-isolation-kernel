@@ -10,9 +10,11 @@ b__*.ad[bs]
 install
 
 MCS/runtime/
-MCS/obj/main.S
+
 *.a
 
+main
+*.S
 
 # Created by https://www.toptal.com/developers/gitignore/api/ada,c,c++,visualstudio,visualstudiocode,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=ada,c,c++,visualstudio,visualstudiocode,linux
