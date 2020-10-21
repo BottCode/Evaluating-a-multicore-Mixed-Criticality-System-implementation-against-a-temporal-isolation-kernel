@@ -1,15 +1,14 @@
-cd bb-runtimes
-exec ./build_rts.py --output=temp --bsps-only zynq7000
+git submodule update --init --recursive
 
-gprbuild -P temp/BSPs/ravenscar_full_zynq7000.gpr -j0 -f 
+cd ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems
+mkdir cortex-ar/zynq7000/ravenscar-full/adalib/ -p
+mkdir cortex-ar/zynq7000/ravenscar-full/obj -p
+mkdir cortex-ar/zynq7000/ravenscar-full/user_srcs
+
+gprbuild -P ravenscar_full_zynq7000.gpr -j0 -f 
 mkdir ../runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000 -p
-gprinstall -P temp/BSPs/ravenscar_full_zynq7000.gpr -p -f -XPREFIX=$PWD/../runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000
+gprinstall -P ravenscar_full_zynq7000.gpr -p -f -XPREFIX=$PWD/../runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000 --install-name=ravenscar_full_zynq7000
 
 cd ..
 
-mv runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/adalib/ravenscar_full_zynq7000/* runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/adalib/
-rm -rf runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/adalib/ravenscar_full_zynq7000/
-
-mv runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/gnat/ravenscar_full_zynq7000/* runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/gnat/
-rm -rf runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000/gnat/ravenscar_full_zynq7000/
 
