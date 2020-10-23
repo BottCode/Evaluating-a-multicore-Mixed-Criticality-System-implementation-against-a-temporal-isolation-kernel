@@ -116,7 +116,9 @@ L'algoritmo di scheduling, nel caso di piattaforma dual-core, presenta i seguent
 3. se un *LO-crit* task eccede il suo *LO-crit* budget, il suo job corrente deve essere terminato;
 4. se un *HI-crit* task eccede il suo *LO-crit* budget, allora $`\Gamma \leftarrow HI`$;
 5. Se $`\Gamma \equiv HI`$ solo su di un core ($`c_A`$), allora sul core ($`c_B`$) con $`\Gamma \equiv LO`$ vengono spostati alcuni prestabiliti *LO-crit* tasks di $`c_A`$, mentre gli *HI-crit* task sul core $`c_A`$ inizieranno ad eseguire secondo il loro *HI-crit* budget;
-6. se $`(\Gamma\_c_A \equiv HI) \wedge (\Gamma\_c_B \leftarrow HI)`$, allora sul core $`c_B`$ vengono abbandonati tutti i *LO-crit* tasks, mentre i suoi *HI-crit* tasks inizieranno ad eseguire secondo il loro *HI-crit* budget.
+6. se $`(\Gamma c_A \equiv HI) \wedge (\Gamma c_B \leftarrow HI)`$, allora sul core $`c_B`$ vengono abbandonati tutti i *LO-crit* tasks, mentre i suoi *HI-crit* tasks inizieranno ad eseguire secondo il loro *HI-crit* budget.
+
+## **RTA**
 
 ## **Metodo**
 
