@@ -4,6 +4,11 @@ REPO_ROOT=$PWD
 RUNTIME_PROJ_DIR="$REPO_ROOT/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems/"
 RUNTIME_INSTALLATION_DIR="$RUNTIME_PROJ_DIR/runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000"
 RTA_DIR="$REPO_ROOT/py-xu-burns-2019-rta/dual-core-version"
+PATH_TO_XSDB="/home/mattia/opt/XilinxSDK/SDK/2016.4/bin"
+
+cd $RUNTIME_PROJ_DIR
+sh build_runtime_zynq.sh
+cd $REPO_ROOT
 
 ADA_TASKSETS_DIR="$RTA_DIR/Ada_tasksets"
 
@@ -27,10 +32,12 @@ then
     do
         for taskset_dir in $approach_dir*/
         do
-            [ -d "$taskset_dir" ] && make -C $taskset_dir && make clean -C $taskset_dir
+            [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
         done
     done
 fi
+
+cd $REPO_ROOT
 
 if [ "$Execute_E2" = true ]
 then
@@ -38,10 +45,12 @@ then
     do
         for taskset_dir in $approach_dir*/
         do
-            [ -d "$taskset_dir" ] && make -C $taskset_dir && make clean -C $taskset_dir
+            [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
         done
     done
 fi
+
+cd $REPO_ROOT
 
 if [ "$Execute_E3" = true ]
 then
@@ -49,10 +58,12 @@ then
     do
         for taskset_dir in $approach_dir*/
         do
-            [ -d "$taskset_dir" ] && make -C $taskset_dir && make clean -C $taskset_dir
+            [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
         done
     done
 fi
+
+cd $REPO_ROOT
 
 if [ "$Execute_E4" = true ]
 then
@@ -60,7 +71,9 @@ then
     do
         for taskset_dir in $approach_dir*/
         do
-            [ -d "$taskset_dir" ] && make -C $taskset_dir && make clean -C $taskset_dir
+            [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
         done
     done
 fi
+
+cd $REPO_ROOT
