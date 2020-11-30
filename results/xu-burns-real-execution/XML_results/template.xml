@@ -5,6 +5,10 @@
         <experimentid></experimentid>
         <approach></approach>
         <tasksetid></tasksetid>
+        <tasksetsize></tasksetsize>
+		<tasksetutilization></tasksetutilization>
+		<criticalityfactor></criticalityfactor>
+		<perc></perc>
         <experimentisnotvalid></experimentisnotvalid>
         <safeboundaryexceeded></safeboundaryexceeded>
         <guiltytask></guiltytask>

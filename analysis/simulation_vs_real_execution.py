@@ -10,18 +10,20 @@ import sys
 
 from shutil import copyfile, rmtree
 
+import time
+
 import matplotlib
 matplotlib.use('tkagg')
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-def plot_data (results, output):
+def plot_data (results, output, x_lab):
   fig, ax = plt.subplots(figsize=(12,9))
 
   for approach in results:
     ax.plot([results[approach][i][0] for i in range(len(results[approach]))], [results[approach][i][1] for i in range(len(results[approach]))], label=approach)
 
-  ax.set(xlabel='Utilization levels', ylabel='Percentage of actually schedulable tasksets')
+  ax.set(xlabel=x_lab, ylabel='Percentage of actually schedulable tasksets')
   ax.grid()
   plt.xticks()
   plt.legend()
@@ -79,6 +81,27 @@ def beautify_XML_log():
       xmldata.write(xml_pretty_str)
       xmldata.close()
 
+def add_root_to_XML(file_name=config_sim_vs_real.PATH_TO_LOG, line='<executions>\n'):
+
+    with open(config_sim_vs_real.PATH_TO_LOG, "a") as logfile:
+        logfile.write("\n</executions>")
+        logfile.close()
+
+    """ Insert given string as a new line at the beginning of a file """
+    # define name of temporary dummy file
+    dummy_file = file_name + '.bak'
+    # open original file in read mode and dummy file in write mode
+    with open(file_name, 'r') as read_obj, open(dummy_file, 'w') as write_obj:
+        # Write given line to the dummy file
+        write_obj.write(line + '\n')
+        # Read lines from original file one by one and append them to the dummy file
+        for line in read_obj:
+            write_obj.write(line)
+    # remove original file
+    os.remove(file_name)
+    # Rename dummy file as the original file
+    os.rename(dummy_file, file_name)
+
 def organize_executions():
     clean_XML_experiments()
     experiment_id = 0
@@ -86,19 +109,21 @@ def organize_executions():
         tree_source = ET.parse (config_sim_vs_real.PATH_TO_LOG)
     except:
         # it means that log file has no root => Add it!
-        print("no root!")
-        with open(config_sim_vs_real.PATH_TO_LOG, "a") as logfile:
-            logfile.write("\n</executions>")
-            logfile.close()
-        with open(config_sim_vs_real.PATH_TO_LOG, 'r+') as logfile:
+        # print("no root!")
+        #add_root_to_XML()
+        '''with open(config_sim_vs_real.PATH_TO_LOG, 'r+') as logfile:
             content = logfile.read()
             logfile.seek(0, 0)
             logfile.write('<executions>\n' + content)
             logfile.close()
+            # This sleep seems necessary because file writing is asynchronous. 
+            # Since the files are quite large, it may happen that the next parsing
+            # starts before the previous writing is complete.
+            time.sleep(3)'''
 
         tree_source = ET.parse (config_sim_vs_real.PATH_TO_LOG)
-    
-    beautify_XML_log()
+        #beautify_XML_log()
+
     root_source = tree_source.getroot()
 
     for execution_XML in root_source.findall('execution'):
@@ -136,7 +161,7 @@ def organize_executions():
 
                 tree_target.write(config_sim_vs_real.XML_Files[experiment_id][approach])
 
-    beautify_XML_experiments()
+    # beautify_XML_experiments()
 
 
     '''if config_sim_vs_real.RUN_FIRST_TEST:
@@ -149,51 +174,71 @@ def organize_executions():
 
             execution_XML = ET.SubElement (root, 'execution')'''
 
-def produce_results_experiment_1():
-    experiment_id = 1
-    utilizations_levels = {}
-    number_of_exec_for_util_lv = {}
+def produce_results_experiment(experiment_id):
+    xml_level_to_analyze = ""
+    if experiment_id == 1:
+        xml_level_to_analyze = 'tasksetutilization'
+        x_lab = 'Utilization level'
+    elif experiment_id == 2:
+        xml_level_to_analyze = 'criticalityfactor'
+        x_lab = 'Criticality Factor'
+    elif experiment_id == 3:
+        # hi-crit proportion
+        xml_level_to_analyze = 'perc'
+        x_lab = 'HI-CRIT task proportion'
+    elif experiment_id == 4:
+        xml_level_to_analyze = 'tasksetsize'
+        x_lab = 'Taskset size'
+    x_axis_levels = {}
+    number_of_exec_for_each_level = {}
     results_to_plot = {}
 
     for approach in config_sim_vs_real.XML_Files[experiment_id]:
         results_to_plot[approach] = []
-        utilizations_levels[approach] = {}
-        number_of_exec_for_util_lv[approach] = {}
+        x_axis_levels[approach] = {}
+        number_of_exec_for_each_level[approach] = {}
         tree = ET.parse(config_sim_vs_real.XML_Files[experiment_id][approach])
         root = tree.getroot()
         
         for execution_XML in root.findall('execution'):
             if str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE' and str(execution_XML.find('safeboundaryexceeded').text).upper() == 'FALSE':
-                util_lv = execution_XML.find('tasksetutilization').text
+                single_level = execution_XML.find(xml_level_to_analyze).text
                 
-                if util_lv not in number_of_exec_for_util_lv[approach]:
-                    number_of_exec_for_util_lv[approach][util_lv] = 1
-                    utilizations_levels[approach][util_lv] = 0
+                if single_level not in number_of_exec_for_each_level[approach]:
+                    number_of_exec_for_each_level[approach][single_level] = 1
+                    x_axis_levels[approach][single_level] = 0
                 else:
-                    number_of_exec_for_util_lv[approach][util_lv] += 1
+                    number_of_exec_for_each_level[approach][single_level] += 1
 
                 if str(execution_XML.find('tasksetisschedulable').text).upper() == 'TRUE':
-                    utilizations_levels[approach][util_lv] += 1
-        
-        for u in utilizations_levels[approach]:
+                    x_axis_levels[approach][single_level] += 1
+
+        for level in x_axis_levels[approach]:
             # compute percentage of taskset schedulable / total taskset
-            if utilizations_levels[approach][u] == 0:
+            if x_axis_levels[approach][level] == 0:
                 perc = 0
             else:
-                perc = (utilizations_levels[approach][u] / utilizations_levels[approach][u]) * 100
+                perc = (x_axis_levels[approach][level] / number_of_exec_for_each_level[approach][level]) * 100
 
-            results_to_plot[approach].append([float(u), perc])
+            results_to_plot[approach].append([float(level), perc])
 
-    # print(number_of_exec_for_util_lv)            
-    # print(utilizations_levels)
-    # print(results_to_plot)
-    output_path = './result1.png'
-    plot_data(results_to_plot, output_path)
+    output_path = './result' + str(experiment_id) + '.png'
+    plot_data(results_to_plot, output_path, x_lab)
 
 
 def produce_results():
     organize_executions()
 
-    produce_results_experiment_1()
+    #produce_results_experiment_1()
+    #produce_results_experiment_2()
+
+    if config_sim_vs_real.RUN_FIRST_TEST:
+        produce_results_experiment(1)
+    if config_sim_vs_real.RUN_SECOND_TEST:
+        produce_results_experiment(2)
+    if config_sim_vs_real.RUN_THIRD_TEST:
+        produce_results_experiment(3)
+    if config_sim_vs_real.RUN_FOURTH_TEST:
+        produce_results_experiment(4)
 
 produce_results()
