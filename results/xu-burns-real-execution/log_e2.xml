@@ -1,0 +1,19 @@
+UE
+<execution>
+<executionid>e1_semi2wf_t1715</executionid>
+<experimentid> 1</experimentid>
+<approach>SEMI2WF</approach>
+<tasksetid> 1715</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>2.004</tasksetutilization>
+<criticalityfactor>2</criticalityfactor>
+<perc>0.5</perc>
+<hyperperiodc1> 113400000</hyperperiodc1>
+<hyperperiodc2> 9450000</hyperperiodc2>
+<experimentisnotvalid>TRUE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask> 0</guiltytask>
+<tasks>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>ýUE

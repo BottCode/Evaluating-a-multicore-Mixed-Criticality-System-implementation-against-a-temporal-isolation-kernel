@@ -12,10 +12,10 @@ cd $REPO_ROOT
 
 ADA_TASKSETS_DIR="$RTA_DIR/Ada_tasksets"
 
-Execute_E1=true
-Execute_E2=true
-Execute_E3=true
-Execute_E4=true
+Execute_E1=$1
+Execute_E2=$2
+Execute_E3=$3
+Execute_E4=$4
 
 # Tasksets related to experiment 1
 ADA_TASKSETS_E_1="$ADA_TASKSETS_DIR/experiment_1"
@@ -26,7 +26,7 @@ ADA_TASKSETS_E_3="$ADA_TASKSETS_DIR/experiment_3"
 # Tasksets related to experiment 4
 ADA_TASKSETS_E_4="$ADA_TASKSETS_DIR/experiment_4"
 
-if [ "$Execute_E1" = true ]
+if [ "$Execute_E1" = True ]
 then
     for approach_dir in $ADA_TASKSETS_E_1/*/
     do
@@ -39,7 +39,7 @@ fi
 
 cd $REPO_ROOT
 
-if [ "$Execute_E2" = true ]
+if [ "$Execute_E2" = True ]
 then
     for approach_dir in $ADA_TASKSETS_E_2/*/
     do
@@ -52,7 +52,7 @@ fi
 
 cd $REPO_ROOT
 
-if [ "$Execute_E3" = true ]
+if [ "$Execute_E3" = True ]
 then
     for approach_dir in $ADA_TASKSETS_E_3/*/
     do
@@ -65,7 +65,7 @@ fi
 
 cd $REPO_ROOT
 
-if [ "$Execute_E4" = true ]
+if [ "$Execute_E4" = True ]
 then
     for approach_dir in $ADA_TASKSETS_E_4/*/
     do
