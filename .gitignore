@@ -6,13 +6,20 @@
 *-loc.xml
 gnatinspect.db
 b__*.ad[bs]
+b~*.ad[bs]
 .#*
 install
 
 MCS/runtime/
+./TSP/Ada_tasksets/experiment_1/*
+./TSP/Ada_tasksets/experiment_2/*
+./TSP/Ada_tasksets/experiment_3/*
+./TSP/Ada_tasksets/experiment_4/*
+
 
 *.a
-
+*.num
+*.ralf
 main
 *.S
 
