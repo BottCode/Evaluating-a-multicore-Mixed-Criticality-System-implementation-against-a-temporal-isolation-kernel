@@ -18,15 +18,21 @@ matplotlib.use('tkagg')
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import pandas as pd
+import json
+
+def beautify_dict (task):
+    s = json.dumps(task, indent=4)
+    return s[0+1 : len(s)-1]
+
 
 def plot_two_or_more_functions(results, output, x_lab, experiment_id):
 
     if experiment_id == 1:
         base_loc_x = config_sim_vs_real.UTIL_STEP * 2
     elif experiment_id == 2:
-        base_loc_x = config.CRITICALITY_STEP
+        base_loc_x = config_sim_vs_real.CRITICALITY_STEP
     elif experiment_id == 3:
-        base_loc_x = config.PROPORTION_STEP
+        base_loc_x = config_sim_vs_real.PROPORTION_STEP
     else:
         base_loc_x = 5
 
@@ -52,7 +58,7 @@ def draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, o
     plt.hist (NS_histogram, color = 'orange', alpha = 0.8, bins = 52, label = 'NS tasksets')
     plt.savefig(output_histogram)
     plt.close()
-    print('Result saved: ' + output_histogram)
+    # print('Result saved: ' + output_histogram)
 
 
 def plot_data (results, output, x_lab):
@@ -66,7 +72,7 @@ def plot_data (results, output, x_lab):
   plt.xticks()
   plt.legend()
   plt.savefig(output)
-  print('Result saved: ' + output)
+  # print('Result saved: ' + output)
 
 def plot_BE_data (by_locrit_budget, by_migrability, by_period, output):
     df = pd.DataFrame({'Tasks BE by LO-crit budget (microseconds)' : by_locrit_budget, 'Tasks BE by period (microseconds)' : by_period, 'Tasks BE by migrability': by_migrability})
@@ -188,6 +194,7 @@ def organize_executions():
                     root_target = tree_target.getroot()
                     root_target.append(execution_XML)
                     tree_target.write(config_sim_vs_real.XML_Files[experiment_id][approach])
+
                     continue
 
                 if experiment_id == current_experiment_id and config_sim_vs_real.RUN_SECOND_TEST:
@@ -195,13 +202,15 @@ def organize_executions():
                     root_target = tree_target.getroot()
                     root_target.append(execution_XML)
                     tree_target.write(config_sim_vs_real.XML_Files[experiment_id][approach])
+                    
                     continue
-
+                    
                 if experiment_id == current_experiment_id and config_sim_vs_real.RUN_THIRD_TEST:
                     tree_target = ET.parse(config_sim_vs_real.XML_Files[experiment_id][approach])
                     root_target = tree_target.getroot()
                     root_target.append(execution_XML)
                     tree_target.write(config_sim_vs_real.XML_Files[experiment_id][approach])
+
                     continue
 
                 if experiment_id == current_experiment_id and config_sim_vs_real.RUN_FOURTH_TEST:
@@ -209,6 +218,7 @@ def organize_executions():
                     root_target = tree_target.getroot()
                     root_target.append(execution_XML)
                     tree_target.write(config_sim_vs_real.XML_Files[experiment_id][approach])
+
                     continue
 
 def produce_results_experiment(experiment_id):
@@ -319,7 +329,8 @@ def produce_results_experiment(experiment_id):
             }
             
             cores_info = '   <details> <summary markdown="span">Click here to see the CPUs log.</summary>\n\n   Idle time is expressed as **seconds**.\n\n'
-            guilty_tasks = '   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>\n\n   Time values are expressed as **micro-seconds**.\n\n'
+            guilty_tasks = '   <details> <summary markdown="span">Click here to see the guilty task.</summary>\n\n   Time values are expressed as **micro-seconds**.\n\n'
+            dm_tasks = '   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>\n\n   Time values are expressed as **micro-seconds**.\n\n'
             list_of_tasks = []
 
             single_level = execution_XML.find(xml_level_to_analyze).text
@@ -340,7 +351,7 @@ def produce_results_experiment(experiment_id):
                 curr_core['hightolow'] = core_XML.find('hightolow').text
                 curr_core['idletime'] = int(float(core_XML.find('idletime').text) * 1000000)
                 curr_core['util'] = 100 - ((curr_core['idletime'] / curr_core['hyperperiod']) * 100)
-                cores_info += '\n\n   CPU: ' + str(curr_core['id']) + '\n\n    ' + str(curr_core) + '\n\n'
+                cores_info += '\n\n   CPU: ' + str(curr_core['id']) + '\n\n    ' + beautify_dict(curr_core) + '\n\n'
             cores_info += '\n   </details>\n\n'
 
             for task_XML in tasks_XML.findall('task'):
@@ -360,7 +371,7 @@ def produce_results_experiment(experiment_id):
                     curr_task['minreleasejitter'] = task_XML.find('minreleasejitter').text
                     curr_task['maxreleasejitter'] = task_XML.find('maxreleasejitter').text
                     curr_task['avgresponsejitter'] = task_XML.find('avgresponsejitter').text
-                    curr_task['deadlinesmissed'] = task_XML.find('deadlinesmissed').text
+                    curr_task['deadlinesmissed'] = str(task_XML.find('deadlinesmissed').text)
                     # curr_task['deadlinemissedtargetcore'] = task_XML.find('deadlinemissedtargetcore').text
                     curr_task['budgetexceeded'] = task_XML.find('budgetexceeded').text
                     # curr_task['budgetexceededtargetcore'] = task_XML.find('budgetexceededtargetcore').text
@@ -369,11 +380,12 @@ def produce_results_experiment(experiment_id):
                     curr_task['timesonc1'] = task_XML.find('timesonc1').text
                     curr_task['timesonc2'] = task_XML.find('timesonc2').text
                     curr_task['lockedtime'] = task_XML.find('lockedtime').text
+                    curr_task_string = beautify_dict (curr_task)
                     list_of_tasks.append(copy.deepcopy(curr_task))
                     # Write on markdown report
-                    collapse_menu_containing_tasks += '\n\n   Task: ' + curr_task['id'] + '\n\n    ' + str(curr_task) + '\n\n'
+                    collapse_menu_containing_tasks += '\n\n   Task: ' + curr_task['id'] + '\n\n    ' + curr_task_string + '\n\n'
                     if int(task_XML.find('taskid').text) == int(execution_XML.find('guiltytask').text):
-                        guilty_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + str(curr_task) + '\n\n'
+                        guilty_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + curr_task_string + '\n\n'
                         if int(task_XML.find('taskid').text) == int(execution_XML.find('guiltytask').text):
                             p = float (task_XML.find('period').text) * 1000000
                             locrit_budget = float (task_XML.find('locritbudget').text) * 1000000
@@ -384,15 +396,16 @@ def produce_results_experiment(experiment_id):
                             '''if int(curr_task['budgetexceededtargetcore']) > 0:
                                 NS_tasks_group_by_migrability.append ('BE on target core.')'''
                     elif int(curr_task['deadlinesmissed']) > 0:
-                        guilty_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + str(curr_task) + '\n\n'
+                        dm_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + curr_task_string + '\n\n'
                         p = float (task_XML.find('period').text) * 1000000
                         mig = str (task_XML.find('migrable').text)
                         NS_tasks_group_by_period.append (p)
                         NS_tasks_group_by_migrability.append (mig)
                         '''if int(curr_task['deadlinemissedtargetcore']) > 0:
                             NS_tasks_group_by_migrability.append ('DM on target core.')'''
-                                    
+                                   
             guilty_tasks += '\n   </details>\n\n'
+            dm_tasks += '\n   </details>\n\n'
 
             collapse_menu_containing_tasks += '\n   </details>\n\n'
 
@@ -402,16 +415,16 @@ def produce_results_experiment(experiment_id):
                     x_axis_levels[approach][single_level] += 1
                     schedulable_histogram.append (float(single_level))
                 else:
-                    not_schedulable_tasksets += '  ' + str(numbered_list_index_NS) +'. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
-                    not_schedulable_tasksets += '\n    Taskset execution params: ' + str(execution_info) + '\n\n' + guilty_tasks + '\n\n'
+                    not_schedulable_tasksets += '\n\n  ' + str(numbered_list_index_NS) +'. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
+                    not_schedulable_tasksets += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n' + dm_tasks + '\n\n'
                     not_schedulable_tasksets += cores_info + collapse_menu_containing_tasks
                     NS_for_each_level[approach][single_level] += 1
                     NS_histogram.append (float(single_level))
                     numbered_list_index_NS += 1
 
             elif str(execution_XML.find('safeboundaryexceeded').text).upper() == 'TRUE':
-                bad_tasksets_safe_boundary += '  ' + str(numbered_list_index_safe_boundary) + '. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
-                bad_tasksets_safe_boundary += '\n    Taskset execution params: ' + str(execution_info) + '\n\n'
+                bad_tasksets_safe_boundary += '\n\n  ' + str(numbered_list_index_safe_boundary) + '. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
+                bad_tasksets_safe_boundary += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n'
                 bad_tasksets_safe_boundary += cores_info + collapse_menu_containing_tasks
                 SBE_for_each_level[approach][single_level] += 1
                 SBE_histogram.append (single_level)
@@ -420,8 +433,8 @@ def produce_results_experiment(experiment_id):
                 BE_for_each_level[approach][single_level] += 1
                 BE_histogram.append (float(single_level))
                 numbered_list_index_BE += 1
-                bad_tasksets_BE += '  ' + str(numbered_list_index_BE) + '. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
-                bad_tasksets_BE += '\n    Taskset execution params: ' + str(execution_info) + '\n\n' + guilty_tasks + '\n\n'
+                bad_tasksets_BE += '\n\n  ' + str(numbered_list_index_BE) + '. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
+                bad_tasksets_BE += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n' + guilty_tasks + '\n\n'
                 bad_tasksets_BE += cores_info + collapse_menu_containing_tasks
 
         overall_results = {'Actually Schedulable': {'values': [], 'legend': 'AS'}, 'Deadline Missed': {'values': [], 'legend': 'DM'}, 'Budget Exceeded': {'values': [], 'legend': 'BE'}} #, 'Safe Boundary Exceeded': {'values': [], 'legend': 'SBE'}, 'DM and BE': {'values': [], 'legend': 'DM+BE'}}
@@ -431,6 +444,7 @@ def produce_results_experiment(experiment_id):
         total_NS = 0
         total_BE = 0
         total_SBE = 0
+        
         for level in x_axis_levels[approach]:
             # compute percentage of taskset schedulable / total taskset
             if number_of_exec_for_each_level[approach][level] == 0:
@@ -463,27 +477,47 @@ def produce_results_experiment(experiment_id):
             # overall_results['Safe Boundary Exceeded']['values'].append ([float(level), perc_SBE])
             # overall_results['DM and BE']['values'].append ([float(level), perc_BE_and_NS])
             results_to_plot[approach].append([float(level), perc])
-    
-    overall_data_section = '\n\n   ## Overall data\n\n  Number of executions: ' + str(total_executions) + '\n\n'
+
+    exp_param = '   Utilization range = [' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ', ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.UTIL_STEP) + '\n\n'
+    if experiment_id == 2:
+        exp_param += '   Criticality factor range = [' + str(config_sim_vs_real.CRITICALITY_LOWER_BOUND) + ', ' + str(config_sim_vs_real.CRITICALITY_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.CRITICALITY_STEP) + '\n\n'
+    elif experiment_id == 3:
+        exp_param += '   Criticality factor range = [' + str(config_sim_vs_real.PROPORTION_LOWER_BOUND) + ', ' + str(config_sim_vs_real.PROPORTION_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.PROPORTION_STEP) + '\n\n'
+    elif experiment_id == 4:
+        exp_param += ' Taskset sizes = ' + str(config_sim_vs_real.TASKSETS_SIZE) + '\n\n'
+ 
+    overall_data_section = '\n\n   ## Overall data\n\n' + exp_param
+    overall_data_section += '  Number of executions: ' + str(total_executions) + '\n\n'
     overall_data_section += 'Schedulable executions: ' + str(total_schedulable) + '/' + str(total_executions) + ' = ' + str((total_schedulable/total_executions)*100) + ' %\n\n'
     overall_data_section += '_Not_ schedulable executions: ' + str(total_NS) + '/' + str(total_executions) + ' = ' + str((total_NS/total_executions)*100) + ' %\n\n'
     overall_data_section += 'Budget Exceeded executions: ' + str(total_BE) + '/' + str(total_executions) + ' = '  + str((total_BE/total_executions)*100) + ' %\n\n'
     overall_data_section += 'Safe Boundary Exceeded executions: ' + str(total_SBE) + '/' + str(total_executions) + ' = '  + str((total_SBE/total_executions)*100) + ' %\n\n'
     overall_data_section += 'NS + BE executions: ' + str(total_BE+total_NS) + '/' + str(total_executions) + ' = '  + str(((total_BE+total_NS)/total_executions)*100) + ' %\n\n'
-
+    overall_data_section += '### **Simulations**\n\n#### **Weighted schedulability experiment ' + str(experiment_id) + ' according to simulations.**\n\n![ALT](result_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '#### **Percentage of (schedulable tasksets with at least one migrating tasks / number of schedulable tasksets) of experiment ' + str(experiment_id) + ' according to simulations.** \n\n![ALT](result_taskset_sched_' + str(experiment_id) + '.png) \n\n'
+    overall_data_section += '\n### **Real Executions**\n\n#### **Schedulability for each level**\n\n![ALT](./overall_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '\n#### **Tasksets, grouped by (LO-crit budget, Period & Migrability), with a Budget_Exceeded task.**\n\n![ALT](./BE_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '\n#### **Tasksets, grouped by (Period & Migrability), with at least one task missing one (or more) of its deadlines.**\n\n![ALT](./NS_' + str(experiment_id) + '.png)\n\n'
+    
+    copyfile (config_sim_vs_real.MAIN_LOG, config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/log_e' + str(experiment_id) + '.xml')
+    copyfile(config_sim_vs_real.SIMULATIONS_RESULTS + 'result_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/result_' + str(experiment_id) + '.png')
+    copyfile(config_sim_vs_real.SIMULATIONS_RESULTS + 'result_taskset_sched_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/result_taskset_sched_' + str(experiment_id) + '.png')
+    
     # Markdown generation
     report_on_bad_tasksets += overall_data_section + bad_tasksets_section +  not_schedulable_tasksets + '</details>\n\n\n' + bad_tasksets_BE + '</details>\n\n\n' + bad_tasksets_safe_boundary + '</details></details>\n\n\n' + results_for_each_level + '</details>\n\n\n'
-    
-    f = open('report_bad_tasksets_e' + str(experiment_id) + '.md', 'w')
+
+    f = open(config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_executions_e' + str(experiment_id) + '.md', 'w')
     f.write(report_on_bad_tasksets)
     f.close()
     #print(results_to_plot)
-    output_dir_path = './../results/xu-burns-real-execution/'
+    
     # plot_data(results_to_plot, output_path, x_lab)
-    plot_two_or_more_functions(overall_results, output_dir_path + 'overall_' + str(experiment_id) + '.png', x_lab, experiment_id)
-    draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, output_dir_path + 'overall_histogram_' + str(experiment_id) + '.png')
-    plot_BE_data (BE_tasks_group_by_locrit_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, output_dir_path + 'BE_' + str(experiment_id) + '.png')
-    plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, schedulable_histogram, output_dir_path + 'NS_' + str(experiment_id) + '.png')
+    plot_two_or_more_functions(overall_results, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_' + str(experiment_id) + '.png', x_lab, experiment_id)
+    draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_histogram_' + str(experiment_id) + '.png')
+    plot_BE_data (BE_tasks_group_by_locrit_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png')
+    plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
+
+    print ('Generated report about experiment ' + str(experiment_id) + ' at ' + config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_executions_e' + str(experiment_id) + '.md\n')
 
 def parse_options():
   parser = optparse.OptionParser()

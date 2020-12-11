@@ -12,6 +12,9 @@ PATH_TO_LOG = {
   4: '../results/xu-burns-real-execution/log.xml'
 }'''
 
+OUTPUT_DIR_PATH = '../results/xu-burns-real-execution/'
+SIMULATIONS_RESULTS = '../py-xu-burns-2019-rta/dual-core-version/results_dualcore_2/'
+
 MAIN_LOG = '../results/xu-burns-real-execution/log.xml'
 
 # Enable/disable tests to run

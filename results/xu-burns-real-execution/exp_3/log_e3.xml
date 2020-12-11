@@ -1,49 +1,5 @@
-<tasksets>
-    <execution>
-        <executionid>-1</executionid>
-        <totalutil />
-        <experimentid />
-        <approach />
-        <tasksetid />
-        <tasksetsize />
-		<tasksetutilization />
-		<criticalityfactor />
-		<perc />
-        <experimentisnotvalid />
-        <safeboundaryexceeded />
-        <guiltytask />
-        <tasks>
-            <task>
-                <priority> </priority>
-                <basecpu> </basecpu>
-                <criticality />
-                <migrable />
-                <deadlinesmissed> </deadlinesmissed>
-                <budgetexceeded> </budgetexceeded>
-                <timesdiscarded> </timesdiscarded>
-                <timesmigrated> </timesmigrated>
-                <timesrestored> </timesrestored>
-                <timesonc1> </timesonc1>
-                <timesonc2> </timesonc2>
-                <lockedtime> </lockedtime>
-            </task>
-        </tasks>
-        <tasksetisschedulable />
-        <cores>
-            <cpu>
-                <id> </id>
-                <lowtohigh> </lowtohigh>
-                <hightolow> </hightolow>
-                <idletime> </idletime>
-            </cpu>
-            <cpu>
-                <id> </id>
-                <lowtohigh> </lowtohigh>
-                <hightolow> </hightolow>
-                <idletime> </idletime>
-            </cpu>
-        </cores>
-</execution>
+<executions>
+
 <execution>
 <executionid>e3_semi2wf_t1000</executionid>
 <experimentid> 3</experimentid>
@@ -96159,4 +96115,4 @@ In last chance handler
 
 
 
-</tasksets>
+</executions>
