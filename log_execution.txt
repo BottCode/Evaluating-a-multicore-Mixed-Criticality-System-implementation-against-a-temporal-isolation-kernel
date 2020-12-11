@@ -1,29 +1,0 @@
-Install project Install
-Install project Libgnarl
-Install project Libgnat
-make: Entering directory '/home/mattia/UNI/ThesisProject/mcs-vs-tsp-a-comparison/py-xu-burns-2019-rta/dual-core-version/Ada_tasksets/experiment_1/semi2-WF/e1_semi2wf_t106'
-gprbuild e1_semi2wf_t106.gpr
-Compile
-   [ada]          main_e1_semi2wf_t106.adb
-   [ada]          periodic_tasks.adb
-   [ada]          taskset_e1_semi2wf_t106.ads
-   [ada]          production_workload.adb
-   [ada]          single_execution_data.ads
-   [ada]          workload_manager.adb
-Bind
-   [gprbind]      main_e1_semi2wf_t106.bexch
-   [Ada]          main_e1_semi2wf_t106.ali
-Link
-   [link]         main_e1_semi2wf_t106.adb
-make: Leaving directory '/home/mattia/UNI/ThesisProject/mcs-vs-tsp-a-comparison/py-xu-burns-2019-rta/dual-core-version/Ada_tasksets/experiment_1/semi2-WF/e1_semi2wf_t106'
-Downloading Program -- /home/mattia/UNI/ThesisProject/mcs-vs-tsp-a-comparison/py-xu-burns-2019-rta/dual-core-version/Ada_tasksets/experiment_1/semi2-WF/e1_semi2wf_t106/obj/main_e1_semi2wf_t106
-	section, .text: 0x00100000 - 0x0012743f
-	section, .rodata: 0x00127440 - 0x0012b54b
-	section, .ARM.extab: 0x0012b54c - 0x0012c11b
-	section, .ARM.exidx: 0x0012c11c - 0x0012d94b
-	section, .data: 0x0012d950 - 0x001375db
-	section, .bss: 0x001375e0 - 0x001a06bf
-	section, .ucache: 0x3ff00000 - 0x3fefffff
-  0%    0MB   0.0MB/s  ??:?? ETA100%    0MB   0.5MB/s  00:00    
-Setting PC to Program Start Address 0x00104020
-Successfully downloaded /home/mattia/UNI/ThesisProject/mcs-vs-tsp-a-comparison/py-xu-burns-2019-rta/dual-core-version/Ada_tasksets/experiment_1/semi2-WF/e1_semi2wf_t106/obj/main_e1_semi2wf_t106

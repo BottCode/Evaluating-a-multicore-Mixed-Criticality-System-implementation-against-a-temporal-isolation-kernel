@@ -24,9 +24,9 @@ def plot_two_or_more_functions(results, output, x_lab, experiment_id):
     if experiment_id == 1:
         base_loc_x = config_sim_vs_real.UTIL_STEP * 2
     elif experiment_id == 2:
-        base_loc_x = config.CRITICALITY_STEP
+        base_loc_x = config_sim_vs_real.CRITICALITY_STEP
     elif experiment_id == 3:
-        base_loc_x = config.PROPORTION_STEP
+        base_loc_x = config_sim_vs_real.PROPORTION_STEP
     else:
         base_loc_x = 5
 
@@ -66,6 +66,7 @@ def plot_data (results, output, x_lab):
   plt.xticks()
   plt.legend()
   plt.savefig(output)
+  plt.close()
   print('Result saved: ' + output)
 
 def plot_BE_data (by_locrit_budget, by_migrability, by_period, output):
@@ -77,16 +78,18 @@ def plot_BE_data (by_locrit_budget, by_migrability, by_period, output):
 
     plt.tight_layout()    
     plt.savefig(output)
+    plt.close()
 
 def plot_NS_data (by_locrit_budget, by_migrability, schedulable_histogram, output):
     df = pd.DataFrame({'Tasks NS by period (microseconds)' : by_locrit_budget, 'Tasks NS by migrability': by_migrability})
 
-    fig, axes = plt.subplots(ncols=len(df.columns), figsize=(10,5))
+    fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
         df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
 
     plt.tight_layout()    
     plt.savefig(output)
+    plt.close()
 
 def CLEAN_ALL():
   for i in range(4):
@@ -361,9 +364,9 @@ def produce_results_experiment(experiment_id):
                     curr_task['maxreleasejitter'] = task_XML.find('maxreleasejitter').text
                     curr_task['avgresponsejitter'] = task_XML.find('avgresponsejitter').text
                     curr_task['deadlinesmissed'] = task_XML.find('deadlinesmissed').text
-                    # curr_task['deadlinemissedtargetcore'] = task_XML.find('deadlinemissedtargetcore').text
+                    curr_task['deadlinemissedtargetcore'] = task_XML.find('deadlinemissedtargetcore').text
                     curr_task['budgetexceeded'] = task_XML.find('budgetexceeded').text
-                    # curr_task['budgetexceededtargetcore'] = task_XML.find('budgetexceededtargetcore').text
+                    curr_task['budgetexceededtargetcore'] = task_XML.find('budgetexceededtargetcore').text
                     curr_task['timesmigrated'] = task_XML.find('timesmigrated').text
                     curr_task['timesrestored'] = task_XML.find('timesrestored').text
                     curr_task['timesonc1'] = task_XML.find('timesonc1').text
