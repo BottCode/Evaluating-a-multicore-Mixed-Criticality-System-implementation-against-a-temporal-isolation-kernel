@@ -72,12 +72,8 @@ def plot_data (results, output, x_lab):
   plt.xticks()
   plt.legend()
   plt.savefig(output)
-<<<<<<< HEAD
   plt.close()
-  print('Result saved: ' + output)
-=======
   # print('Result saved: ' + output)
->>>>>>> f99c89fc5cd70df821bd2618a67ec2e5bdb2599e
 
 def plot_BE_data (by_locrit_budget, by_migrability, by_period, output):
     df = pd.DataFrame({'Tasks BE by LO-crit budget (microseconds)' : by_locrit_budget, 'Tasks BE by period (microseconds)' : by_period, 'Tasks BE by migrability': by_migrability})
@@ -378,13 +374,8 @@ def produce_results_experiment(experiment_id):
                     curr_task['minreleasejitter'] = task_XML.find('minreleasejitter').text
                     curr_task['maxreleasejitter'] = task_XML.find('maxreleasejitter').text
                     curr_task['avgresponsejitter'] = task_XML.find('avgresponsejitter').text
-<<<<<<< HEAD
                     curr_task['deadlinesmissed'] = task_XML.find('deadlinesmissed').text
                     curr_task['deadlinemissedtargetcore'] = task_XML.find('deadlinemissedtargetcore').text
-=======
-                    curr_task['deadlinesmissed'] = str(task_XML.find('deadlinesmissed').text)
-                    # curr_task['deadlinemissedtargetcore'] = task_XML.find('deadlinemissedtargetcore').text
->>>>>>> f99c89fc5cd70df821bd2618a67ec2e5bdb2599e
                     curr_task['budgetexceeded'] = task_XML.find('budgetexceeded').text
                     curr_task['budgetexceededtargetcore'] = task_XML.find('budgetexceededtargetcore').text
                     curr_task['timesmigrated'] = task_XML.find('timesmigrated').text
