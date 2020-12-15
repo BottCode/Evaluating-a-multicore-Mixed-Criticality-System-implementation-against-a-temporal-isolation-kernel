@@ -4,19 +4,19 @@
 
    ## Overall data
 
-   Utilization range = [1.8, 2.1] with step = 0.012
+   Utilization range = [1.848, 2.1] with step = 0.012
 
-  Number of executions: 291
+  Number of executions: 188
 
-Schedulable executions: 245/291 = 84.19243986254295 %
+Schedulable executions: 164/188 = 87.2340425531915 %
 
-_Not_ schedulable executions: 13/291 = 4.4673539518900345 %
+_Not_ schedulable executions: 16/188 = 8.51063829787234 %
 
-Budget Exceeded executions: 27/291 = 9.278350515463918 %
+Budget Exceeded executions: 5/188 = 2.6595744680851063 %
 
-Safe Boundary Exceeded executions: 6/291 = 2.0618556701030926 %
+Safe Boundary Exceeded executions: 3/188 = 1.5957446808510638 %
 
-NS + BE executions: 40/291 = 13.745704467353953 %
+NS + BE executions: 21/188 = 11.170212765957446 %
 
 ### **Simulations**
 
@@ -58,18 +58,18 @@ Ovvero quando almeno un task non completa entra almeno una sua deadline.
 
 
 
-  1. Taskset **e1_semi2wf_t1257**
+  1. Taskset **e1_semi2wf_t118**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t1257",
+    "id": "e1_semi2wf_t118",
     "size": "12",
-    "utilization": "1.836",
+    "utilization": "1.848",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
 
    Time values are expressed as **micro-seconds**.
 
@@ -78,26 +78,30 @@ Task:  1
     
     "id": " 1",
     "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 5398.0,
-    "C(HI)": 5398.0,
+    "priority": " 7",
+    "period": 18900.0,
+    "C(LO)": 1015.0000000000001,
+    "C(HI)": 1015.0000000000001,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 1",
+    "completedruns": " 2910",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003253171",
+    "maxresponsejitter": " 0.000468964",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677506258",
-    "avgresponsejitter": " 0.002700967",
+    "maxreleasejitter": " 55.961206871",
+    "avgresponsejitter": " 0.000454589",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 4",
     "timesrestored": " 4",
-    "timesonc1": " 2518",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000029841"
+    "timesonc1": " 2904",
+    "timesonc2": " 4",
+    "lockedtime": " 0.000029447"
 
 
 
@@ -109,6 +113,1972 @@ Task:  1
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 59",
+    "hightolow": " 59",
+    "idletime": 78396826,
+    "util": 30.866996472663146
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 9450000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 82915887,
+    "util": 26.881933862433854
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 787500.0,
+    "C(LO)": 58602.0,
+    "C(HI)": 117204.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 145",
+    "preemptions": " 308",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.104164366",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.613608267",
+    "avgresponsejitter": " 0.031821150",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 453",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001850"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 129600.0,
+    "C(LO)": 8201.0,
+    "C(HI)": 16403.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 876",
+    "preemptions": " 195",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.025351480",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.270406099",
+    "avgresponsejitter": " 0.004036234",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1078",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001048"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 840000.0,
+    "C(LO)": 47191.0,
+    "C(HI)": 94382.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 136",
+    "preemptions": " 284",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.051882291",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.560006135",
+    "avgresponsejitter": " 0.026233589",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 419",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002616"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 56250.0,
+    "C(LO)": 2791.0,
+    "C(HI)": 5583.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2017",
+    "preemptions": " 127",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004221622",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.343755967",
+    "avgresponsejitter": " 0.001286502",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 21",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2164",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000005724"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 28350.0,
+    "C(LO)": 414.0,
+    "C(HI)": 829.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 4001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000586526",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.371656075",
+    "avgresponsejitter": " 0.000184075",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 29",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 4029",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006414"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 101250.0,
+    "C(LO)": 36431.0,
+    "C(HI)": 36431.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1121",
+    "preemptions": " 919",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.020079610",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.298756144",
+    "avgresponsejitter": " 0.016452880",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2039",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000013955"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 18900.0,
+    "C(LO)": 1015.0000000000001,
+    "C(HI)": 1015.0000000000001,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2910",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000468964",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 55.961206871",
+    "avgresponsejitter": " 0.000454589",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 4",
+    "timesrestored": " 4",
+    "timesonc1": " 2904",
+    "timesonc2": " 4",
+    "lockedtime": " 0.000029447"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 67500.0,
+    "C(LO)": 3276.0,
+    "C(HI)": 3276.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1681",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001745712",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.332506162",
+    "avgresponsejitter": " 0.001452733",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1681",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006411"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 175000.0,
+    "C(LO)": 46518.0,
+    "C(HI)": 93036.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 649",
+    "preemptions": " 303",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.038250904",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.225005913",
+    "avgresponsejitter": " 0.023595559",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 951",
+    "lockedtime": " 0.000026601"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 75600.0,
+    "C(LO)": 15795.0,
+    "C(HI)": 15795.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1501",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.008401006",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.324405940",
+    "avgresponsejitter": " 0.007021883",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1500",
+    "lockedtime": " 0.000072607"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 126000.0,
+    "C(LO)": 14254.0,
+    "C(HI)": 14254.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 901",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007575880",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.274005934",
+    "avgresponsejitter": " 0.006327141",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 900",
+    "lockedtime": " 0.000003213"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 150000.0,
+    "C(LO)": 2386.0,
+    "C(HI)": 2386.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 757",
+    "preemptions": " 2",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.008898937",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.256671216",
+    "avgresponsejitter": " 0.001067114",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 758",
+    "lockedtime": " 0.000012171"
+
+
+
+   </details>
+
+
+
+  2. Taskset **e1_semi2wf_t1492**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t1492",
+    "size": "12",
+    "utilization": "1.9080000000000001",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 10000.0,
+    "C(LO)": 821.0,
+    "C(HI)": 821.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 4626",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000381772",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 47.240006775",
+    "avgresponsejitter": " 0.000366153",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 4624",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000011495"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 37800000,
+    "lowtohigh": " 13",
+    "hightolow": " 13",
+    "idletime": 39009977,
+    "util": 31.199335097001764
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 56700000,
+    "lowtohigh": " 22",
+    "hightolow": " 22",
+    "idletime": 41255144,
+    "util": 27.239604938271597
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 56250.0,
+    "C(LO)": 9006.0,
+    "C(HI)": 18013.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1009",
+    "preemptions": " 562",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.016577700",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.645674495",
+    "avgresponsejitter": " 0.004805408",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 13",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1583",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000025991"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 200000.0,
+    "C(LO)": 19006.0,
+    "C(HI)": 38012.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 285",
+    "preemptions": " 323",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.018494577",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.600006375",
+    "avgresponsejitter": " 0.010653982",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 607",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000007090"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 787500.0,
+    "C(LO)": 28884.0,
+    "C(HI)": 57769.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 73",
+    "preemptions": " 163",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.028559619",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 56.917007901",
+    "avgresponsejitter": " 0.016275625",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 235",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001273"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 18900.0,
+    "C(LO)": 5766.0,
+    "C(HI)": 5766.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 3001",
+    "preemptions": " 617",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003436928",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.681106195",
+    "avgresponsejitter": " 0.002634550",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 3617",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000019727"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 10000.0,
+    "C(LO)": 821.0,
+    "C(HI)": 821.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 4626",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000381772",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 47.240006775",
+    "avgresponsejitter": " 0.000366153",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 4624",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000011495"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 100800.0,
+    "C(LO)": 2198.0,
+    "C(HI)": 2198.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 564",
+    "preemptions": " 39",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001538610",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.649606523",
+    "avgresponsejitter": " 0.001003414",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 602",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 72000.0,
+    "C(LO)": 787.0,
+    "C(HI)": 787.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 789",
+    "preemptions": " 3",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000728709",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.665263120",
+    "avgresponsejitter": " 0.000348532",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 791",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000468"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 84375.0,
+    "C(LO)": 20505.0,
+    "C(HI)": 41011.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 673",
+    "preemptions": " 67",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.032823216",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.615631057",
+    "avgresponsejitter": " 0.009806207",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 11",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 750",
+    "lockedtime": " 0.000032808"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 100000.0,
+    "C(LO)": 4489.0,
+    "C(HI)": 8979.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 568",
+    "preemptions": " 7",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006661772",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.600007177",
+    "avgresponsejitter": " 0.002086276",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 6",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 580",
+    "lockedtime": " 0.000027838"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 141750.0,
+    "C(LO)": 2165.0,
+    "C(HI)": 4330.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 401",
+    "preemptions": " 5",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006389456",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.558256057",
+    "avgresponsejitter": " 0.001031988",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 410",
+    "lockedtime": " 0.000013471"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 67500.0,
+    "C(LO)": 10377.0,
+    "C(HI)": 10377.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 841",
+    "preemptions": " 47",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.009743498",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.632506123",
+    "avgresponsejitter": " 0.004825859",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 887",
+    "lockedtime": " 0.000031081"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 65625.0,
+    "C(LO)": 9461.0,
+    "C(HI)": 9461.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 865",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004275727",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.634381532",
+    "avgresponsejitter": " 0.004226853",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 864",
+    "lockedtime": " 0.000021261"
+
+
+
+   </details>
+
+
+
+  3. Taskset **e1_semi2wf_t1659**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t1659",
+    "size": "12",
+    "utilization": "1.9200000000000002",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 2066.0,
+    "C(HI)": 2066.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 7201",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000943811",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.384255967",
+    "avgresponsejitter": " 0.000921739",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 9",
+    "timesrestored": " 9",
+    "timesonc1": " 7197",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000037742"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 35",
+    "hightolow": " 35",
+    "idletime": 80025671,
+    "util": 29.430625220458552
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 14175000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 84989626,
+    "util": 25.053239858906522
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 100000.0,
+    "C(LO)": 16114.0,
+    "C(HI)": 32228.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1135",
+    "preemptions": " 996",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.026203441",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.300006207",
+    "avgresponsejitter": " 0.008462733",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 10",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2140",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000013883"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 168750.0,
+    "C(LO)": 25482.0,
+    "C(HI)": 50965.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 673",
+    "preemptions": " 974",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.041990225",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.231350423",
+    "avgresponsejitter": " 0.013916138",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1651",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000012871"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 60480.0,
+    "C(LO)": 2271.0,
+    "C(HI)": 4543.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1876",
+    "preemptions": " 87",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007927703",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.339526066",
+    "avgresponsejitter": " 0.001084468",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 20",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1982",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 2066.0,
+    "C(HI)": 2066.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 7201",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000943811",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.384255967",
+    "avgresponsejitter": " 0.000921739",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 9",
+    "timesrestored": " 9",
+    "timesonc1": " 7197",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000037742"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 28350.0,
+    "C(LO)": 3180.0,
+    "C(HI)": 3180.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 4001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001445892",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.371656075",
+    "avgresponsejitter": " 0.001420592",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 3",
+    "timesonc1": " 4000",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000014300"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 118125.0,
+    "C(LO)": 7061.0,
+    "C(HI)": 7061.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 961",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003762033",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.281881084",
+    "avgresponsejitter": " 0.003116580",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 960",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 175000.0,
+    "C(LO)": 29662.0,
+    "C(HI)": 59325.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 649",
+    "preemptions": " 279",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.027411610",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.225006021",
+    "avgresponsejitter": " 0.014410568",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 927",
+    "lockedtime": " 0.000033949"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 787500.0,
+    "C(LO)": 85089.0,
+    "C(HI)": 170178.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 145",
+    "preemptions": " 184",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.056804435",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.621354279",
+    "avgresponsejitter": " 0.041443150",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 328",
+    "lockedtime": " 0.000024610"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 131250.0,
+    "C(LO)": 9963.0,
+    "C(HI)": 19926.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 865",
+    "preemptions": " 68",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.017031402",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.268755886",
+    "avgresponsejitter": " 0.004738727",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 932",
+    "lockedtime": " 0.000021859"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 113400.0,
+    "C(LO)": 22559.0,
+    "C(HI)": 22559.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1001",
+    "preemptions": " 128",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.012150351",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.286606688",
+    "avgresponsejitter": " 0.009997057",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1128",
+    "lockedtime": " 0.000080853"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 94500.0,
+    "C(LO)": 707.0,
+    "C(HI)": 707.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1201",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000373766",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.305507192",
+    "avgresponsejitter": " 0.000311760",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1200",
+    "lockedtime": " 0.000056934"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 67500.0,
+    "C(LO)": 276.0,
+    "C(HI)": 276.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1681",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000146694",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.332506024",
+    "avgresponsejitter": " 0.000124231",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1680",
+    "lockedtime": " 0.000032526"
+
+
+
+   </details>
+
+
+
+  4. Taskset **e1_semi2wf_t2157**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t2157",
+    "size": "12",
+    "utilization": "1.9440000000000002",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 20000.0,
+    "C(LO)": 845.0,
+    "C(HI)": 845.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 3377",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000391051",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 68.500008772",
+    "avgresponsejitter": " 0.000373078",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 6",
+    "timesonc1": " 3374",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000006261"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 39",
+    "hightolow": " 39",
+    "idletime": 84081648,
+    "util": 25.85392592592592
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 11340000,
+    "lowtohigh": " 17",
+    "hightolow": " 17",
+    "idletime": 85126826,
+    "util": 24.932252204585538
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 189000.0,
+    "C(LO)": 25758.0,
+    "C(HI)": 51517.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 601",
+    "preemptions": " 665",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.042968553",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.211006159",
+    "avgresponsejitter": " 0.013149637",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1273",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000021129"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 50400.0,
+    "C(LO)": 6015.0,
+    "C(HI)": 12030.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2251",
+    "preemptions": " 418",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010990321",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.349606075",
+    "avgresponsejitter": " 0.002895829",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 24",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2692",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000011279"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 540000.0,
+    "C(LO)": 60544.0,
+    "C(HI)": 121088.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 211",
+    "preemptions": " 598",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.102064634",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.860006180",
+    "avgresponsejitter": " 0.032717210",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 809",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000014703"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 181440.0,
+    "C(LO)": 5248.0,
+    "C(HI)": 10497.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 626",
+    "preemptions": " 128",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.009788727",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.218566556",
+    "avgresponsejitter": " 0.002564399",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 6",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 759",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 75000.0,
+    "C(LO)": 6129.0,
+    "C(HI)": 6129.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1513",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003258348",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.325006105",
+    "avgresponsejitter": " 0.002717805",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1512",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000005847"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 26250.0,
+    "C(LO)": 1856.0,
+    "C(HI)": 1856.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 4321",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000989285",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.373756081",
+    "avgresponsejitter": " 0.000820880",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 4321",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000024712"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 20000.0,
+    "C(LO)": 845.0,
+    "C(HI)": 845.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 3377",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000391051",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 68.500008772",
+    "avgresponsejitter": " 0.000373078",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 6",
+    "timesonc1": " 3374",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000006261"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 135000.0,
+    "C(LO)": 51149.0,
+    "C(HI)": 102299.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 841",
+    "preemptions": " 523",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.076677661",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.265006048",
+    "avgresponsejitter": " 0.024177114",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 9",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1372",
+    "lockedtime": " 0.000069135"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 84000.0,
+    "C(LO)": 2402.0,
+    "C(HI)": 4805.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1351",
+    "preemptions": " 8",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005469952",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.316005859",
+    "avgresponsejitter": " 0.001091225",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1366",
+    "lockedtime": " 0.000016027"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 81000.0,
+    "C(LO)": 5978.0,
+    "C(HI)": 5978.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1401",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002701625",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.319005856",
+    "avgresponsejitter": " 0.002672616",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1400",
+    "lockedtime": " 0.000018459"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 105000.0,
+    "C(LO)": 6247.0,
+    "C(HI)": 6247.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1081",
+    "preemptions": " 6",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005923976",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.295006003",
+    "avgresponsejitter": " 0.002787282",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1086",
+    "lockedtime": " 0.000064075"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 94500.0,
+    "C(LO)": 719.0,
+    "C(HI)": 719.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1201",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000327042",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.305506003",
+    "avgresponsejitter": " 0.000321243",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 3",
+    "timesonc1": " 2",
+    "timesonc2": " 1198",
+    "lockedtime": " 0.000038595"
+
+
+
+   </details>
+
+
+
+  5. Taskset **e1_semi2wf_t2255**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t2255",
+    "size": "12",
+    "utilization": "1.9560000000000002",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 60000.0,
+    "C(LO)": 4921.0,
+    "C(HI)": 4921.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 677",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002219910",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 41.500010108",
+    "avgresponsejitter": " 0.002200757",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 673",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000001357"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
@@ -116,10 +2086,10 @@ Task:  1
     
     "id": 1,
     "hyperperiod": 56700000,
-    "lowtohigh": " 29",
-    "hightolow": " 29",
-    "idletime": 36315645,
-    "util": 35.95124338624338
+    "lowtohigh": " 22",
+    "hightolow": " 22",
+    "idletime": 38847088,
+    "util": 31.486617283950608
 
 
 
@@ -131,8 +2101,8 @@ Task:  1
     "hyperperiod": 37800000,
     "lowtohigh": " 0",
     "hightolow": " 0",
-    "idletime": 36782990,
-    "util": 2.6905026455026473
+    "idletime": 39967734,
+    "util": 29.51016931216931
 
 
 
@@ -144,468 +2114,35 @@ Task:  1
 
 
 
-   Task:  5
+   Task:  7
 
     
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 60000.0,
-    "C(LO)": 6566.0,
-    "C(HI)": 13132.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 946",
-    "preemptions": " 112",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010495474",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.640006081",
-    "avgresponsejitter": " 0.003545691",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1065",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008282"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 67500.0,
-    "C(LO)": 3775.0,
-    "C(HI)": 7551.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 841",
-    "preemptions": " 61",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013076649",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.635645288",
-    "avgresponsejitter": " 0.002090583",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 907",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003138"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
+    "id": " 7",
     "basecpu": " 1",
     "priority": " 3",
-    "period": 45360.0,
-    "C(LO)": 1647.0,
-    "C(HI)": 3295.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1251",
-    "preemptions": " 63",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014545868",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.654646180",
-    "avgresponsejitter": " 0.001048189",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1323",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010063"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 0",
     "period": 141750.0,
-    "C(LO)": 49.0,
-    "C(HI)": 99.0,
+    "C(LO)": 23408.0,
+    "C(HI)": 46817.0,
     "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 401",
-    "preemptions": " 0",
+    "preemptions": " 79",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000095090",
+    "maxresponsejitter": " 0.034478643",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.558256198",
-    "avgresponsejitter": " 0.000030796",
+    "maxreleasejitter": " 57.558256886",
+    "avgresponsejitter": " 0.011553829",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 405",
+    "timesonc1": " 482",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000805"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 5398.0,
-    "C(HI)": 5398.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003253171",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677506258",
-    "avgresponsejitter": " 0.002700967",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 2518",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000029841"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 75000.0,
-    "C(LO)": 14669.0,
-    "C(HI)": 14669.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 757",
-    "preemptions": " 106",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012049246",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.625006105",
-    "avgresponsejitter": " 0.007767042",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 862",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000022625"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 84000.0,
-    "C(LO)": 6272.0,
-    "C(HI)": 6272.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 676",
-    "preemptions": " 95",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014554222",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.616006084",
-    "avgresponsejitter": " 0.003660339",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 770",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010847"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 33750.0,
-    "C(LO)": 6764.0,
-    "C(HI)": 13528.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1681",
-    "preemptions": " 212",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005773474",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.666256015",
-    "avgresponsejitter": " 0.003559267",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1892",
-    "lockedtime": " 0.000030970"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 150000.0,
-    "C(LO)": 3680.0,
-    "C(HI)": 7360.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 379",
-    "preemptions": " 31",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007135276",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.550249751",
-    "avgresponsejitter": " 0.001998649",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 409",
-    "lockedtime": " 0.000011583"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 840000.0,
-    "C(LO)": 183375.0,
-    "C(HI)": 183375.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 69",
-    "preemptions": " 514",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.150074096",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.280006808",
-    "avgresponsejitter": " 0.117244111",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 582",
-    "lockedtime": " 0.000038616"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 200000.0,
-    "C(LO)": 27238.0,
-    "C(HI)": 27238.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 285",
-    "preemptions": " 263",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021732559",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.604226637",
-    "avgresponsejitter": " 0.015928868",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 547",
-    "lockedtime": " 0.000018270"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 25200.0,
-    "C(LO)": 2956.0,
-    "C(HI)": 2956.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2251",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001785264",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.674805754",
-    "avgresponsejitter": " 0.001486697",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2250",
-    "lockedtime": " 0.000037910"
-
-
-
-   </details>
-
-
-
-  2. Taskset **e1_semi2wf_t1542**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t1542",
-    "size": "12",
-    "utilization": "1.848",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 33750.0,
-    "C(LO)": 4075.9999999999995,
-    "C(HI)": 4075.9999999999995,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3361",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002457474",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.366255907",
-    "avgresponsejitter": " 0.002041652",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2",
-    "timesonc2": " 3357",
-    "lockedtime": " 0.000073033"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 72594585,
-    "util": 35.98361111111112
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 7560000,
-    "lowtohigh": " 9",
-    "hightolow": " 9",
-    "idletime": 74749359,
-    "util": -888.7481349206348
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 810000.0,
-    "C(LO)": 68261.0,
-    "C(HI)": 136522.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 141",
-    "preemptions": " 249",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.063434243",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.593756123",
-    "avgresponsejitter": " 0.043340889",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 389",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010003"
+    "lockedtime": " 0.000005234"
 
 
 
@@ -616,54 +2153,29 @@ Task:  1
     "id": " 6",
     "basecpu": " 1",
     "priority": " 4",
-    "period": 101250.0,
-    "C(LO)": 8411.0,
-    "C(HI)": 16823.0,
+    "period": 108000.0,
+    "C(LO)": 10067.0,
+    "C(HI)": 20135.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1121",
-    "preemptions": " 150",
+    "completedruns": " 526",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026705568",
+    "maxresponsejitter": " 0.013821039",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.298756835",
-    "avgresponsejitter": " 0.004905183",
+    "maxreleasejitter": " 57.592006231",
+    "avgresponsejitter": " 0.004605396",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 11",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1270",
+    "timesonc1": " 536",
     "timesonc2": " 0",
-    "lockedtime": " 0.000027414"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 175000.0,
-    "C(LO)": 3480.0,
-    "C(HI)": 6961.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 649",
-    "preemptions": " 31",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.029315718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.225006183",
-    "avgresponsejitter": " 0.002119408",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 679",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010189"
+    "lockedtime": " 0.000003715"
 
 
 
@@ -673,434 +2185,63 @@ Task:  1
     
     "id": " 10",
     "basecpu": " 1",
-    "priority": " 2",
-    "period": 150000.0,
-    "C(LO)": 2884.0,
-    "C(HI)": 5769.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 757",
-    "preemptions": " 11",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006353390",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.250006063",
-    "avgresponsejitter": " 0.001465868",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 767",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005003"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 108000.0,
-    "C(LO)": 294.0,
-    "C(HI)": 588.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1051",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004310991",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.292006306",
-    "avgresponsejitter": " 0.000157405",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1053",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005126"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 72000.0,
-    "C(LO)": 36363.0,
-    "C(HI)": 36363.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1576",
-    "preemptions": " 580",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021926625",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.328005979",
-    "avgresponsejitter": " 0.018290417",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2155",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000143928"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 42000.0,
-    "C(LO)": 85.0,
-    "C(HI)": 85.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2701",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000060505",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.358006216",
-    "avgresponsejitter": " 0.000050048",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2701",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012276"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 140000.0,
-    "C(LO)": 34900.0,
-    "C(HI)": 69800.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 811",
-    "preemptions": " 785",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.070652676",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.264230318",
-    "avgresponsejitter": " 0.020614471",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 9",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1604",
-    "lockedtime": " 0.000045111"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 70000.0,
-    "C(LO)": 9941.0,
-    "C(HI)": 9941.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1621",
-    "preemptions": " 274",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010500697",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.330005856",
-    "avgresponsejitter": " 0.005351910",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1894",
-    "lockedtime": " 0.000050465"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 33750.0,
-    "C(LO)": 4075.9999999999995,
-    "C(HI)": 4075.9999999999995,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3361",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002457474",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.366255907",
-    "avgresponsejitter": " 0.002041652",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2",
-    "timesonc2": " 3357",
-    "lockedtime": " 0.000073033"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 45000.0,
-    "C(LO)": 4128.0,
-    "C(HI)": 4128.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002479673",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.355005985",
-    "avgresponsejitter": " 0.002063745",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2520",
-    "lockedtime": " 0.000022538"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 120000.0,
-    "C(LO)": 8322.0,
-    "C(HI)": 8322.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 946",
-    "preemptions": " 86",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007300468",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.280006547",
-    "avgresponsejitter": " 0.004357297",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1031",
-    "lockedtime": " 0.000014841"
-
-
-
-   </details>
-
-
-
-  3. Taskset **e1_semi2wf_t1642**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t1642",
-    "size": "12",
-    "utilization": "1.86",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 37800.0,
-    "C(LO)": 1958.0,
-    "C(HI)": 1958.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1062",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001179880",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.068006580",
-    "avgresponsejitter": " 0.000979709",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 1059",
-    "lockedtime": " 0.000014664"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 39866051,
-    "util": 29.68950440917108
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 5",
-    "hightolow": " 5",
-    "idletime": 40361159,
-    "util": -113.55110582010585
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 45360.0,
-    "C(LO)": 9235.0,
-    "C(HI)": 18470.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1251",
-    "preemptions": " 130",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014421135",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.654646060",
-    "avgresponsejitter": " 0.005145673",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1380",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004811"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
     "priority": " 1",
     "period": 196875.0,
-    "C(LO)": 16818.0,
-    "C(HI)": 33637.0,
+    "C(LO)": 3619.0,
+    "C(HI)": 7238.0,
     "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 289",
-    "preemptions": " 104",
+    "preemptions": " 3",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019510835",
+    "maxresponsejitter": " 0.006786174",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.509051919",
-    "avgresponsejitter": " 0.009976760",
+    "maxreleasejitter": " 57.503131847",
+    "avgresponsejitter": " 0.001675258",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 392",
+    "timesonc1": " 294",
     "timesonc2": " 0",
-    "lockedtime": " 0.000004345"
+    "lockedtime": " 0.000010508"
 
 
 
 
-   Task:  10
+   Task:  8
 
     
-    "id": " 10",
+    "id": " 8",
     "basecpu": " 1",
     "priority": " 2",
-    "period": 151200.0,
-    "C(LO)": 5457.0,
-    "C(HI)": 10914.0,
+    "period": 175000.0,
+    "C(LO)": 135.0,
+    "C(HI)": 270.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 376",
-    "preemptions": " 17",
+    "completedruns": " 325",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010323243",
+    "maxresponsejitter": " 0.000205000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.550347252",
-    "avgresponsejitter": " 0.002998541",
+    "maxreleasejitter": " 57.528717153",
+    "avgresponsejitter": " 0.000066294",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 392",
+    "timesonc1": " 329",
     "timesonc2": " 0",
-    "lockedtime": " 0.000001207"
+    "lockedtime": " 0.000000703"
 
 
 
@@ -1111,83 +2252,29 @@ Task:  1
     "id": " 12",
     "basecpu": " 1",
     "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 5150.0,
-    "C(HI)": 10301.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 81",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008624718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.991255973",
-    "avgresponsejitter": " 0.002686156",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 83",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000547"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 65625.0,
-    "C(LO)": 12130.0,
-    "C(HI)": 12130.0,
+    "period": 540000.0,
+    "C(LO)": 138665.0,
+    "C(HI)": 138665.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 865",
-    "preemptions": " 101",
+    "completedruns": " 106",
+    "preemptions": " 184",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009332715",
+    "maxresponsejitter": " 0.091275204",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.634381213",
-    "avgresponsejitter": " 0.006314943",
+    "maxreleasejitter": " 57.174082967",
+    "avgresponsejitter": " 0.068952646",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 965",
+    "timesonc1": " 289",
     "timesonc2": " 0",
-    "lockedtime": " 0.000012498"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 50400.0,
-    "C(LO)": 3567.0,
-    "C(HI)": 3567.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1126",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002148156",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.649605973",
-    "avgresponsejitter": " 0.001793150",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1126",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012132"
+    "lockedtime": " 0.000014144"
 
 
 
@@ -1196,114 +2283,163 @@ Task:  1
 
     
     "id": " 9",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 150000.0,
-    "C(LO)": 41167.0,
-    "C(HI)": 82334.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 379",
-    "preemptions": " 399",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.069634868",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.550005850",
-    "avgresponsejitter": " 0.023586249",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 780",
-    "lockedtime": " 0.000009105"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 105000.0,
-    "C(LO)": 8142.999999999999,
-    "C(HI)": 16285.999999999998,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 541",
-    "preemptions": " 51",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015894550",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.595005940",
-    "avgresponsejitter": " 0.004281955",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 593",
-    "lockedtime": " 0.000004655"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 7644.0,
-    "C(HI)": 7644.0,
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 180000.0,
+    "C(LO)": 19626.0,
+    "C(HI)": 19626.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 673",
-    "preemptions": " 95",
+    "completedruns": " 316",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008970805",
+    "maxresponsejitter": " 0.010447141",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.615631033",
-    "avgresponsejitter": " 0.004064432",
+    "maxreleasejitter": " 57.520006429",
+    "avgresponsejitter": " 0.008679955",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 767",
-    "lockedtime": " 0.000001375"
+    "timesonc1": " 316",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000571"
 
 
 
 
-   Task:  6
+   Task:  4
 
     
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 70000.0,
-    "C(LO)": 5001.0,
-    "C(HI)": 5001.0,
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 60000.0,
+    "C(LO)": 4921.0,
+    "C(HI)": 4921.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 811",
-    "preemptions": " 27",
+    "completedruns": " 677",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004047922",
+    "maxresponsejitter": " 0.002219910",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.630005868",
-    "avgresponsejitter": " 0.002516619",
-    "deadlinesmissed": " 0",
+    "maxreleasejitter": " 41.500010108",
+    "avgresponsejitter": " 0.002200757",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 673",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000001357"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 56250.0,
+    "C(LO)": 13698.0,
+    "C(HI)": 27396.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1009",
+    "preemptions": " 293",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010112991",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.643755853",
+    "avgresponsejitter": " 0.006418892",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 837",
-    "lockedtime": " 0.000001204"
+    "timesonc2": " 1301",
+    "lockedtime": " 0.000001387"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 84375.0,
+    "C(LO)": 3807.0,
+    "C(HI)": 7614.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 673",
+    "preemptions": " 51",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004019336",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.615630748",
+    "avgresponsejitter": " 0.001789916",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 723",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 504000.0,
+    "C(LO)": 116380.0,
+    "C(HI)": 116380.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 114",
+    "preemptions": " 453",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.078314288",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.448739646",
+    "avgresponsejitter": " 0.062636258",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 566",
+    "lockedtime": " 0.000006228"
 
 
 
@@ -1313,55 +2449,63 @@ Task:  1
     
     "id": " 1",
     "basecpu": " 2",
-    "priority": " 5",
-    "period": 37800.0,
-    "C(LO)": 1958.0,
-    "C(HI)": 1958.0,
+    "priority": " 4",
+    "period": 30240.0,
+    "C(LO)": 4022.0000000000005,
+    "C(HI)": 4022.0000000000005,
     "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1062",
+    "migrable": "False",
+    "completedruns": " 1876",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001179880",
+    "maxresponsejitter": " 0.002140640",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.068006580",
-    "avgresponsejitter": " 0.000979709",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 1059",
-    "lockedtime": " 0.000014664"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 60000.0,
-    "C(LO)": 1304.0,
-    "C(HI)": 1304.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 692",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001854471",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 42.400006796",
-    "avgresponsejitter": " 0.000666832",
+    "maxreleasejitter": " 57.669765853",
+    "avgresponsejitter": " 0.001778429",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 699",
-    "lockedtime": " 0.000000595"
+    "timesonc2": " 1875",
+    "lockedtime": " 0.000006333"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 39375.0,
+    "C(LO)": 468.0,
+    "C(HI)": 468.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1441",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000246508",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.660630751",
+    "avgresponsejitter": " 0.000207937",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1440",
+    "lockedtime": " 0.000023658"
 
 
 
@@ -1369,46 +2513,50 @@ Task:  1
 
 
 
-  4. Taskset **e1_semi2wf_t1799**
+  6. Taskset **e1_semi2wf_t2383**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t1799",
+    "id": "e1_semi2wf_t2383",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.9560000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
 
    Time values are expressed as **micro-seconds**.
 
-Task:  2
+Task:  1
 
     
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 35000.0,
-    "C(LO)": 5242.0,
-    "C(HI)": 5242.0,
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 18900.0,
+    "C(LO)": 381.0,
+    "C(HI)": 381.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 3241",
+    "completedruns": " 1501",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005532508",
+    "maxresponsejitter": " 0.000183670",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.365005931",
-    "avgresponsejitter": " 0.002613946",
+    "maxreleasejitter": " 29.331106096",
+    "avgresponsejitter": " 0.000172228",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 4",
-    "timesonc2": " 3236",
-    "lockedtime": " 0.000022048"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 7",
+    "timesonc1": " 1496",
+    "timesonc2": " 4",
+    "lockedtime": " 0.000014997"
 
 
 
@@ -1420,17 +2568,19 @@ Task:  2
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
 
     
     "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 76007858,
-    "util": 32.97367019400352
+    "hyperperiod": 7560000,
+    "lowtohigh": " 25",
+    "hightolow": " 25",
+    "idletime": 21079856,
+    "util": 25.644246913580247
 
 
 
@@ -1439,11 +2589,11 @@ Task:  2
 
     
     "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 13",
-    "hightolow": " 13",
-    "idletime": 71113900,
-    "util": -25.421340388007053
+    "hyperperiod": 28350000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 21800987,
+    "util": 23.100574955908286
 
 
 
@@ -1455,118 +2605,200 @@ Task:  2
 
 
 
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 120000.0,
-    "C(LO)": 13359.0,
-    "C(HI)": 26718.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 946",
-    "preemptions": " 407",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023318889",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.280006144",
-    "avgresponsejitter": " 0.008564183",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1352",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008156"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 37800.0,
-    "C(LO)": 3667.0,
-    "C(HI)": 7334.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 3001",
-    "preemptions": " 290",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005737601",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.362205973",
-    "avgresponsejitter": " 0.002051904",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 3290",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005529"
-
-
-
-
    Task:  10
 
     
     "id": " 10",
     "basecpu": " 1",
     "priority": " 0",
-    "period": 196875.0,
-    "C(LO)": 2256.0,
-    "C(HI)": 4512.0,
+    "period": 168000.0,
+    "C(LO)": 38068.0,
+    "C(HI)": 76136.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 577",
-    "preemptions": " 4",
+    "completedruns": " 170",
+    "preemptions": " 368",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009715949",
+    "maxresponsejitter": " 0.061914030",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.204149096",
-    "avgresponsejitter": " 0.001157267",
+    "maxreleasejitter": " 29.228227225",
+    "avgresponsejitter": " 0.018704498",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 580",
+    "timesonc1": " 540",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000005177"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 63000.0,
+    "C(LO)": 11425.0,
+    "C(HI)": 22851.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 451",
+    "preemptions": " 104",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.016641381",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.287006087",
+    "avgresponsejitter": " 0.005237363",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 4",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 558",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001111"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 22500.0,
+    "C(LO)": 32.0,
+    "C(HI)": 65.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1261",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000066177",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.327506508",
+    "avgresponsejitter": " 0.000021039",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 18",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1278",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000820"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 78750.0,
+    "C(LO)": 5730.0,
+    "C(HI)": 5730.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 302",
+    "preemptions": " 12",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003101303",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 24.625189643",
+    "avgresponsejitter": " 0.002582075",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 0",
+    "timesonc1": " 313",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000007673"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 94500.0,
+    "C(LO)": 4395.0,
+    "C(HI)": 4395.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 301",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002329237",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.255685790",
+    "avgresponsejitter": " 0.001924991",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 300",
     "timesonc2": " 0",
     "lockedtime": " 0.000000000"
 
 
 
 
-   Task:  4
+   Task:  5
 
     
-    "id": " 4",
+    "id": " 5",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 75600.0,
-    "C(LO)": 17968.0,
-    "C(HI)": 17968.0,
+    "priority": " 5",
+    "period": 54000.0,
+    "C(LO)": 1105.0,
+    "C(HI)": 1105.0,
     "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1501",
-    "preemptions": " 193",
+    "migrable": "True",
+    "completedruns": " 526",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013839562",
+    "maxresponsejitter": " 0.000501036",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.324407168",
-    "avgresponsejitter": " 0.009343294",
+    "maxreleasejitter": " 29.296006772",
+    "avgresponsejitter": " 0.000497192",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1693",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007778"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 3",
+    "timesonc1": " 524",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000000162"
 
 
 
@@ -1576,84 +2808,63 @@ Task:  2
     
     "id": " 1",
     "basecpu": " 1",
-    "priority": " 5",
-    "period": 28350.0,
-    "C(LO)": 5105.0,
-    "C(HI)": 5105.0,
+    "priority": " 6",
+    "period": 18900.0,
+    "C(LO)": 381.0,
+    "C(HI)": 381.0,
     "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 4001",
+    "migrable": "True",
+    "completedruns": " 1501",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003062492",
+    "maxresponsejitter": " 0.000183670",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.371656270",
-    "avgresponsejitter": " 0.002552078",
-    "deadlinesmissed": " 0",
+    "maxreleasejitter": " 29.331106096",
+    "avgresponsejitter": " 0.000172228",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 4001",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012952"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 7",
+    "timesonc1": " 1496",
+    "timesonc2": " 4",
+    "lockedtime": " 0.000014997"
 
 
 
 
-   Task:  5
+   Task:  3
 
     
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 78750.0,
-    "C(LO)": 1464.0,
-    "C(HI)": 1464.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1441",
-    "preemptions": " 13",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003833375",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.321256207",
-    "avgresponsejitter": " 0.000761841",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1453",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000015444"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
+    "id": " 3",
     "basecpu": " 2",
     "priority": " 2",
-    "period": 175000.0,
-    "C(LO)": 20064.0,
-    "C(HI)": 40129.0,
+    "period": 28350.0,
+    "C(LO)": 6801.0,
+    "C(HI)": 13602.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 649",
-    "preemptions": " 153",
+    "completedruns": " 1001",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.046128538",
+    "maxresponsejitter": " 0.003611850",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.227650574",
-    "avgresponsejitter": " 0.012006282",
+    "maxreleasejitter": " 29.321656114",
+    "avgresponsejitter": " 0.003002132",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 807",
-    "lockedtime": " 0.000005378"
+    "timesonc2": " 1000",
+    "lockedtime": " 0.000044003"
 
 
 
@@ -1664,25 +2875,520 @@ Task:  2
     "id": " 12",
     "basecpu": " 2",
     "priority": " 0",
-    "period": 525000.0,
-    "C(LO)": 41843.0,
-    "C(HI)": 83686.0,
+    "period": 450000.0,
+    "C(LO)": 51616.0,
+    "C(HI)": 103232.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 217",
-    "preemptions": " 284",
+    "completedruns": " 64",
+    "preemptions": " 95",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.084270381",
+    "maxresponsejitter": " 0.035853757",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.887478742",
-    "avgresponsejitter": " 0.028824718",
+    "maxreleasejitter": " 28.900006120",
+    "avgresponsejitter": " 0.026548595",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 504",
-    "lockedtime": " 0.000003673"
+    "timesonc2": " 158",
+    "lockedtime": " 0.000012051"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 52500.0,
+    "C(LO)": 5504.0,
+    "C(HI)": 11009.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 541",
+    "preemptions": " 40",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006292000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.297505874",
+    "avgresponsejitter": " 0.002650075",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 580",
+    "lockedtime": " 0.000008994"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 70875.0,
+    "C(LO)": 4000.0,
+    "C(HI)": 4000.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 401",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002126661",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.279131066",
+    "avgresponsejitter": " 0.001766057",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 400",
+    "lockedtime": " 0.000004910"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 189000.0,
+    "C(LO)": 357.0,
+    "C(HI)": 357.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 151",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000193237",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 29.161006333",
+    "avgresponsejitter": " 0.000159673",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 150",
+    "lockedtime": " 0.000002357"
+
+
+
+   </details>
+
+
+
+  7. Taskset **e1_semi2wf_t241**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t241",
+    "size": "12",
+    "utilization": "1.848",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 7",
+    "period": 15750.0,
+    "C(LO)": 1297.0,
+    "C(HI)": 1297.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 3601",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000597138",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.684255847",
+    "avgresponsejitter": " 0.000583694",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 13",
+    "timesrestored": " 13",
+    "timesonc1": " 2",
+    "timesonc2": " 3597",
+    "lockedtime": " 0.000038610"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 2268000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 43762845,
+    "util": 22.81685185185185
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 56700000,
+    "lowtohigh": " 32",
+    "hightolow": " 32",
+    "idletime": 37894529,
+    "util": 33.16661552028218
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 94500.0,
+    "C(LO)": 14897.0,
+    "C(HI)": 29794.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 601",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007927517",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.605506252",
+    "avgresponsejitter": " 0.006611426",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 600",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000009441"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 108000.0,
+    "C(LO)": 17011.0,
+    "C(HI)": 34022.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 526",
+    "preemptions": " 35",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.015972180",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.592006267",
+    "avgresponsejitter": " 0.007722048",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 560",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000003514"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 81000.0,
+    "C(LO)": 13474.0,
+    "C(HI)": 13474.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 701",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007171375",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.619006315",
+    "avgresponsejitter": " 0.006008372",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 701",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000009727"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 84000.0,
+    "C(LO)": 2615.0,
+    "C(HI)": 2615.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 676",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001390141",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.616006219",
+    "avgresponsejitter": " 0.001163763",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 675",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000008423"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 101250.0,
+    "C(LO)": 16143.000000000002,
+    "C(HI)": 32286.000000000004,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 561",
+    "preemptions": " 411",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.026091604",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.600329366",
+    "avgresponsejitter": " 0.007962252",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 976",
+    "lockedtime": " 0.000005342"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 33750.0,
+    "C(LO)": 2571.0,
+    "C(HI)": 5142.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1681",
+    "preemptions": " 45",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005442994",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.666256207",
+    "avgresponsejitter": " 0.001180631",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 17",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1742",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 900000.0,
+    "C(LO)": 29197.0,
+    "C(HI)": 58395.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 64",
+    "preemptions": " 116",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.045103420",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 56.805114955",
+    "avgresponsejitter": " 0.016286213",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 181",
+    "lockedtime": " 0.000001156"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 50400.0,
+    "C(LO)": 853.0,
+    "C(HI)": 1707.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1126",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001449354",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.649605862",
+    "avgresponsejitter": " 0.000379477",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1134",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 2",
+    "priority": " 6",
+    "period": 45000.0,
+    "C(LO)": 9210.0,
+    "C(HI)": 9210.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1261",
+    "preemptions": " 232",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005484604",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.655006144",
+    "avgresponsejitter": " 0.004211276",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1492",
+    "lockedtime": " 0.000005757"
 
 
 
@@ -1694,111 +3400,94 @@ Task:  2
     "basecpu": " 2",
     "priority": " 1",
     "period": 472500.0,
-    "C(LO)": 24866.0,
-    "C(HI)": 49733.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 241",
-    "preemptions": " 82",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.051318976",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.927506925",
-    "avgresponsejitter": " 0.015533129",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 325",
-    "lockedtime": " 0.000003805"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 81000.0,
-    "C(LO)": 16566.0,
-    "C(HI)": 16566.0,
+    "C(LO)": 46702.0,
+    "C(HI)": 46702.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1401",
-    "preemptions": " 310",
+    "completedruns": " 121",
+    "preemptions": " 326",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012793165",
+    "maxresponsejitter": " 0.040851261",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.319006793",
-    "avgresponsejitter": " 0.008870829",
+    "maxreleasejitter": " 57.229105754",
+    "avgresponsejitter": " 0.024058778",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 1710",
-    "lockedtime": " 0.000008315"
+    "timesonc2": " 446",
+    "lockedtime": " 0.000000748"
 
 
 
 
-   Task:  2
+   Task:  1
 
     
-    "id": " 2",
+    "id": " 1",
     "basecpu": " 2",
-    "priority": " 5",
-    "period": 35000.0,
-    "C(LO)": 5242.0,
-    "C(HI)": 5242.0,
+    "priority": " 7",
+    "period": 15750.0,
+    "C(LO)": 1297.0,
+    "C(HI)": 1297.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 3241",
-    "preemptions": " 1",
+    "completedruns": " 3601",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005532508",
+    "maxresponsejitter": " 0.000597138",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.365005931",
-    "avgresponsejitter": " 0.002613946",
+    "maxreleasejitter": " 57.684255847",
+    "avgresponsejitter": " 0.000583694",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
     "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 4",
-    "timesonc2": " 3236",
-    "lockedtime": " 0.000022048"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 13",
+    "timesrestored": " 13",
+    "timesonc1": " 2",
+    "timesonc2": " 3597",
+    "lockedtime": " 0.000038610"
 
 
 
 
-   Task:  7
+   Task:  5
 
     
-    "id": " 7",
+    "id": " 5",
     "basecpu": " 2",
-    "priority": " 3",
-    "period": 84000.0,
-    "C(LO)": 11403.0,
-    "C(HI)": 11403.0,
+    "priority": " 5",
+    "period": 65625.0,
+    "C(LO)": 4217.0,
+    "C(HI)": 4217.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1351",
-    "preemptions": " 109",
+    "completedruns": " 865",
+    "preemptions": " 38",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019157964",
+    "maxresponsejitter": " 0.006989108",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.316005862",
-    "avgresponsejitter": " 0.006315916",
+    "maxreleasejitter": " 57.634380745",
+    "avgresponsejitter": " 0.001949225",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 1459",
-    "lockedtime": " 0.000002354"
+    "timesonc2": " 902",
+    "lockedtime": " 0.000001468"
 
 
 
@@ -1806,18 +3495,18 @@ Task:  2
 
 
 
-  5. Taskset **e1_semi2wf_t2223**
+  8. Taskset **e1_semi2wf_t2710**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t2223",
+    "id": "e1_semi2wf_t2710",
     "size": "12",
-    "utilization": "1.872",
+    "utilization": "1.9680000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
 
    Time values are expressed as **micro-seconds**.
 
@@ -1827,25 +3516,29 @@ Task:  1
     "id": " 1",
     "basecpu": " 1",
     "priority": " 7",
-    "period": 22500.0,
-    "C(LO)": 1771.0,
-    "C(HI)": 1771.0,
+    "period": 15750.0,
+    "C(LO)": 566.0,
+    "C(HI)": 566.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 5042",
+    "completedruns": " 322",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001074336",
+    "maxresponsejitter": " 0.000269763",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.400015601",
-    "avgresponsejitter": " 0.000886778",
+    "maxreleasejitter": " 6.040011381",
+    "avgresponsejitter": " 0.000254859",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
     "budgetexceeded": " 0",
-    "timesmigrated": " 5",
-    "timesrestored": " 5",
-    "timesonc1": " 5038",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000026625"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 320",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000003607"
 
 
 
@@ -1857,17 +3550,19 @@ Task:  1
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
 
     
     "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 23",
-    "hightolow": " 23",
-    "idletime": 68287685,
-    "util": 39.781582892416225
+    "hyperperiod": 3150000,
+    "lowtohigh": " 11",
+    "hightolow": " 11",
+    "idletime": 7085777,
+    "util": 37.51519400352734
 
 
 
@@ -1876,11 +3571,11 @@ Task:  1
 
     
     "id": 2,
-    "hyperperiod": 113400000,
+    "hyperperiod": 11340000,
     "lowtohigh": " 0",
     "hightolow": " 0",
-    "idletime": 71921521,
-    "util": 36.57714197530865
+    "idletime": 7715439,
+    "util": 31.962619047619043
 
 
 
@@ -1892,31 +3587,35 @@ Task:  1
 
 
 
-   Task:  6
+   Task:  2
 
     
-    "id": " 6",
+    "id": " 2",
     "basecpu": " 1",
-    "priority": " 3",
-    "period": 90720.0,
-    "C(LO)": 6401.0,
-    "C(HI)": 12803.0,
+    "priority": " 5",
+    "period": 22500.0,
+    "C(LO)": 873.0,
+    "C(HI)": 1747.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1251",
-    "preemptions": " 229",
+    "completedruns": " 505",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017783429",
+    "maxresponsejitter": " 0.001078829",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.309287333",
-    "avgresponsejitter": " 0.003871748",
+    "maxreleasejitter": " 12.317506066",
+    "avgresponsejitter": " 0.000388309",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 15",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1494",
+    "timesonc1": " 508",
     "timesonc2": " 0",
-    "lockedtime": " 0.000012390"
+    "lockedtime": " 0.000002985"
 
 
 
@@ -1927,25 +3626,29 @@ Task:  1
     "id": " 11",
     "basecpu": " 1",
     "priority": " 1",
-    "period": 540000.0,
-    "C(LO)": 27388.0,
-    "C(HI)": 54776.0,
+    "period": 196875.0,
+    "C(LO)": 7501.0,
+    "C(HI)": 15002.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 211",
-    "preemptions": " 155",
+    "completedruns": " 59",
+    "preemptions": " 11",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.056606796",
+    "maxresponsejitter": " 0.004453625",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.864012580",
-    "avgresponsejitter": " 0.018440940",
+    "maxreleasejitter": " 12.233155369",
+    "avgresponsejitter": " 0.003461838",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 366",
+    "timesonc1": " 69",
     "timesonc2": " 0",
-    "lockedtime": " 0.000005526"
+    "lockedtime": " 0.000001066"
 
 
 
@@ -1957,227 +3660,28 @@ Task:  1
     "basecpu": " 1",
     "priority": " 0",
     "period": 630000.0,
-    "C(LO)": 31731.000000000004,
-    "C(HI)": 63462.00000000001,
+    "C(LO)": 21754.0,
+    "C(HI)": 43509.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 181",
-    "preemptions": " 124",
+    "completedruns": " 19",
+    "preemptions": " 38",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.058943775",
+    "maxresponsejitter": " 0.031625661",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.770814057",
-    "avgresponsejitter": " 0.020543703",
+    "maxreleasejitter": " 11.731009955",
+    "avgresponsejitter": " 0.012413237",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 306",
+    "timesonc1": " 58",
     "timesonc2": " 0",
-    "lockedtime": " 0.000005333"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 196875.0,
-    "C(LO)": 1678.0,
-    "C(HI)": 3356.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 577",
-    "preemptions": " 17",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021284348",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.203131204",
-    "avgresponsejitter": " 0.000982231",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 598",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000658"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 87500.0,
-    "C(LO)": 22938.0,
-    "C(HI)": 22938.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1297",
-    "preemptions": " 591",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014849913",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.312506709",
-    "avgresponsejitter": " 0.011899096",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1887",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000050976"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 151200.0,
-    "C(LO)": 32648.000000000004,
-    "C(HI)": 32648.000000000004,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 751",
-    "preemptions": " 671",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.033969153",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.248806273",
-    "avgresponsejitter": " 0.019120769",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1421",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000031342"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 22500.0,
-    "C(LO)": 1771.0,
-    "C(HI)": 1771.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 5042",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001074336",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.400015601",
-    "avgresponsejitter": " 0.000886778",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 5",
-    "timesrestored": " 5",
-    "timesonc1": " 5038",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000026625"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 181440.0,
-    "C(LO)": 9454.0,
-    "C(HI)": 9454.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 626",
-    "preemptions": " 165",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.020119483",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.218567880",
-    "avgresponsejitter": " 0.005646486",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 790",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012282"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 200000.0,
-    "C(LO)": 34520.0,
-    "C(HI)": 69040.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 568",
-    "preemptions": " 543",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.038886703",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.200006024",
-    "avgresponsejitter": " 0.022719174",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1110",
-    "lockedtime": " 0.000039841"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 45360.0,
-    "C(LO)": 147.0,
-    "C(HI)": 294.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2501",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000097862",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.363925345",
-    "avgresponsejitter": " 0.000078201",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2500",
-    "lockedtime": " 0.000031348"
+    "lockedtime": " 0.000001081"
 
 
 
@@ -2186,669 +3690,31 @@ Task:  1
 
     
     "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 47250.0,
-    "C(LO)": 19212.0,
-    "C(HI)": 19212.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2401",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011563258",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.352755928",
-    "avgresponsejitter": " 0.009636321",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2400",
-    "lockedtime": " 0.000081015"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 81000.0,
-    "C(LO)": 11696.0,
-    "C(HI)": 11696.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1401",
-    "preemptions": " 27",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.018194231",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.319005781",
-    "avgresponsejitter": " 0.006051366",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1427",
-    "lockedtime": " 0.000031568"
-
-
-
-   </details>
-
-
-
-  6. Taskset **e1_semi2wf_t2415**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2415",
-    "size": "12",
-    "utilization": "1.8840000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 3144.0,
-    "C(HI)": 3144.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 5041",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001898426",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.377506060",
-    "avgresponsejitter": " 0.001578465",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 8",
-    "timesrestored": " 8",
-    "timesonc1": " 5037",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000143979"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 5670000,
-    "lowtohigh": " 65",
-    "hightolow": " 65",
-    "idletime": 78293006,
-    "util": -1280.8290299823634
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 79034883,
-    "util": 30.30433597883598
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 26250.0,
-    "C(LO)": 4397.0,
-    "C(HI)": 8795.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 4321",
-    "preemptions": " 310",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009750291",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.373756060",
-    "avgresponsejitter": " 0.002318916",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 46",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 4676",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002616"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 9589.0,
-    "C(HI)": 19178.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1001",
-    "preemptions": " 471",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019092922",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.286606291",
-    "avgresponsejitter": " 0.005779793",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 13",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1484",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000016072"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 189000.0,
-    "C(LO)": 14175.0,
-    "C(HI)": 28350.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 601",
-    "preemptions": " 441",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.027462607",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.211005973",
-    "avgresponsejitter": " 0.008601763",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1047",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000015508"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 3144.0,
-    "C(HI)": 3144.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 5041",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001898426",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.377506060",
-    "avgresponsejitter": " 0.001578465",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 8",
-    "timesrestored": " 8",
-    "timesonc1": " 5037",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000143979"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
     "basecpu": " 1",
     "priority": " 4",
     "period": 25200.0,
-    "C(LO)": 2054.0,
-    "C(HI)": 2054.0,
-    "criticality": "LOW",
+    "C(LO)": 768.0,
+    "C(HI)": 1536.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 4501",
-    "preemptions": " 149",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003034682",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.374806595",
-    "avgresponsejitter": " 0.001083078",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 4649",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000013063"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 42000.0,
-    "C(LO)": 2456.0,
-    "C(HI)": 2456.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2701",
+    "completedruns": " 451",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001480444",
+    "maxresponsejitter": " 0.000849225",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.358006204",
-    "avgresponsejitter": " 0.001234234",
+    "maxreleasejitter": " 12.314806165",
+    "avgresponsejitter": " 0.000347514",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 2700",
+    "timesonc1": " 455",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 108000.0,
-    "C(LO)": 27733.0,
-    "C(HI)": 55466.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1051",
-    "preemptions": " 448",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.027029925",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.292005766",
-    "avgresponsejitter": " 0.015421502",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1498",
-    "lockedtime": " 0.000062880"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 648000.0,
-    "C(LO)": 29572.0,
-    "C(HI)": 59145.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 176",
-    "preemptions": " 115",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.028372628",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.766582066",
-    "avgresponsejitter": " 0.017358300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 290",
-    "lockedtime": " 0.000019354"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 157500.0,
-    "C(LO)": 6865.0,
-    "C(HI)": 13731.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 721",
-    "preemptions": " 20",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023500625",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.242506706",
-    "avgresponsejitter": " 0.003665159",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 740",
-    "lockedtime": " 0.000002661"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 84375.0,
-    "C(LO)": 9723.0,
-    "C(HI)": 9723.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1345",
-    "preemptions": " 16",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007586024",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.315630775",
-    "avgresponsejitter": " 0.004882904",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1360",
-    "lockedtime": " 0.000013171"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 112500.0,
-    "C(LO)": 8209.0,
-    "C(HI)": 8209.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1009",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004916874",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.287507030",
-    "avgresponsejitter": " 0.004130357",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1008",
-    "lockedtime": " 0.000016096"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 45000.0,
-    "C(LO)": 3138.0,
-    "C(HI)": 3138.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001889465",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.355006586",
-    "avgresponsejitter": " 0.001576144",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2520",
-    "lockedtime": " 0.000135129"
-
-
-
-   </details>
-
-
-
-  7. Taskset **e1_semi2wf_t2420**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2420",
-    "size": "12",
-    "utilization": "1.8840000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 2335.0,
-    "C(HI)": 2335.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001413225",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677506162",
-    "avgresponsejitter": " 0.001170841",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 1",
-    "timesonc2": " 2518",
-    "lockedtime": " 0.000024706"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 14",
-    "hightolow": " 14",
-    "idletime": 37678065,
-    "util": -232.25806878306878
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 17",
-    "hightolow": " 17",
-    "idletime": 38668054,
-    "util": 31.802373897707227
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 29633.0,
-    "C(HI)": 59267.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 301",
-    "preemptions": " 109",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.046697093",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.511006264",
-    "avgresponsejitter": " 0.015903261",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 412",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000733"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 420000.0,
-    "C(LO)": 42357.0,
-    "C(HI)": 84714.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 136",
-    "preemptions": " 154",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.061690943",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.280714817",
-    "avgresponsejitter": " 0.024433132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 290",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000901"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 56700.0,
-    "C(LO)": 1994.9999999999998,
-    "C(HI)": 3989.9999999999995,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1001",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003197132",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.643306180",
-    "avgresponsejitter": " 0.001028222",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1015",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000008784"
 
 
 
@@ -2858,142 +3724,30 @@ Task:  1
     
     "id": " 9",
     "basecpu": " 1",
-    "priority": " 3",
-    "period": 157500.0,
-    "C(LO)": 41391.0,
-    "C(HI)": 41391.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 361",
-    "preemptions": " 297",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.027481339",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.542507408",
-    "avgresponsejitter": " 0.021779946",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 657",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011144"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 45360.0,
-    "C(LO)": 3317.0,
-    "C(HI)": 3317.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1169",
-    "preemptions": " 25",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002853574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.935126913",
-    "avgresponsejitter": " 0.001680315",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 1192",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000003306"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 42000.0,
-    "C(LO)": 1515.0,
-    "C(HI)": 1515.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1351",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000913730",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.658006261",
-    "avgresponsejitter": " 0.000761120",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 1349",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000003495"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
     "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 14010.0,
-    "C(HI)": 28020.0,
+    "period": 150000.0,
+    "C(LO)": 315.0,
+    "C(HI)": 630.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 673",
-    "preemptions": " 205",
+    "completedruns": " 77",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023359036",
+    "maxresponsejitter": " 0.000359997",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.618393234",
-    "avgresponsejitter": " 0.008120153",
+    "maxreleasejitter": " 12.250426826",
+    "avgresponsejitter": " 0.000141423",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 881",
-    "lockedtime": " 0.000004378"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 162000.0,
-    "C(LO)": 13108.0,
-    "C(HI)": 26216.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 351",
-    "preemptions": " 150",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.034045117",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.539158634",
-    "avgresponsejitter": " 0.008296300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 510",
-    "lockedtime": " 0.000004048"
+    "timesonc1": " 77",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -3002,56 +3756,64 @@ Task:  1
 
     
     "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 108000.0,
-    "C(LO)": 6194.0,
-    "C(HI)": 12388.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 526",
-    "preemptions": " 27",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017724432",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.592005838",
-    "avgresponsejitter": " 0.003310973",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 555",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 90000.0,
-    "C(LO)": 15530.0,
-    "C(HI)": 15530.0,
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 63000.0,
+    "C(LO)": 39096.0,
+    "C(HI)": 39096.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 631",
-    "preemptions": " 0",
+    "completedruns": " 181",
+    "preemptions": " 289",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009344246",
+    "maxresponsejitter": " 0.022900535",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.611061748",
-    "avgresponsejitter": " 0.007812300",
+    "maxreleasejitter": " 12.277006225",
+    "avgresponsejitter": " 0.018037288",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 630",
-    "lockedtime": " 0.000001231"
+    "timesonc1": " 469",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000017198"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 45000.0,
+    "C(LO)": 3504.0,
+    "C(HI)": 3504.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 184",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001591204",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 9.190011141",
+    "avgresponsejitter": " 0.001569943",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 1",
+    "timesonc1": " 183",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000976"
 
 
 
@@ -3060,174 +3822,31 @@ Task:  1
 
     
     "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 2335.0,
-    "C(HI)": 2335.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001413225",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677506162",
-    "avgresponsejitter": " 0.001170841",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 1",
-    "timesonc2": " 2518",
-    "lockedtime": " 0.000024706"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 151200.0,
-    "C(LO)": 6249.0,
-    "C(HI)": 6249.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 376",
-    "preemptions": " 49",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013791772",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.548805973",
-    "avgresponsejitter": " 0.003375327",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 424",
-    "lockedtime": " 0.000004787"
-
-
-
-   </details>
-
-
-
-  8. Taskset **e1_semi2wf_t3111**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3111",
-    "size": "12",
-    "utilization": "1.9080000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 2559.0,
-    "C(HI)": 2559.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001541604",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677505751",
-    "avgresponsejitter": " 0.001276586",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 7",
-    "timesonc2": " 2511",
-    "lockedtime": " 0.000039294"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 9450000,
-    "lowtohigh": " 17",
-    "hightolow": " 17",
-    "idletime": 39735921,
-    "util": -320.48593650793646
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 7",
-    "hightolow": " 7",
-    "idletime": 38663016,
-    "util": 31.81125925925926
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
     "basecpu": " 1",
-    "priority": " 2",
-    "period": 168750.0,
-    "C(LO)": 20211.0,
-    "C(HI)": 40423.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 337",
-    "preemptions": " 89",
+    "priority": " 7",
+    "period": 15750.0,
+    "C(LO)": 566.0,
+    "C(HI)": 566.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 322",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.033392441",
+    "maxresponsejitter": " 0.000269763",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.531255973",
-    "avgresponsejitter": " 0.011454769",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 430",
+    "maxreleasejitter": " 6.040011381",
+    "avgresponsejitter": " 0.000254859",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 320",
     "timesonc2": " 0",
-    "lockedtime": " 0.000005988"
+    "lockedtime": " 0.000003607"
 
 
 
@@ -3236,143 +3855,31 @@ Task:  1
 
     
     "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 21442.0,
-    "C(HI)": 42885.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 301",
-    "preemptions": " 71",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.040984622",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.511006339",
-    "avgresponsejitter": " 0.011589276",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 374",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001432"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 157500.0,
-    "C(LO)": 14392.0,
-    "C(HI)": 28784.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 361",
-    "preemptions": " 61",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023566303",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.542506099",
-    "avgresponsejitter": " 0.007709348",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 429",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006679"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
+    "basecpu": " 2",
     "priority": " 0",
-    "period": 630000.0,
-    "C(LO)": 13840.0,
-    "C(HI)": 27680.0,
+    "period": 151200.0,
+    "C(LO)": 34625.0,
+    "C(HI)": 69251.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 91",
-    "preemptions": " 40",
+    "completedruns": " 76",
+    "preemptions": " 39",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.020511339",
+    "maxresponsejitter": " 0.025351685",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.087021916",
-    "avgresponsejitter": " 0.008535601",
+    "maxreleasejitter": " 12.191461228",
+    "avgresponsejitter": " 0.017256477",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 131",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002321"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 105000.0,
-    "C(LO)": 19339.0,
-    "C(HI)": 19339.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 541",
-    "preemptions": " 82",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012685267",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.595005973",
-    "avgresponsejitter": " 0.009775144",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 622",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011574"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 54000.0,
-    "C(LO)": 1834.0,
-    "C(HI)": 1834.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1051",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001110787",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.646006213",
-    "avgresponsejitter": " 0.000925237",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 1048",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000004730"
+    "timesonc1": " 0",
+    "timesonc2": " 114",
+    "lockedtime": " 0.000001754"
 
 
 
@@ -3381,172 +3888,97 @@ Task:  1
 
     
     "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 87500.0,
-    "C(LO)": 1864.0,
-    "C(HI)": 1864.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 649",
-    "preemptions": " 7",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002180189",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.612506180",
-    "avgresponsejitter": " 0.000944486",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 654",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000003033"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
     "basecpu": " 2",
-    "priority": " 0",
-    "period": 405000.0,
-    "C(LO)": 111132.0,
-    "C(HI)": 222264.0,
-    "criticality": "HIGH",
+    "priority": " 3",
+    "period": 39375.0,
+    "C(LO)": 8482.0,
+    "C(HI)": 8482.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 141",
-    "preemptions": " 576",
+    "completedruns": " 289",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.202217703",
+    "maxresponsejitter": " 0.004500541",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.303040372",
-    "avgresponsejitter": " 0.064144703",
+    "maxreleasejitter": " 12.300631096",
+    "avgresponsejitter": " 0.003732162",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 718",
-    "lockedtime": " 0.000012264"
+    "timesonc2": " 288",
+    "lockedtime": " 0.000013495"
 
 
 
 
-   Task:  3
+   Task:  6
 
     
-    "id": " 3",
+    "id": " 6",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 50400.0,
+    "C(LO)": 7135.0,
+    "C(HI)": 7135.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 226",
+    "preemptions": " 13",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.008164604",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 12.289606030",
+    "avgresponsejitter": " 0.003355997",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 238",
+    "lockedtime": " 0.000017823"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
     "basecpu": " 2",
     "priority": " 1",
     "period": 64800.0,
-    "C(LO)": 5041.0,
-    "C(HI)": 10082.0,
-    "criticality": "HIGH",
+    "C(LO)": 8452.0,
+    "C(HI)": 8452.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 876",
-    "preemptions": " 99",
+    "completedruns": " 176",
+    "preemptions": " 19",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008204492",
+    "maxresponsejitter": " 0.011749772",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.635205781",
-    "avgresponsejitter": " 0.002700195",
+    "maxreleasejitter": " 12.275206297",
+    "avgresponsejitter": " 0.004149165",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 979",
-    "lockedtime": " 0.000015336"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 101250.0,
-    "C(LO)": 12668.0,
-    "C(HI)": 12668.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 561",
-    "preemptions": " 35",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009307811",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.598755850",
-    "avgresponsejitter": " 0.006498132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 595",
-    "lockedtime": " 0.000007402"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 2559.0,
-    "C(HI)": 2559.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2521",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001541604",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.677505751",
-    "avgresponsejitter": " 0.001276586",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 7",
-    "timesonc2": " 2511",
-    "lockedtime": " 0.000039294"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 100000.0,
-    "C(LO)": 3210.0,
-    "C(HI)": 3210.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 568",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001927423",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.600006321",
-    "avgresponsejitter": " 0.001605321",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 567",
-    "lockedtime": " 0.000006033"
+    "timesonc2": " 194",
+    "lockedtime": " 0.000000634"
 
 
 
@@ -3554,46 +3986,50 @@ Task:  1
 
 
 
-  9. Taskset **e1_semi2wf_t3307**
+  9. Taskset **e1_semi2wf_t2913**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t3307",
+    "id": "e1_semi2wf_t2913",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.9800000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
 
    Time values are expressed as **micro-seconds**.
 
-Task:  7
+Task:  2
 
     
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 87500.0,
-    "C(LO)": 15827.999999999998,
-    "C(HI)": 15827.999999999998,
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 33750.0,
+    "C(LO)": 2872.0,
+    "C(HI)": 2872.0,
     "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1297",
+    "migrable": "True",
+    "completedruns": " 3362",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009518378",
+    "maxresponsejitter": " 0.001311312",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.312505934",
-    "avgresponsejitter": " 0.007953925",
+    "maxreleasejitter": " 114.400014916",
+    "avgresponsejitter": " 0.001286784",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1295",
-    "lockedtime": " 0.000033342"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 2",
+    "timesonc1": " 3357",
+    "timesonc2": " 3",
+    "lockedtime": " 0.000017441"
 
 
 
@@ -3604,6 +4040,8 @@ Task:  7
    <details> <summary markdown="span">Click here to see the CPUs log.</summary>
 
    Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
 
 
 
@@ -3612,10 +4050,10 @@ Task:  7
     
     "id": 1,
     "hyperperiod": 113400000,
-    "lowtohigh": " 278",
-    "hightolow": " 278",
-    "idletime": 73987846,
-    "util": 34.75498589065256
+    "lowtohigh": " 22",
+    "hightolow": " 22",
+    "idletime": 73922300,
+    "util": 34.81278659611992
 
 
 
@@ -3624,11 +4062,11 @@ Task:  7
 
     
     "id": 2,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 1",
-    "hightolow": " 1",
-    "idletime": 72268759,
-    "util": -282.37438624338625
+    "hyperperiod": 113400000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 74911339,
+    "util": 33.94061816578483
 
 
 
@@ -3640,60 +4078,35 @@ Task:  7
 
 
 
-   Task:  2
+   Task:  5
 
     
-    "id": " 2",
+    "id": " 5",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 33750.0,
-    "C(LO)": 3424.0,
-    "C(HI)": 6848.0,
+    "priority": " 3",
+    "period": 78750.0,
+    "C(LO)": 6424.0,
+    "C(HI)": 12849.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 3361",
-    "preemptions": " 216",
+    "completedruns": " 1441",
+    "preemptions": " 160",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012701222",
+    "maxresponsejitter": " 0.013885538",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.366255973",
-    "avgresponsejitter": " 0.002081375",
+    "maxreleasejitter": " 114.324289171",
+    "avgresponsejitter": " 0.003196505",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 18",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 3576",
+    "timesonc1": " 1618",
     "timesonc2": " 0",
-    "lockedtime": " 0.000027790"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 168000.0,
-    "C(LO)": 12619.0,
-    "C(HI)": 25239.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 676",
-    "preemptions": " 271",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012574270",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.233154072",
-    "avgresponsejitter": " 0.006849144",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 946",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010907"
+    "lockedtime": " 0.000007985"
 
 
 
@@ -3704,25 +4117,293 @@ Task:  7
     "id": " 9",
     "basecpu": " 1",
     "priority": " 1",
-    "period": 162000.0,
-    "C(LO)": 6055.0,
-    "C(HI)": 12111.0,
+    "period": 157500.0,
+    "C(LO)": 11790.0,
+    "C(HI)": 23580.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 701",
-    "preemptions": " 94",
+    "completedruns": " 721",
+    "preemptions": " 213",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.016066940",
+    "maxresponsejitter": " 0.019336553",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.238006658",
-    "avgresponsejitter": " 0.003254375",
+    "maxreleasejitter": " 114.244880084",
+    "avgresponsejitter": " 0.006086063",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 794",
+    "timesonc1": " 933",
     "timesonc2": " 0",
-    "lockedtime": " 0.000004411"
+    "lockedtime": " 0.000001976"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 150000.0,
+    "C(LO)": 10481.0,
+    "C(HI)": 20962.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 757",
+    "preemptions": " 175",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.014772114",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.250005991",
+    "avgresponsejitter": " 0.005253084",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 4",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 935",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000004898"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 700000.0,
+    "C(LO)": 170562.0,
+    "C(HI)": 170562.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 163",
+    "preemptions": " 1075",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.125771288",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.700006393",
+    "avgresponsejitter": " 0.097438535",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1237",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000019772"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 40000.0,
+    "C(LO)": 4088.9999999999995,
+    "C(HI)": 4088.9999999999995,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2836",
+    "preemptions": " 105",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003160255",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.360006285",
+    "avgresponsejitter": " 0.001874967",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 3",
+    "timesonc1": " 2937",
+    "timesonc2": " 3",
+    "lockedtime": " 0.000029997"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 81000.0,
+    "C(LO)": 6942.0,
+    "C(HI)": 6942.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1401",
+    "preemptions": " 93",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005495309",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.319006255",
+    "avgresponsejitter": " 0.003193505",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1493",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006168"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 33750.0,
+    "C(LO)": 2872.0,
+    "C(HI)": 2872.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 3362",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001311312",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.400014916",
+    "avgresponsejitter": " 0.001286784",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 2",
+    "timesonc1": " 3357",
+    "timesonc2": " 3",
+    "lockedtime": " 0.000017441"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 181440.0,
+    "C(LO)": 6402.0,
+    "C(HI)": 6402.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 626",
+    "preemptions": " 98",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.008248156",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.218566393",
+    "avgresponsejitter": " 0.003107775",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 723",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000004123"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 28350.0,
+    "C(LO)": 4532.0,
+    "C(HI)": 9065.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 4001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002407480",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.371656039",
+    "avgresponsejitter": " 0.002003772",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 4000",
+    "lockedtime": " 0.000029976"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 100000.0,
+    "C(LO)": 4977.0,
+    "C(HI)": 9955.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1135",
+    "preemptions": " 90",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004958787",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.300005877",
+    "avgresponsejitter": " 0.002366997",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1224",
+    "lockedtime": " 0.000040517"
 
 
 
@@ -3731,27 +4412,225 @@ Task:  7
 
     
     "id": " 3",
-    "basecpu": " 1",
-    "priority": " 3",
+    "basecpu": " 2",
+    "priority": " 2",
     "period": 35000.0,
-    "C(LO)": 278.0,
-    "C(HI)": 556.0,
+    "C(LO)": 164.0,
+    "C(HI)": 329.0,
     "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 3241",
-    "preemptions": " 1",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001776072",
+    "maxresponsejitter": " 0.000092799",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.365005973",
-    "avgresponsejitter": " 0.000142246",
+    "maxreleasejitter": " 114.365006045",
+    "avgresponsejitter": " 0.000076042",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 3241",
+    "timesonc1": " 0",
+    "timesonc2": " 3240",
+    "lockedtime": " 0.000033069"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 945000.0,
+    "C(LO)": 516534.99999999994,
+    "C(HI)": 516534.99999999994,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 121",
+    "preemptions": " 2043",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.305849739",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.455085294",
+    "avgresponsejitter": " 0.253740003",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 2163",
+    "lockedtime": " 0.000049511"
+
+
+
+   </details>
+
+
+
+  10. Taskset **e1_semi2wf_t2930**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t2930",
+    "size": "12",
+    "utilization": "1.9800000000000002",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 30240.0,
+    "C(LO)": 2563.0,
+    "C(HI)": 2563.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2294",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001171249",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 70.310087270",
+    "avgresponsejitter": " 0.001148811",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 4",
+    "timesrestored": " 3",
+    "timesonc1": " 3",
+    "timesonc2": " 2289",
+    "lockedtime": " 0.000021489"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 56700000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 79390170,
+    "util": 29.99103174603175
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 14",
+    "hightolow": " 14",
+    "idletime": 75117696,
+    "util": 33.75864550264551
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 151200.0,
+    "C(LO)": 17609.0,
+    "C(HI)": 35219.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 751",
+    "preemptions": " 60",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.014593751",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.248858360",
+    "avgresponsejitter": " 0.008129039",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 810",
     "timesonc2": " 0",
-    "lockedtime": " 0.000041159"
+    "lockedtime": " 0.000000730"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 135000.0,
+    "C(LO)": 11069.0,
+    "C(HI)": 22139.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 841",
+    "preemptions": " 134",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005942093",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.265006258",
+    "avgresponsejitter": " 0.004970483",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 974",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000003210"
 
 
 
@@ -3762,25 +4641,652 @@ Task:  7
     "id": " 6",
     "basecpu": " 1",
     "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 18.0,
-    "C(HI)": 36.0,
+    "period": 140000.0,
+    "C(LO)": 7781.0,
+    "C(HI)": 15562.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1345",
-    "preemptions": " 0",
+    "completedruns": " 811",
+    "preemptions": " 89",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000036279",
+    "maxresponsejitter": " 0.004183405",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.315631237",
-    "avgresponsejitter": " 0.000016279",
+    "maxreleasejitter": " 114.260006099",
+    "avgresponsejitter": " 0.003451589",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 278",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1622",
+    "timesonc1": " 899",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006709"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 25200.0,
+    "C(LO)": 81.0,
+    "C(HI)": 162.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 4501",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000046453",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.374806222",
+    "avgresponsejitter": " 0.000038258",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 4500",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000024772"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 405000.0,
+    "C(LO)": 167812.0,
+    "C(HI)": 167812.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 281",
+    "preemptions": " 1074",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.101147658",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.000467018",
+    "avgresponsejitter": " 0.080529444",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1354",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000029895"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 189000.0,
+    "C(LO)": 339.0,
+    "C(HI)": 339.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 601",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000186363",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.211006703",
+    "avgresponsejitter": " 0.000155234",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 601",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000009718"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 181440.0,
+    "C(LO)": 38668.0,
+    "C(HI)": 77336.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 626",
+    "preemptions": " 277",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.069149799",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.218565937",
+    "avgresponsejitter": " 0.020267685",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 4",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 906",
+    "lockedtime": " 0.000010243"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 150000.0,
+    "C(LO)": 8005.999999999999,
+    "C(HI)": 16011.999999999998,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 757",
+    "preemptions": " 59",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.014182784",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.250006000",
+    "avgresponsejitter": " 0.003703411",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 10",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 825",
+    "lockedtime": " 0.000003724"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 100000.0,
+    "C(LO)": 17464.0,
+    "C(HI)": 17464.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1135",
+    "preemptions": " 178",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.009073697",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.300006538",
+    "avgresponsejitter": " 0.008001796",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 1",
+    "timesonc1": " 1",
+    "timesonc2": " 1311",
+    "lockedtime": " 0.000017898"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 630000.0,
+    "C(LO)": 87787.0,
+    "C(HI)": 87787.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 181",
+    "preemptions": " 271",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.080189063",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.775456919",
+    "avgresponsejitter": " 0.049524192",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 451",
+    "lockedtime": " 0.000007592"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 105000.0,
+    "C(LO)": 12342.0,
+    "C(HI)": 12342.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1081",
+    "preemptions": " 144",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.015430559",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.295006120",
+    "avgresponsejitter": " 0.005860832",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1224",
+    "lockedtime": " 0.000026189"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 30240.0,
+    "C(LO)": 2563.0,
+    "C(HI)": 2563.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2294",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001171249",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 70.310087270",
+    "avgresponsejitter": " 0.001148811",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 4",
+    "timesrestored": " 3",
+    "timesonc1": " 3",
+    "timesonc2": " 2289",
+    "lockedtime": " 0.000021489"
+
+
+
+   </details>
+
+
+
+  11. Taskset **e1_semi2wf_t3429**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t3429",
+    "size": "12",
+    "utilization": "2.004",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 37800.0,
+    "C(LO)": 3227.0,
+    "C(HI)": 3227.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 3001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001457556",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.362206063",
+    "avgresponsejitter": " 0.001442264",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 1",
+    "timesonc1": " 1",
+    "timesonc2": " 2998",
+    "lockedtime": " 0.000055793"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 61",
+    "hightolow": " 61",
+    "idletime": 76174439,
+    "util": 32.826773368606695
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 56700000,
+    "lowtohigh": " 6",
+    "hightolow": " 6",
+    "idletime": 75934560,
+    "util": 33.038306878306884
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 40000.0,
+    "C(LO)": 3048.0,
+    "C(HI)": 6096.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2836",
+    "preemptions": " 139",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007860315",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.360005994",
+    "avgresponsejitter": " 0.001488288",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 37",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 3011",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002721"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 420000.0,
+    "C(LO)": 28199.0,
+    "C(HI)": 56399.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 271",
+    "preemptions": " 166",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.052770105",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.982272784",
+    "avgresponsejitter": " 0.015566907",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 4",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 440",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000004009"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 129600.0,
+    "C(LO)": 8382.0,
+    "C(HI)": 16764.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 876",
+    "preemptions": " 234",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.018066988",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.278403961",
+    "avgresponsejitter": " 0.004379781",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 7",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1116",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001883"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 196875.0,
+    "C(LO)": 10220.0,
+    "C(HI)": 20441.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 577",
+    "preemptions": " 169",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.022982477",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.203131075",
+    "avgresponsejitter": " 0.005319315",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 753",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000847"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 175000.0,
+    "C(LO)": 1884.0,
+    "C(HI)": 3769.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 649",
+    "preemptions": " 6",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005169937",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.225005967",
+    "avgresponsejitter": " 0.000877135",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 659",
     "timesonc2": " 0",
     "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 26250.0,
+    "C(LO)": 5044.0,
+    "C(HI)": 5044.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 4321",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002289514",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.373756273",
+    "avgresponsejitter": " 0.002252219",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 3",
+    "timesonc1": " 4320",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000015685"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 135000.0,
+    "C(LO)": 24663.0,
+    "C(HI)": 24663.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 841",
+    "preemptions": " 691",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.018844081",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.265005970",
+    "avgresponsejitter": " 0.012526192",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1531",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000014823"
 
 
 
@@ -3792,82 +5298,61 @@ Task:  7
     "basecpu": " 1",
     "priority": " 6",
     "period": 50400.0,
-    "C(LO)": 14482.0,
-    "C(HI)": 14482.0,
+    "C(LO)": 4359.0,
+    "C(HI)": 4359.0,
     "criticality": "LOW",
     "migrable": "False",
     "completedruns": " 2251",
-    "preemptions": " 0",
+    "preemptions": " 113",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008708613",
+    "maxresponsejitter": " 0.004578601",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.351584985",
-    "avgresponsejitter": " 0.007240186",
+    "maxreleasejitter": " 114.349792991",
+    "avgresponsejitter": " 0.002040099",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 2250",
+    "timesonc1": " 2363",
     "timesonc2": " 0",
-    "lockedtime": " 0.000083192"
+    "lockedtime": " 0.000034036"
 
 
 
 
-   Task:  1
+   Task:  6
 
     
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 25200.0,
-    "C(LO)": 4155.0,
-    "C(HI)": 4155.0,
-    "criticality": "LOW",
+    "id": " 6",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 126000.0,
+    "C(LO)": 32854.0,
+    "C(HI)": 65709.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 4501",
-    "preemptions": " 1",
+    "completedruns": " 901",
+    "preemptions": " 368",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002504456",
+    "maxresponsejitter": " 0.053567682",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.374806099",
-    "avgresponsejitter": " 0.002082165",
+    "maxreleasejitter": " 114.274005865",
+    "avgresponsejitter": " 0.015992096",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 6",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 4501",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000018604"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 101250.0,
-    "C(LO)": 1774.0,
-    "C(HI)": 1774.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1121",
-    "preemptions": " 30",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012020438",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.298756979",
-    "avgresponsejitter": " 0.001036757",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1150",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002099"
+    "timesonc1": " 0",
+    "timesonc2": " 1274",
+    "lockedtime": " 0.000035694"
 
 
 
@@ -3879,53 +5364,28 @@ Task:  7
     "basecpu": " 2",
     "priority": " 0",
     "period": 700000.0,
-    "C(LO)": 199329.0,
-    "C(HI)": 398659.0,
-    "criticality": "HIGH",
+    "C(LO)": 157822.0,
+    "C(HI)": 157822.0,
+    "criticality": "LOW",
     "migrable": "False",
     "completedruns": " 163",
-    "preemptions": " 451",
+    "preemptions": " 530",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.352977249",
+    "maxresponsejitter": " 0.118534156",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.711129658",
-    "avgresponsejitter": " 0.121838486",
+    "maxreleasejitter": " 113.700006676",
+    "avgresponsejitter": " 0.087506904",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 614",
-    "lockedtime": " 0.000059928"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 87500.0,
-    "C(LO)": 15827.999999999998,
-    "C(HI)": 15827.999999999998,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1297",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009518378",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.312505934",
-    "avgresponsejitter": " 0.007953925",
-    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 1295",
-    "lockedtime": " 0.000033342"
+    "timesonc2": " 692",
+    "lockedtime": " 0.000038787"
 
 
 
@@ -3935,1366 +5395,63 @@ Task:  7
     
     "id": " 5",
     "basecpu": " 2",
-    "priority": " 3",
-    "period": 70000.0,
-    "C(LO)": 9938.0,
-    "C(HI)": 9938.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1621",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005959045",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.330006550",
-    "avgresponsejitter": " 0.004970505",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 2",
-    "timesonc2": " 1618",
-    "lockedtime": " 0.000092508"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 21464.0,
-    "C(HI)": 21464.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 601",
-    "preemptions": " 119",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026981498",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.211005934",
-    "avgresponsejitter": " 0.012083462",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 719",
-    "lockedtime": " 0.000025024"
-
-
-
-   </details>
-
-
-
-  10. Taskset **e1_semi2wf_t3885**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3885",
-    "size": "12",
-    "utilization": "1.9320000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
     "priority": " 2",
-    "period": 26250.0,
-    "C(LO)": 3119.0,
-    "C(HI)": 3119.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 433",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001875174",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.313755865",
-    "avgresponsejitter": " 0.001560589",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 1",
-    "timesonc2": " 430",
-    "lockedtime": " 0.000010583"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 6714454,
-    "util": 40.789647266313935
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 6972492,
-    "util": 38.51417989417989
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 78750.0,
-    "C(LO)": 7057.0,
-    "C(HI)": 14114.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 145",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004495075",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.261257231",
-    "avgresponsejitter": " 0.003577631",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 146",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005402"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 379.0,
-    "C(HI)": 759.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 505",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000233429",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.317506300",
-    "avgresponsejitter": " 0.000195754",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 504",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007420"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 60000.0,
-    "C(LO)": 946.0,
-    "C(HI)": 1893.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 190",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000565607",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.280006234",
-    "avgresponsejitter": " 0.000469835",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 189",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 180000.0,
-    "C(LO)": 2136.0,
-    "C(HI)": 4272.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 64",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001280237",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.160678168",
-    "avgresponsejitter": " 0.001065892",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 63",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 67500.0,
-    "C(LO)": 422.0,
-    "C(HI)": 845.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 169",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000252243",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.272686294",
-    "avgresponsejitter": " 0.000211096",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 168",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 630000.0,
-    "C(LO)": 281446.0,
-    "C(HI)": 281446.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 19",
-    "preemptions": " 201",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.178128255",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 11.716037444",
-    "avgresponsejitter": " 0.148046913",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 219",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000018865"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 138353.0,
-    "C(HI)": 138353.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 17",
-    "preemptions": " 84",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.087766123",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 11.634930393",
-    "avgresponsejitter": " 0.073219712",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 100",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006111"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 8",
-    "period": 105000.0,
-    "C(LO)": 3842.0,
-    "C(HI)": 3842.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 110",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002313072",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.340014877",
-    "avgresponsejitter": " 0.001941895",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 109",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004396"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 126000.0,
-    "C(LO)": 409.0,
-    "C(HI)": 409.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 91",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000248676",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.214006237",
-    "avgresponsejitter": " 0.000206805",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 90",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000219"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 33750.0,
-    "C(LO)": 7040.0,
-    "C(HI)": 14081.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 337",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010745526",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.306256273",
-    "avgresponsejitter": " 0.003688369",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 358",
-    "lockedtime": " 0.000005646"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 64800.0,
-    "C(LO)": 28080.0,
-    "C(HI)": 28080.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 176",
-    "preemptions": " 164",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.022067769",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.275961252",
-    "avgresponsejitter": " 0.016404180",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 339",
-    "lockedtime": " 0.000015468"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 26250.0,
-    "C(LO)": 3119.0,
-    "C(HI)": 3119.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 433",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001875174",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.313755865",
-    "avgresponsejitter": " 0.001560589",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 1",
-    "timesonc2": " 430",
-    "lockedtime": " 0.000010583"
-
-
-
-   </details>
-
-
-
-  11. Taskset **e1_semi2wf_t491**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t491",
-    "size": "12",
-    "utilization": "1.812",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 25200.0,
-    "C(LO)": 5126.0,
-    "C(HI)": 5126.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3117",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003078748",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 79.498006625",
-    "avgresponsejitter": " 0.002558042",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 6",
-    "timesrestored": " 6",
-    "timesonc1": " 5",
-    "timesonc2": " 3110",
-    "lockedtime": " 0.000072727"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 75650085,
-    "util": -300.265
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 31",
-    "hightolow": " 31",
-    "idletime": 69393900,
-    "util": 38.806084656084664
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 33750.0,
-    "C(LO)": 2679.0,
-    "C(HI)": 5358.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 3361",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001610189",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.366256192",
-    "avgresponsejitter": " 0.001341348",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 3360",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010120"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 151200.0,
-    "C(LO)": 9715.0,
-    "C(HI)": 19431.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 751",
-    "preemptions": " 261",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.049791676",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.260211489",
-    "avgresponsejitter": " 0.005993345",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1011",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000016084"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 105000.0,
-    "C(LO)": 519.0,
-    "C(HI)": 1038.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1081",
-    "preemptions": " 7",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001792976",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.295006057",
-    "avgresponsejitter": " 0.000264865",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1087",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000808"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 87.0,
-    "C(HI)": 175.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 5041",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000060378",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.377505973",
-    "avgresponsejitter": " 0.000047610",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 5040",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000020126"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 175000.0,
-    "C(LO)": 73123.0,
-    "C(HI)": 73123.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 649",
-    "preemptions": " 1730",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.047462691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.225006198",
-    "avgresponsejitter": " 0.038314141",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2378",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000110012"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 675000.0,
-    "C(LO)": 56778.0,
-    "C(HI)": 56778.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 169",
-    "preemptions": " 424",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.081109709",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.741245667",
-    "avgresponsejitter": " 0.035560048",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 592",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000018237"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 63000.0,
-    "C(LO)": 591.0,
-    "C(HI)": 591.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1801",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000359294",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.337006006",
-    "avgresponsejitter": " 0.000296189",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1801",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000033441"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 13640.0,
-    "C(HI)": 27281.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1001",
-    "preemptions": " 389",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026510303",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.286605910",
-    "avgresponsejitter": " 0.008209577",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1395",
-    "lockedtime": " 0.000027916"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 39375.0,
-    "C(LO)": 1640.0,
-    "C(HI)": 3280.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2881",
-    "preemptions": " 54",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011554156",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.366901213",
-    "avgresponsejitter": " 0.000929571",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 25",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2959",
-    "lockedtime": " 0.000043381"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 40000.0,
-    "C(LO)": 11469.0,
-    "C(HI)": 11469.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2836",
-    "preemptions": " 430",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009897592",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.360006045",
-    "avgresponsejitter": " 0.006140096",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 3265",
-    "lockedtime": " 0.000081429"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 25200.0,
-    "C(LO)": 5126.0,
-    "C(HI)": 5126.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3117",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003078748",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 79.498006625",
-    "avgresponsejitter": " 0.002558042",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 6",
-    "timesrestored": " 6",
-    "timesonc1": " 5",
-    "timesonc2": " 3110",
-    "lockedtime": " 0.000072727"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 200000.0,
-    "C(LO)": 36322.0,
-    "C(HI)": 36322.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 568",
-    "preemptions": " 663",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.041514123",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.206221718",
-    "avgresponsejitter": " 0.021551234",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1230",
-    "lockedtime": " 0.000042411"
-
-
-
-   </details>
-
-
-
-  12. Taskset **e1_semi2wf_t4923**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4923",
-    "size": "12",
-    "utilization": "1.9800000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 50400.0,
-    "C(LO)": 10677.0,
-    "C(HI)": 10677.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1962",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009352988",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 99.784007351",
-    "avgresponsejitter": " 0.005392757",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 3",
-    "timesonc2": " 1958",
-    "lockedtime": " 0.000045261"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 74360793,
-    "util": 34.426108465608465
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 76230007,
-    "util": -572.2222839506172
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 567000.0,
-    "C(LO)": 77165.0,
-    "C(HI)": 154330.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 201",
-    "preemptions": " 1184",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.061215363",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.838188282",
-    "avgresponsejitter": " 0.049077216",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1384",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004390"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 1208.0,
-    "C(HI)": 2416.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 5041",
-    "preemptions": " 20",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006067231",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.377650099",
-    "avgresponsejitter": " 0.000612670",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 5060",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003616"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 60000.0,
-    "C(LO)": 2695.0,
-    "C(HI)": 5390.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1891",
-    "preemptions": " 14",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008358508",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.340006796",
-    "avgresponsejitter": " 0.001373835",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1904",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000679"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 60480.0,
-    "C(LO)": 1247.0,
-    "C(HI)": 2495.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1876",
-    "preemptions": " 146",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007030613",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.339526090",
-    "avgresponsejitter": " 0.000771141",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2021",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004408"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 3715.0,
-    "C(HI)": 7430.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 577",
-    "preemptions": " 69",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009039769",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.203131006",
-    "avgresponsejitter": " 0.002098423",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 645",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001625"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 8",
-    "period": 26250.0,
-    "C(LO)": 6738.0,
-    "C(HI)": 6738.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 4322",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004062673",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.400014823",
-    "avgresponsejitter": " 0.003374450",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 4321",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000014622"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 6",
     "period": 81000.0,
-    "C(LO)": 9920.0,
-    "C(HI)": 9920.0,
+    "C(LO)": 13677.0,
+    "C(HI)": 13677.0,
     "criticality": "LOW",
     "migrable": "False",
     "completedruns": " 1401",
-    "preemptions": " 370",
+    "preemptions": " 152",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010658652",
+    "maxresponsejitter": " 0.008738727",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.319006087",
-    "avgresponsejitter": " 0.005627423",
+    "maxreleasejitter": " 114.319006048",
+    "avgresponsejitter": " 0.006230282",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1770",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000015688"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 50000.0,
-    "C(LO)": 1515.0,
-    "C(HI)": 1515.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2269",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000914796",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.351483357",
-    "avgresponsejitter": " 0.000759589",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2268",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002345"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 84000.0,
-    "C(LO)": 64.0,
-    "C(HI)": 64.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1351",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000045402",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.316006087",
-    "avgresponsejitter": " 0.000037847",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1350",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010408"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 254413.99999999997,
-    "C(HI)": 508829.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 161",
-    "preemptions": " 604",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.430238742",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 113.691257195",
-    "avgresponsejitter": " 0.153537330",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 767",
-    "lockedtime": " 0.000057598"
+    "timesonc2": " 1552",
+    "lockedtime": " 0.000030324"
 
 
 
 
-   Task:  4
+   Task:  2
 
     
-    "id": " 4",
+    "id": " 2",
     "basecpu": " 2",
-    "priority": " 2",
-    "period": 50400.0,
-    "C(LO)": 10677.0,
-    "C(HI)": 10677.0,
+    "priority": " 3",
+    "period": 37800.0,
+    "C(LO)": 3227.0,
+    "C(HI)": 3227.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 1962",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009352988",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 99.784007351",
-    "avgresponsejitter": " 0.005392757",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 3",
-    "timesonc2": " 1958",
-    "lockedtime": " 0.000045261"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 108000.0,
-    "C(LO)": 9886.0,
-    "C(HI)": 9886.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1051",
+    "completedruns": " 3001",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005928628",
+    "maxresponsejitter": " 0.001457556",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 114.292006393",
-    "avgresponsejitter": " 0.004980640",
-    "deadlinesmissed": " 0",
+    "maxreleasejitter": " 114.362206063",
+    "avgresponsejitter": " 0.001442264",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1050",
-    "lockedtime": " 0.000023402"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 1",
+    "timesonc1": " 1",
+    "timesonc2": " 2998",
+    "lockedtime": " 0.000055793"
 
 
 
@@ -5302,46 +5459,50 @@ Task:  4
 
 
 
-  13. Taskset **e1_semi2wf_t6086**
+  12. Taskset **e1_semi2wf_t3757**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t6086",
+    "id": "e1_semi2wf_t3757",
     "size": "12",
-    "utilization": "2.016",
+    "utilization": "2.028",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
 
    Time values are expressed as **micro-seconds**.
 
-Task:  5
+Task:  1
 
     
-    "id": " 5",
+    "id": " 1",
     "basecpu": " 2",
-    "priority": " 3",
-    "period": 56700.0,
-    "C(LO)": 4960.0,
-    "C(HI)": 4960.0,
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 2720.0,
+    "C(HI)": 2720.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 1001",
+    "completedruns": " 424",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002978024",
+    "maxresponsejitter": " 0.001236015",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.643306165",
-    "avgresponsejitter": " 0.002492018",
+    "maxreleasejitter": " 7.651233273",
+    "avgresponsejitter": " 0.001220342",
     "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 4",
     "timesrestored": " 4",
-    "timesonc1": " 5",
-    "timesonc2": " 994",
-    "lockedtime": " 0.000005147"
+    "timesonc1": " 3",
+    "timesonc2": " 419",
+    "lockedtime": " 0.000002039"
 
 
 
@@ -5352,6 +5513,8 @@ Task:  5
    <details> <summary markdown="span">Click here to see the CPUs log.</summary>
 
    Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
 
 
 
@@ -5360,10 +5523,10 @@ Task:  5
     
     "id": 1,
     "hyperperiod": 56700000,
-    "lowtohigh": " 31",
-    "hightolow": " 31",
-    "idletime": 41195827,
-    "util": 27.344220458553792
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 37780613,
+    "util": 33.36752557319224
 
 
 
@@ -5372,11 +5535,11 @@ Task:  5
 
     
     "id": 2,
-    "hyperperiod": 5670000,
-    "lowtohigh": " 11",
-    "hightolow": " 11",
-    "idletime": 37863044,
-    "util": -567.7785537918871
+    "hyperperiod": 4725000,
+    "lowtohigh": " 22",
+    "hightolow": " 22",
+    "idletime": 38206808,
+    "util": 32.615858906525574
 
 
 
@@ -5388,31 +5551,332 @@ Task:  5
 
 
 
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 189000.0,
+    "C(LO)": 21509.0,
+    "C(HI)": 43018.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 301",
+    "preemptions": " 60",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.049192495",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.511006132",
+    "avgresponsejitter": " 0.011606192",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 360",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006255"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 708750.0,
+    "C(LO)": 50284.0,
+    "C(HI)": 100569.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 81",
+    "preemptions": " 53",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.061878000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 56.991256781",
+    "avgresponsejitter": " 0.028148829",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 133",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000003417"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 75600.0,
+    "C(LO)": 123.00000000000001,
+    "C(HI)": 247.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 751",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000066138",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.624406315",
+    "avgresponsejitter": " 0.000057553",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 750",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001922"
+
+
+
+
    Task:  7
 
     
     "id": " 7",
     "basecpu": " 1",
-    "priority": " 1",
-    "period": 90720.0,
-    "C(LO)": 17676.0,
-    "C(HI)": 35352.0,
-    "criticality": "HIGH",
+    "priority": " 3",
+    "period": 175000.0,
+    "C(LO)": 54447.0,
+    "C(HI)": 54447.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 626",
-    "preemptions": " 354",
+    "completedruns": " 325",
+    "preemptions": " 143",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.103314790",
+    "maxresponsejitter": " 0.041055297",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.609285973",
-    "avgresponsejitter": " 0.009816027",
+    "maxreleasejitter": " 57.525006102",
+    "avgresponsejitter": " 0.025776739",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 983",
+    "timesonc1": " 467",
     "timesonc2": " 0",
-    "lockedtime": " 0.000008132"
+    "lockedtime": " 0.000014898"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 100000.0,
+    "C(LO)": 23572.0,
+    "C(HI)": 23572.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 568",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.012542508",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.600006291",
+    "avgresponsejitter": " 0.010536775",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 568",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000005468"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 180000.0,
+    "C(LO)": 2809.0,
+    "C(HI)": 2809.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 316",
+    "preemptions": " 5",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.012731673",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.520007553",
+    "avgresponsejitter": " 0.001282841",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 320",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000005829"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 26250.0,
+    "C(LO)": 3251.0,
+    "C(HI)": 6503.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2161",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006343781",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.673755838",
+    "avgresponsejitter": " 0.001463835",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 20",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 2181",
+    "lockedtime": " 0.000005760"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 945000.0,
+    "C(LO)": 43878.0,
+    "C(HI)": 87756.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 61",
+    "preemptions": " 136",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.031792814",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 56.770965423",
+    "avgresponsejitter": " 0.024531300",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 196",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 196875.0,
+    "C(LO)": 7815.000000000001,
+    "C(HI)": 15630.999999999998,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 289",
+    "preemptions": " 34",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.015093489",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.503130853",
+    "avgresponsejitter": " 0.003715622",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 324",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 22500.0,
+    "C(LO)": 6726.0,
+    "C(HI)": 6726.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 2521",
+    "preemptions": " 41",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004705288",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.677505835",
+    "avgresponsejitter": " 0.002989916",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 2561",
+    "lockedtime": " 0.000021387"
 
 
 
@@ -5421,27 +5885,258 @@ Task:  5
 
     
     "id": " 6",
-    "basecpu": " 1",
+    "basecpu": " 2",
     "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 7737.0,
-    "C(HI)": 15475.0,
-    "criticality": "HIGH",
+    "period": 118125.0,
+    "C(LO)": 23750.0,
+    "C(HI)": 23750.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 673",
-    "preemptions": " 56",
+    "completedruns": " 481",
+    "preemptions": " 333",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013476862",
+    "maxresponsejitter": " 0.018135156",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.615631865",
-    "avgresponsejitter": " 0.004035694",
+    "maxreleasejitter": " 57.581880889",
+    "avgresponsejitter": " 0.012328901",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 734",
+    "timesonc1": " 0",
+    "timesonc2": " 813",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 2720.0,
+    "C(HI)": 2720.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 424",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001236015",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 7.651233273",
+    "avgresponsejitter": " 0.001220342",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 4",
+    "timesrestored": " 4",
+    "timesonc1": " 3",
+    "timesonc2": " 419",
+    "lockedtime": " 0.000002039"
+
+
+
+   </details>
+
+
+
+  13. Taskset **e1_semi2wf_t423**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t423",
+    "size": "12",
+    "utilization": "1.86",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 26250.0,
+    "C(LO)": 1172.0,
+    "C(HI)": 1172.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 140",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000538547",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 4.622507946",
+    "avgresponsejitter": " 0.000530129",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 1",
+    "timesonc1": " 135",
+    "timesonc2": " 3",
+    "lockedtime": " 0.000002276"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 22680000,
+    "lowtohigh": " 43",
+    "hightolow": " 43",
+    "idletime": 39320435,
+    "util": 30.65179012345679
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 56700000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 40459700,
+    "util": 28.64250440917108
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 81000.0,
+    "C(LO)": 9404.0,
+    "C(HI)": 18808.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 701",
+    "preemptions": " 126",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.013592438",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.619006435",
+    "avgresponsejitter": " 0.004292619",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 834",
     "timesonc2": " 0",
-    "lockedtime": " 0.000004390"
+    "lockedtime": " 0.000001315"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 129600.0,
+    "C(LO)": 12364.0,
+    "C(HI)": 24728.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 439",
+    "preemptions": " 129",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.030558084",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.635206408",
+    "avgresponsejitter": " 0.005900168",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 570",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002273"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 40000.0,
+    "C(LO)": 757.0,
+    "C(HI)": 1515.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1419",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001062973",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.680006369",
+    "avgresponsejitter": " 0.000344934",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 20",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1438",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000009396"
 
 
 
@@ -5452,54 +6147,29 @@ Task:  5
     "id": " 4",
     "basecpu": " 1",
     "priority": " 3",
-    "period": 50000.0,
-    "C(LO)": 1851.0,
-    "C(HI)": 3702.0,
+    "period": 78750.0,
+    "C(LO)": 701.0,
+    "C(HI)": 1402.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1135",
+    "completedruns": " 721",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002903396",
+    "maxresponsejitter": " 0.000967985",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.650006198",
-    "avgresponsejitter": " 0.000946604",
+    "maxreleasejitter": " 57.621256820",
+    "avgresponsejitter": " 0.000322940",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 12",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1143",
+    "timesonc1": " 733",
     "timesonc2": " 0",
-    "lockedtime": " 0.000001643"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 33750.0,
-    "C(LO)": 85.0,
-    "C(HI)": 170.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1681",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000149964",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.666256087",
-    "avgresponsejitter": " 0.000050778",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 13",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1693",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010820"
+    "lockedtime": " 0.000006360"
 
 
 
@@ -5510,25 +6180,62 @@ Task:  5
     "id": " 12",
     "basecpu": " 1",
     "priority": " 0",
-    "period": 675000.0,
-    "C(LO)": 128136.0,
-    "C(HI)": 128136.0,
+    "period": 708750.0,
+    "C(LO)": 211104.0,
+    "C(HI)": 211104.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 85",
-    "preemptions": " 376",
+    "completedruns": " 81",
+    "preemptions": " 458",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.109714411",
+    "maxresponsejitter": " 0.137656889",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.028409565",
-    "avgresponsejitter": " 0.074341910",
+    "maxreleasejitter": " 56.992741997",
+    "avgresponsejitter": " 0.109541012",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 460",
+    "timesonc1": " 538",
     "timesonc2": " 0",
-    "lockedtime": " 0.000007171"
+    "lockedtime": " 0.000014763"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 135000.0,
+    "C(LO)": 19900.0,
+    "C(HI)": 19900.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 421",
+    "preemptions": " 7",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010924802",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.565006282",
+    "avgresponsejitter": " 0.008846622",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 427",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000007757"
 
 
 
@@ -5539,25 +6246,29 @@ Task:  5
     "id": " 1",
     "basecpu": " 1",
     "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 3074.0,
-    "C(HI)": 3074.0,
+    "period": 26250.0,
+    "C(LO)": 1172.0,
+    "C(HI)": 1172.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 276",
+    "completedruns": " 140",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001844207",
+    "maxresponsejitter": " 0.000538547",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 7.165006814",
-    "avgresponsejitter": " 0.001525553",
-    "deadlinesmissed": " 0",
+    "maxreleasejitter": " 4.622507946",
+    "avgresponsejitter": " 0.000530129",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 275",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000982"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 1",
+    "timesonc1": " 135",
+    "timesonc2": " 3",
+    "lockedtime": " 0.000002276"
 
 
 
@@ -5566,27 +6277,97 @@ Task:  5
 
     
     "id": " 10",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 162000.0,
-    "C(LO)": 1198.0,
-    "C(HI)": 1198.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 351",
-    "preemptions": " 1",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 175000.0,
+    "C(LO)": 26784.0,
+    "C(HI)": 53569.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 325",
+    "preemptions": " 67",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000725955",
+    "maxresponsejitter": " 0.022292520",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.538006114",
-    "avgresponsejitter": " 0.000610489",
+    "maxreleasejitter": " 57.528419213",
+    "avgresponsejitter": " 0.012511228",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 350",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000002814"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 391",
+    "lockedtime": " 0.000002156"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 35000.0,
+    "C(LO)": 3279.0,
+    "C(HI)": 6558.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1621",
+    "preemptions": " 17",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004110399",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.665006147",
+    "avgresponsejitter": " 0.001473787",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1637",
+    "lockedtime": " 0.000012970"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 196875.0,
+    "C(LO)": 51992.0,
+    "C(HI)": 51992.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 289",
+    "preemptions": " 231",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.034950423",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.503130856",
+    "avgresponsejitter": " 0.025071111",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 519",
+    "lockedtime": " 0.000021153"
 
 
 
@@ -5596,26 +6377,880 @@ Task:  5
     
     "id": " 9",
     "basecpu": " 2",
-    "priority": " 1",
-    "period": 126000.0,
-    "C(LO)": 40491.0,
-    "C(HI)": 80982.0,
-    "criticality": "HIGH",
+    "priority": " 3",
+    "period": 140000.0,
+    "C(LO)": 12352.0,
+    "C(HI)": 12352.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 451",
-    "preemptions": " 261",
+    "completedruns": " 406",
+    "preemptions": " 19",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.066081877",
+    "maxresponsejitter": " 0.008605850",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.574006054",
-    "avgresponsejitter": " 0.022260387",
+    "maxreleasejitter": " 57.560007694",
+    "avgresponsejitter": " 0.005549748",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 9",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 720",
-    "lockedtime": " 0.000010099"
+    "timesonc2": " 424",
+    "lockedtime": " 0.000018682"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 101250.0,
+    "C(LO)": 4608.0,
+    "C(HI)": 4608.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 561",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002447826",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 57.598755883",
+    "avgresponsejitter": " 0.002036165",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 560",
+    "lockedtime": " 0.000006213"
+
+
+
+   </details>
+
+
+
+  14. Taskset **e1_semi2wf_t60**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t60",
+    "size": "12",
+    "utilization": "1.848",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 20000.0,
+    "C(LO)": 1611.0,
+    "C(HI)": 1611.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 5671",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000743634",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.380005970",
+    "avgresponsejitter": " 0.000720547",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 7",
+    "timesonc1": " 5667",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000024444"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 45",
+    "hightolow": " 45",
+    "idletime": 72873901,
+    "util": 35.73730070546736
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 16200000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 74934689,
+    "util": 33.92002733686067
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 168750.0,
+    "C(LO)": 10031.0,
+    "C(HI)": 20063.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 673",
+    "preemptions": " 267",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.023590255",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.231256102",
+    "avgresponsejitter": " 0.005745189",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 6",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 945",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 67500.0,
+    "C(LO)": 3624.0,
+    "C(HI)": 7248.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1681",
+    "preemptions": " 79",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.007740435",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.332506273",
+    "avgresponsejitter": " 0.001786033",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 19",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1778",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002763"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 189000.0,
+    "C(LO)": 4653.0,
+    "C(HI)": 9306.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 601",
+    "preemptions": " 87",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010249468",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.211006081",
+    "avgresponsejitter": " 0.002299862",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 7",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 694",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 100800.0,
+    "C(LO)": 869.0,
+    "C(HI)": 1738.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1126",
+    "preemptions": " 6",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002833375",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.299205997",
+    "avgresponsejitter": " 0.000394486",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 13",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1144",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 113400.0,
+    "C(LO)": 25777.0,
+    "C(HI)": 25777.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1001",
+    "preemptions": " 579",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.014441595",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.286606072",
+    "avgresponsejitter": " 0.011820201",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1579",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000004039"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 45360.0,
+    "C(LO)": 9664.0,
+    "C(HI)": 9664.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 2501",
+    "preemptions": " 526",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005864556",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.354646078",
+    "avgresponsejitter": " 0.004407901",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 3026",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002667"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 420000.0,
+    "C(LO)": 56801.0,
+    "C(HI)": 56801.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 271",
+    "preemptions": " 692",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.057135372",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.980740514",
+    "avgresponsejitter": " 0.033991958",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 962",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001117"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 20000.0,
+    "C(LO)": 1611.0,
+    "C(HI)": 1611.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 5671",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000743634",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.380005970",
+    "avgresponsejitter": " 0.000720547",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 1",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 7",
+    "timesrestored": " 7",
+    "timesonc1": " 5667",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000024444"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 150000.0,
+    "C(LO)": 21098.0,
+    "C(HI)": 42197.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 757",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.011221976",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.250138225",
+    "avgresponsejitter": " 0.009360195",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 756",
+    "lockedtime": " 0.000000396"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 75000.0,
+    "C(LO)": 231.0,
+    "C(HI)": 462.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1513",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000126156",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.325006051",
+    "avgresponsejitter": " 0.000107492",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1512",
+    "lockedtime": " 0.000022718"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 648000.0,
+    "C(LO)": 314725.0,
+    "C(HI)": 314725.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 176",
+    "preemptions": " 451",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.192456453",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.752005913",
+    "avgresponsejitter": " 0.158758096",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 626",
+    "lockedtime": " 0.000066120"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 200000.0,
+    "C(LO)": 25174.0,
+    "C(HI)": 25174.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 568",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.013390477",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.200006715",
+    "avgresponsejitter": " 0.011184934",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 567",
+    "lockedtime": " 0.000028511"
+
+
+
+   </details>
+
+
+
+  15. Taskset **e1_semi2wf_t723**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t723",
+    "size": "12",
+    "utilization": "1.872",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 18900.0,
+    "C(LO)": 3385.0,
+    "C(HI)": 3385.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 6001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001538375",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.381105880",
+    "avgresponsejitter": " 0.001510222",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 6",
+    "timesrestored": " 6",
+    "timesonc1": " 8",
+    "timesonc2": " 5991",
+    "lockedtime": " 0.000044129"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 78281768,
+    "util": 30.96845855379189
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 28350000,
+    "lowtohigh": " 7",
+    "hightolow": " 7",
+    "idletime": 70727073,
+    "util": 37.6304470899471
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 175000.0,
+    "C(LO)": 7243.0,
+    "C(HI)": 14486.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 649",
+    "preemptions": " 117",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.008536066",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.225006514",
+    "avgresponsejitter": " 0.003823306",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 765",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001880"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 600000.0,
+    "C(LO)": 21118.0,
+    "C(HI)": 42237.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 190",
+    "preemptions": " 145",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.018066685",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.801168931",
+    "avgresponsejitter": " 0.012293601",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 334",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000002979"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 189000.0,
+    "C(LO)": 5122.0,
+    "C(HI)": 10245.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 601",
+    "preemptions": " 39",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006473847",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.215662763",
+    "avgresponsejitter": " 0.002314312",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 639",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 100000.0,
+    "C(LO)": 2225.0,
+    "C(HI)": 4450.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1135",
+    "preemptions": " 66",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005721751",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.300006204",
+    "avgresponsejitter": " 0.001191492",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1200",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000225"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 47250.0,
+    "C(LO)": 592.0,
+    "C(HI)": 1185.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2401",
+    "preemptions": " 6",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000762913",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.357289489",
+    "avgresponsejitter": " 0.000258087",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2406",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 15750.0,
+    "C(LO)": 8723.0,
+    "C(HI)": 8723.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 7201",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004634991",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.384256387",
+    "avgresponsejitter": " 0.003846342",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 7201",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000090204"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 129600.0,
+    "C(LO)": 888.0,
+    "C(HI)": 888.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 876",
+    "preemptions": " 6",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004578408",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.270406414",
+    "avgresponsejitter": " 0.000416661",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 881",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000014174"
 
 
 
@@ -5625,26 +7260,129 @@ Task:  5
     
     "id": " 8",
     "basecpu": " 2",
-    "priority": " 2",
-    "period": 118125.0,
-    "C(LO)": 1690.0,
-    "C(HI)": 3381.0,
+    "priority": " 1",
+    "period": 162000.0,
+    "C(LO)": 30828.0,
+    "C(HI)": 61656.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 481",
-    "preemptions": " 0",
+    "completedruns": " 701",
+    "preemptions": " 853",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002317652",
+    "maxresponsejitter": " 0.060821955",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.581881438",
-    "avgresponsejitter": " 0.000860754",
+    "maxreleasejitter": " 114.238005907",
+    "avgresponsejitter": " 0.016247210",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 7",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 482",
-    "lockedtime": " 0.000012357"
+    "timesonc2": " 1560",
+    "lockedtime": " 0.000020234"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 18900.0,
+    "C(LO)": 3385.0,
+    "C(HI)": 3385.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 6001",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001538375",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.381105880",
+    "avgresponsejitter": " 0.001510222",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 6",
+    "timesrestored": " 6",
+    "timesonc1": " 8",
+    "timesonc2": " 5991",
+    "lockedtime": " 0.000044129"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 101250.0,
+    "C(LO)": 17156.0,
+    "C(HI)": 17156.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1121",
+    "preemptions": " 687",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.012740054",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.298756024",
+    "avgresponsejitter": " 0.008770952",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1807",
+    "lockedtime": " 0.000017030"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 25200.0,
+    "C(LO)": 4045.0,
+    "C(HI)": 4045.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 4501",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002153453",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.374806027",
+    "avgresponsejitter": " 0.001790357",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 4500",
+    "lockedtime": " 0.000046381"
 
 
 
@@ -5655,25 +7393,190 @@ Task:  5
     "id": " 11",
     "basecpu": " 2",
     "priority": " 0",
-    "period": 567000.0,
-    "C(LO)": 106508.0,
-    "C(HI)": 106508.0,
+    "period": 590625.0,
+    "C(LO)": 85416.0,
+    "C(HI)": 85416.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 101",
-    "preemptions": " 193",
+    "completedruns": " 193",
+    "preemptions": " 755",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.116205715",
+    "maxresponsejitter": " 0.099138084",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.135697063",
-    "avgresponsejitter": " 0.059508595",
+    "maxreleasejitter": " 113.809381015",
+    "avgresponsejitter": " 0.052212087",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 293",
-    "lockedtime": " 0.000006411"
+    "timesonc2": " 947",
+    "lockedtime": " 0.000022610"
+
+
+
+   </details>
+
+
+
+  16. Taskset **e1_semi2wf_t812**
+
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t812",
+    "size": "12",
+    "utilization": "1.8840000000000001",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the deadlines missed tasks list.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 10000.0,
+    "C(LO)": 1560.0,
+    "C(HI)": 1560.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1498",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000719502",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 15.962508348",
+    "avgresponsejitter": " 0.000699976",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 2",
+    "timesrestored": " 2",
+    "timesonc1": " 1",
+    "timesonc2": " 1495",
+    "lockedtime": " 0.000021874"
+
+
+
+   </details>
+
+
+
+   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
+
+   Idle time is expressed as **seconds**.
+
+   Util values are expressed as **percentage** %.
+
+
+
+   CPU: 1
+
+    
+    "id": 1,
+    "hyperperiod": 113400000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 77781660,
+    "util": 31.409470899470904
+
+
+
+
+   CPU: 2
+
+    
+    "id": 2,
+    "hyperperiod": 11340000,
+    "lowtohigh": " 6",
+    "hightolow": " 6",
+    "idletime": 83594252,
+    "util": 26.28372839506173
+
+
+
+   </details>
+
+   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 141750.0,
+    "C(LO)": 12503.0,
+    "C(HI)": 25007.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 801",
+    "preemptions": " 395",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.011825306",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.258435790",
+    "avgresponsejitter": " 0.006330402",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1195",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 56250.0,
+    "C(LO)": 2927.0,
+    "C(HI)": 5854.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2017",
+    "preemptions": " 146",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005189862",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.343756075",
+    "avgresponsejitter": " 0.001442486",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2162",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -5682,27 +7585,64 @@ Task:  5
 
     
     "id": " 5",
-    "basecpu": " 2",
+    "basecpu": " 1",
     "priority": " 3",
-    "period": 56700.0,
-    "C(LO)": 4960.0,
-    "C(HI)": 4960.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1001",
-    "preemptions": " 0",
+    "period": 45000.0,
+    "C(LO)": 1740.0,
+    "C(HI)": 3480.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 2521",
+    "preemptions": " 61",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002978024",
+    "maxresponsejitter": " 0.004718255",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.643306165",
-    "avgresponsejitter": " 0.002492018",
-    "deadlinesmissed": " 1",
+    "maxreleasejitter": " 114.355006081",
+    "avgresponsejitter": " 0.000835637",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 5",
-    "timesonc2": " 994",
-    "lockedtime": " 0.000005147"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2581",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000018057"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 373.0,
+    "C(HI)": 746.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 7201",
+    "preemptions": " 5",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003646538",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.384256081",
+    "avgresponsejitter": " 0.000164685",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 7205",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000012006"
 
 
 
@@ -5711,27 +7651,262 @@ Task:  5
 
     
     "id": " 3",
-    "basecpu": " 2",
+    "basecpu": " 1",
     "priority": " 4",
-    "period": 37800.0,
-    "C(LO)": 3147.0,
-    "C(HI)": 3147.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 678",
+    "period": 26250.0,
+    "C(LO)": 299.0,
+    "C(HI)": 598.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 4321",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001889961",
+    "maxresponsejitter": " 0.000159462",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 26.552806195",
-    "avgresponsejitter": " 0.001584408",
+    "maxreleasejitter": " 114.373755967",
+    "avgresponsejitter": " 0.000130787",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 4320",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000757"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 907200.0,
+    "C(LO)": 223442.0,
+    "C(HI)": 223442.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 126",
+    "preemptions": " 2058",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.150990730",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 113.496130090",
+    "avgresponsejitter": " 0.122674489",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2183",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000010700"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 30240.0,
+    "C(LO)": 6870.0,
+    "C(HI)": 6870.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 3751",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003654306",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.369766057",
+    "avgresponsejitter": " 0.003035093",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 3751",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000024634"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 200000.0,
+    "C(LO)": 3476.0,
+    "C(HI)": 3476.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 568",
+    "preemptions": " 28",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.005342423",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.200006384",
+    "avgresponsejitter": " 0.001688724",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 595",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000004979"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 162000.0,
+    "C(LO)": 39348.0,
+    "C(HI)": 78697.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 701",
+    "preemptions": " 317",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.063700114",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.238006051",
+    "avgresponsejitter": " 0.019686462",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 6",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1023",
+    "lockedtime": " 0.000026646"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 75600.0,
+    "C(LO)": 17861.0,
+    "C(HI)": 17861.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1501",
+    "preemptions": " 152",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010197556",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.324406066",
+    "avgresponsejitter": " 0.007979066",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1652",
+    "lockedtime": " 0.000072715"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 10000.0,
+    "C(LO)": 1560.0,
+    "C(HI)": 1560.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1498",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000719502",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 15.962508348",
+    "avgresponsejitter": " 0.000699976",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 1",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 2",
     "timesrestored": " 2",
-    "timesonc1": " 2",
-    "timesonc2": " 675",
-    "lockedtime": " 0.000003841"
+    "timesonc1": " 1",
+    "timesonc2": " 1495",
+    "lockedtime": " 0.000021874"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 180000.0,
+    "C(LO)": 15657.0,
+    "C(HI)": 15657.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 631",
+    "preemptions": " 59",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.017101357",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 114.220007171",
+    "avgresponsejitter": " 0.007586577",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 689",
+    "lockedtime": " 0.000040108"
 
 
 
@@ -5749,892 +7924,18 @@ Ovvero quando un task di un taskset ha ecceduto il suo criticality-level budget,
 
 
 
-  2. Taskset **e1_semi2wf_t1451**
+  2. Taskset **e1_semi2wf_t11**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t1451",
+    "id": "e1_semi2wf_t11",
     "size": "12",
     "utilization": "1.848",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 26250.0,
-    "C(LO)": 5756.0,
-    "C(HI)": 5756.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 929",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003454574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.360007613",
-    "avgresponsejitter": " 0.002871910",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 927",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000010042"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 6",
-    "hightolow": " 6",
-    "idletime": 15689841,
-    "util": 86.16416137566138
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 9450000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 15240362,
-    "util": -61.27367195767195
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 14142.0,
-    "C(HI)": 28285.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 130",
-    "preemptions": " 37",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.035993105",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.198632099",
-    "avgresponsejitter": " 0.008557231",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 166",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001706"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 181440.0,
-    "C(LO)": 12594.0,
-    "C(HI)": 25189.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 136",
-    "preemptions": " 41",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.036175838",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.312966598",
-    "avgresponsejitter": " 0.007963547",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 179",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002297"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 405000.0,
-    "C(LO)": 14591.0,
-    "C(HI)": 29182.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 62",
-    "preemptions": " 22",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.049158823",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.307689739",
-    "avgresponsejitter": " 0.009912111",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 83",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000312"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 162000.0,
-    "C(LO)": 5381.0,
-    "C(HI)": 10763.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 152",
-    "preemptions": " 17",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026785420",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.300007087",
-    "avgresponsejitter": " 0.003390811",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 171",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003402"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 26250.0,
-    "C(LO)": 5756.0,
-    "C(HI)": 5756.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 929",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003454574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.360007613",
-    "avgresponsejitter": " 0.002871910",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 927",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000010042"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 196875.0,
-    "C(LO)": 36803.0,
-    "C(HI)": 36803.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 125",
-    "preemptions": " 79",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.032098997",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.215631321",
-    "avgresponsejitter": " 0.021035456",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 203",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003441"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 168000.0,
-    "C(LO)": 14331.0,
-    "C(HI)": 14331.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 146",
-    "preemptions": " 29",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011561447",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.192007120",
-    "avgresponsejitter": " 0.007794577",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 174",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012279"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 87500.0,
-    "C(LO)": 10630.0,
-    "C(HI)": 21260.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 280",
-    "preemptions": " 50",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.030298462",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.325006030",
-    "avgresponsejitter": " 0.006886688",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 329",
-    "lockedtime": " 0.000005553"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 945000.0,
-    "C(LO)": 61515.0,
-    "C(HI)": 123030.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 27",
-    "preemptions": " 34",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.063997574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 24.630950997",
-    "avgresponsejitter": " 0.034417300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 60",
-    "lockedtime": " 0.000001396"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 75600.0,
-    "C(LO)": 40369.0,
-    "C(HI)": 40369.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 324",
-    "preemptions": " 192",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.024613751",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.343205754",
-    "avgresponsejitter": " 0.020389477",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 515",
-    "lockedtime": " 0.000022144"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 42000.0,
-    "C(LO)": 624.0,
-    "C(HI)": 624.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 582",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000378096",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.360006889",
-    "avgresponsejitter": " 0.000314877",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 581",
-    "lockedtime": " 0.000014219"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 63000.0,
-    "C(LO)": 470.0,
-    "C(HI)": 470.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 388",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000286036",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 25.320742751",
-    "avgresponsejitter": " 0.000241372",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 387",
-    "lockedtime": " 0.000005976"
-
-
-
-   </details>
-
-
-
-  3. Taskset **e1_semi2wf_t1818**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t1818",
-    "size": "12",
-    "utilization": "1.86",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 28.0,
-    "C(HI)": 28.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 16,
-    "util": 99.99997178130512
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 13,
-    "util": 99.99993121693122
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 78750.0,
-    "C(LO)": 5115.0,
-    "C(HI)": 10231.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 108000.0,
-    "C(LO)": 4130.0,
-    "C(HI)": 8260.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 81000.0,
-    "C(LO)": 1162.0,
-    "C(HI)": 2325.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 84375.0,
-    "C(LO)": 889.0,
-    "C(HI)": 1779.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 131250.0,
-    "C(LO)": 523.0,
-    "C(HI)": 1046.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 450000.0,
-    "C(LO)": 287973.0,
-    "C(HI)": 287973.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 28.0,
-    "C(HI)": 28.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 37800.0,
-    "C(LO)": 5757.0,
-    "C(HI)": 11515.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 180000.0,
-    "C(LO)": 51814.0,
-    "C(HI)": 51814.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 175000.0,
-    "C(LO)": 35543.0,
-    "C(HI)": 35543.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 87500.0,
-    "C(LO)": 7058.0,
-    "C(HI)": 7058.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 75600.0,
-    "C(LO)": 5922.0,
-    "C(HI)": 5922.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  4. Taskset **e1_semi2wf_t2012**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2012",
-    "size": "12",
-    "utilization": "1.872",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the guilty task.</summary>
 
    Time values are expressed as **micro-seconds**.
 
@@ -6643,26 +7944,30 @@ Task:  3
     
     "id": " 3",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 47250.0,
-    "C(LO)": 15.0,
-    "C(HI)": 15.0,
-    "criticality": "LOW",
+    "priority": " 5",
+    "period": 42000.0,
+    "C(LO)": 3655.0,
+    "C(HI)": 7310.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
+    "completedruns": " 255",
+    "preemptions": " 11",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010022952",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.626006138",
+    "avgresponsejitter": " 0.001674694",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1",
+    "timesonc1": " 267",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000000865"
 
 
 
@@ -6674,17 +7979,19 @@ Task:  3
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
 
     
     "id": 1,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 14,
-    "util": 99.99992592592592
+    "hyperperiod": 113400000,
+    "lowtohigh": " 2",
+    "hightolow": " 1",
+    "idletime": 7327736,
+    "util": 93.53815167548501
 
 
 
@@ -6694,10 +8001,10 @@ Task:  3
     
     "id": 2,
     "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 16,
-    "util": 99.99997178130512
+    "lowtohigh": " 1",
+    "hightolow": " 1",
+    "idletime": 7178394,
+    "util": 93.66984656084657
 
 
 
@@ -6709,31 +8016,68 @@ Task:  3
 
 
 
-   Task:  9
+   Task:  3
 
     
-    "id": " 9",
+    "id": " 3",
     "basecpu": " 1",
-    "priority": " 1",
-    "period": 150000.0,
-    "C(LO)": 21342.0,
-    "C(HI)": 42685.0,
+    "priority": " 5",
+    "period": 42000.0,
+    "C(LO)": 3655.0,
+    "C(HI)": 7310.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
+    "completedruns": " 255",
+    "preemptions": " 11",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.010022952",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.626006138",
+    "avgresponsejitter": " 0.001674694",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
+    "timesonc1": " 267",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000000865"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 22500.0,
+    "C(LO)": 1491.0,
+    "C(HI)": 2982.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 477",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000795547",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 11.687506291",
+    "avgresponsejitter": " 0.000663724",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 476",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001898"
 
 
 
@@ -6744,52 +8088,93 @@ Task:  3
     "id": " 6",
     "basecpu": " 1",
     "priority": " 2",
-    "period": 118125.0,
-    "C(LO)": 8206.0,
-    "C(HI)": 16413.0,
+    "period": 81000.0,
+    "C(LO)": 3314.0,
+    "C(HI)": 6629.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
+    "completedruns": " 133",
+    "preemptions": " 6",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004281381",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.611006174",
+    "avgresponsejitter": " 0.001552901",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
+    "timesonc1": " 138",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001456"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 141750.0,
+    "C(LO)": 1519.0,
+    "C(HI)": 3039.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 77",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000890111",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 11.636254811",
+    "avgresponsejitter": " 0.000655270",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 77",
     "timesonc2": " 0",
     "lockedtime": " 0.000000000"
 
 
 
 
-   Task:  12
+   Task:  5
 
     
-    "id": " 12",
+    "id": " 5",
     "basecpu": " 1",
-    "priority": " 0",
-    "period": 420000.0,
-    "C(LO)": 25287.0,
-    "C(HI)": 50575.0,
+    "priority": " 3",
+    "period": 78750.0,
+    "C(LO)": 214.0,
+    "C(HI)": 428.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1",
+    "completedruns": " 137",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000119508",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.636159453",
+    "avgresponsejitter": " 0.000096354",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
+    "timesonc1": " 136",
     "timesonc2": " 0",
     "lockedtime": " 0.000000000"
 
@@ -6801,142 +8186,30 @@ Task:  3
     
     "id": " 4",
     "basecpu": " 1",
-    "priority": " 3",
-    "period": 70000.0,
-    "C(LO)": 28266.0,
-    "C(HI)": 28266.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
     "priority": " 4",
-    "period": 47250.0,
-    "C(LO)": 15.0,
-    "C(HI)": 15.0,
+    "period": 64800.0,
+    "C(LO)": 21780.0,
+    "C(HI)": 21780.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
+    "completedruns": " 167",
+    "preemptions": " 137",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.015571249",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.668006075",
+    "avgresponsejitter": " 0.010629847",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 135000.0,
-    "C(LO)": 27751.0,
-    "C(HI)": 55503.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
+    "timesonc1": " 303",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 151200.0,
-    "C(LO)": 9442.0,
-    "C(HI)": 18884.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 168750.0,
-    "C(LO)": 5456.0,
-    "C(HI)": 10913.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000003027"
 
 
 
@@ -6945,85 +8218,130 @@ Task:  3
 
     
     "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 45360.0,
-    "C(LO)": 6266.0,
-    "C(HI)": 6266.0,
+    "basecpu": " 1",
+    "priority": " 7",
+    "period": 37800.0,
+    "C(LO)": 3783.0,
+    "C(HI)": 3783.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1",
+    "completedruns": " 285",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002013396",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.697407336",
+    "avgresponsejitter": " 0.001693751",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
+    "timesonc1": " 284",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000001147"
 
 
 
 
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 6",
-    "period": 35000.0,
-    "C(LO)": 4158.0,
-    "C(HI)": 4158.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
+   Task:  11
 
     
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 113400.0,
-    "C(LO)": 5330.0,
-    "C(HI)": 5330.0,
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 200000.0,
+    "C(LO)": 12252.0,
+    "C(HI)": 12252.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
+    "completedruns": " 55",
+    "preemptions": " 33",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.019257108",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.600006093",
+    "avgresponsejitter": " 0.007106760",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 87",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001039"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 151200.0,
+    "C(LO)": 31509.000000000004,
+    "C(HI)": 63019.00000000001,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 72",
+    "preemptions": " 18",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.044493210",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 11.584006195",
+    "avgresponsejitter": " 0.016584204",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "timesonc2": " 90",
+    "lockedtime": " 0.000005030"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 420000.0,
+    "C(LO)": 76282.0,
+    "C(HI)": 76282.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 27",
+    "preemptions": " 15",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.056686438",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 11.506816874",
+    "avgresponsejitter": " 0.038856796",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 41",
+    "lockedtime": " 0.000003021"
 
 
 
@@ -7034,25 +8352,62 @@ Task:  3
     "id": " 7",
     "basecpu": " 2",
     "priority": " 3",
-    "period": 131250.0,
-    "C(LO)": 2527.0,
-    "C(HI)": 2527.0,
+    "period": 87500.0,
+    "C(LO)": 15249.0,
+    "C(HI)": 15249.0,
     "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
+    "migrable": "True",
+    "completedruns": " 124",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.006902198",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
+    "maxreleasejitter": " 11.675006435",
+    "avgresponsejitter": " 0.006829856",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "timesonc2": " 123",
+    "lockedtime": " 0.000003141"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 162000.0,
+    "C(LO)": 26324.0,
+    "C(HI)": 26324.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 67",
+    "preemptions": " 10",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.020744604",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 11.530007336",
+    "avgresponsejitter": " 0.012675997",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 76",
+    "lockedtime": " 0.000004360"
 
 
 
@@ -7060,18 +8415,18 @@ Task:  3
 
 
 
-  5. Taskset **e1_semi2wf_t249**
+  3. Taskset **e1_semi2wf_t1323**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t249",
+    "id": "e1_semi2wf_t1323",
     "size": "12",
-    "utilization": "1.8",
+    "utilization": "1.9080000000000001",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the guilty task.</summary>
 
    Time values are expressed as **micro-seconds**.
 
@@ -7079,438 +8434,32 @@ Task:  1
 
     
     "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 528.0,
-    "C(HI)": 528.0,
+    "basecpu": " 2",
+    "priority": " 7",
+    "period": 15750.0,
+    "C(LO)": 433.0,
+    "C(HI)": 433.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 4427",
+    "completedruns": " 1284",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000318276",
+    "maxresponsejitter": " 0.000210808",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.600007354",
-    "avgresponsejitter": " 0.000262925",
-    "deadlinesmissed": " 3",
+    "maxreleasejitter": " 21.217810120",
+    "avgresponsejitter": " 0.000198550",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 1",
-    "timesmigrated": " 11",
-    "timesrestored": " 11",
-    "timesonc1": " 4418",
-    "timesonc2": " 6",
-    "lockedtime": " 0.000037844"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 27",
-    "hightolow": " 27",
-    "idletime": 71585791,
-    "util": 36.873200176366836
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 66659383,
-    "util": -17.565049382716055
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 126000.0,
-    "C(LO)": 15942.999999999998,
-    "C(HI)": 31885.999999999996,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 792",
-    "preemptions": " 411",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.032056742",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.550612081",
-    "avgresponsejitter": " 0.009202520",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1212",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006168"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 101250.0,
-    "C(LO)": 10963.0,
-    "C(HI)": 21926.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 985",
-    "preemptions": " 188",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023721354",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.528756093",
-    "avgresponsejitter": " 0.005832258",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1179",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009967"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 168000.0,
-    "C(LO)": 8695.0,
-    "C(HI)": 17390.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 594",
-    "preemptions": " 179",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019365985",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.459121000",
-    "avgresponsejitter": " 0.005004847",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 782",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002288"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 90000.0,
-    "C(LO)": 12116.0,
-    "C(HI)": 12116.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1108",
-    "preemptions": " 113",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008260084",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.540010198",
-    "avgresponsejitter": " 0.006150901",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1220",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000432"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 75000.0,
-    "C(LO)": 4859.0,
-    "C(HI)": 4859.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1329",
-    "preemptions": " 4",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003848195",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.525006192",
-    "avgresponsejitter": " 0.002441877",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 1",
     "timesrestored": " 1",
-    "timesonc1": " 1332",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006459"
+    "timesonc1": " 1",
+    "timesonc2": " 1281",
+    "lockedtime": " 0.000007198"
 
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 42000.0,
-    "C(LO)": 1783.0,
-    "C(HI)": 1783.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2372",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001074063",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.540254709",
-    "avgresponsejitter": " 0.000896874",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2370",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000008342"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 528.0,
-    "C(HI)": 528.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 4427",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000318276",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.600007354",
-    "avgresponsejitter": " 0.000262925",
-    "deadlinesmissed": " 3",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 11",
-    "timesrestored": " 11",
-    "timesonc1": " 4418",
-    "timesonc2": " 6",
-    "lockedtime": " 0.000037844"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 179880.0,
-    "C(HI)": 359761.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 142",
-    "preemptions": " 660",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.143078468",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.229527384",
-    "avgresponsejitter": " 0.110942856",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 801",
-    "lockedtime": " 0.000050126"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 75600.0,
-    "C(LO)": 2381.0,
-    "C(HI)": 4762.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1319",
-    "preemptions": " 14",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001735751",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.565205781",
-    "avgresponsejitter": " 0.001192781",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1332",
-    "lockedtime": " 0.000001841"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 506250.0,
-    "C(LO)": 9880.0,
-    "C(HI)": 19761.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 198",
-    "preemptions": " 27",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007287054",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.225007592",
-    "avgresponsejitter": " 0.005076345",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 224",
-    "lockedtime": " 0.000007051"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 54000.0,
-    "C(LO)": 18468.0,
-    "C(HI)": 18468.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1846",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011118438",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.576005862",
-    "avgresponsejitter": " 0.009231811",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1845",
-    "lockedtime": " 0.000033432"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 60000.0,
-    "C(LO)": 589.0,
-    "C(HI)": 589.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1662",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000354625",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 100.600006123",
-    "avgresponsejitter": " 0.000295339",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1661",
-    "lockedtime": " 0.000022060"
-
-
-
-   </details>
-
-
-
-  6. Taskset **e1_semi2wf_t2505**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2505",
-    "size": "12",
-    "utilization": "1.8840000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
 
 
    </details>
@@ -7521,415 +8470,7 @@ Task:  1
 
    Idle time is expressed as **seconds**.
 
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 1",
-    "hightolow": " 0",
-    "idletime": 35529743,
-    "util": -87.98805820105821
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 5",
-    "hightolow": " 5",
-    "idletime": 31762395,
-    "util": 71.99083333333333
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 151200.0,
-    "C(LO)": 19258.0,
-    "C(HI)": 38517.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 327",
-    "preemptions": " 213",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.016584859",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.146197724",
-    "avgresponsejitter": " 0.010651066",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 539",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003847"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 196875.0,
-    "C(LO)": 22361.0,
-    "C(HI)": 44722.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 252",
-    "preemptions": " 258",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.031274730",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.218756255",
-    "avgresponsejitter": " 0.013874282",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 509",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009108"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 22500.0,
-    "C(LO)": 1392.0,
-    "C(HI)": 2785.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2191",
-    "preemptions": " 49",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003097144",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.252506084",
-    "avgresponsejitter": " 0.000744183",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2239",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009324"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 33750.0,
-    "C(LO)": 500.0,
-    "C(HI)": 1000.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1461",
-    "preemptions": " 4",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002403408",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.241256447",
-    "avgresponsejitter": " 0.000257715",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1464",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000240"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 30240.0,
-    "C(LO)": 3849.0,
-    "C(HI)": 3849.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1631",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002323529",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.260967243",
-    "avgresponsejitter": " 0.001935655",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1630",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000019796"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 70000.0,
-    "C(LO)": 7409.0,
-    "C(HI)": 7409.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 705",
-    "preemptions": " 78",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006629348",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.210005997",
-    "avgresponsejitter": " 0.003948553",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 782",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012477"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 630000.0,
-    "C(LO)": 171748.0,
-    "C(HI)": 343497.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 80",
-    "preemptions": " 301",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.135696523",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.151252835",
-    "avgresponsejitter": " 0.101307541",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 380",
-    "lockedtime": " 0.000025363"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 90720.0,
-    "C(LO)": 3270.0,
-    "C(HI)": 6540.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 545",
-    "preemptions": " 18",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010010706",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.260967517",
-    "avgresponsejitter": " 0.001812171",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 567",
-    "lockedtime": " 0.000033051"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 126000.0,
-    "C(LO)": 17212.0,
-    "C(HI)": 17212.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 392",
-    "preemptions": " 60",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017619264",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.142698003",
-    "avgresponsejitter": " 0.009201631",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 451",
-    "lockedtime": " 0.000013640"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 60000.0,
-    "C(LO)": 6380.0,
-    "C(HI)": 6380.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 823",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005374766",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.260006201",
-    "avgresponsejitter": " 0.003185862",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 5",
-    "timesonc2": " 818",
-    "lockedtime": " 0.000027919"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 100000.0,
-    "C(LO)": 8518.0,
-    "C(HI)": 8518.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 494",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005116919",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.200007547",
-    "avgresponsejitter": " 0.004292622",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 493",
-    "lockedtime": " 0.000009544"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 168000.0,
-    "C(LO)": 11761.0,
-    "C(HI)": 11761.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 295",
-    "preemptions": " 30",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012796033",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 50.224006676",
-    "avgresponsejitter": " 0.006241532",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 324",
-    "lockedtime": " 0.000005258"
-
-
-
-   </details>
-
-
-
-  7. Taskset **e1_semi2wf_t2622**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2622",
-    "size": "12",
-    "utilization": "1.8960000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
+   Util values are expressed as **percentage** %.
 
 
 
@@ -7937,11 +8478,11 @@ Task:  1
 
     
     "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 1",
+    "hyperperiod": 7560000,
+    "lowtohigh": " 0",
     "hightolow": " 0",
-    "idletime": 24759,
-    "util": 99.97816666666667
+    "idletime": 14310518,
+    "util": 36.90247795414462
 
 
 
@@ -7951,10 +8492,10 @@ Task:  1
     
     "id": 2,
     "hyperperiod": 22680000,
-    "lowtohigh": " 1",
-    "hightolow": " 1",
-    "idletime": 15,
-    "util": 99.99993386243386
+    "lowtohigh": " 10",
+    "hightolow": " 10",
+    "idletime": 13201482,
+    "util": 41.7924074074074
 
 
 
@@ -7963,93 +8504,6 @@ Task:  1
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
 
    Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 135000.0,
-    "C(LO)": 14753.0,
-    "C(HI)": 29507.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010098790",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.015275297",
-    "avgresponsejitter": " 0.010098790",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 101250.0,
-    "C(LO)": 10073.0,
-    "C(HI)": 20147.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005585568",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.009685327",
-    "avgresponsejitter": " 0.005585568",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 200000.0,
-    "C(LO)": 3779.0,
-    "C(HI)": 7559.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001650688",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.025378213",
-    "avgresponsejitter": " 0.001650688",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
 
 
 
@@ -8058,200 +8512,30 @@ Task:  1
     
     "id": " 2",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 50000.0,
-    "C(LO)": 13884.0,
-    "C(HI)": 13884.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 3",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007122489",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.050006318",
-    "avgresponsejitter": " 0.006364754",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 2977.0,
-    "C(HI)": 2977.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 4",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001669447",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.045006255",
-    "avgresponsejitter": " 0.001387339",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 3",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
     "priority": " 3",
-    "period": 131250.0,
-    "C(LO)": 5166.0,
-    "C(HI)": 5166.0,
-    "criticality": "LOW",
+    "period": 33750.0,
+    "C(LO)": 5741.0,
+    "C(HI)": 11483.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
+    "completedruns": " 600",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002355718",
+    "maxresponsejitter": " 0.003042685",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.007324931",
-    "avgresponsejitter": " 0.002355718",
+    "maxreleasejitter": " 21.182506072",
+    "avgresponsejitter": " 0.002530054",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1",
+    "timesonc1": " 600",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 81000.0,
-    "C(LO)": 15715.0,
-    "C(HI)": 31431.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006771162",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.020816529",
-    "avgresponsejitter": " 0.006771162",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 540000.0,
-    "C(LO)": 17558.0,
-    "C(HI)": 35116.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.025435132",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.027591880",
-    "avgresponsejitter": " 0.025435132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 907200.0,
-    "C(LO)": 12977.0,
-    "C(HI)": 25954.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007543994",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.053031243",
-    "avgresponsejitter": " 0.007543994",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 90000.0,
-    "C(LO)": 21618.0,
-    "C(HI)": 21618.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012943057",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.007869069",
-    "avgresponsejitter": " 0.012943057",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
+    "lockedtime": " 0.000006498"
 
 
 
@@ -8260,756 +8544,64 @@ Task:  1
 
     
     "id": " 3",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 54000.0,
-    "C(LO)": 8002.0,
-    "C(HI)": 8002.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004555667",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.057135832",
-    "avgresponsejitter": " 0.003729033",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 64800.0,
-    "C(LO)": 7849.0,
-    "C(HI)": 7849.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004526916",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.003337724",
-    "avgresponsejitter": " 0.004526916",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  8. Taskset **e1_semi2wf_t2773**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2773",
-    "size": "12",
-    "utilization": "1.8960000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  9
-
-    
-    "id": " 9",
     "basecpu": " 1",
     "priority": " 2",
-    "period": 175000.0,
-    "C(LO)": 1.0,
-    "C(HI)": 3.0,
+    "period": 50400.0,
+    "C(LO)": 4834.0,
+    "C(HI)": 9668.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 1",
-    "hightolow": " 0",
-    "idletime": 16,
-    "util": 99.99998589065255
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 14,
-    "util": 99.99997530864198
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 648000.0,
-    "C(LO)": 71220.0,
-    "C(HI)": 142441.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 72000.0,
-    "C(LO)": 2886.0,
-    "C(HI)": 5773.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001425270",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.001985126",
-    "avgresponsejitter": " 0.001425270",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 30240.0,
-    "C(LO)": 1123.0,
-    "C(HI)": 2246.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 3",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000677192",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.030247808",
-    "avgresponsejitter": " 0.000607165",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 1655.0,
-    "C(HI)": 3311.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 175000.0,
-    "C(LO)": 1.0,
-    "C(HI)": 3.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 162000.0,
-    "C(LO)": 91461.0,
-    "C(HI)": 91461.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.043223910",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.003414535",
-    "avgresponsejitter": " 0.043223910",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 90720.0,
-    "C(LO)": 2121.0,
-    "C(HI)": 2121.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001279928",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.000017153",
-    "avgresponsejitter": " 0.001279928",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 180000.0,
-    "C(LO)": 40512.0,
-    "C(HI)": 81025.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 75000.0,
-    "C(LO)": 15253.0,
-    "C(HI)": 15253.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008811414",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.003366306",
-    "avgresponsejitter": " 0.008811414",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 28350.0,
-    "C(LO)": 2661.0,
-    "C(HI)": 2661.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001590324",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.028356697",
-    "avgresponsejitter": " 0.001480547",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 35000.0,
-    "C(LO)": 3147.0,
-    "C(HI)": 3147.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 3",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001750718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.035006408",
-    "avgresponsejitter": " 0.001625180",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 100000.0,
-    "C(LO)": 7887.999999999999,
-    "C(HI)": 7887.999999999999,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003949300",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.012181898",
-    "avgresponsejitter": " 0.003949300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  9. Taskset **e1_semi2wf_t2919**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t2919",
-    "size": "12",
-    "utilization": "1.8960000000000001",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 37800.0,
-    "C(LO)": 4915.0,
-    "C(HI)": 4915.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1540",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002947709",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.185006601",
-    "avgresponsejitter": " 0.002473057",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 2",
-    "timesonc2": " 1537",
-    "lockedtime": " 0.000005243"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 37989622,
-    "util": 66.49945149911817
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 8",
-    "hightolow": " 8",
-    "idletime": 36131943,
-    "util": 68.13761640211641
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 420000.0,
-    "C(LO)": 70385.0,
-    "C(HI)": 140771.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 140",
-    "preemptions": " 246",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.063070360",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 58.965330465",
-    "avgresponsejitter": " 0.046143508",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 385",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009751"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 175000.0,
-    "C(LO)": 7776.0,
-    "C(HI)": 15553.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 334",
+    "completedruns": " 403",
     "preemptions": " 26",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015948937",
+    "maxresponsejitter": " 0.005447075",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.102423907",
-    "avgresponsejitter": " 0.004316820",
+    "maxreleasejitter": " 21.210406829",
+    "avgresponsejitter": " 0.002308838",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 359",
+    "timesonc1": " 428",
     "timesonc2": " 0",
-    "lockedtime": " 0.000002246"
+    "lockedtime": " 0.000007075"
 
 
 
 
-   Task:  5
+   Task:  6
 
     
-    "id": " 5",
+    "id": " 6",
     "basecpu": " 1",
-    "priority": " 2",
-    "period": 120000.0,
-    "C(LO)": 1330.0,
-    "C(HI)": 2660.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 486",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007303093",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.086825414",
-    "avgresponsejitter": " 0.000740667",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 494",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002012"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 40000.0,
-    "C(LO)": 11525.0,
-    "C(HI)": 11525.0,
+    "priority": " 1",
+    "period": 118125.0,
+    "C(LO)": 44960.0,
+    "C(HI)": 44960.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 1456",
-    "preemptions": " 0",
+    "completedruns": " 172",
+    "preemptions": " 154",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006933033",
+    "maxresponsejitter": " 0.028361198",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.160006087",
-    "avgresponsejitter": " 0.005790715",
+    "maxreleasejitter": " 21.084091450",
+    "avgresponsejitter": " 0.022097021",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1455",
+    "timesonc1": " 325",
     "timesonc2": " 0",
-    "lockedtime": " 0.000018462"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 84375.0,
-    "C(LO)": 11062.0,
-    "C(HI)": 11062.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 691",
-    "preemptions": " 85",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013378270",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.134381060",
-    "avgresponsejitter": " 0.006287060",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 775",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007327"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 141750.0,
-    "C(LO)": 5998.0,
-    "C(HI)": 5998.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 412",
-    "preemptions": " 29",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014765571",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.117506312",
-    "avgresponsejitter": " 0.003439679",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 440",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009150"
+    "lockedtime": " 0.000007739"
 
 
 
@@ -9018,27 +8610,31 @@ Task:  1
 
     
     "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 135000.0,
-    "C(LO)": 24706.0,
-    "C(HI)": 49412.0,
-    "criticality": "HIGH",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 120000.0,
+    "C(LO)": 1063.0,
+    "C(HI)": 1063.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 432",
-    "preemptions": " 270",
+    "completedruns": " 170",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.051349243",
+    "maxresponsejitter": " 0.000566985",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.054871541",
-    "avgresponsejitter": " 0.016244204",
+    "maxreleasejitter": " 21.162501616",
+    "avgresponsejitter": " 0.000479730",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 706",
-    "lockedtime": " 0.000007523"
+    "timesonc1": " 169",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000799"
 
 
 
@@ -9049,25 +8645,29 @@ Task:  1
     "id": " 12",
     "basecpu": " 2",
     "priority": " 0",
-    "period": 787500.0,
-    "C(LO)": 22259.0,
-    "C(HI)": 44519.0,
+    "period": 648000.0,
+    "C(LO)": 119302.0,
+    "C(HI)": 238604.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 75",
-    "preemptions": " 43",
+    "completedruns": " 33",
+    "preemptions": " 175",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.022595508",
+    "maxresponsejitter": " 0.084780784",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 58.487506018",
-    "avgresponsejitter": " 0.013446901",
+    "maxreleasejitter": " 21.092147517",
+    "avgresponsejitter": " 0.063532240",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 117",
-    "lockedtime": " 0.000001616"
+    "timesonc2": " 207",
+    "lockedtime": " 0.000002348"
 
 
 
@@ -9076,435 +8676,97 @@ Task:  1
 
     
     "id": " 10",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 168000.0,
+    "C(LO)": 3249.0,
+    "C(HI)": 6498.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 122",
+    "preemptions": " 2",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001945048",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 21.160248604",
+    "avgresponsejitter": " 0.001429916",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 123",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 70000.0,
+    "C(LO)": 595.0,
+    "C(HI)": 1190.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 290",
+    "preemptions": " 2",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000840291",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 21.160009462",
+    "avgresponsejitter": " 0.000274784",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 296",
+    "lockedtime": " 0.000001096"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
     "basecpu": " 2",
     "priority": " 1",
     "period": 181440.0,
-    "C(LO)": 4999.0,
-    "C(HI)": 9998.0,
+    "C(LO)": 446.0,
+    "C(HI)": 893.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 322",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.029239015",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.106226970",
-    "avgresponsejitter": " 0.003248255",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 343",
-    "lockedtime": " 0.000000739"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 70875.0,
-    "C(LO)": 14520.0,
-    "C(HI)": 14520.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 822",
-    "preemptions": " 103",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011526691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.117506904",
-    "avgresponsejitter": " 0.007564237",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 924",
-    "lockedtime": " 0.000030895"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 126000.0,
-    "C(LO)": 22130.0,
-    "C(HI)": 22130.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 463",
-    "preemptions": " 63",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023751447",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.086006568",
-    "avgresponsejitter": " 0.012209817",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 525",
-    "lockedtime": " 0.000003913"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 37800.0,
-    "C(LO)": 4915.0,
-    "C(HI)": 4915.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1540",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002947709",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 59.185006601",
-    "avgresponsejitter": " 0.002473057",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 4",
-    "timesrestored": " 4",
-    "timesonc1": " 2",
-    "timesonc2": " 1537",
-    "lockedtime": " 0.000005243"
-
-
-
-   </details>
-
-
-
-  10. Taskset **e1_semi2wf_t296**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t296",
-    "size": "12",
-    "utilization": "1.8",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 150000.0,
-    "C(LO)": 24442.0,
-    "C(HI)": 24442.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 137",
-    "preemptions": " 48",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015177952",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.250519168",
-    "avgresponsejitter": " 0.012324562",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 182",
-    "lockedtime": " 0.000004375"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 13260267,
-    "util": 88.30664285714286
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 9450000,
-    "lowtohigh": " 16",
-    "hightolow": " 15",
-    "idletime": 13702255,
-    "util": -44.99740740740742
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 40000.0,
-    "C(LO)": 5264.0,
-    "C(HI)": 10529.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 512",
-    "preemptions": " 80",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010769934",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.400007664",
-    "avgresponsejitter": " 0.003236105",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 591",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003354"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 189000.0,
-    "C(LO)": 14422.0,
-    "C(HI)": 28844.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 109",
-    "preemptions": " 46",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023310925",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.223006009",
-    "avgresponsejitter": " 0.008898450",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 154",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002420"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 33750.0,
-    "C(LO)": 29.0,
-    "C(HI)": 58.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 607",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000021832",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.418756643",
-    "avgresponsejitter": " 0.000019396",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 606",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000016069"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 30240.0,
-    "C(LO)": 12843.0,
-    "C(HI)": 12843.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 677",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007729132",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.412008336",
-    "avgresponsejitter": " 0.006457387",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 676",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006868"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 200000.0,
-    "C(LO)": 8285.0,
-    "C(HI)": 8285.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 104",
-    "preemptions": " 24",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012605309",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.402379024",
-    "avgresponsejitter": " 0.004930450",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 127",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001087"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 504000.0,
-    "C(LO)": 5327.0,
-    "C(HI)": 5327.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 42",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005606562",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.163150691",
-    "avgresponsejitter": " 0.002817240",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 49",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 453600.0,
-    "C(LO)": 4231.0,
-    "C(HI)": 4231.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 46",
+    "completedruns": " 113",
     "preemptions": " 3",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005488871",
+    "maxresponsejitter": " 0.000595547",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 20.967215141",
-    "avgresponsejitter": " 0.002206417",
+    "maxreleasejitter": " 21.155578267",
+    "avgresponsejitter": " 0.000215997",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 48",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000321"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 157500.0,
-    "C(LO)": 22419.0,
-    "C(HI)": 44838.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 131",
-    "preemptions": " 23",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.030592375",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.319977829",
-    "avgresponsejitter": " 0.012236706",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 153",
-    "lockedtime": " 0.000002012"
+    "timesonc2": " 120",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -9514,26 +8776,63 @@ Task:  6
     
     "id": " 5",
     "basecpu": " 2",
-    "priority": " 2",
-    "period": 67500.0,
-    "C(LO)": 3592.0,
-    "C(HI)": 7184.0,
-    "criticality": "HIGH",
+    "priority": " 6",
+    "period": 90720.0,
+    "C(LO)": 40196.0,
+    "C(HI)": 40196.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 304",
-    "preemptions": " 0",
+    "completedruns": " 224",
+    "preemptions": " 247",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005731898",
+    "maxresponsejitter": " 0.021602408",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.385639120",
-    "avgresponsejitter": " 0.001838727",
+    "maxreleasejitter": " 21.139847231",
+    "avgresponsejitter": " 0.018245228",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 307",
-    "lockedtime": " 0.000000000"
+    "timesonc2": " 470",
+    "lockedtime": " 0.000005318"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 129600.0,
+    "C(LO)": 8280.0,
+    "C(HI)": 8280.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 157",
+    "preemptions": " 41",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004564141",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 21.088006883",
+    "avgresponsejitter": " 0.003720622",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 197",
+    "lockedtime": " 0.000000712"
 
 
 
@@ -9543,26 +8842,30 @@ Task:  6
     
     "id": " 1",
     "basecpu": " 2",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 1144.0,
-    "C(HI)": 2288.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 909",
-    "preemptions": " 0",
+    "priority": " 7",
+    "period": 15750.0,
+    "C(LO)": 433.0,
+    "C(HI)": 433.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1284",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001849793",
+    "maxresponsejitter": " 0.000210808",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.407506498",
-    "avgresponsejitter": " 0.000592063",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 12",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 920",
-    "lockedtime": " 0.000015252"
+    "maxreleasejitter": " 21.217810120",
+    "avgresponsejitter": " 0.000198550",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 1",
+    "timesonc1": " 1",
+    "timesonc2": " 1281",
+    "lockedtime": " 0.000007198"
 
 
 
@@ -9572,55 +8875,30 @@ Task:  6
     
     "id": " 9",
     "basecpu": " 2",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 47359.0,
-    "C(HI)": 47359.0,
+    "priority": " 4",
+    "period": 151200.0,
+    "C(LO)": 3492.0,
+    "C(HI)": 3492.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 105",
-    "preemptions": " 121",
+    "completedruns": " 135",
+    "preemptions": " 2",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.044169021",
+    "maxresponsejitter": " 0.001847610",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.278130784",
-    "avgresponsejitter": " 0.026987853",
+    "maxreleasejitter": " 21.109606874",
+    "avgresponsejitter": " 0.001592408",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 225",
-    "lockedtime": " 0.000009502"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 150000.0,
-    "C(LO)": 24442.0,
-    "C(HI)": 24442.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 137",
-    "preemptions": " 48",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015177952",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.250519168",
-    "avgresponsejitter": " 0.012324562",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 182",
-    "lockedtime": " 0.000004375"
+    "timesonc2": " 136",
+    "lockedtime": " 0.000005270"
 
 
 
@@ -9628,30 +8906,30 @@ Task:  6
 
 
 
-  11. Taskset **e1_semi2wf_t2980**
+  4. Taskset **e1_semi2wf_t1586**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t2980",
+    "id": "e1_semi2wf_t1586",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.9200000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the guilty task.</summary>
 
    Time values are expressed as **micro-seconds**.
 
-Task:  10
+Task:  2
 
     
-    "id": " 10",
-    "basecpu": " 1",
+    "id": " 2",
+    "basecpu": " 2",
     "priority": " 1",
-    "period": 162000.0,
-    "C(LO)": 3.0,
-    "C(HI)": 6.0,
+    "period": 18900.0,
+    "C(LO)": 7.0,
+    "C(HI)": 15.0,
     "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 1",
@@ -9662,11 +8940,15 @@ Task:  10
     "maxreleasejitter": " 0.000000000",
     "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 2",
     "lockedtime": " 0.000000000"
 
 
@@ -9679,6 +8961,8 @@ Task:  10
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
@@ -9686,7 +8970,7 @@ Task:  10
     
     "id": 1,
     "hyperperiod": 113400000,
-    "lowtohigh": " 1",
+    "lowtohigh": " 0",
     "hightolow": " 0",
     "idletime": 17,
     "util": 99.99998500881834
@@ -9698,448 +8982,11 @@ Task:  10
 
     
     "id": 2,
-    "hyperperiod": 22680000,
-    "lowtohigh": " 0",
+    "hyperperiod": 37800000,
+    "lowtohigh": " 1",
     "hightolow": " 0",
     "idletime": 13,
-    "util": 99.99994268077602
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 420000.0,
-    "C(LO)": 44864.0,
-    "C(HI)": 89728.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 56250.0,
-    "C(LO)": 3389.0,
-    "C(HI)": 6779.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001416778",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.017562060",
-    "avgresponsejitter": " 0.001416778",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 39375.0,
-    "C(LO)": 408.0,
-    "C(HI)": 816.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000237015",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.004035607",
-    "avgresponsejitter": " 0.000237015",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 64800.0,
-    "C(LO)": 350.0,
-    "C(HI)": 700.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000175802",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.018983048",
-    "avgresponsejitter": " 0.000175802",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 162000.0,
-    "C(LO)": 3.0,
-    "C(HI)": 6.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 22500.0,
-    "C(LO)": 7197.0,
-    "C(HI)": 7197.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003768321",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.000018523",
-    "avgresponsejitter": " 0.003768321",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 120000.0,
-    "C(LO)": 24140.0,
-    "C(HI)": 24140.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013280429",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.004277273",
-    "avgresponsejitter": " 0.013280429",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 63000.0,
-    "C(LO)": 448.0,
-    "C(HI)": 448.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000238441",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.003792613",
-    "avgresponsejitter": " 0.000238441",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 28350.0,
-    "C(LO)": 6327.0,
-    "C(HI)": 12654.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002921291",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.006170120",
-    "avgresponsejitter": " 0.002921291",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 648000.0,
-    "C(LO)": 139418.0,
-    "C(HI)": 139418.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 24365.0,
-    "C(HI)": 24365.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 105000.0,
-    "C(LO)": 14457.0,
-    "C(HI)": 14457.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006151324",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.000014078",
-    "avgresponsejitter": " 0.006151324",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  12. Taskset **e1_semi2wf_t3320**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3320",
-    "size": "12",
-    "utilization": "1.9200000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 37800.0,
-    "C(LO)": 1093.0,
-    "C(HI)": 1093.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 197",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000663949",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.425007393",
-    "avgresponsejitter": " 0.000555015",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 195",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000001261"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 4",
-    "hightolow": " 4",
-    "idletime": 4954410,
-    "util": 91.26206349206349
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 5003094,
-    "util": 55.881005291005295
+    "util": 99.9999885361552
 
 
 
@@ -10157,25 +9004,29 @@ Task:  3
     "id": " 9",
     "basecpu": " 1",
     "priority": " 1",
-    "period": 126000.0,
-    "C(LO)": 13239.0,
-    "C(HI)": 26478.0,
+    "period": 175000.0,
+    "C(LO)": 18337.0,
+    "C(HI)": 36675.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 60",
-    "preemptions": " 10",
+    "completedruns": " 1",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019444709",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.308006589",
-    "avgresponsejitter": " 0.007497808",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 69",
+    "timesonc1": " 0",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000919"
+    "lockedtime": " 0.000000000"
 
 
 
@@ -10186,25 +9037,29 @@ Task:  3
     "id": " 11",
     "basecpu": " 1",
     "priority": " 0",
-    "period": 453600.0,
-    "C(LO)": 45264.0,
-    "C(HI)": 90528.0,
+    "period": 450000.0,
+    "C(LO)": 37192.0,
+    "C(HI)": 74385.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 18",
-    "preemptions": " 24",
+    "completedruns": " 1",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.096503511",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.271587577",
-    "avgresponsejitter": " 0.029550730",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 42",
+    "timesonc1": " 0",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000808"
+    "lockedtime": " 0.000000000"
 
 
 
@@ -10215,228 +9070,227 @@ Task:  3
     "id": " 7",
     "basecpu": " 1",
     "priority": " 3",
-    "period": 112500.0,
-    "C(LO)": 7191.0,
-    "C(HI)": 14383.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 67",
-    "preemptions": " 11",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014270384",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.312506802",
-    "avgresponsejitter": " 0.004207535",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 78",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001940"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 118125.0,
-    "C(LO)": 6275.0,
-    "C(HI)": 12551.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 64",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012678784",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.323756718",
-    "avgresponsejitter": " 0.003478087",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 66",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000414"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 90720.0,
-    "C(LO)": 18804.0,
-    "C(HI)": 18804.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 83",
-    "preemptions": " 25",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015194147",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.348327093",
-    "avgresponsejitter": " 0.009915051",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 107",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002198"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 87500.0,
-    "C(LO)": 6740.0,
-    "C(HI)": 6740.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 86",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004535489",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.350006781",
-    "avgresponsejitter": " 0.003483204",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 93",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000261"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 37800.0,
-    "C(LO)": 1093.0,
-    "C(HI)": 1093.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 197",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000663949",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.425007393",
-    "avgresponsejitter": " 0.000555015",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 195",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000001261"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 157500.0,
-    "C(LO)": 46009.0,
-    "C(HI)": 92018.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 49",
-    "preemptions": " 85",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.039223402",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.403857255",
-    "avgresponsejitter": " 0.027180826",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 133",
-    "lockedtime": " 0.000001799"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 540000.0,
-    "C(LO)": 17379.0,
-    "C(HI)": 34759.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 15",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010759288",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.028867480",
-    "avgresponsejitter": " 0.008564598",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 19",
-    "lockedtime": " 0.000000381"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
     "period": 108000.0,
-    "C(LO)": 17092.0,
-    "C(HI)": 17092.0,
-    "criticality": "LOW",
+    "C(LO)": 7540.0,
+    "C(HI)": 15081.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 70",
-    "preemptions": " 38",
+    "completedruns": " 1",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011617291",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.344005994",
-    "avgresponsejitter": " 0.009011153",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 107",
-    "lockedtime": " 0.000000655"
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  8
+
+    
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 135000.0,
+    "C(LO)": 1686.0,
+    "C(HI)": 3373.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  6
+
+    
+    "id": " 6",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 81000.0,
+    "C(LO)": 13420.0,
+    "C(HI)": 13420.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 6",
+    "period": 25200.0,
+    "C(LO)": 3805.0,
+    "C(HI)": 3805.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001722087",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 1.000018141",
+    "avgresponsejitter": " 0.001722087",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 181440.0,
+    "C(LO)": 13701.0,
+    "C(HI)": 13701.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 840000.0,
+    "C(LO)": 222066.0,
+    "C(HI)": 444132.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  2
+
+    
+    "id": " 2",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 18900.0,
+    "C(LO)": 7.0,
+    "C(HI)": 15.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -10447,54 +9301,95 @@ Task:  3
     "id": " 1",
     "basecpu": " 2",
     "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 3001.0,
-    "C(HI)": 3001.0,
+    "period": 15750.0,
+    "C(LO)": 4900.0,
+    "C(HI)": 4900.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 331",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001806886",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.402506643",
-    "avgresponsejitter": " 0.001515246",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 331",
-    "lockedtime": " 0.000009273"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 28350.0,
-    "C(LO)": 642.0,
-    "C(HI)": 642.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 263",
+    "completedruns": " 2",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000384285",
+    "maxresponsejitter": " 0.001975556",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.399355871",
-    "avgresponsejitter": " 0.000328138",
+    "maxreleasejitter": " 1.000014303",
+    "avgresponsejitter": " 0.001975556",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 262",
-    "lockedtime": " 0.000004258"
+    "timesonc2": " 1",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 60000.0,
+    "C(LO)": 7818.0,
+    "C(HI)": 7818.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 2",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003193045",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 1.001994877",
+    "avgresponsejitter": " 0.003193045",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  5
+
+    
+    "id": " 5",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 75000.0,
+    "C(LO)": 1295.0,
+    "C(HI)": 1295.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 2",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000623925",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 1.005192195",
+    "avgresponsejitter": " 0.000623925",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -10502,18 +9397,18 @@ Task:  3
 
 
 
-  13. Taskset **e1_semi2wf_t3335**
+  5. Taskset **e1_semi2wf_t307**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t3335",
+    "id": "e1_semi2wf_t307",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.86",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
 
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
+   <details> <summary markdown="span">Click here to see the guilty task.</summary>
 
    Time values are expressed as **micro-seconds**.
 
@@ -10521,874 +9416,31 @@ Task:  1
 
     
     "id": " 1",
-    "basecpu": " 2",
+    "basecpu": " 1",
     "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 2413.0,
-    "C(HI)": 2413.0,
+    "period": 15750.0,
+    "C(LO)": 447.0,
+    "C(HI)": 447.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 3243",
+    "completedruns": " 2184",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001451913",
+    "maxresponsejitter": " 0.000216622",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.964806240",
-    "avgresponsejitter": " 0.001210237",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 5",
-    "timesrestored": " 5",
-    "timesonc1": " 2",
-    "timesonc2": " 3240",
-    "lockedtime": " 0.000045087"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 18900000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 49156421,
-    "util": -160.08688359788363
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 17",
-    "hightolow": " 17",
-    "idletime": 50949659,
-    "util": 55.07084744268077
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 540000.0,
-    "C(LO)": 108931.0,
-    "C(HI)": 217862.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 136",
-    "preemptions": " 534",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.088441450",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.360006940",
-    "avgresponsejitter": " 0.069063411",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 669",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000026664"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 94500.0,
-    "C(LO)": 10498.0,
-    "C(HI)": 20996.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 774",
-    "preemptions": " 98",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014361303",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.954057865",
-    "avgresponsejitter": " 0.005682703",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 871",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 65625.0,
-    "C(LO)": 565.0,
-    "C(HI)": 1131.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1113",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000340171",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.910729276",
-    "avgresponsejitter": " 0.000283547",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1112",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002120"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 84375.0,
-    "C(LO)": 14024.0,
-    "C(HI)": 14024.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 866",
-    "preemptions": " 225",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011951159",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.904310844",
-    "avgresponsejitter": " 0.007511057",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1090",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000024351"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 39375.0,
-    "C(LO)": 6066.0,
-    "C(HI)": 6066.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1855",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003637273",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.961881706",
-    "avgresponsejitter": " 0.003038270",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1854",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000023447"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 47250.0,
-    "C(LO)": 81.0,
-    "C(HI)": 81.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1546",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000052652",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.954007583",
-    "avgresponsejitter": " 0.000045802",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1545",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006378"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 105000.0,
-    "C(LO)": 24204.0,
-    "C(HI)": 48408.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 696",
-    "preemptions": " 580",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.042691027",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.870006444",
-    "avgresponsejitter": " 0.013949826",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1280",
-    "lockedtime": " 0.000015117"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 168000.0,
-    "C(LO)": 11132.0,
-    "C(HI)": 22264.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 436",
-    "preemptions": " 198",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.018797429",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.912703646",
-    "avgresponsejitter": " 0.006621144",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 638",
-    "lockedtime": " 0.000003934"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 81000.0,
-    "C(LO)": 5147.0,
-    "C(HI)": 10295.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 902",
-    "preemptions": " 33",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008618492",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.901255670",
-    "avgresponsejitter": " 0.002704321",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 941",
-    "lockedtime": " 0.000001189"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 2413.0,
-    "C(HI)": 2413.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 3243",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001451913",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.964806240",
-    "avgresponsejitter": " 0.001210237",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 5",
-    "timesrestored": " 5",
-    "timesonc1": " 2",
-    "timesonc2": " 3240",
-    "lockedtime": " 0.000045087"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 56250.0,
-    "C(LO)": 4960.0,
-    "C(HI)": 4960.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1298",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002979700",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.901382829",
-    "avgresponsejitter": " 0.002473480",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 1296",
-    "lockedtime": " 0.000017682"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 64800.0,
-    "C(LO)": 2524.0,
-    "C(HI)": 2524.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1127",
-    "preemptions": " 57",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005336417",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 73.900010423",
-    "avgresponsejitter": " 0.001365168",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1183",
-    "lockedtime": " 0.000003856"
-
-
-
-   </details>
-
-
-
-  14. Taskset **e1_semi2wf_t3389**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3389",
-    "size": "12",
-    "utilization": "1.9200000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 1",
-    "hightolow": " 0",
-    "idletime": 29436878,
-    "util": 74.04155379188713
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 5670000,
-    "lowtohigh": " 30",
-    "hightolow": " 30",
-    "idletime": 29921179,
-    "util": -427.7103880070547
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 72000.0,
-    "C(LO)": 7748.0,
-    "C(HI)": 15497.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 656",
-    "preemptions": " 73",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012678306",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.088005991",
-    "avgresponsejitter": " 0.004072571",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 728",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005754"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 70875.0,
-    "C(LO)": 7178.0,
-    "C(HI)": 14356.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 666",
-    "preemptions": " 99",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009858237",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.061006892",
-    "avgresponsejitter": " 0.004051474",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 764",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008871"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 175000.0,
-    "C(LO)": 1695.0,
-    "C(HI)": 3390.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 271",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007157357",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.075006192",
-    "avgresponsejitter": " 0.000891760",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 272",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001976"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 472500.0,
-    "C(LO)": 134717.0,
-    "C(HI)": 134717.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 101",
-    "preemptions": " 524",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.112844511",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 47.780886745",
-    "avgresponsejitter": " 0.085969198",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 624",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000014000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 40000.0,
-    "C(LO)": 9701.0,
-    "C(HI)": 9701.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1180",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005814871",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.120006126",
-    "avgresponsejitter": " 0.004862865",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1179",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012982"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 50000.0,
-    "C(LO)": 195.0,
-    "C(HI)": 195.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 944",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000128012",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.100006213",
-    "avgresponsejitter": " 0.000101862",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 943",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001640"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 39375.0,
-    "C(LO)": 5230.0,
-    "C(HI)": 10461.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1198",
-    "preemptions": " 107",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011624748",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.093706670",
-    "avgresponsejitter": " 0.002953616",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1314",
-    "lockedtime": " 0.000004829"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 26250.0,
-    "C(LO)": 2240.0,
-    "C(HI)": 4481.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1797",
-    "preemptions": " 18",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006581204",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.121668039",
-    "avgresponsejitter": " 0.001175408",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 20",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1834",
-    "lockedtime": " 0.000004913"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 5245.0,
-    "C(HI)": 10490.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 68",
-    "preemptions": " 12",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005679006",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 47.784172057",
-    "avgresponsejitter": " 0.003002195",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 79",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 51234.0,
-    "C(HI)": 51234.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 251",
-    "preemptions": " 491",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.042544988",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.063788420",
-    "avgresponsejitter": " 0.031043652",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 741",
-    "lockedtime": " 0.000003498"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 56700.0,
-    "C(LO)": 6610.0,
-    "C(HI)": 6610.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 833",
-    "preemptions": " 41",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006560757",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.117706057",
-    "avgresponsejitter": " 0.003417886",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 873",
-    "lockedtime": " 0.000007453"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 42000.0,
-    "C(LO)": 4719.0,
-    "C(HI)": 4719.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1124",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002835577",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 48.124261940",
-    "avgresponsejitter": " 0.002358904",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 1",
-    "timesonc2": " 1122",
-    "lockedtime": " 0.000010718"
-
-
-
-   </details>
-
-
-
-  15. Taskset **e1_semi2wf_t348**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t348",
-    "size": "12",
-    "utilization": "1.812",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 28350.0,
-    "C(LO)": 3862.0,
-    "C(HI)": 3862.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1858",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002328892",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.650007036",
-    "avgresponsejitter": " 0.001933652",
+    "maxreleasejitter": " 35.383098592",
+    "avgresponsejitter": " 0.000205420",
     "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 11",
-    "timesonc2": " 1845",
-    "lockedtime": " 0.000041601"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 5",
+    "timesrestored": " 5",
+    "timesonc1": " 2180",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000002637"
 
 
 
@@ -11400,427 +9452,19 @@ Task:  2
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
 
     
     "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 34670857,
-    "util": 38.85210405643738
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
     "hyperperiod": 56700000,
     "lowtohigh": " 11",
     "hightolow": " 11",
-    "idletime": 34069008,
-    "util": 39.913566137566136
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 105000.0,
-    "C(LO)": 7852.0,
-    "C(HI)": 15704.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 503",
-    "preemptions": " 33",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004727486",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.611109027",
-    "avgresponsejitter": " 0.003936880",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 535",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001805"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 151200.0,
-    "C(LO)": 8996.0,
-    "C(HI)": 17992.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 350",
-    "preemptions": " 105",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015332495",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.617607985",
-    "avgresponsejitter": " 0.005876976",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 454",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007994"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 90000.0,
-    "C(LO)": 4068.9999999999995,
-    "C(HI)": 8137.999999999999,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 586",
-    "preemptions": " 51",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005337375",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.568653228",
-    "avgresponsejitter": " 0.002122520",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 636",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001676"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 84000.0,
-    "C(LO)": 2846.0,
-    "C(HI)": 5692.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 628",
-    "preemptions": " 18",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007666420",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.587875646",
-    "avgresponsejitter": " 0.001545826",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 645",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000492"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 10368.0,
-    "C(HI)": 10368.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 2341",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006248459",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.627505976",
-    "avgresponsejitter": " 0.005215207",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 2341",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000034024"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 70875.0,
-    "C(LO)": 125.0,
-    "C(HI)": 125.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 744",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000082811",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.591530799",
-    "avgresponsejitter": " 0.000068508",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 743",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000016336"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 945000.0,
-    "C(LO)": 184611.0,
-    "C(HI)": 369223.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 57",
-    "preemptions": " 311",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.252825739",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 52.976814838",
-    "avgresponsejitter": " 0.116098703",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 367",
-    "lockedtime": " 0.000018150"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 56250.0,
-    "C(LO)": 1569.0,
-    "C(HI)": 3139.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 937",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005570213",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.593756766",
-    "avgresponsejitter": " 0.000855234",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 11",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 966",
-    "lockedtime": " 0.000024943"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 700000.0,
-    "C(LO)": 201020.0,
-    "C(HI)": 201020.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 77",
-    "preemptions": " 420",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.132972339",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.500867438",
-    "avgresponsejitter": " 0.111634087",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 496",
-    "lockedtime": " 0.000028526"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 28350.0,
-    "C(LO)": 3862.0,
-    "C(HI)": 3862.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1858",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002328892",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.650007036",
-    "avgresponsejitter": " 0.001933652",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 11",
-    "timesonc2": " 1845",
-    "lockedtime": " 0.000041601"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 56700.0,
-    "C(LO)": 2349.0,
-    "C(HI)": 2349.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 929",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001410042",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.567607694",
-    "avgresponsejitter": " 0.001188619",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 6",
-    "timesonc2": " 922",
-    "lockedtime": " 0.000000631"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 175000.0,
-    "C(LO)": 1973.0,
-    "C(HI)": 1973.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 302",
-    "preemptions": " 10",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004445646",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 53.500008162",
-    "avgresponsejitter": " 0.001073303",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2",
-    "timesonc2": " 309",
-    "lockedtime": " 0.000005021"
-
-
-
-   </details>
-
-
-
-  16. Taskset **e1_semi2wf_t3502**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3502",
-    "size": "12",
-    "utilization": "1.9200000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 1",
-    "hightolow": " 0",
-    "idletime": 45060998,
-    "util": 60.263670194003524
+    "idletime": 23831875,
+    "util": 78.98423721340387
 
 
 
@@ -11830,10 +9474,10 @@ Task:  2
     
     "id": 2,
     "hyperperiod": 113400000,
-    "lowtohigh": " 25",
-    "hightolow": " 25",
-    "idletime": 40845410,
-    "util": 63.981119929453264
+    "lowtohigh": " 15",
+    "hightolow": " 15",
+    "idletime": 26592465,
+    "util": 76.54985449735449
 
 
 
@@ -11845,118 +9489,35 @@ Task:  2
 
 
 
-   Task:  10
+   Task:  11
 
     
-    "id": " 10",
+    "id": " 11",
     "basecpu": " 1",
     "priority": " 1",
-    "period": 162000.0,
-    "C(LO)": 15726.0,
-    "C(HI)": 31452.0,
+    "period": 472500.0,
+    "C(LO)": 59440.0,
+    "C(HI)": 118880.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 436",
-    "preemptions": " 145",
+    "completedruns": " 74",
+    "preemptions": " 162",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.032862240",
+    "maxresponsejitter": " 0.091709637",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.324085613",
-    "avgresponsejitter": " 0.008607631",
+    "maxreleasejitter": " 35.031246126",
+    "avgresponsejitter": " 0.031985009",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 580",
+    "timesonc1": " 236",
     "timesonc2": " 0",
-    "lockedtime": " 0.000005402"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 75000.0,
-    "C(LO)": 5610.0,
-    "C(HI)": 11221.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 940",
-    "preemptions": " 99",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.024506766",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.353384592",
-    "avgresponsejitter": " 0.003081679",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1038",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011303"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 120000.0,
-    "C(LO)": 2723.0,
-    "C(HI)": 5447.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 588",
-    "preemptions": " 30",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021911006",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.322783468",
-    "avgresponsejitter": " 0.001527769",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 617",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001640"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 94500.0,
-    "C(LO)": 27591.0,
-    "C(HI)": 27591.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 746",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.016580823",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.308082057",
-    "avgresponsejitter": " 0.013747132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 745",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000019709"
+    "lockedtime": " 0.000007571"
 
 
 
@@ -11968,111 +9529,28 @@ Task:  2
     "basecpu": " 1",
     "priority": " 0",
     "period": 590625.0,
-    "C(LO)": 97019.0,
-    "C(HI)": 97019.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 121",
-    "preemptions": " 365",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.092145646",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.284381901",
-    "avgresponsejitter": " 0.061755718",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 485",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000021895"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 131250.0,
-    "C(LO)": 8363.0,
-    "C(HI)": 8363.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 538",
-    "preemptions": " 63",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005079793",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.350007279",
-    "avgresponsejitter": " 0.004138955",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 600",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008318"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 37800.0,
-    "C(LO)": 130.0,
-    "C(HI)": 130.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1864",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000084766",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.383606342",
-    "avgresponsejitter": " 0.000068679",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1863",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000021883"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 453600.0,
-    "C(LO)": 45600.0,
-    "C(HI)": 91201.0,
+    "C(LO)": 56277.0,
+    "C(HI)": 112554.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 157",
-    "preemptions": " 130",
+    "completedruns": " 60",
+    "preemptions": " 151",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.101247988",
+    "maxresponsejitter": " 0.092044384",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.311141453",
-    "avgresponsejitter": " 0.029841766",
+    "maxreleasejitter": " 35.256469799",
+    "avgresponsejitter": " 0.032573489",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 290",
-    "lockedtime": " 0.000006117"
+    "timesonc1": " 212",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006198"
 
 
 
@@ -12081,930 +9559,163 @@ Task:  2
 
     
     "id": " 5",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 5924.0,
-    "C(HI)": 11848.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 622",
-    "preemptions": " 65",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.058291219",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.308006943",
-    "avgresponsejitter": " 0.003982727",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 687",
-    "lockedtime": " 0.000033892"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 39375.0,
-    "C(LO)": 990.0,
-    "C(HI)": 1980.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1789",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010180553",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.363131523",
-    "avgresponsejitter": " 0.000524709",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 20",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1813",
-    "lockedtime": " 0.000020162"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 150000.0,
-    "C(LO)": 78690.0,
-    "C(HI)": 78690.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 471",
-    "preemptions": " 590",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.056975486",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.350006580",
-    "avgresponsejitter": " 0.042442168",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1060",
-    "lockedtime": " 0.000095351"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 129600.0,
-    "C(LO)": 16454.0,
-    "C(HI)": 16454.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 545",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009904691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 71.383678514",
-    "avgresponsejitter": " 0.008252330",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 3",
-    "timesonc2": " 541",
-    "lockedtime": " 0.000013853"
-
-
-
-   </details>
-
-
-
-  17. Taskset **e1_semi2wf_t3620**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3620",
-    "size": "12",
-    "utilization": "1.9320000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 1536.0,
-    "C(HI)": 1536.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2506",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000929973",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.362506661",
-    "avgresponsejitter": " 0.000770721",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2502",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000028625"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 13",
-    "hightolow": " 13",
-    "idletime": 34703431,
-    "util": 69.39732716049383
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 36898141,
-    "util": 67.46195679012345
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 405000.0,
-    "C(LO)": 50163.0,
-    "C(HI)": 100327.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 141",
-    "preemptions": " 271",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.097436189",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.301354252",
-    "avgresponsejitter": " 0.033758267",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 412",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007985"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
     "basecpu": " 1",
     "priority": " 2",
-    "period": 60480.0,
-    "C(LO)": 5497.0,
-    "C(HI)": 10994.0,
+    "period": 50000.0,
+    "C(LO)": 1937.0,
+    "C(HI)": 3875.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 933",
-    "preemptions": " 137",
+    "completedruns": " 689",
+    "preemptions": " 45",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026399580",
+    "maxresponsejitter": " 0.018060021",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.306887117",
-    "avgresponsejitter": " 0.003347360",
+    "maxreleasejitter": " 35.350006667",
+    "avgresponsejitter": " 0.001017835",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1075",
+    "timesonc1": " 741",
     "timesonc2": " 0",
-    "lockedtime": " 0.000003988"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 84375.0,
-    "C(LO)": 4335.0,
-    "C(HI)": 8671.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 669",
-    "preemptions": " 56",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.028716102",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.278131360",
-    "avgresponsejitter": " 0.002705754",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 730",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000306"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 105000.0,
-    "C(LO)": 37477.0,
-    "C(HI)": 37477.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 538",
-    "preemptions": " 495",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026782943",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.280006763",
-    "avgresponsejitter": " 0.020202366",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1032",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000014595"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 1536.0,
-    "C(HI)": 1536.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2506",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000929973",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.362506661",
-    "avgresponsejitter": " 0.000770721",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 2502",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000028625"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 90720.0,
-    "C(LO)": 6098.0,
-    "C(HI)": 6098.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 623",
-    "preemptions": " 77",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004473784",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.337126204",
-    "avgresponsejitter": " 0.003132408",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 699",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009574"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 168000.0,
-    "C(LO)": 22904.0,
-    "C(HI)": 45808.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 337",
-    "preemptions": " 153",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.033738315",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.280007462",
-    "avgresponsejitter": " 0.014005664",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 489",
-    "lockedtime": " 0.000010138"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 175000.0,
-    "C(LO)": 14342.0,
-    "C(HI)": 28685.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 324",
-    "preemptions": " 70",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023176246",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.350006222",
-    "avgresponsejitter": " 0.007857261",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 393",
-    "lockedtime": " 0.000001369"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 78750.0,
-    "C(LO)": 250.0,
-    "C(HI)": 501.00000000000006,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 717",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000157838",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.306256123",
-    "avgresponsejitter": " 0.000127592",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 716",
-    "lockedtime": " 0.000001658"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 75000.0,
-    "C(LO)": 32979.0,
-    "C(HI)": 32979.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 753",
-    "preemptions": " 216",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019923538",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.325721375",
-    "avgresponsejitter": " 0.016561408",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 968",
-    "lockedtime": " 0.000047769"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 157500.0,
-    "C(LO)": 3447.0,
-    "C(HI)": 3447.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 359",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002071006",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.227507970",
-    "avgresponsejitter": " 0.001740736",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 360",
-    "lockedtime": " 0.000015420"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 56700.0,
-    "C(LO)": 154.0,
-    "C(HI)": 154.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 996",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000098087",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 57.359805877",
-    "avgresponsejitter": " 0.000084219",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 995",
-    "lockedtime": " 0.000007619"
-
-
-
-   </details>
-
-
-
-  18. Taskset **e1_semi2wf_t3847**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3847",
-    "size": "12",
-    "utilization": "1.9320000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 3847.0,
-    "C(HI)": 3847.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 161",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002305691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.628808117",
-    "avgresponsejitter": " 0.001917736",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 158",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000001033"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 37800000,
-    "lowtohigh": " 1",
-    "hightolow": " 1",
-    "idletime": 2378702,
-    "util": 93.70713756613756
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 2387287,
-    "util": 95.78961728395062
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 140000.0,
-    "C(LO)": 21707.0,
-    "C(HI)": 43414.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 27",
-    "preemptions": " 29",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.035484327",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.500006090",
-    "avgresponsejitter": " 0.013780384",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 56",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001483"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 100800.0,
-    "C(LO)": 8778.0,
-    "C(HI)": 17557.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 37",
-    "preemptions": " 10",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007694718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.528007808",
-    "avgresponsejitter": " 0.004909571",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 46",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000315"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 131250.0,
-    "C(LO)": 7275.0,
-    "C(HI)": 14551.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 29",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006272775",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.547521547",
-    "avgresponsejitter": " 0.003746796",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 31",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000237"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 3847.0,
-    "C(HI)": 3847.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 161",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002305691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.628808117",
-    "avgresponsejitter": " 0.001917736",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 158",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000001033"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 504000.0,
-    "C(LO)": 50022.0,
-    "C(HI)": 50022.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 9",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.041444276",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.535497207",
-    "avgresponsejitter": " 0.031326165",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 27",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000832"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 118125.0,
-    "C(LO)": 8012.999999999999,
-    "C(HI)": 8012.999999999999,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 32",
-    "preemptions": " 4",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005258222",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.543757583",
-    "avgresponsejitter": " 0.004098646",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 35",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000273"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 30240.0,
-    "C(LO)": 1024.0,
-    "C(HI)": 1024.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 119",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002612495",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.549581634",
-    "avgresponsejitter": " 0.000566399",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 120",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000001390"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 70000.0,
-    "C(LO)": 11968.0,
-    "C(HI)": 23936.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 53",
-    "preemptions": " 16",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.013446324",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.570006526",
-    "avgresponsejitter": " 0.007178321",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 68",
     "lockedtime": " 0.000001670"
 
 
 
 
-   Task:  6
+   Task:  8
 
     
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 75600.0,
-    "C(LO)": 5141.0,
-    "C(HI)": 10283.0,
-    "criticality": "HIGH",
+    "id": " 8",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 90720.0,
+    "C(LO)": 28363.0,
+    "C(HI)": 28363.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 49",
-    "preemptions": " 3",
+    "completedruns": " 380",
+    "preemptions": " 287",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006665949",
+    "maxresponsejitter": " 0.015316252",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.553827414",
-    "avgresponsejitter": " 0.002735514",
+    "maxreleasejitter": " 35.292167342",
+    "avgresponsejitter": " 0.012726036",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 51",
-    "lockedtime": " 0.000000000"
+    "timesonc1": " 666",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000050616"
 
 
 
 
-   Task:  12
+   Task:  9
 
     
-    "id": " 12",
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 112500.0,
+    "C(LO)": 8428.0,
+    "C(HI)": 8428.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 307",
+    "preemptions": " 61",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.018719829",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 35.312506724",
+    "avgresponsejitter": " 0.004217060",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 367",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000008144"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 447.0,
+    "C(HI)": 447.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2184",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000216622",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 35.383098592",
+    "avgresponsejitter": " 0.000205420",
+    "deadlinesmissed": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 5",
+    "timesrestored": " 5",
+    "timesonc1": " 2180",
+    "timesonc2": " 2",
+    "lockedtime": " 0.000002637"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
     "basecpu": " 2",
     "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 40026.0,
-    "C(HI)": 80052.0,
+    "period": 181440.0,
+    "C(LO)": 29197.0,
+    "C(HI)": 58394.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 7",
-    "preemptions": " 8",
+    "completedruns": " 191",
+    "preemptions": " 128",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.031177970",
+    "maxresponsejitter": " 0.043246459",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.557969333",
-    "avgresponsejitter": " 0.025439907",
+    "maxreleasejitter": " 35.294651456",
+    "avgresponsejitter": " 0.015117913",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 14",
-    "lockedtime": " 0.000000207"
+    "timesonc2": " 320",
+    "lockedtime": " 0.000001586"
 
 
 
@@ -13014,26 +9725,30 @@ Task:  1
     
     "id": " 2",
     "basecpu": " 2",
-    "priority": " 4",
-    "period": 28350.0,
-    "C(LO)": 6279.0,
-    "C(HI)": 6279.0,
-    "criticality": "LOW",
+    "priority": " 2",
+    "period": 40000.0,
+    "C(LO)": 3413.0,
+    "C(HI)": 6827.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 130",
-    "preemptions": " 0",
+    "completedruns": " 861",
+    "preemptions": " 12",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003764315",
+    "maxresponsejitter": " 0.004740958",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.628807009",
-    "avgresponsejitter": " 0.003160006",
+    "maxreleasejitter": " 35.361947462",
+    "avgresponsejitter": " 0.001565823",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 8",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 129",
-    "lockedtime": " 0.000001183"
+    "timesonc2": " 880",
+    "lockedtime": " 0.000017234"
 
 
 
@@ -13043,116 +9758,31 @@ Task:  1
     
     "id": " 4",
     "basecpu": " 2",
-    "priority": " 3",
-    "period": 56250.0,
-    "C(LO)": 8577.0,
-    "C(HI)": 8577.0,
-    "criticality": "LOW",
+    "priority": " 1",
+    "period": 45360.0,
+    "C(LO)": 1633.0,
+    "C(HI)": 3266.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 66",
-    "preemptions": " 9",
+    "completedruns": " 759",
+    "preemptions": " 29",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008526342",
+    "maxresponsejitter": " 0.009930255",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 4.600005751",
-    "avgresponsejitter": " 0.004603084",
+    "maxreleasejitter": " 35.337738447",
+    "avgresponsejitter": " 0.000831661",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 74",
-    "lockedtime": " 0.000001775"
+    "timesonc2": " 792",
+    "lockedtime": " 0.000029033"
 
-
-
-   </details>
-
-
-
-  19. Taskset **e1_semi2wf_t3922**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t3922",
-    "size": "12",
-    "utilization": "1.9440000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 1850.0,
-    "C(HI)": 1850.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 941",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001118381",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.150008931",
-    "avgresponsejitter": " 0.000934730",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 939",
-    "lockedtime": " 0.000030574"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 13611561,
-    "util": 87.99685978835979
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 9",
-    "hightolow": " 8",
-    "idletime": 13156595,
-    "util": 88.39806437389771
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
 
 
 
@@ -13160,143 +9790,31 @@ Task:  1
 
     
     "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 90000.0,
-    "C(LO)": 11208.0,
-    "C(HI)": 22416.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 236",
-    "preemptions": " 10",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008345405",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.060008532",
-    "avgresponsejitter": " 0.005626261",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 245",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000012030"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 112500.0,
-    "C(LO)": 7606.0,
-    "C(HI)": 15212.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 189",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004553916",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.037507973",
-    "avgresponsejitter": " 0.003789595",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 188",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008781"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
+    "basecpu": " 2",
     "priority": " 4",
-    "period": 87500.0,
-    "C(LO)": 3051.0,
-    "C(HI)": 6103.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 243",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001836132",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.087506811",
-    "avgresponsejitter": " 0.001512916",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 242",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000003892"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 101250.0,
-    "C(LO)": 2185.0,
-    "C(HI)": 4371.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 210",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002642108",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.065784306",
-    "avgresponsejitter": " 0.001108520",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 211",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005730"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 840000.0,
-    "C(LO)": 383796.0,
-    "C(HI)": 383796.0,
+    "period": 67500.0,
+    "C(LO)": 10692.0,
+    "C(HI)": 10692.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 26",
-    "preemptions": " 191",
+    "completedruns": " 511",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.262123619",
+    "maxresponsejitter": " 0.007337171",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.166652844",
-    "avgresponsejitter": " 0.217717105",
+    "maxreleasejitter": " 35.357505886",
+    "avgresponsejitter": " 0.004758709",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 216",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000040640"
+    "timesonc1": " 0",
+    "timesonc2": " 511",
+    "lockedtime": " 0.000017030"
 
 
 
@@ -13306,657 +9824,114 @@ Task:  1
     
     "id": " 3",
     "basecpu": " 2",
-    "priority": " 1",
-    "period": 56250.0,
-    "C(LO)": 13295.0,
-    "C(HI)": 26590.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 377",
-    "preemptions": " 117",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.020823135",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.096647240",
-    "avgresponsejitter": " 0.007589784",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 497",
-    "lockedtime": " 0.000002916"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 52500.0,
-    "C(LO)": 1055.0,
-    "C(HI)": 2111.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 404",
+    "priority": " 5",
+    "period": 42000.0,
+    "C(LO)": 6047.0,
+    "C(HI)": 6047.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 27",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001664030",
+    "maxresponsejitter": " 0.002743297",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.106025568",
-    "avgresponsejitter": " 0.000547039",
+    "maxreleasejitter": " 2.050006138",
+    "avgresponsejitter": " 0.002704237",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 26",
+    "lockedtime": " 0.000001592"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 84375.0,
+    "C(LO)": 4845.0,
+    "C(HI)": 4845.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 409",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.002575423",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 35.340630928",
+    "avgresponsejitter": " 0.002152697",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
     "timesonc2": " 408",
-    "lockedtime": " 0.000004153"
+    "lockedtime": " 0.000006345"
 
 
 
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 810000.0,
-    "C(LO)": 159968.0,
-    "C(HI)": 159968.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 27",
-    "preemptions": " 219",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.129671742",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 21.256312967",
-    "avgresponsejitter": " 0.109946399",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 245",
-    "lockedtime": " 0.000008754"
+   </details>
 
 
 
+  6. Taskset **e1_semi2wf_t674**
 
-   Task:  4
+    Taskset execution params:
+	 
+    "id": "e1_semi2wf_t674",
+    "size": "12",
+    "utilization": "1.872",
+    "criticality_factor": "2",
+    "hicrit_proportion": "0.5"
+
+
+   <details> <summary markdown="span">Click here to see the guilty task.</summary>
+
+   Time values are expressed as **micro-seconds**.
+
+Task:  4
 
     
     "id": " 4",
     "basecpu": " 2",
     "priority": " 5",
-    "period": 75600.0,
-    "C(LO)": 9198.0,
-    "C(HI)": 9198.0,
+    "period": 75000.0,
+    "C(LO)": 16.0,
+    "C(HI)": 16.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 281",
-    "preemptions": " 53",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006552718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.092406450",
-    "avgresponsejitter": " 0.004750273",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 333",
-    "lockedtime": " 0.000005444"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 1850.0,
-    "C(HI)": 1850.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 941",
+    "completedruns": " 1",
     "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001118381",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.150008931",
-    "avgresponsejitter": " 0.000934730",
-    "deadlinesmissed": " 1",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 939",
-    "lockedtime": " 0.000030574"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 141750.0,
-    "C(LO)": 7953.999999999999,
-    "C(HI)": 7953.999999999999,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 151",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005722360",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.120756685",
-    "avgresponsejitter": " 0.004112300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 169",
-    "lockedtime": " 0.000002315"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 168000.0,
-    "C(LO)": 3261.0,
-    "C(HI)": 3261.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 127",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002868691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 22.000006961",
-    "avgresponsejitter": " 0.001699598",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 134",
-    "lockedtime": " 0.000001393"
-
-
-
-   </details>
-
-
-
-  20. Taskset **e1_semi2wf_t4147**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4147",
-    "size": "12",
-    "utilization": "1.9440000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 37800000,
-    "lowtohigh": " 3",
-    "hightolow": " 2",
-    "idletime": 5040553,
-    "util": 86.6652037037037
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 22680000,
-    "lowtohigh": " 4",
-    "hightolow": " 4",
-    "idletime": 5045364,
-    "util": 77.75412698412698
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 168000.0,
-    "C(LO)": 22898.0,
-    "C(HI)": 45796.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 49",
-    "preemptions": " 55",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019958991",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.896593465",
-    "avgresponsejitter": " 0.013362282",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 103",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001399"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 590625.0,
-    "C(LO)": 50288.0,
-    "C(HI)": 100576.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 15",
-    "preemptions": " 48",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.043419544",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.678131264",
-    "avgresponsejitter": " 0.032907538",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 62",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002958"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 151200.0,
-    "C(LO)": 4331.0,
-    "C(HI)": 8663.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 54",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005985667",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.866246408",
-    "avgresponsejitter": " 0.002438694",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 63",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 25200.0,
-    "C(LO)": 8712.0,
-    "C(HI)": 8712.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 316",
-    "preemptions": " 60",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005962550",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.912806228",
-    "avgresponsejitter": " 0.004495799",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 375",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000010583"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 1417.0,
-    "C(HI)": 1417.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 354",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000861408",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.920006105",
-    "avgresponsejitter": " 0.000714595",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 353",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000009547"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 26250.0,
-    "C(LO)": 783.0,
-    "C(HI)": 783.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 304",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000468219",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.927507003",
-    "avgresponsejitter": " 0.000393276",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 303",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005817"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 42000.0,
-    "C(LO)": 1225.0,
-    "C(HI)": 1225.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 190",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001571282",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.896006970",
-    "avgresponsejitter": " 0.000635486",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 194",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 35000.0,
-    "C(LO)": 7184.0,
-    "C(HI)": 14368.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 228",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010554384",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.910006192",
-    "avgresponsejitter": " 0.003595592",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 229",
-    "lockedtime": " 0.000000288"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 181440.0,
-    "C(LO)": 6386.0,
-    "C(HI)": 12772.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 45",
-    "preemptions": " 8",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009552030",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.801925949",
-    "avgresponsejitter": " 0.003829745",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 52",
-    "lockedtime": " 0.000000601"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 45000.0,
-    "C(LO)": 524.0,
-    "C(HI)": 1049.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 178",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000791024",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.920567315",
-    "avgresponsejitter": " 0.000271210",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 179",
-    "lockedtime": " 0.000013559"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 72000.0,
-    "C(LO)": 21710.0,
-    "C(HI)": 21710.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 112",
-    "preemptions": " 63",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021166093",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.920810291",
-    "avgresponsejitter": " 0.012705589",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 174",
-    "lockedtime": " 0.000008234"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 52500.0,
-    "C(LO)": 8937.0,
-    "C(HI)": 8937.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 153",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005329012",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.927973234",
-    "avgresponsejitter": " 0.004455934",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 151",
-    "lockedtime": " 0.000004240"
-
-
-
-   </details>
-
-
-
-  21. Taskset **e1_semi2wf_t4302**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4302",
-    "size": "12",
-    "utilization": "1.9560000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 3583.0,
-    "C(HI)": 3583.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 368",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002147354",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.268756733",
-    "avgresponsejitter": " 0.001792673",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 366",
     "timesonc2": " 1",
-    "lockedtime": " 0.000000144"
+    "lockedtime": " 0.000000000"
 
 
 
@@ -13968,442 +9943,7 @@ Task:  1
 
    Idle time is expressed as **seconds**.
 
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 5480275,
-    "util": 95.16730599647266
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 5338149,
-    "util": 95.29263756613757
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 200000.0,
-    "C(LO)": 33125.0,
-    "C(HI)": 66250.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 43",
-    "preemptions": " 63",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.034575096",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.208531117",
-    "avgresponsejitter": " 0.021998940",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 105",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001838"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 126000.0,
-    "C(LO)": 12482.0,
-    "C(HI)": 24965.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 67",
-    "preemptions": " 21",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.023992192",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.192061468",
-    "avgresponsejitter": " 0.007354231",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 89",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000495"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 60000.0,
-    "C(LO)": 1806.0,
-    "C(HI)": 3612.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 139",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004786081",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.220006703",
-    "avgresponsejitter": " 0.000942420",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 140",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 810000.0,
-    "C(LO)": 5600.0,
-    "C(HI)": 11201.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 12",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003164135",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.102449700",
-    "avgresponsejitter": " 0.002679426",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 11",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 22500.0,
-    "C(LO)": 3583.0,
-    "C(HI)": 3583.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 368",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002147354",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.268756733",
-    "avgresponsejitter": " 0.001792673",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 366",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000144"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 118125.0,
-    "C(LO)": 12416.0,
-    "C(HI)": 12416.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 71",
-    "preemptions": " 13",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009034411",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.154040138",
-    "avgresponsejitter": " 0.006479826",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 83",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000658"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 70875.0,
-    "C(LO)": 6594.0,
-    "C(HI)": 6594.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 118",
-    "preemptions": " 15",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005857483",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.221506721",
-    "avgresponsejitter": " 0.003526126",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 132",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001583"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 72000.0,
-    "C(LO)": 19542.0,
-    "C(HI)": 39085.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 116",
-    "preemptions": " 13",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.036404258",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.208005862",
-    "avgresponsejitter": " 0.010718093",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 130",
-    "lockedtime": " 0.000001736"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 162000.0,
-    "C(LO)": 3896.0,
-    "C(HI)": 7792.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 53",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005972838",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.262005757",
-    "avgresponsejitter": " 0.002025087",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 53",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 600000.0,
-    "C(LO)": 137646.0,
-    "C(HI)": 137646.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 15",
-    "preemptions": " 33",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.108492306",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.802731228",
-    "avgresponsejitter": " 0.082480171",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 47",
-    "lockedtime": " 0.000002006"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 113400.0,
-    "C(LO)": 10755.0,
-    "C(HI)": 10755.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 74",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006463099",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.164805934",
-    "avgresponsejitter": " 0.005455477",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 73",
-    "lockedtime": " 0.000001471"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 141750.0,
-    "C(LO)": 11328.0,
-    "C(HI)": 11328.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 60",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006822787",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 9.223364925",
-    "avgresponsejitter": " 0.005709285",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 59",
-    "lockedtime": " 0.000003342"
-
-
-
-   </details>
-
-
-
-  22. Taskset **e1_semi2wf_t4356**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4356",
-    "size": "12",
-    "utilization": "1.9560000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 26250.0,
-    "C(LO)": 2417.0,
-    "C(HI)": 2417.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 675",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001457604",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.730006688",
-    "avgresponsejitter": " 0.001219655",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 4",
-    "timesonc2": " 670",
-    "lockedtime": " 0.000011736"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
+   Util values are expressed as **percentage** %.
 
 
 
@@ -14411,11 +9951,11 @@ Task:  2
 
     
     "id": 1,
-    "hyperperiod": 37800000,
+    "hyperperiod": 6300000,
     "lowtohigh": " 0",
     "hightolow": " 0",
-    "idletime": 10789330,
-    "util": 71.45679894179895
+    "idletime": 16,
+    "util": 99.99998589065255
 
 
 
@@ -14424,11 +9964,11 @@ Task:  2
 
     
     "id": 2,
-    "hyperperiod": 12600000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 10804073,
-    "util": 14.253388888888878
+    "hyperperiod": 113400000,
+    "lowtohigh": " 0",
+    "hightolow": " 0",
+    "idletime": 14,
+    "util": 99.99998765432099
 
 
 
@@ -14440,31 +9980,101 @@ Task:  2
 
 
 
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 180000.0,
+    "C(LO)": 27253.0,
+    "C(HI)": 54506.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  7
+
+    
+    "id": " 7",
+    "basecpu": " 1",
+    "priority": " 2",
+    "period": 140000.0,
+    "C(LO)": 19761.0,
+    "C(HI)": 39522.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
    Task:  3
 
     
     "id": " 3",
     "basecpu": " 1",
     "priority": " 4",
-    "period": 30240.0,
-    "C(LO)": 1698.0,
-    "C(HI)": 3396.0,
+    "period": 65625.0,
+    "C(LO)": 923.0,
+    "C(HI)": 1847.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 588",
-    "preemptions": " 20",
+    "completedruns": " 1",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007367162",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.720646063",
-    "avgresponsejitter": " 0.001040949",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 607",
+    "timesonc1": " 0",
     "timesonc2": " 0",
-    "lockedtime": " 0.000001628"
+    "lockedtime": " 0.000000000"
 
 
 
@@ -14475,199 +10085,29 @@ Task:  2
     "id": " 5",
     "basecpu": " 1",
     "priority": " 3",
-    "period": 50400.0,
-    "C(LO)": 2550.0,
-    "C(HI)": 5101.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 353",
-    "preemptions": " 16",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008183033",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.691357072",
-    "avgresponsejitter": " 0.001551435",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 368",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002946"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 72000.0,
-    "C(LO)": 3250.0,
-    "C(HI)": 6501.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 248",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003085087",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.712630733",
-    "avgresponsejitter": " 0.001660631",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 256",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 120000.0,
-    "C(LO)": 4669.0,
-    "C(HI)": 9339.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 149",
-    "preemptions": " 19",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004448327",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.650195261",
-    "avgresponsejitter": " 0.002507435",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 167",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000357"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 11097.0,
-    "C(HI)": 11097.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 789",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006683670",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.707505976",
-    "avgresponsejitter": " 0.005599315",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 789",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000019634"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 525000.0,
-    "C(LO)": 46705.0,
-    "C(HI)": 46705.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 35",
-    "preemptions": " 95",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.045255547",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.332673399",
-    "avgresponsejitter": " 0.034619898",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 129",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005477"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 157500.0,
-    "C(LO)": 28483.0,
-    "C(HI)": 56967.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 114",
-    "preemptions": " 44",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.037913279",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.642063252",
-    "avgresponsejitter": " 0.014992961",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 158",
-    "lockedtime": " 0.000003444"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 2",
     "period": 90000.0,
-    "C(LO)": 2930.0,
-    "C(HI)": 5860.0,
+    "C(LO)": 1021.0,
+    "C(HI)": 2043.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 198",
+    "completedruns": " 1",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004438120",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.640822634",
-    "avgresponsejitter": " 0.001482441",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 199",
-    "lockedtime": " 0.000011790"
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -14676,492 +10116,30 @@ Task:  2
 
     
     "id": " 11",
-    "basecpu": " 2",
+    "basecpu": " 1",
     "priority": " 0",
     "period": 450000.0,
-    "C(LO)": 183642.0,
-    "C(HI)": 183642.0,
+    "C(LO)": 93473.0,
+    "C(HI)": 93473.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 41",
-    "preemptions": " 284",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.135277387",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.553973279",
-    "avgresponsejitter": " 0.108690390",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 324",
-    "lockedtime": " 0.000023444"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 26250.0,
-    "C(LO)": 2417.0,
-    "C(HI)": 2417.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 675",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001457604",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.730006688",
-    "avgresponsejitter": " 0.001219655",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 4",
-    "timesonc2": " 670",
-    "lockedtime": " 0.000011736"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 50000.0,
-    "C(LO)": 2533.0,
-    "C(HI)": 2533.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 318",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002829333",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.800006583",
-    "avgresponsejitter": " 0.001302643",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 326",
-    "lockedtime": " 0.000001901"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 100800.0,
-    "C(LO)": 1459.0,
-    "C(HI)": 1459.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 177",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001779351",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 18.640009138",
-    "avgresponsejitter": " 0.000745679",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 177",
-    "lockedtime": " 0.000008030"
-
-
-
-   </details>
-
-
-
-  23. Taskset **e1_semi2wf_t4567**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4567",
-    "size": "12",
-    "utilization": "1.9680000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 28350.0,
-    "C(LO)": 1718.0,
-    "C(HI)": 1718.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 40",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001034336",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.114385973",
-    "avgresponsejitter": " 0.000870159",
-    "deadlinesmissed": " 3",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 37",
-    "lockedtime": " 0.000000550"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 8",
-    "hightolow": " 8",
-    "idletime": 661795,
-    "util": 99.4164065255732
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 22680000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 596676,
-    "util": 97.36915343915344
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 907200.0,
-    "C(LO)": 94054.0,
-    "C(HI)": 188109.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 3",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.057167535",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.916377129",
-    "avgresponsejitter": " 0.044559399",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 4",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000483"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 189000.0,
-    "C(LO)": 18706.0,
-    "C(HI)": 37413.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 7",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.012593622",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.945007925",
-    "avgresponsejitter": " 0.010544045",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 9",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 50000.0,
-    "C(LO)": 2802.0,
-    "C(HI)": 5605.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 24",
+    "completedruns": " 1",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001670559",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.100006120",
-    "avgresponsejitter": " 0.001401231",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 23",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000219"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 3164.0,
-    "C(HI)": 6329.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 7",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001765153",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.984380979",
-    "avgresponsejitter": " 0.001449607",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 6",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 75600.0,
-    "C(LO)": 21.0,
-    "C(HI)": 42.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 16",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000035090",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.058406652",
-    "avgresponsejitter": " 0.000022922",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 23",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000432"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 175000.0,
-    "C(LO)": 72829.0,
-    "C(HI)": 72829.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 8",
-    "preemptions": " 7",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.043686595",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.051281874",
-    "avgresponsejitter": " 0.037953715",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 14",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000255"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 648000.0,
-    "C(LO)": 190580.0,
-    "C(HI)": 381160.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 3",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.130285901",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.649334363",
-    "avgresponsejitter": " 0.101883607",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 11",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 118125.0,
-    "C(LO)": 19095.0,
-    "C(HI)": 19095.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 11",
-    "preemptions": " 6",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015097474",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.102949856",
-    "avgresponsejitter": " 0.010765177",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 16",
-    "lockedtime": " 0.000000165"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 90000.0,
-    "C(LO)": 7241.0,
-    "C(HI)": 7241.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 13",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004320763",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.991589649",
-    "avgresponsejitter": " 0.003594796",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 13",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 157500.0,
-    "C(LO)": 10339.0,
-    "C(HI)": 10339.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 8",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005479183",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.005615685",
-    "avgresponsejitter": " 0.004954580",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 7",
+    "timesonc2": " 0",
     "lockedtime": " 0.000000000"
 
 
@@ -15171,174 +10149,31 @@ Task:  1
 
     
     "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 28350.0,
-    "C(LO)": 1718.0,
-    "C(HI)": 1718.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 40",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001034336",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.114385973",
-    "avgresponsejitter": " 0.000870159",
-    "deadlinesmissed": " 3",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 37",
-    "lockedtime": " 0.000000550"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 64800.0,
-    "C(LO)": 2923.0,
-    "C(HI)": 2923.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 19",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001741024",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 2.101606102",
-    "avgresponsejitter": " 0.001410264",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 18",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  24. Taskset **e1_semi2wf_t4861**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4861",
-    "size": "12",
-    "utilization": "1.9680000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 22500.0,
-    "C(LO)": 3243.0,
-    "C(HI)": 3243.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1670",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001958033",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.558086895",
-    "avgresponsejitter": " 0.001623607",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 2",
-    "timesonc2": " 1666",
-    "lockedtime": " 0.000037541"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 37800000,
-    "lowtohigh": " 27",
-    "hightolow": " 27",
-    "idletime": 25694760,
-    "util": 32.02444444444444
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 3",
-    "hightolow": " 3",
-    "idletime": 24518144,
-    "util": 78.37906172839506
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
     "basecpu": " 1",
-    "priority": " 2",
-    "period": 78750.0,
-    "C(LO)": 9380.0,
-    "C(HI)": 18760.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 478",
-    "preemptions": " 98",
+    "priority": " 5",
+    "period": 10000.0,
+    "C(LO)": 938.0,
+    "C(HI)": 938.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 1",
+    "preemptions": " 1",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014816643",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.486888565",
-    "avgresponsejitter": " 0.004811598",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 577",
+    "timesonc1": " 1",
     "timesonc2": " 0",
-    "lockedtime": " 0.000004276"
+    "lockedtime": " 0.000000000"
 
 
 
@@ -15347,419 +10182,44 @@ Task:  1
 
     
     "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 39375.0,
-    "C(LO)": 4229.0,
-    "C(HI)": 8458.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 955",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006654820",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.524381081",
-    "avgresponsejitter": " 0.002130078",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 959",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000017844"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 157500.0,
-    "C(LO)": 5048.0,
-    "C(HI)": 10096.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 240",
-    "preemptions": " 23",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007177135",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.491192556",
-    "avgresponsejitter": " 0.002587024",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 264",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000559"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 60480.0,
-    "C(LO)": 835.0,
-    "C(HI)": 1671.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 623",
-    "preemptions": " 13",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003607321",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.558086222",
-    "avgresponsejitter": " 0.000457384",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 9",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 644",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007006"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 40000.0,
-    "C(LO)": 391.0,
-    "C(HI)": 783.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 941",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002298420",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.560005991",
-    "avgresponsejitter": " 0.000202498",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 9",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 950",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007505"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 525000.0,
-    "C(LO)": 134081.0,
-    "C(HI)": 134081.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 73",
-    "preemptions": " 389",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.100570171",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.275006114",
-    "avgresponsejitter": " 0.079756946",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 461",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000028120"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 135000.0,
-    "C(LO)": 10210.0,
-    "C(HI)": 10210.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 280",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006149024",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.530007108",
-    "avgresponsejitter": " 0.005167514",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 279",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008471"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 47250.0,
-    "C(LO)": 3144.0,
-    "C(HI)": 3144.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 147",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001889291",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 7.851259138",
-    "avgresponsejitter": " 0.001603619",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 146",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000649"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
     "basecpu": " 2",
-    "priority": " 0",
+    "priority": " 3",
+    "period": 50000.0,
+    "C(LO)": 12151.0,
+    "C(HI)": 24302.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 1",
     "period": 200000.0,
-    "C(LO)": 64403.0,
-    "C(HI)": 128806.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 189",
-    "preemptions": " 444",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.127603868",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.400007066",
-    "avgresponsejitter": " 0.039373982",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 635",
-    "lockedtime": " 0.000044105"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 31465.0,
-    "C(HI)": 31465.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 192",
-    "preemptions": " 173",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.022150685",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.406256694",
-    "avgresponsejitter": " 0.017170889",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 364",
-    "lockedtime": " 0.000023946"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 22500.0,
-    "C(LO)": 3243.0,
-    "C(HI)": 3243.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1670",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001958033",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.558086895",
-    "avgresponsejitter": " 0.001623607",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 2",
-    "timesonc2": " 1666",
-    "lockedtime": " 0.000037541"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 45360.0,
-    "C(LO)": 2632.0,
-    "C(HI)": 2632.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 829",
-    "preemptions": " 45",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003466541",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 38.512726640",
-    "avgresponsejitter": " 0.001406096",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 873",
-    "lockedtime": " 0.000018535"
-
-
-
-   </details>
-
-
-
-  25. Taskset **e1_semi2wf_t5178**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t5178",
-    "size": "12",
-    "utilization": "1.9800000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 28350.0,
-    "C(LO)": 8.0,
-    "C(HI)": 8.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 19,
-    "util": 99.99996649029983
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 11340000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 11,
-    "util": 99.99990299823634
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 180000.0,
-    "C(LO)": 29388.0,
-    "C(HI)": 58777.0,
+    "C(LO)": 13491.0,
+    "C(HI)": 26982.0,
     "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 1",
@@ -15770,7 +10230,11 @@ Task:  3
     "maxreleasejitter": " 0.000000000",
     "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
@@ -15784,141 +10248,29 @@ Task:  3
 
     
     "id": " 8",
-    "basecpu": " 1",
+    "basecpu": " 2",
     "priority": " 2",
-    "period": 70875.0,
-    "C(LO)": 2388.0,
-    "C(HI)": 4776.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 131250.0,
-    "C(LO)": 2421.0,
-    "C(HI)": 4843.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 47250.0,
-    "C(LO)": 670.0,
-    "C(HI)": 1341.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 270.0,
-    "C(HI)": 541.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 8",
-    "period": 26250.0,
-    "C(LO)": 9175.0,
-    "C(HI)": 9175.0,
+    "period": 151200.0,
+    "C(LO)": 37879.0,
+    "C(HI)": 37879.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 2",
+    "completedruns": " 1",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005362429",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.000020300",
-    "avgresponsejitter": " 0.005362429",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1",
+    "timesonc1": " 0",
     "timesonc2": " 0",
     "lockedtime": " 0.000000000"
 
@@ -15929,127 +10281,11 @@ Task:  3
 
     
     "id": " 6",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 54000.0,
-    "C(LO)": 3171.0,
-    "C(HI)": 3171.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 50000.0,
-    "C(LO)": 2444.0,
-    "C(HI)": 2444.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 28350.0,
-    "C(LO)": 8.0,
-    "C(HI)": 8.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
     "basecpu": " 2",
-    "priority": " 1",
+    "priority": " 4",
     "period": 101250.0,
-    "C(LO)": 39325.0,
-    "C(HI)": 78651.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000000000",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 0.000000000",
-    "avgresponsejitter": " 0.000000000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 567000.0,
-    "C(LO)": 80557.0,
-    "C(HI)": 80557.0,
+    "C(LO)": 4840.0,
+    "C(HI)": 4840.0,
     "criticality": "LOW",
     "migrable": "False",
     "completedruns": " 1",
@@ -16060,7 +10296,11 @@ Task:  3
     "maxreleasejitter": " 0.000000000",
     "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
@@ -16070,1341 +10310,67 @@ Task:  3
 
 
 
-   Task:  7
+   Task:  12
 
     
-    "id": " 7",
+    "id": " 12",
     "basecpu": " 2",
-    "priority": " 2",
-    "period": 64800.0,
-    "C(LO)": 7796.0,
-    "C(HI)": 7796.0,
+    "priority": " 0",
+    "period": 540000.0,
+    "C(LO)": 8071.999999999999,
+    "C(HI)": 8071.999999999999,
     "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 2",
+    "migrable": "False",
+    "completedruns": " 1",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004410841",
+    "maxresponsejitter": " 0.000000000",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 1.000011751",
-    "avgresponsejitter": " 0.004410841",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 75000.0,
+    "C(LO)": 16.0,
+    "C(HI)": 16.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000000000",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 0.000000000",
+    "avgresponsejitter": " 0.000000000",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
     "timesonc2": " 1",
-    "lockedtime": " 0.000000000"
-
-
-
-   </details>
-
-
-
-  26. Taskset **e1_semi2wf_t5729**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t5729",
-    "size": "12",
-    "utilization": "2.004",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 970.0,
-    "C(HI)": 970.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 267",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000580739",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.985007961",
-    "avgresponsejitter": " 0.000474724",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 265",
-    "lockedtime": " 0.000002435"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 37800000,
-    "lowtohigh": " 2",
-    "hightolow": " 2",
-    "idletime": 4026471,
-    "util": 89.34796031746032
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 2",
-    "hightolow": " 1",
-    "idletime": 3824022,
-    "util": 96.62784656084656
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 157500.0,
-    "C(LO)": 40417.0,
-    "C(HI)": 80835.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 39",
-    "preemptions": " 30",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.059084120",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.828306712",
-    "avgresponsejitter": " 0.022592781",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 69",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 700000.0,
-    "C(LO)": 46242.0,
-    "C(HI)": 92485.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 10",
-    "preemptions": " 16",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.075066622",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.600006009",
-    "avgresponsejitter": " 0.033334228",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 26",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001790"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 168000.0,
-    "C(LO)": 9102.0,
-    "C(HI)": 18204.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 37",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009378378",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.880006138",
-    "avgresponsejitter": " 0.005036529",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 45",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000505"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 30240.0,
-    "C(LO)": 3594.0,
-    "C(HI)": 3594.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 199",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002154009",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.957286057",
-    "avgresponsejitter": " 0.001832234",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 198",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002144"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 150000.0,
-    "C(LO)": 11558.0,
-    "C(HI)": 11558.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 41",
-    "preemptions": " 17",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009126234",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.850006069",
-    "avgresponsejitter": " 0.006440333",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 57",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001384"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 39375.0,
-    "C(LO)": 1872.0,
-    "C(HI)": 1872.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 153",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002982574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.945631108",
-    "avgresponsejitter": " 0.000969829",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 155",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004535"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 236904.0,
-    "C(HI)": 473808.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 9",
-    "preemptions": " 96",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.172823258",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 5.961700613",
-    "avgresponsejitter": " 0.138656811",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 105",
-    "lockedtime": " 0.000004577"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 3489.0,
-    "C(HI)": 6979.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 32",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002086120",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.908846414",
-    "avgresponsejitter": " 0.001732874",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 31",
-    "lockedtime": " 0.000001168"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 78750.0,
-    "C(LO)": 836.0,
-    "C(HI)": 1672.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 78",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001265505",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.985007339",
-    "avgresponsejitter": " 0.000424556",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 78",
-    "lockedtime": " 0.000002174"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 60000.0,
-    "C(LO)": 7371.0,
-    "C(HI)": 7371.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 101",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004384471",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.940404595",
-    "avgresponsejitter": " 0.003658192",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 100",
-    "lockedtime": " 0.000000474"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 72000.0,
-    "C(LO)": 8325.0,
-    "C(HI)": 8325.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 85",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005205102",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.976006450",
-    "avgresponsejitter": " 0.004136204",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 85",
-    "lockedtime": " 0.000002006"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 22500.0,
-    "C(LO)": 970.0,
-    "C(HI)": 970.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 267",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000580739",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 6.985007961",
-    "avgresponsejitter": " 0.000474724",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 1",
-    "timesonc2": " 265",
-    "lockedtime": " 0.000002435"
-
-
-
-   </details>
-
-
-
-  27. Taskset **e1_semi2wf_t6149**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t6149",
-    "size": "12",
-    "utilization": "2.016",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 8",
-    "period": 40000.0,
-    "C(LO)": 3255.0,
-    "C(HI)": 3255.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 387",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001957198",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.446812126",
-    "avgresponsejitter": " 0.001628480",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 6",
-    "timesrestored": " 6",
-    "timesonc1": " 383",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000000892"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 18",
-    "hightolow": " 18",
-    "idletime": 9802374,
-    "util": 91.35593121693122
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 1",
-    "hightolow": " 1",
-    "idletime": 10579785,
-    "util": 90.6703835978836
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 60000.0,
-    "C(LO)": 7392.0,
-    "C(HI)": 14785.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 259",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010247039",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.420006697",
-    "avgresponsejitter": " 0.003847120",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 266",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001063"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 9594.0,
-    "C(HI)": 19188.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 138",
-    "preemptions": " 39",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017719526",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.423642559",
-    "avgresponsejitter": " 0.005740213",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 179",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001093"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 4306.0,
-    "C(HI)": 8612.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 185",
-    "preemptions": " 14",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008224823",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.440632006",
-    "avgresponsejitter": " 0.002384817",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 199",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 54000.0,
-    "C(LO)": 1668.0,
-    "C(HI)": 3336.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 288",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002752991",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.444006577",
-    "avgresponsejitter": " 0.000888952",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 295",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 67500.0,
-    "C(LO)": 1298.0,
-    "C(HI)": 2596.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 230",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002006114",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.392105399",
-    "avgresponsejitter": " 0.000673075",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 233",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000405"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 590625.0,
-    "C(LO)": 138334.0,
-    "C(HI)": 138334.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 28",
-    "preemptions": " 169",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.107384417",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.367727270",
-    "avgresponsejitter": " 0.087448976",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 196",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002853"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 8",
-    "period": 40000.0,
-    "C(LO)": 3255.0,
-    "C(HI)": 3255.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 387",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001957198",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.446812126",
-    "avgresponsejitter": " 0.001628480",
-    "deadlinesmissed": " 1",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 6",
-    "timesrestored": " 6",
-    "timesonc1": " 383",
-    "timesonc2": " 3",
-    "lockedtime": " 0.000000892"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 7",
-    "period": 126000.0,
-    "C(LO)": 5572.0,
-    "C(HI)": 5572.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 124",
-    "preemptions": " 7",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004932985",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.372006468",
-    "avgresponsejitter": " 0.002925018",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 3",
-    "timesonc1": " 129",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000000979"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 168750.0,
-    "C(LO)": 6965.0,
-    "C(HI)": 6965.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 93",
-    "preemptions": " 10",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.008385961",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.356258090",
-    "avgresponsejitter": " 0.003725123",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 102",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001399"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 75000.0,
-    "C(LO)": 28458.0,
-    "C(HI)": 56916.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 207",
-    "preemptions": " 22",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.043454697",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.375006030",
-    "avgresponsejitter": " 0.014453177",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 229",
-    "lockedtime": " 0.000005616"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 756000.0,
-    "C(LO)": 167608.0,
-    "C(HI)": 167608.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 22",
-    "preemptions": " 37",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.128150486",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.120006679",
-    "avgresponsejitter": " 0.101268766",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 58",
-    "lockedtime": " 0.000003198"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 141750.0,
-    "C(LO)": 2315.0,
-    "C(HI)": 2315.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 110",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001401523",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 16.309007132",
-    "avgresponsejitter": " 0.001156997",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 109",
-    "lockedtime": " 0.000000781"
-
-
-
-   </details>
-
-
-
-  28. Taskset **e1_semi2wf_t620**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t620",
-    "size": "12",
-    "utilization": "1.812",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the guilty tasks list.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 26250.0,
-    "C(LO)": 5826.0,
-    "C(HI)": 5826.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1531",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003510066",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.162506339",
-    "avgresponsejitter": " 0.002923646",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 7",
-    "timesrestored": " 6",
-    "timesonc1": " 1523",
-    "timesonc2": " 6",
-    "lockedtime": " 0.000008387"
-
-
-
-   </details>
-
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 22680000,
-    "lowtohigh": " 24",
-    "hightolow": " 23",
-    "idletime": 24605311,
-    "util": -8.489025573192237
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 0",
-    "hightolow": " 0",
-    "idletime": 28016436,
-    "util": 75.29414814814815
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 64800.0,
-    "C(LO)": 5553.0,
-    "C(HI)": 11107.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 621",
-    "preemptions": " 84",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010230027",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.112948694",
-    "avgresponsejitter": " 0.003142117",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 707",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004568"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 141750.0,
-    "C(LO)": 12041.0,
-    "C(HI)": 24082.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 285",
-    "preemptions": " 89",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.022339090",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.117122913",
-    "avgresponsejitter": " 0.007020595",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 375",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000706"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 28350.0,
-    "C(LO)": 950.0,
-    "C(HI)": 1901.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1418",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001502393",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.143606817",
-    "avgresponsejitter": " 0.000481174",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 16",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1433",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001321"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 120000.0,
-    "C(LO)": 1537.0,
-    "C(HI)": 3075.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 336",
-    "preemptions": " 11",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003403730",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.080006697",
-    "avgresponsejitter": " 0.000802847",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 349",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002072"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 756000.0,
-    "C(LO)": 218961.0,
-    "C(HI)": 218961.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 54",
-    "preemptions": " 652",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.170823886",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 40.312006303",
-    "avgresponsejitter": " 0.145039667",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 705",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011174"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 26250.0,
-    "C(LO)": 5826.0,
-    "C(HI)": 5826.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1531",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003510066",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.162506339",
-    "avgresponsejitter": " 0.002923646",
-    "deadlinesmissed": " 2",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 7",
-    "timesrestored": " 6",
-    "timesonc1": " 1523",
-    "timesonc2": " 6",
-    "lockedtime": " 0.000008387"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 70875.0,
-    "C(LO)": 2700.0,
-    "C(HI)": 2700.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 397",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001621952",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 28.995631691",
-    "avgresponsejitter": " 0.001346132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 396",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000432"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 101250.0,
-    "C(LO)": 20358.0,
-    "C(HI)": 40717.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 398",
-    "preemptions": " 81",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.041401574",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.095005970",
-    "avgresponsejitter": " 0.011191237",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 478",
-    "lockedtime": " 0.000006622"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 75000.0,
-    "C(LO)": 1819.0,
-    "C(HI)": 3639.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 537",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.007640919",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.125006189",
-    "avgresponsejitter": " 0.000949153",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 539",
-    "lockedtime": " 0.000006991"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 157500.0,
-    "C(LO)": 40818.0,
-    "C(HI)": 40818.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 256",
-    "preemptions": " 46",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.030851820",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.005006093",
-    "avgresponsejitter": " 0.021375282",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 301",
-    "lockedtime": " 0.000020105"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 100800.0,
-    "C(LO)": 11424.0,
-    "C(HI)": 11424.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 400",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006873781",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 41.118405871",
-    "avgresponsejitter": " 0.005722730",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 399",
-    "lockedtime": " 0.000007132"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 900000.0,
-    "C(LO)": 4621.0,
-    "C(HI)": 4621.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 46",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002770634",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 40.600791021",
-    "avgresponsejitter": " 0.002297832",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 45",
     "lockedtime": " 0.000000000"
 
 
@@ -17423,13 +10389,13 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-  1. Taskset **e1_semi2wf_t3062**
+  1. Taskset **e1_semi2wf_t1523**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t3062",
+    "id": "e1_semi2wf_t1523",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.9200000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -17438,6 +10404,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
@@ -17445,10 +10413,10 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": 1,
     "hyperperiod": 113400000,
-    "lowtohigh": " 7",
-    "hightolow": " 6",
-    "idletime": 46358370,
-    "util": 59.11960317460318
+    "lowtohigh": " 57",
+    "hightolow": " 56",
+    "idletime": 68395257,
+    "util": 39.68672222222223
 
 
 
@@ -17457,11 +10425,11 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": 2,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 28",
-    "hightolow": " 27",
-    "idletime": 46971960,
-    "util": 58.57851851851852
+    "hyperperiod": 56700000,
+    "lowtohigh": " 34",
+    "hightolow": " 33",
+    "idletime": 70140515,
+    "util": 38.147694003527334
 
 
 
@@ -17473,147 +10441,134 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 141750.0,
-    "C(LO)": 18434.0,
-    "C(HI)": 36868.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 478",
-    "preemptions": " 178",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.032516309",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.476082186",
-    "avgresponsejitter": " 0.010215724",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 658",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000006492"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 151200.0,
-    "C(LO)": 17423.0,
-    "C(HI)": 34847.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 448",
-    "preemptions": " 104",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.034139078",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.435206006",
-    "avgresponsejitter": " 0.010162745",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 4",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 555",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008183"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 600000.0,
-    "C(LO)": 53710.0,
-    "C(HI)": 107421.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 114",
-    "preemptions": " 225",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.060633781",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.206591604",
-    "avgresponsejitter": " 0.035605583",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 338",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007024"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 65625.0,
-    "C(LO)": 11350.0,
-    "C(HI)": 11350.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1032",
-    "preemptions": " 245",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010373420",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.593756688",
-    "avgresponsejitter": " 0.005944402",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 1276",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007949"
-
-
-
-
    Task:  5
 
     
     "id": " 5",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 63000.0,
-    "C(LO)": 5900.0,
-    "C(HI)": 5900.0,
-    "criticality": "LOW",
+    "priority": " 2",
+    "period": 60480.0,
+    "C(LO)": 8296.0,
+    "C(HI)": 16593.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1075",
-    "preemptions": " 77",
+    "completedruns": " 1676",
+    "preemptions": " 219",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004110120",
+    "maxresponsejitter": " 0.011651303",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.599006532",
-    "avgresponsejitter": " 0.002969141",
+    "maxreleasejitter": " 102.246429150",
+    "avgresponsejitter": " 0.003782267",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 14",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1151",
+    "timesonc1": " 1908",
     "timesonc2": " 0",
-    "lockedtime": " 0.000006438"
+    "lockedtime": " 0.000016577"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 1",
+    "priority": " 3",
+    "period": 18900.0,
+    "C(LO)": 1188.0,
+    "C(HI)": 2376.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 5359",
+    "preemptions": " 1",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.001671165",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 102.247306718",
+    "avgresponsejitter": " 0.000534060",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 43",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 5402",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000100928"
+
+
+
+
+   Task:  11
+
+    
+    "id": " 11",
+    "basecpu": " 1",
+    "priority": " 0",
+    "period": 675000.0,
+    "C(LO)": 35276.0,
+    "C(HI)": 70553.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 151",
+    "preemptions": " 233",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.041001979",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 101.575006312",
+    "avgresponsejitter": " 0.020548222",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 383",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000020045"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 1",
+    "priority": " 1",
+    "period": 105000.0,
+    "C(LO)": 34660.0,
+    "C(HI)": 34660.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 966",
+    "preemptions": " 1252",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.026355141",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 102.220007075",
+    "avgresponsejitter": " 0.017913237",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 2217",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000092868"
 
 
 
@@ -17623,26 +10578,63 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 2",
     "basecpu": " 1",
-    "priority": " 6",
-    "period": 30240.0,
-    "C(LO)": 1215.0,
-    "C(HI)": 1215.0,
+    "priority": " 4",
+    "period": 45360.0,
+    "C(LO)": 6496.0,
+    "C(HI)": 6496.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 987",
+    "completedruns": " 2234",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000732700",
+    "maxresponsejitter": " 0.002939802",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 30.786406970",
-    "avgresponsejitter": " 0.000615754",
+    "maxreleasejitter": " 102.243527408",
+    "avgresponsejitter": " 0.002901835",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
     "timesrestored": " 1",
-    "timesonc1": " 986",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001330"
+    "timesonc1": " 2232",
+    "timesonc2": " 1",
+    "lockedtime": " 0.000024189"
+
+
+
+
+   Task:  10
+
+    
+    "id": " 10",
+    "basecpu": " 2",
+    "priority": " 1",
+    "period": 118125.0,
+    "C(LO)": 19120.0,
+    "C(HI)": 38240.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 859",
+    "preemptions": " 391",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.039505976",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 102.233445159",
+    "avgresponsejitter": " 0.010299598",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 12",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1261",
+    "lockedtime": " 0.000046505"
 
 
 
@@ -17651,27 +10643,64 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 4",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 45360.0,
-    "C(LO)": 47.0,
-    "C(HI)": 47.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 1492",
-    "preemptions": " 0",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 60000.0,
+    "C(LO)": 3335.0,
+    "C(HI)": 6670.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 1689",
+    "preemptions": " 64",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000037150",
+    "maxresponsejitter": " 0.013925547",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.586407237",
-    "avgresponsejitter": " 0.000030171",
+    "maxreleasejitter": " 102.220006045",
+    "avgresponsejitter": " 0.001629724",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 20",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1491",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
+    "timesonc1": " 0",
+    "timesonc2": " 1772",
+    "lockedtime": " 0.000024781"
+
+
+
+
+   Task:  12
+
+    
+    "id": " 12",
+    "basecpu": " 2",
+    "priority": " 0",
+    "period": 810000.0,
+    "C(LO)": 33755.0,
+    "C(HI)": 67511.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 126",
+    "preemptions": " 106",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.053086225",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 101.441558012",
+    "avgresponsejitter": " 0.020030862",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 233",
+    "lockedtime": " 0.000012535"
 
 
 
@@ -17681,55 +10710,63 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 8",
     "basecpu": " 2",
-    "priority": " 1",
-    "period": 131250.0,
-    "C(LO)": 32627.000000000004,
-    "C(HI)": 65254.00000000001,
-    "criticality": "HIGH",
+    "priority": " 3",
+    "period": 87500.0,
+    "C(LO)": 14604.0,
+    "C(HI)": 14604.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 516",
-    "preemptions": " 480",
+    "completedruns": " 1159",
+    "preemptions": " 260",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.055236024",
+    "maxresponsejitter": " 0.015986345",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.462506012",
-    "avgresponsejitter": " 0.019376237",
+    "maxreleasejitter": " 102.237506763",
+    "avgresponsejitter": " 0.007188264",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 1002",
-    "lockedtime": " 0.000037027"
+    "timesonc2": " 1418",
+    "lockedtime": " 0.000052417"
 
 
 
 
-   Task:  11
+   Task:  6
 
     
-    "id": " 11",
+    "id": " 6",
     "basecpu": " 2",
-    "priority": " 0",
-    "period": 168750.0,
-    "C(LO)": 9567.0,
-    "C(HI)": 19134.0,
-    "criticality": "HIGH",
+    "priority": " 5",
+    "period": 75600.0,
+    "C(LO)": 11416.0,
+    "C(HI)": 11416.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 402",
-    "preemptions": " 57",
+    "completedruns": " 1341",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019059628",
+    "maxresponsejitter": " 0.006077051",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.500457721",
-    "avgresponsejitter": " 0.005512210",
+    "maxreleasejitter": " 102.228407303",
+    "avgresponsejitter": " 0.005090706",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 466",
-    "lockedtime": " 0.000000213"
+    "timesonc2": " 1340",
+    "lockedtime": " 0.000064781"
 
 
 
@@ -17739,26 +10776,30 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 7",
     "basecpu": " 2",
-    "priority": " 2",
-    "period": 112500.0,
-    "C(LO)": 821.0,
-    "C(HI)": 1643.0,
-    "criticality": "HIGH",
+    "priority": " 4",
+    "period": 84375.0,
+    "C(LO)": 5844.0,
+    "C(HI)": 5844.0,
+    "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 602",
-    "preemptions": " 1",
+    "completedruns": " 1202",
+    "preemptions": " 72",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001301574",
+    "maxresponsejitter": " 0.009867117",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.500007021",
-    "avgresponsejitter": " 0.000421742",
+    "maxreleasejitter": " 102.250008829",
+    "avgresponsejitter": " 0.002779012",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 13",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 615",
-    "lockedtime": " 0.000001063"
+    "timesonc2": " 1273",
+    "lockedtime": " 0.000026048"
 
 
 
@@ -17768,55 +10809,30 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 3",
     "basecpu": " 2",
-    "priority": " 3",
-    "period": 40000.0,
-    "C(LO)": 9383.0,
-    "C(HI)": 9383.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 1692",
-    "preemptions": " 167",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006566231",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 68.600006550",
-    "avgresponsejitter": " 0.004786396",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1858",
-    "lockedtime": " 0.000016066"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 1592.0,
-    "C(HI)": 1592.0,
+    "priority": " 6",
+    "period": 56700.0,
+    "C(LO)": 2074.0,
+    "C(HI)": 2074.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 2051",
+    "completedruns": " 1788",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000958919",
+    "maxresponsejitter": " 0.000951670",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 47.102506390",
-    "avgresponsejitter": " 0.000803523",
+    "maxreleasejitter": " 102.266207393",
+    "avgresponsejitter": " 0.000930165",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 5",
-    "timesrestored": " 4",
-    "timesonc1": " 0",
-    "timesonc2": " 2050",
-    "lockedtime": " 0.000013102"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 1",
+    "timesrestored": " 0",
+    "timesonc1": " 1",
+    "timesonc2": " 1786",
+    "lockedtime": " 0.000129285"
 
 
 
@@ -17824,11 +10840,11 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-  2. Taskset **e1_semi2wf_t4239**
+  2. Taskset **e1_semi2wf_t2309**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t4239",
+    "id": "e1_semi2wf_t2309",
     "size": "12",
     "utilization": "1.9560000000000002",
     "criticality_factor": "2",
@@ -17839,406 +10855,7 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
    Idle time is expressed as **seconds**.
 
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 6",
-    "hightolow": " 5",
-    "idletime": 7311345,
-    "util": 93.55260582010582
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 2",
-    "hightolow": " 1",
-    "idletime": 7389671,
-    "util": 86.96707054673722
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 129600.0,
-    "C(LO)": 21278.0,
-    "C(HI)": 42557.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 87",
-    "preemptions": " 6",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.033979823",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.016006288",
-    "avgresponsejitter": " 0.011094489",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 94",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001438"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 151200.0,
-    "C(LO)": 22754.0,
-    "C(HI)": 45508.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 75",
-    "preemptions": " 6",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.033118201",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.046395096",
-    "avgresponsejitter": " 0.011809877",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 81",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004724"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 200000.0,
-    "C(LO)": 660.0,
-    "C(HI)": 1321.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 57",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001048682",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.000006916",
-    "avgresponsejitter": " 0.000353643",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 59",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001447"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 787500.0,
-    "C(LO)": 256483.00000000003,
-    "C(HI)": 256483.00000000003,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 15",
-    "preemptions": " 53",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.198054694",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 11.237506177",
-    "avgresponsejitter": " 0.153151592",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 67",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007889"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 140000.0,
-    "C(LO)": 2371.0,
-    "C(HI)": 2371.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 80",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001419868",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 11.920006231",
-    "avgresponsejitter": " 0.001199670",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 79",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000001393"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 141750.0,
-    "C(LO)": 28594.0,
-    "C(HI)": 57188.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 80",
-    "preemptions": " 80",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026210685",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.056505949",
-    "avgresponsejitter": " 0.016862351",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 159",
-    "lockedtime": " 0.000002523"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 150000.0,
-    "C(LO)": 14709.0,
-    "C(HI)": 29419.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 76",
-    "preemptions": " 53",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.026931670",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.103406342",
-    "avgresponsejitter": " 0.009489772",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 128",
-    "lockedtime": " 0.000001694"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 84375.0,
-    "C(LO)": 1396.0,
-    "C(HI)": 2793.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 133",
-    "preemptions": " 4",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003828517",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.053437583",
-    "avgresponsejitter": " 0.000752426",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 138",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 50000.0,
-    "C(LO)": 6059.0,
-    "C(HI)": 6059.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 224",
-    "preemptions": " 35",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006131532",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.100006757",
-    "avgresponsejitter": " 0.003310919",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 258",
-    "lockedtime": " 0.000005850"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 37800.0,
-    "C(LO)": 4005.0,
-    "C(HI)": 4005.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 296",
-    "preemptions": " 12",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003693204",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.113205754",
-    "avgresponsejitter": " 0.002071946",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 307",
-    "lockedtime": " 0.000005264"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 6",
-    "period": 33750.0,
-    "C(LO)": 2719.0,
-    "C(HI)": 2719.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 332",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001631517",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 12.137506640",
-    "avgresponsejitter": " 0.001369712",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 331",
-    "lockedtime": " 0.000001174"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 180000.0,
-    "C(LO)": 6659.0,
-    "C(HI)": 6659.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 63",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005746348",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 11.980005913",
-    "avgresponsejitter": " 0.003457210",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 67",
-    "lockedtime": " 0.000000495"
-
-
-
-   </details>
-
-
-
-  3. Taskset **e1_semi2wf_t4639**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t4639",
-    "size": "12",
-    "utilization": "1.9680000000000002",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
+   Util values are expressed as **percentage** %.
 
 
 
@@ -18246,11 +10863,11 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 18",
-    "hightolow": " 17",
-    "idletime": 23199162,
-    "util": 79.54218518518519
+    "hyperperiod": 9450000,
+    "lowtohigh": " 5",
+    "hightolow": " 4",
+    "idletime": 22448200,
+    "util": 80.20440917107584
 
 
 
@@ -18262,8 +10879,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "hyperperiod": 113400000,
     "lowtohigh": " 6",
     "hightolow": " 5",
-    "idletime": 21801258,
-    "util": 80.77490476190476
+    "idletime": 22356557,
+    "util": 80.28522310405644
 
 
 
@@ -18275,89 +10892,68 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 157500.0,
-    "C(LO)": 19746.0,
-    "C(HI)": 39493.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 223",
-    "preemptions": " 24",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.031734243",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.808042111",
-    "avgresponsejitter": " 0.010386676",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 249",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004096"
-
-
-
-
    Task:  10
 
     
     "id": " 10",
     "basecpu": " 1",
-    "priority": " 1",
-    "period": 196875.0,
-    "C(LO)": 20191.0,
-    "C(HI)": 40382.0,
+    "priority": " 0",
+    "period": 168750.0,
+    "C(LO)": 27713.0,
+    "C(HI)": 55426.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 178",
-    "preemptions": " 94",
+    "completedruns": " 193",
+    "preemptions": " 228",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.015816366",
+    "maxresponsejitter": " 0.025301396",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.659772057",
-    "avgresponsejitter": " 0.010679550",
+    "maxreleasejitter": " 33.236619483",
+    "avgresponsejitter": " 0.014387751",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 272",
+    "timesonc1": " 420",
     "timesonc2": " 0",
-    "lockedtime": " 0.000002441"
+    "lockedtime": " 0.000005691"
 
 
 
 
-   Task:  1
+   Task:  7
 
     
-    "id": " 1",
+    "id": " 7",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 22500.0,
-    "C(LO)": 1039.0,
-    "C(HI)": 2078.0,
+    "priority": " 2",
+    "period": 90000.0,
+    "C(LO)": 10528.0,
+    "C(HI)": 21056.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 1551",
-    "preemptions": " 0",
+    "completedruns": " 362",
+    "preemptions": " 118",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001640628",
+    "maxresponsejitter": " 0.014946078",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.852506724",
-    "avgresponsejitter": " 0.000535213",
+    "maxreleasejitter": " 33.404608216",
+    "avgresponsejitter": " 0.005054895",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 14",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 1564",
+    "timesonc1": " 481",
     "timesonc2": " 0",
-    "lockedtime": " 0.000006090"
+    "lockedtime": " 0.000000252"
 
 
 
@@ -18367,55 +10963,30 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 8",
     "basecpu": " 1",
-    "priority": " 3",
-    "period": 150000.0,
-    "C(LO)": 1056.0,
-    "C(HI)": 2112.0,
+    "priority": " 1",
+    "period": 94500.0,
+    "C(LO)": 1845.0,
+    "C(HI)": 3691.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 234",
-    "preemptions": " 0",
+    "completedruns": " 344",
+    "preemptions": " 7",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000641216",
+    "maxresponsejitter": " 0.006433204",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.800006820",
-    "avgresponsejitter": " 0.000529045",
+    "maxreleasejitter": " 33.320189414",
+    "avgresponsejitter": " 0.000874162",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 233",
+    "timesonc1": " 353",
     "timesonc2": " 0",
-    "lockedtime": " 0.000005649"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 405000.0,
-    "C(LO)": 131100.0,
-    "C(HI)": 131100.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 87",
-    "preemptions": " 333",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.107667739",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.425436360",
-    "avgresponsejitter": " 0.078650132",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 419",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000020285"
+    "lockedtime": " 0.000000568"
 
 
 
@@ -18425,84 +10996,30 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 6",
     "basecpu": " 1",
-    "priority": " 5",
-    "period": 100800.0,
-    "C(LO)": 5569.0,
-    "C(HI)": 5569.0,
+    "priority": " 3",
+    "period": 56250.0,
+    "C(LO)": 10855.0,
+    "C(HI)": 10855.0,
     "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 296",
-    "preemptions": " 0",
+    "migrable": "False",
+    "completedruns": " 578",
+    "preemptions": " 219",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003341438",
+    "maxresponsejitter": " 0.007388105",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 30.667540099",
-    "avgresponsejitter": " 0.002797796",
+    "maxreleasejitter": " 33.400009009",
+    "avgresponsejitter": " 0.005238598",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 293",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000006066"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 113400.0,
-    "C(LO)": 30487.0,
-    "C(HI)": 60975.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 309",
-    "preemptions": " 251",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.049886565",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.813805931",
-    "avgresponsejitter": " 0.018321829",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 560",
-    "lockedtime": " 0.000011502"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 64800.0,
-    "C(LO)": 875.0,
-    "C(HI)": 1751.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 539",
-    "preemptions": " 5",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006808868",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.797605760",
-    "avgresponsejitter": " 0.000481267",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 5",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 548",
-    "lockedtime": " 0.000001616"
+    "timesonc1": " 796",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000007619"
 
 
 
@@ -18511,27 +11028,97 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 2",
-    "basecpu": " 2",
+    "basecpu": " 1",
     "priority": " 5",
-    "period": 52500.0,
-    "C(LO)": 11413.0,
-    "C(HI)": 11413.0,
+    "period": 18900.0,
+    "C(LO)": 2603.0,
+    "C(HI)": 2603.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 666",
+    "completedruns": " 1717",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.006873084",
+    "maxresponsejitter": " 0.001184174",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.860006751",
-    "avgresponsejitter": " 0.005701096",
+    "maxreleasejitter": " 33.413746751",
+    "avgresponsejitter": " 0.001165703",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 1",
     "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 664",
-    "lockedtime": " 0.000006622"
+    "timesonc1": " 1716",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000006153"
+
+
+
+
+   Task:  3
+
+    
+    "id": " 3",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 25200.0,
+    "C(LO)": 1278.0,
+    "C(HI)": 1278.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 1288",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000681321",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 33.407206625",
+    "avgresponsejitter": " 0.000568054",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 1287",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000028754"
+
+
+
+
+   Task:  9
+
+    
+    "id": " 9",
+    "basecpu": " 2",
+    "priority": " 2",
+    "period": 126000.0,
+    "C(LO)": 26107.0,
+    "C(HI)": 52214.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 259",
+    "preemptions": " 145",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.042189739",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 33.382246610",
+    "avgresponsejitter": " 0.012750835",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 4",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 407",
+    "lockedtime": " 0.000000907"
 
 
 
@@ -18542,54 +11129,62 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": " 12",
     "basecpu": " 2",
     "priority": " 0",
-    "period": 708750.0,
-    "C(LO)": 75945.0,
-    "C(HI)": 75945.0,
-    "criticality": "LOW",
+    "period": 648000.0,
+    "C(LO)": 29368.0,
+    "C(HI)": 58737.0,
+    "criticality": "HIGH",
     "migrable": "False",
     "completedruns": " 51",
-    "preemptions": " 119",
+    "preemptions": " 65",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.072068036",
+    "maxresponsejitter": " 0.024234408",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.729242949",
-    "avgresponsejitter": " 0.050081093",
+    "maxreleasejitter": " 32.770020784",
+    "avgresponsejitter": " 0.015713093",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 169",
-    "lockedtime": " 0.000003132"
+    "timesonc2": " 115",
+    "lockedtime": " 0.000003438"
 
 
 
 
-   Task:  4
+   Task:  11
 
     
-    "id": " 4",
+    "id": " 11",
     "basecpu": " 2",
-    "priority": " 4",
-    "period": 70000.0,
-    "C(LO)": 6031.0,
-    "C(HI)": 6031.0,
-    "criticality": "LOW",
+    "priority": " 1",
+    "period": 200000.0,
+    "C(LO)": 6187.0,
+    "C(HI)": 12374.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 500",
-    "preemptions": " 0",
+    "completedruns": " 164",
+    "preemptions": " 39",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003630159",
+    "maxresponsejitter": " 0.021710216",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.865639279",
-    "avgresponsejitter": " 0.003018760",
+    "maxreleasejitter": " 33.400007114",
+    "avgresponsejitter": " 0.003398486",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 2",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 499",
-    "lockedtime": " 0.000000000"
+    "timesonc2": " 204",
+    "lockedtime": " 0.000000324"
 
 
 
@@ -18600,25 +11195,95 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": " 5",
     "basecpu": " 2",
     "priority": " 3",
-    "period": 75000.0,
-    "C(LO)": 3846.0,
-    "C(HI)": 3846.0,
+    "period": 47250.0,
+    "C(LO)": 10453.0,
+    "C(HI)": 10453.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 466",
-    "preemptions": " 0",
+    "completedruns": " 687",
+    "preemptions": " 81",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002312880",
+    "maxresponsejitter": " 0.008373048",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 35.800005919",
-    "avgresponsejitter": " 0.001928838",
+    "maxreleasejitter": " 33.366494919",
+    "avgresponsejitter": " 0.004900607",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 465",
-    "lockedtime": " 0.000018345"
+    "timesonc2": " 767",
+    "lockedtime": " 0.000000462"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 35000.0,
+    "C(LO)": 5327.0,
+    "C(HI)": 5327.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 928",
+    "preemptions": " 103",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.003072216",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 33.410007069",
+    "avgresponsejitter": " 0.002394508",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 0",
+    "timesonc2": " 1030",
+    "lockedtime": " 0.000000000"
+
+
+
+
+   Task:  1
+
+    
+    "id": " 1",
+    "basecpu": " 2",
+    "priority": " 5",
+    "period": 15750.0,
+    "C(LO)": 514.0,
+    "C(HI)": 514.0,
+    "criticality": "LOW",
+    "migrable": "True",
+    "completedruns": " 2060",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.000244634",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 33.413507967",
+    "avgresponsejitter": " 0.000231988",
+    "deadlinesmissed": " 1",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 3",
+    "timesrestored": " 2",
+    "timesonc1": " 3",
+    "timesonc2": " 2055",
+    "lockedtime": " 0.000046051"
 
 
 
@@ -18626,13 +11291,13 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-  4. Taskset **e1_semi2wf_t5200**
+  3. Taskset **e1_semi2wf_t3242**
 
     Taskset execution params:
 	 
-    "id": "e1_semi2wf_t5200",
+    "id": "e1_semi2wf_t3242",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.9920000000000002",
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -18641,17 +11306,19 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
    Idle time is expressed as **seconds**.
 
+   Util values are expressed as **percentage** %.
+
 
 
    CPU: 1
 
     
     "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 19",
-    "hightolow": " 18",
-    "idletime": 35627310,
-    "util": 68.58261904761905
+    "hyperperiod": 56700000,
+    "lowtohigh": " 6",
+    "hightolow": " 5",
+    "idletime": 12359975,
+    "util": 78.20110229276895
 
 
 
@@ -18660,11 +11327,11 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 25",
-    "hightolow": " 24",
-    "idletime": 33913984,
-    "util": 40.186977072310405
+    "hyperperiod": 22680000,
+    "lowtohigh": " 4",
+    "hightolow": " 3",
+    "idletime": 12344838,
+    "util": 78.22779894179894
 
 
 
@@ -18676,89 +11343,35 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 84000.0,
-    "C(LO)": 9723.0,
-    "C(HI)": 19446.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 661",
-    "preemptions": " 15",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.021454306",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.356006682",
-    "avgresponsejitter": " 0.005219808",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 8",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 683",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004276"
-
-
-
-
    Task:  9
 
     
     "id": " 9",
     "basecpu": " 1",
-    "priority": " 1",
-    "period": 151200.0,
-    "C(LO)": 10840.0,
-    "C(HI)": 21681.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 368",
-    "preemptions": " 22",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.024725613",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.351947601",
-    "avgresponsejitter": " 0.005772375",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 395",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004072"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 1",
     "priority": " 2",
-    "period": 108000.0,
-    "C(LO)": 6390.0,
-    "C(HI)": 12780.0,
+    "period": 75600.0,
+    "C(LO)": 11174.0,
+    "C(HI)": 22349.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 515",
-    "preemptions": " 2",
+    "completedruns": " 229",
+    "preemptions": " 103",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010139267",
+    "maxresponsejitter": " 0.015745598",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.404007003",
-    "avgresponsejitter": " 0.003254288",
+    "maxreleasejitter": " 18.161206162",
+    "avgresponsejitter": " 0.005697643",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 5",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 521",
+    "timesonc1": " 336",
     "timesonc2": " 0",
-    "lockedtime": " 0.000000655"
+    "lockedtime": " 0.000004066"
 
 
 
@@ -18769,25 +11382,29 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": " 12",
     "basecpu": " 1",
     "priority": " 0",
-    "period": 675000.0,
-    "C(LO)": 200551.0,
-    "C(HI)": 200551.0,
-    "criticality": "LOW",
+    "period": 945000.0,
+    "C(LO)": 88203.0,
+    "C(HI)": 176406.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 83",
-    "preemptions": " 308",
+    "completedruns": " 20",
+    "preemptions": " 94",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.162780820",
+    "maxresponsejitter": " 0.065473604",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 55.675006757",
-    "avgresponsejitter": " 0.124667102",
+    "maxreleasejitter": " 18.027593189",
+    "avgresponsejitter": " 0.049411649",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 390",
+    "timesonc1": " 113",
     "timesonc2": " 0",
-    "lockedtime": " 0.000011324"
+    "lockedtime": " 0.000003258"
 
 
 
@@ -18797,26 +11414,30 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 10",
     "basecpu": " 1",
-    "priority": " 4",
-    "period": 181440.0,
-    "C(LO)": 28738.0,
-    "C(HI)": 28738.0,
-    "criticality": "LOW",
+    "priority": " 1",
+    "period": 141750.0,
+    "C(LO)": 11988.0,
+    "C(HI)": 23976.0,
+    "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 307",
-    "preemptions": " 29",
+    "completedruns": " 123",
+    "preemptions": " 46",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017406243",
+    "maxresponsejitter": " 0.015230769",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.339207820",
-    "avgresponsejitter": " 0.014281538",
+    "maxreleasejitter": " 18.151756093",
+    "avgresponsejitter": " 0.005915264",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 335",
+    "timesonc1": " 168",
     "timesonc2": " 0",
-    "lockedtime": " 0.000006162"
+    "lockedtime": " 0.000001661"
 
 
 
@@ -18826,26 +11447,63 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 8",
     "basecpu": " 1",
-    "priority": " 5",
-    "period": 150000.0,
-    "C(LO)": 985.9999999999999,
-    "C(HI)": 985.9999999999999,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 371",
+    "priority": " 3",
+    "period": 75000.0,
+    "C(LO)": 2944.0,
+    "C(HI)": 5889.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 232",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000588970",
+    "maxresponsejitter": " 0.004086913",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.350008057",
-    "avgresponsejitter": " 0.000498396",
+    "maxreleasejitter": " 18.250007285",
+    "avgresponsejitter": " 0.001319201",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 232",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000793"
+
+
+
+
+   Task:  4
+
+    
+    "id": " 4",
+    "basecpu": " 1",
+    "priority": " 4",
+    "period": 52500.0,
+    "C(LO)": 8038.0,
+    "C(HI)": 8038.0,
+    "criticality": "LOW",
+    "migrable": "False",
+    "completedruns": " 330",
+    "preemptions": " 0",
+    "minresponsejitter": " 0.000000000",
+    "maxresponsejitter": " 0.004254856",
+    "minreleasejitter": " 0.000000000",
+    "maxreleasejitter": " 18.220908018",
+    "avgresponsejitter": " 0.003549913",
+    "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 1",
-    "timesonc1": " 369",
-    "timesonc2": " 1",
-    "lockedtime": " 0.000005021"
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
+    "timesmigrated": " 0",
+    "timesrestored": " 0",
+    "timesonc1": " 329",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000000514"
 
 
 
@@ -18854,114 +11512,31 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 2",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 45000.0,
-    "C(LO)": 7697.0,
-    "C(HI)": 15395.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1232",
-    "preemptions": " 34",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.019645823",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.351435982",
-    "avgresponsejitter": " 0.004082387",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 11",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1276",
-    "lockedtime": " 0.000003108"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 90000.0,
-    "C(LO)": 5901.0,
-    "C(HI)": 11802.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 617",
-    "preemptions": " 24",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009146237",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.356747955",
-    "avgresponsejitter": " 0.002984378",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 642",
-    "lockedtime": " 0.000001306"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 70875.0,
-    "C(LO)": 1284.0,
-    "C(HI)": 2569.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 783",
-    "preemptions": " 3",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.003577925",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.356043997",
-    "avgresponsejitter": " 0.000671835",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 12",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 797",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 453600.0,
-    "C(LO)": 128992.0,
-    "C(HI)": 128992.0,
+    "basecpu": " 1",
+    "priority": " 5",
+    "period": 26250.0,
+    "C(LO)": 2241.0,
+    "C(HI)": 2241.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 123",
-    "preemptions": " 594",
+    "completedruns": " 659",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.108020703",
+    "maxresponsejitter": " 0.001189204",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 55.887729402",
-    "avgresponsejitter": " 0.083814282",
+    "maxreleasejitter": " 18.246257000",
+    "avgresponsejitter": " 0.000999459",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 716",
-    "lockedtime": " 0.000012063"
+    "timesonc1": " 658",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000001910"
 
 
 
@@ -18970,27 +11545,31 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 1",
-    "basecpu": " 2",
-    "priority": " 5",
+    "basecpu": " 1",
+    "priority": " 6",
     "period": 22500.0,
-    "C(LO)": 2890.0,
-    "C(HI)": 2890.0,
+    "C(LO)": 405.0,
+    "C(HI)": 405.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 2464",
+    "completedruns": " 768",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001739330",
+    "maxresponsejitter": " 0.000197420",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.395007492",
-    "avgresponsejitter": " 0.001450216",
+    "maxreleasejitter": " 18.235005985",
+    "avgresponsejitter": " 0.000185450",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 1",
-    "timesonc2": " 2462",
-    "lockedtime": " 0.000009643"
+    "timesrestored": " 0",
+    "timesonc1": " 767",
+    "timesonc2": " 0",
+    "lockedtime": " 0.000003189"
 
 
 
@@ -19000,137 +11579,63 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     
     "id": " 7",
     "basecpu": " 2",
-    "priority": " 4",
-    "period": 140000.0,
-    "C(LO)": 14321.0,
-    "C(HI)": 14321.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 397",
-    "preemptions": " 99",
+    "priority": " 1",
+    "period": 70000.0,
+    "C(LO)": 24025.0,
+    "C(HI)": 48051.0,
+    "criticality": "HIGH",
+    "migrable": "False",
+    "completedruns": " 247",
+    "preemptions": " 127",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010214967",
+    "maxresponsejitter": " 0.033455541",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 56.300006030",
-    "avgresponsejitter": " 0.007460234",
+    "maxreleasejitter": " 18.150006021",
+    "avgresponsejitter": " 0.011816348",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 3",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 495",
+    "timesonc2": " 376",
     "lockedtime": " 0.000007784"
 
 
 
-   </details>
 
-
-
-  5. Taskset **e1_semi2wf_t6179**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t6179",
-    "size": "12",
-    "utilization": "2.028",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
+   Task:  11
 
     
-    "id": 1,
-    "hyperperiod": 113400000,
-    "lowtohigh": " 4",
-    "hightolow": " 3",
-    "idletime": 27969131,
-    "util": 75.33586331569666
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 18",
-    "hightolow": " 17",
-    "idletime": 27486496,
-    "util": 51.52293474426808
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 1",
+    "id": " 11",
+    "basecpu": " 2",
     "priority": " 0",
-    "period": 648000.0,
-    "C(LO)": 159718.0,
-    "C(HI)": 319437.0,
+    "period": 181440.0,
+    "C(LO)": 4529.0,
+    "C(HI)": 9058.0,
     "criticality": "HIGH",
     "migrable": "False",
-    "completedruns": " 67",
-    "preemptions": " 302",
+    "completedruns": " 96",
+    "preemptions": " 8",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.119519342",
+    "maxresponsejitter": " 0.013494655",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.124014787",
-    "avgresponsejitter": " 0.097196883",
+    "maxreleasejitter": " 18.055365982",
+    "avgresponsejitter": " 0.002557150",
     "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
+    "budgetexceeded": " 1",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 368",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011532"
-
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 141750.0,
-    "C(LO)": 8883.0,
-    "C(HI)": 17767.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 300",
-    "preemptions": " 44",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.016742057",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.241505976",
-    "avgresponsejitter": " 0.004960153",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 345",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000004682"
+    "timesonc1": " 0",
+    "timesonc2": " 104",
+    "lockedtime": " 0.000000000"
 
 
 
@@ -19139,56 +11644,31 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 5",
-    "basecpu": " 1",
-    "priority": " 2",
-    "period": 84000.0,
-    "C(LO)": 1692.0,
-    "C(HI)": 3384.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 505",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004105775",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.253878303",
-    "avgresponsejitter": " 0.000855300",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 508",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000002384"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 118125.0,
-    "C(LO)": 15949.999999999998,
-    "C(HI)": 15949.999999999998,
+    "basecpu": " 2",
+    "priority": " 3",
+    "period": 56700.0,
+    "C(LO)": 7835.0,
+    "C(HI)": 7835.0,
     "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 360",
-    "preemptions": " 90",
+    "migrable": "True",
+    "completedruns": " 306",
+    "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.014030907",
+    "maxresponsejitter": " 0.003545183",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.288755979",
-    "avgresponsejitter": " 0.008549408",
+    "maxreleasejitter": " 18.238672459",
+    "avgresponsejitter": " 0.003501844",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 449",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007916"
+    "timesonc1": " 0",
+    "timesonc2": " 305",
+    "lockedtime": " 0.000005502"
 
 
 
@@ -19197,85 +11677,31 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
     
     "id": " 3",
-    "basecpu": " 1",
-    "priority": " 5",
-    "period": 64800.0,
-    "C(LO)": 7158.0,
-    "C(HI)": 7158.0,
+    "basecpu": " 2",
+    "priority": " 4",
+    "period": 50400.0,
+    "C(LO)": 4136.0,
+    "C(HI)": 4136.0,
     "criticality": "LOW",
     "migrable": "True",
-    "completedruns": " 655",
-    "preemptions": " 26",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.005410850",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.314405994",
-    "avgresponsejitter": " 0.003615249",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 680",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000005541"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 140000.0,
-    "C(LO)": 9818.0,
-    "C(HI)": 9818.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 304",
-    "preemptions": " 31",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.017289069",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.280006261",
-    "avgresponsejitter": " 0.005395387",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 334",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000402"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 1",
-    "priority": " 6",
-    "period": 60000.0,
-    "C(LO)": 1951.0,
-    "C(HI)": 1951.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 707",
+    "completedruns": " 344",
     "preemptions": " 0",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.001178706",
+    "maxresponsejitter": " 0.001864790",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.300006907",
-    "avgresponsejitter": " 0.000979240",
+    "maxreleasejitter": " 18.236809072",
+    "avgresponsejitter": " 0.001848270",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
-    "timesonc1": " 706",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000007252"
+    "timesonc1": " 0",
+    "timesonc2": " 343",
+    "lockedtime": " 0.000007264"
 
 
 
@@ -19286,542 +11712,29 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": " 6",
     "basecpu": " 2",
     "priority": " 2",
-    "period": 90000.0,
-    "C(LO)": 27963.0,
-    "C(HI)": 55927.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 472",
-    "preemptions": " 258",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.043965754",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.300007832",
-    "avgresponsejitter": " 0.015136015",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 6",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 735",
-    "lockedtime": " 0.000018435"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 189000.0,
-    "C(LO)": 2738.0,
-    "C(HI)": 5477.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 225",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004370949",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.147109535",
-    "avgresponsejitter": " 0.001406225",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 227",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 37800.0,
-    "C(LO)": 168.0,
-    "C(HI)": 337.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1122",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000260907",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.336007784",
-    "avgresponsejitter": " 0.000089544",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 10",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 1131",
-    "lockedtime": " 0.000011535"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 450000.0,
-    "C(LO)": 115411.0,
-    "C(HI)": 115411.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 95",
-    "preemptions": " 231",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.092611718",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 42.863370117",
-    "avgresponsejitter": " 0.061616961",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 325",
-    "lockedtime": " 0.000007511"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 65625.0,
-    "C(LO)": 6920.0,
-    "C(HI)": 6920.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 647",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004150955",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 43.328131610",
-    "avgresponsejitter": " 0.003445366",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 2",
-    "timesrestored": " 2",
-    "timesonc1": " 1",
-    "timesonc2": " 645",
-    "lockedtime": " 0.000005934"
-
-
-
-   </details>
-
-
-
-  6. Taskset **e1_semi2wf_t6370**
-
-    Taskset execution params:
-	 
-    "id": "e1_semi2wf_t6370",
-    "size": "12",
-    "utilization": "2.028",
-    "criticality_factor": "2",
-    "hicrit_proportion": "0.5"
-
-
-   <details> <summary markdown="span">Click here to see the CPUs log.</summary>
-
-   Idle time is expressed as **seconds**.
-
-
-
-   CPU: 1
-
-    
-    "id": 1,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 10",
-    "hightolow": " 9",
-    "idletime": 20884258,
-    "util": 63.16709347442681
-
-
-
-
-   CPU: 2
-
-    
-    "id": 2,
-    "hyperperiod": 56700000,
-    "lowtohigh": " 25",
-    "hightolow": " 24",
-    "idletime": 22886632,
-    "util": 59.635569664903
-
-
-
-   </details>
-
-   <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
-
-   Time values are expressed as **micro-seconds**.
-
-
-
-   Task:  9
-
-    
-    "id": " 9",
-    "basecpu": " 1",
-    "priority": " 1",
-    "period": 108000.0,
-    "C(LO)": 21086.0,
-    "C(HI)": 42172.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 313",
-    "preemptions": " 37",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.045518276",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.588007246",
-    "avgresponsejitter": " 0.011683865",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 352",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000011111"
-
-
-
-
-   Task:  5
-
-    
-    "id": " 5",
-    "basecpu": " 1",
-    "priority": " 2",
     "period": 60000.0,
-    "C(LO)": 2931.0,
-    "C(HI)": 5863.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 562",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004647778",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.600007820",
-    "avgresponsejitter": " 0.001502261",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 568",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000000000"
-
-
-
-
-   Task:  11
-
-    
-    "id": " 11",
-    "basecpu": " 1",
-    "priority": " 0",
-    "period": 420000.0,
-    "C(LO)": 118847.0,
-    "C(HI)": 118847.0,
+    "C(LO)": 2929.0,
+    "C(HI)": 2929.0,
     "criticality": "LOW",
     "migrable": "False",
-    "completedruns": " 81",
-    "preemptions": " 174",
+    "completedruns": " 289",
+    "preemptions": " 6",
     "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.098029877",
+    "maxresponsejitter": " 0.005006210",
     "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.181441258",
-    "avgresponsejitter": " 0.075245030",
+    "maxreleasejitter": " 18.220008093",
+    "avgresponsejitter": " 0.001369372",
     "deadlinesmissed": " 0",
+    "deadlinemissedtargetcore": " 0",
+    "deadlinemissedaftermigration": " 0",
     "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 254",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000020240"
-
-
-
-
-   Task:  10
-
-    
-    "id": " 10",
-    "basecpu": " 1",
-    "priority": " 3",
-    "period": 112500.0,
-    "C(LO)": 19952.0,
-    "C(HI)": 19952.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 301",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.011990691",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.637506784",
-    "avgresponsejitter": " 0.009968739",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 300",
-    "timesonc2": " 0",
-    "lockedtime": " 0.000008006"
-
-
-
-
-   Task:  7
-
-    
-    "id": " 7",
-    "basecpu": " 1",
-    "priority": " 4",
-    "period": 90000.0,
-    "C(LO)": 3696.0,
-    "C(HI)": 3696.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 375",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004132156",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.570006213",
-    "avgresponsejitter": " 0.001858183",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 3",
-    "timesrestored": " 2",
-    "timesonc1": " 373",
-    "timesonc2": " 2",
-    "lockedtime": " 0.000005048"
-
-
-
-
-   Task:  2
-
-    
-    "id": " 2",
-    "basecpu": " 2",
-    "priority": " 4",
-    "period": 30240.0,
-    "C(LO)": 5990.0,
-    "C(HI)": 11981.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 1114",
-    "preemptions": " 30",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.009562015",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.626885751",
-    "avgresponsejitter": " 0.003103438",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 13",
+    "budgetexceededtargetcore": " 0",
+    "budgetexceededaftermigration": " 0",
     "timesmigrated": " 0",
     "timesrestored": " 0",
     "timesonc1": " 0",
-    "timesonc2": " 1156",
-    "lockedtime": " 0.000005934"
-
-
-
-
-   Task:  6
-
-    
-    "id": " 6",
-    "basecpu": " 2",
-    "priority": " 2",
-    "period": 81000.0,
-    "C(LO)": 1251.0,
-    "C(HI)": 2503.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 417",
-    "preemptions": " 2",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004940706",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.615006769",
-    "avgresponsejitter": " 0.000656805",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 3",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 421",
-    "lockedtime": " 0.000000405"
-
-
-
-
-   Task:  8
-
-    
-    "id": " 8",
-    "basecpu": " 2",
-    "priority": " 1",
-    "period": 101250.0,
-    "C(LO)": 1551.0,
-    "C(HI)": 3102.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 334",
-    "preemptions": " 9",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.010238577",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.615669706",
-    "avgresponsejitter": " 0.000891252",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 2",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 344",
-    "lockedtime": " 0.000000658"
-
-
-
-
-   Task:  3
-
-    
-    "id": " 3",
-    "basecpu": " 2",
-    "priority": " 3",
-    "period": 54000.0,
-    "C(LO)": 385.0,
-    "C(HI)": 771.0,
-    "criticality": "HIGH",
-    "migrable": "False",
-    "completedruns": " 624",
-    "preemptions": " 1",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.000605817",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.588006207",
-    "avgresponsejitter": " 0.000201000",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 7",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 631",
-    "lockedtime": " 0.000019979"
-
-
-
-
-   Task:  12
-
-    
-    "id": " 12",
-    "basecpu": " 2",
-    "priority": " 0",
-    "period": 590625.0,
-    "C(LO)": 206812.0,
-    "C(HI)": 206812.0,
-    "criticality": "LOW",
-    "migrable": "False",
-    "completedruns": " 58",
-    "preemptions": " 475",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.157732940",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 34.075006655",
-    "avgresponsejitter": " 0.121130270",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 0",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 532",
-    "lockedtime": " 0.000010901"
-
-
-
-
-   Task:  1
-
-    
-    "id": " 1",
-    "basecpu": " 2",
-    "priority": " 6",
-    "period": 28350.0,
-    "C(LO)": 4404.0,
-    "C(HI)": 4404.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 256",
-    "preemptions": " 0",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.002644826",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.200906784",
-    "avgresponsejitter": " 0.002190844",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 1",
-    "timesonc1": " 4",
-    "timesonc2": " 251",
-    "lockedtime": " 0.000001814"
-
-
-
-
-   Task:  4
-
-    
-    "id": " 4",
-    "basecpu": " 2",
-    "priority": " 5",
-    "period": 56250.0,
-    "C(LO)": 3420.0,
-    "C(HI)": 3420.0,
-    "criticality": "LOW",
-    "migrable": "True",
-    "completedruns": " 128",
-    "preemptions": " 7",
-    "minresponsejitter": " 0.000000000",
-    "maxresponsejitter": " 0.004449174",
-    "minreleasejitter": " 0.000000000",
-    "maxreleasejitter": " 8.089668823",
-    "avgresponsejitter": " 0.001816718",
-    "deadlinesmissed": " 0",
-    "budgetexceeded": " 0",
-    "timesmigrated": " 1",
-    "timesrestored": " 0",
-    "timesonc1": " 0",
-    "timesonc2": " 134",
-    "lockedtime": " 0.000003610"
+    "timesonc2": " 294",
+    "lockedtime": " 0.000008994"
 
 
 
@@ -19835,43 +11748,43 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 <details><summary markdown="span">Click here to expand this section.</summary>
 
-### Level 1.8
+### Level 1.848
 
-   Tasksets executed: 11
+   Tasksets executed: 19
 
-   - Tasksets actually schedulable: 9/11 = 81.81818181818183 %
+   - Tasksets actually schedulable: 15/19 = 78.94736842105263 %
 
-   - Tasksets **not** schedulable: 0/11 = 0.0 %
+   - Tasksets **not** schedulable: 3/19 = 15.789473684210526 %
 
-   - Tasksets exceeding level-criticality budget: 2/11 = 18.181818181818183 %
+   - Tasksets exceeding level-criticality budget: 1/19 = 5.263157894736842 %
 
-   - Tasksets exceeding safe boundary: 0/11 = 0.0 %
+   - Tasksets exceeding safe boundary: 0/19 = 0.0 %
 
-### Level 1.812
+### Level 1.86
 
-   Tasksets executed: 14
+   Tasksets executed: 17
 
-   - Tasksets actually schedulable: 11/14 = 78.57142857142857 %
+   - Tasksets actually schedulable: 15/17 = 88.23529411764706 %
 
-   - Tasksets **not** schedulable: 1/14 = 7.142857142857142 %
+   - Tasksets **not** schedulable: 1/17 = 5.88235294117647 %
 
-   - Tasksets exceeding level-criticality budget: 2/14 = 14.285714285714285 %
+   - Tasksets exceeding level-criticality budget: 1/17 = 5.88235294117647 %
 
-   - Tasksets exceeding safe boundary: 0/14 = 0.0 %
+   - Tasksets exceeding safe boundary: 0/17 = 0.0 %
 
-### Level 1.824
+### Level 1.872
 
-   Tasksets executed: 11
+   Tasksets executed: 15
 
-   - Tasksets actually schedulable: 11/11 = 100.0 %
+   - Tasksets actually schedulable: 13/15 = 86.66666666666667 %
 
-   - Tasksets **not** schedulable: 0/11 = 0.0 %
+   - Tasksets **not** schedulable: 1/15 = 6.666666666666667 %
 
-   - Tasksets exceeding level-criticality budget: 0/11 = 0.0 %
+   - Tasksets exceeding level-criticality budget: 1/15 = 6.666666666666667 %
 
-   - Tasksets exceeding safe boundary: 0/11 = 0.0 %
+   - Tasksets exceeding safe boundary: 0/15 = 0.0 %
 
-### Level 1.836
+### Level 1.8840000000000001
 
    Tasksets executed: 20
 
@@ -19883,91 +11796,31 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
    - Tasksets exceeding safe boundary: 0/20 = 0.0 %
 
-### Level 1.848
-
-   Tasksets executed: 25
-
-   - Tasksets actually schedulable: 23/25 = 92.0 %
-
-   - Tasksets **not** schedulable: 1/25 = 4.0 %
-
-   - Tasksets exceeding level-criticality budget: 1/25 = 4.0 %
-
-   - Tasksets exceeding safe boundary: 0/25 = 0.0 %
-
-### Level 1.86
-
-   Tasksets executed: 18
-
-   - Tasksets actually schedulable: 15/18 = 83.33333333333334 %
-
-   - Tasksets **not** schedulable: 2/18 = 11.11111111111111 %
-
-   - Tasksets exceeding level-criticality budget: 1/18 = 5.555555555555555 %
-
-   - Tasksets exceeding safe boundary: 0/18 = 0.0 %
-
-### Level 1.872
-
-   Tasksets executed: 22
-
-   - Tasksets actually schedulable: 20/22 = 90.9090909090909 %
-
-   - Tasksets **not** schedulable: 1/22 = 4.545454545454546 %
-
-   - Tasksets exceeding level-criticality budget: 1/22 = 4.545454545454546 %
-
-   - Tasksets exceeding safe boundary: 0/22 = 0.0 %
-
-### Level 1.8840000000000001
-
-   Tasksets executed: 26
-
-   - Tasksets actually schedulable: 23/26 = 88.46153846153845 %
-
-   - Tasksets **not** schedulable: 2/26 = 7.6923076923076925 %
-
-   - Tasksets exceeding level-criticality budget: 1/26 = 3.8461538461538463 %
-
-   - Tasksets exceeding safe boundary: 0/26 = 0.0 %
-
 ### Level 1.8960000000000001
 
-   Tasksets executed: 18
+   Tasksets executed: 16
 
-   - Tasksets actually schedulable: 15/18 = 83.33333333333334 %
+   - Tasksets actually schedulable: 16/16 = 100.0 %
 
-   - Tasksets **not** schedulable: 0/18 = 0.0 %
+   - Tasksets **not** schedulable: 0/16 = 0.0 %
 
-   - Tasksets exceeding level-criticality budget: 3/18 = 16.666666666666664 %
+   - Tasksets exceeding level-criticality budget: 0/16 = 0.0 %
 
-   - Tasksets exceeding safe boundary: 0/18 = 0.0 %
+   - Tasksets exceeding safe boundary: 0/16 = 0.0 %
 
 ### Level 1.9080000000000001
 
-   Tasksets executed: 24
+   Tasksets executed: 20
 
-   - Tasksets actually schedulable: 21/24 = 87.5 %
+   - Tasksets actually schedulable: 18/20 = 90.0 %
 
-   - Tasksets **not** schedulable: 1/24 = 4.166666666666666 %
+   - Tasksets **not** schedulable: 1/20 = 5.0 %
 
-   - Tasksets exceeding level-criticality budget: 1/24 = 4.166666666666666 %
+   - Tasksets exceeding level-criticality budget: 1/20 = 5.0 %
 
-   - Tasksets exceeding safe boundary: 1/24 = 4.166666666666666 %
+   - Tasksets exceeding safe boundary: 0/20 = 0.0 %
 
 ### Level 1.9200000000000002
-
-   Tasksets executed: 22
-
-   - Tasksets actually schedulable: 17/22 = 77.27272727272727 %
-
-   - Tasksets **not** schedulable: 1/22 = 4.545454545454546 %
-
-   - Tasksets exceeding level-criticality budget: 4/22 = 18.181818181818183 %
-
-   - Tasksets exceeding safe boundary: 0/22 = 0.0 %
-
-### Level 1.9320000000000002
 
    Tasksets executed: 19
 
@@ -19975,117 +11828,129 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
    - Tasksets **not** schedulable: 1/19 = 5.263157894736842 %
 
-   - Tasksets exceeding level-criticality budget: 2/19 = 10.526315789473683 %
+   - Tasksets exceeding level-criticality budget: 1/19 = 5.263157894736842 %
 
-   - Tasksets exceeding safe boundary: 0/19 = 0.0 %
+   - Tasksets exceeding safe boundary: 1/19 = 5.263157894736842 %
 
-### Level 1.9440000000000002
+### Level 1.9320000000000002
 
    Tasksets executed: 14
 
-   - Tasksets actually schedulable: 12/14 = 85.71428571428571 %
+   - Tasksets actually schedulable: 14/14 = 100.0 %
 
    - Tasksets **not** schedulable: 0/14 = 0.0 %
 
-   - Tasksets exceeding level-criticality budget: 2/14 = 14.285714285714285 %
+   - Tasksets exceeding level-criticality budget: 0/14 = 0.0 %
 
    - Tasksets exceeding safe boundary: 0/14 = 0.0 %
 
+### Level 1.9440000000000002
+
+   Tasksets executed: 13
+
+   - Tasksets actually schedulable: 12/13 = 92.3076923076923 %
+
+   - Tasksets **not** schedulable: 1/13 = 7.6923076923076925 %
+
+   - Tasksets exceeding level-criticality budget: 0/13 = 0.0 %
+
+   - Tasksets exceeding safe boundary: 0/13 = 0.0 %
+
 ### Level 1.9560000000000002
-
-   Tasksets executed: 11
-
-   - Tasksets actually schedulable: 8/11 = 72.72727272727273 %
-
-   - Tasksets **not** schedulable: 0/11 = 0.0 %
-
-   - Tasksets exceeding level-criticality budget: 2/11 = 18.181818181818183 %
-
-   - Tasksets exceeding safe boundary: 1/11 = 9.090909090909092 %
-
-### Level 1.9680000000000002
 
    Tasksets executed: 12
 
    - Tasksets actually schedulable: 9/12 = 75.0 %
 
-   - Tasksets **not** schedulable: 0/12 = 0.0 %
+   - Tasksets **not** schedulable: 2/12 = 16.666666666666664 %
 
-   - Tasksets exceeding level-criticality budget: 2/12 = 16.666666666666664 %
+   - Tasksets exceeding level-criticality budget: 0/12 = 0.0 %
 
    - Tasksets exceeding safe boundary: 1/12 = 8.333333333333332 %
 
-### Level 1.9800000000000002
-
-   Tasksets executed: 10
-
-   - Tasksets actually schedulable: 7/10 = 70.0 %
-
-   - Tasksets **not** schedulable: 1/10 = 10.0 %
-
-   - Tasksets exceeding level-criticality budget: 1/10 = 10.0 %
-
-   - Tasksets exceeding safe boundary: 1/10 = 10.0 %
-
-### Level 1.9920000000000002
+### Level 1.9680000000000002
 
    Tasksets executed: 6
 
-   - Tasksets actually schedulable: 6/6 = 100.0 %
+   - Tasksets actually schedulable: 5/6 = 83.33333333333334 %
 
-   - Tasksets **not** schedulable: 0/6 = 0.0 %
+   - Tasksets **not** schedulable: 1/6 = 16.666666666666664 %
 
    - Tasksets exceeding level-criticality budget: 0/6 = 0.0 %
 
    - Tasksets exceeding safe boundary: 0/6 = 0.0 %
 
+### Level 1.9800000000000002
+
+   Tasksets executed: 5
+
+   - Tasksets actually schedulable: 3/5 = 60.0 %
+
+   - Tasksets **not** schedulable: 2/5 = 40.0 %
+
+   - Tasksets exceeding level-criticality budget: 0/5 = 0.0 %
+
+   - Tasksets exceeding safe boundary: 0/5 = 0.0 %
+
+### Level 1.9920000000000002
+
+   Tasksets executed: 6
+
+   - Tasksets actually schedulable: 5/6 = 83.33333333333334 %
+
+   - Tasksets **not** schedulable: 0/6 = 0.0 %
+
+   - Tasksets exceeding level-criticality budget: 0/6 = 0.0 %
+
+   - Tasksets exceeding safe boundary: 1/6 = 16.666666666666664 %
+
 ### Level 2.004
+
+   Tasksets executed: 5
+
+   - Tasksets actually schedulable: 4/5 = 80.0 %
+
+   - Tasksets **not** schedulable: 1/5 = 20.0 %
+
+   - Tasksets exceeding level-criticality budget: 0/5 = 0.0 %
+
+   - Tasksets exceeding safe boundary: 0/5 = 0.0 %
+
+### Level 2.016
+
+   Tasksets executed: 0
+
+   - Tasksets actually schedulable: 0/0 = 0 %
+
+   - Tasksets **not** schedulable: 0/0 = 0 %
+
+   - Tasksets exceeding level-criticality budget: 0/0 = 0 %
+
+   - Tasksets exceeding safe boundary: 0/0 = 0 %
+
+### Level 2.028
 
    Tasksets executed: 1
 
    - Tasksets actually schedulable: 0/1 = 0.0 %
 
-   - Tasksets **not** schedulable: 0/1 = 0.0 %
-
-   - Tasksets exceeding level-criticality budget: 1/1 = 100.0 %
-
-   - Tasksets exceeding safe boundary: 0/1 = 0.0 %
-
-### Level 2.016
-
-   Tasksets executed: 4
-
-   - Tasksets actually schedulable: 2/4 = 50.0 %
-
-   - Tasksets **not** schedulable: 1/4 = 25.0 %
-
-   - Tasksets exceeding level-criticality budget: 1/4 = 25.0 %
-
-   - Tasksets exceeding safe boundary: 0/4 = 0.0 %
-
-### Level 2.028
-
-   Tasksets executed: 2
-
-   - Tasksets actually schedulable: 0/2 = 0.0 %
-
-   - Tasksets **not** schedulable: 0/2 = 0.0 %
-
-   - Tasksets exceeding level-criticality budget: 0/2 = 0.0 %
-
-   - Tasksets exceeding safe boundary: 2/2 = 100.0 %
-
-### Level 2.04
-
-   Tasksets executed: 1
-
-   - Tasksets actually schedulable: 1/1 = 100.0 %
-
-   - Tasksets **not** schedulable: 0/1 = 0.0 %
+   - Tasksets **not** schedulable: 1/1 = 100.0 %
 
    - Tasksets exceeding level-criticality budget: 0/1 = 0.0 %
 
    - Tasksets exceeding safe boundary: 0/1 = 0.0 %
+
+### Level 2.04
+
+   Tasksets executed: 0
+
+   - Tasksets actually schedulable: 0/0 = 0 %
+
+   - Tasksets **not** schedulable: 0/0 = 0 %
+
+   - Tasksets exceeding level-criticality budget: 0/0 = 0 %
+
+   - Tasksets exceeding safe boundary: 0/0 = 0 %
 
 ### Level 2.052
 
