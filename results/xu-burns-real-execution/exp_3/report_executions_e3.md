@@ -38,14 +38,19 @@ NS + BE executions: 127/630 = 20.158730158730158 %
 ![ALT](./overall_3.png)
 
 
-#### **Tasksets, grouped by (LO-crit budget, Period & Migrability), with a Budget_Exceeded task.**
+#### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**
 
 ![ALT](./BE_3.png)
 
 
-#### **Tasksets, grouped by (Period & Migrability), with at least one task missing one (or more) of its deadlines.**
+#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**
 
 ![ALT](./NS_3.png)
+
+
+### **Nominal utilizations VS Real utilizations about schedulable tasksets**
+
+![ALT](./utilizations_histogram_3.png)
 
 ## Bad tasksets
 
@@ -67,6 +72,7 @@ Ovvero quando almeno un task non completa entra almeno una sua deadline.
     "id": "e3_semi2wf_t10814",
     "size": "12",
     "utilization": "2.088",
+    "realutilization": 0.53,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -144,6 +150,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.53
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -557,7 +565,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t1195",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 0.64,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -635,6 +644,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.64
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -1049,6 +1060,7 @@ Task:  1
     "id": "e3_semi2wf_t2205",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.63,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -1126,6 +1138,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.63
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -1540,6 +1554,7 @@ Task:  1
     "id": "e3_semi2wf_t2298",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -1617,6 +1632,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -2030,7 +2047,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t2504",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.59,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -2108,6 +2126,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.59
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -2521,7 +2541,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t2515",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.68,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -2599,6 +2620,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6799999999999999
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -3012,7 +3035,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t2541",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.62,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -3090,6 +3114,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6200000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -3503,7 +3529,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t2586",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.61,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -3581,6 +3608,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6100000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -3994,7 +4023,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t2812",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -4072,6 +4102,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -4485,7 +4517,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t2816",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.59,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -4563,6 +4596,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.5900000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -4976,7 +5011,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t2859",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.75,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -5085,6 +5121,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.75
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -5498,7 +5536,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3013",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.71,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -5576,6 +5615,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.71
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -5989,7 +6030,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3054",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 1.23,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -6098,6 +6140,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 1.23
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -6511,7 +6555,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3060",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.58,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -6589,6 +6634,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.58
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -7002,7 +7049,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3080",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.58,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -7080,6 +7128,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.58
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -7493,7 +7543,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3105",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -7571,6 +7622,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -7984,7 +8037,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t3108",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 0.68,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -8062,6 +8116,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6799999999999999
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -8475,7 +8531,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3234",
     "size": "12",
-    "utilization": "1.9680000000000002",
+    "utilization": "1.968",
+    "realutilization": 0.54,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -8584,6 +8641,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.54
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -8997,7 +9056,8 @@ Task:  3
 	 
     "id": "e3_semi2wf_t3255",
     "size": "12",
-    "utilization": "1.9680000000000002",
+    "utilization": "1.968",
+    "realutilization": 0.72,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -9075,6 +9135,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.72
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -9488,7 +9550,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t3481",
     "size": "12",
-    "utilization": "1.9920000000000002",
+    "utilization": "1.992",
+    "realutilization": 0.7,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -9566,6 +9629,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.7
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -9979,7 +10044,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t355",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.62,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -10057,6 +10123,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.62
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -10471,6 +10539,7 @@ Task:  1
     "id": "e3_semi2wf_t3596",
     "size": "12",
     "utilization": "2.004",
+    "realutilization": 0.59,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -10579,6 +10648,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.5900000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -10992,7 +11063,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t379",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.61,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -11070,6 +11142,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.61
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -11484,6 +11558,7 @@ Task:  2
     "id": "e3_semi2wf_t4405",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -11561,6 +11636,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -11975,6 +12052,7 @@ Task:  1
     "id": "e3_semi2wf_t4471",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -12052,6 +12130,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -12465,7 +12545,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4576",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.52,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -12543,6 +12624,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.52
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -12957,6 +13040,7 @@ Task:  3
     "id": "e3_semi2wf_t4657",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.69,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -13034,6 +13118,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.69
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -13447,7 +13533,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4704",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.58,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -13525,6 +13612,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.5800000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -13938,7 +14027,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4795",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -14016,6 +14106,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -14429,7 +14521,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4799",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.53,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -14507,6 +14600,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.53
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -14920,7 +15015,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4822",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.61,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -14998,6 +15094,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.61
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -15411,7 +15509,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4855",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.54,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -15489,6 +15588,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.54
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -15902,7 +16003,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t4869",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.54,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -15980,6 +16082,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.54
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -16393,7 +16497,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4873",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.59,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -16471,6 +16576,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.59
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -16884,7 +16991,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4890",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.62,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -16962,6 +17070,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6200000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -17375,7 +17485,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t4968",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -17453,6 +17564,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -17866,7 +17979,8 @@ Task:  3
 	 
     "id": "e3_semi2wf_t5100",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -17944,6 +18058,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -18357,7 +18473,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5111",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -18435,6 +18552,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -18848,7 +18967,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t5128",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 0.54,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -18926,6 +19046,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.54
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -19339,7 +19461,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5137",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -19417,6 +19540,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -19830,7 +19955,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5220",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.67,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -19908,6 +20034,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.67
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -20321,7 +20449,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5313",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 0.6,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -20399,6 +20528,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -20812,7 +20943,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5384",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 0.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -20890,6 +21022,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -21303,7 +21437,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5517",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 0.62,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -21381,6 +21516,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.62
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -21794,7 +21931,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5597",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 0.5,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -21903,6 +22041,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.5
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -22317,6 +22457,7 @@ Task:  1
     "id": "e3_semi2wf_t6629",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.45,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -22394,6 +22535,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.45
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -22808,6 +22951,7 @@ Task:  1
     "id": "e3_semi2wf_t6659",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.52,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -22885,6 +23029,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.52
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -23299,6 +23445,7 @@ Task:  1
     "id": "e3_semi2wf_t6664",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -23376,6 +23523,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -23790,6 +23939,7 @@ Task:  3
     "id": "e3_semi2wf_t6682",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.52,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -23867,6 +24017,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.52
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -24280,7 +24432,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t6709",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -24358,6 +24511,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -24771,7 +24926,8 @@ Task:  3
 	 
     "id": "e3_semi2wf_t6754",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.47,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -24849,6 +25005,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.47
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -25262,7 +25420,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t6769",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.53,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -25340,6 +25499,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.53
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -25753,7 +25914,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t6771",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -25831,6 +25993,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -26245,6 +26409,7 @@ Task:  2
     "id": "e3_semi2wf_t6820",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.6,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -26322,6 +26487,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.6
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -26736,6 +26903,7 @@ Task:  1
     "id": "e3_semi2wf_t6858",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.52,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -26813,6 +26981,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.52
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -27227,6 +27397,7 @@ Task:  3
     "id": "e3_semi2wf_t6869",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -27304,6 +27475,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -27718,6 +27891,7 @@ Task:  3
     "id": "e3_semi2wf_t6885",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -27795,6 +27969,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -28209,6 +28385,7 @@ Task:  2
     "id": "e3_semi2wf_t6900",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -28286,6 +28463,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -28699,7 +28878,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t707",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 0.63,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -28777,6 +28957,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.63
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -29190,7 +29372,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7118",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -29268,6 +29451,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -29681,7 +29866,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7153",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -29759,6 +29945,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -30172,7 +30360,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7179",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.57,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -30250,6 +30439,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.5700000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -30663,7 +30854,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t7185",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.57,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -30741,6 +30933,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.5700000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -31154,7 +31348,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7204",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.55,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -31232,6 +31427,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.55
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -31645,7 +31842,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7266",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.5,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -31723,6 +31921,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.5
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -32136,7 +32336,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t7481",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -32214,6 +32415,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -32627,7 +32830,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7487",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.52,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -32705,6 +32909,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.52
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -33118,7 +33324,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7585",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 0.57,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -33196,6 +33403,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.5700000000000001
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -33609,7 +33818,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7716",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 0.78,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -33687,6 +33897,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.78
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -34100,7 +34312,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t841",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.65,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -34178,6 +34391,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.65
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -34591,7 +34806,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t868",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.75,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -34669,6 +34885,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.75
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -35082,7 +35300,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t874",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.54,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -35160,6 +35379,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.54
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -35574,6 +35795,7 @@ Task:  1
     "id": "e3_semi2wf_t8811",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -35651,6 +35873,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -36065,6 +36289,7 @@ Task:  1
     "id": "e3_semi2wf_t8827",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 0.47,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -36142,6 +36367,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.47000000000000003
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -36555,7 +36782,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t8933",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.47,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -36633,6 +36861,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.47
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -37046,7 +37276,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t8967",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -37124,6 +37355,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -37538,6 +37771,7 @@ Task:  2
     "id": "e3_semi2wf_t9018",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.45,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -37615,6 +37849,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.45
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -38028,7 +38264,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9130",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.47,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -38106,6 +38343,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.47
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -38519,7 +38758,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9151",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -38597,6 +38837,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -39010,7 +39252,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9289",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 0.5,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -39088,6 +39331,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.5
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -39501,7 +39746,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9350",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 0.51,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -39579,6 +39825,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.51
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -39992,7 +40240,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9435",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -40070,6 +40319,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -40483,7 +40734,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9467",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.47,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -40561,6 +40813,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 0.47
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -40974,7 +41228,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9539",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -41052,6 +41307,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -41465,7 +41722,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9601",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -41543,6 +41801,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -41956,7 +42216,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9847",
     "size": "12",
-    "utilization": "1.9680000000000002",
+    "utilization": "1.968",
+    "realutilization": 0.49,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -42034,6 +42295,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.49
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -42447,7 +42710,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9922",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 0.48,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -42525,6 +42789,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.48
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -42948,7 +43214,8 @@ Ovvero quando un task di un taskset ha ecceduto il suo criticality-level budget,
 	 
     "id": "e3_semi2wf_t132",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 1.96,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -43026,6 +43293,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 1.96
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -43440,6 +43709,7 @@ Task:  1
     "id": "e3_semi2wf_t2207",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -43517,6 +43787,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -43931,6 +44203,7 @@ Task:  1
     "id": "e3_semi2wf_t2290",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -44008,6 +44281,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -44422,6 +44697,7 @@ Task:  2
     "id": "e3_semi2wf_t2446",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 0.99,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -44499,6 +44775,8 @@ Task:  4
 
 
 
+
+   Real Utilization: 0.99
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -44912,7 +45190,8 @@ Task:  4
 	 
     "id": "e3_semi2wf_t2607",
     "size": "12",
-    "utilization": "1.8960000000000001",
+    "utilization": "1.896",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -44990,6 +45269,8 @@ Task:  7
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -45403,7 +45684,8 @@ Task:  7
 	 
     "id": "e3_semi2wf_t3189",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 1.72,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -45481,6 +45763,8 @@ Task:  6
 
 
 
+
+   Real Utilization: 1.72
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -45894,7 +46178,8 @@ Task:  6
 	 
     "id": "e3_semi2wf_t4751",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 1.96,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -45972,6 +46257,8 @@ Task:  8
 
 
 
+
+   Real Utilization: 1.96
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -46385,7 +46672,8 @@ Task:  8
 	 
     "id": "e3_semi2wf_t5152",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -46463,6 +46751,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -46876,7 +47166,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t5235",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 1.75,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -46954,6 +47245,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 1.75
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -47367,7 +47660,8 @@ Task:  3
 	 
     "id": "e3_semi2wf_t554",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -47445,6 +47739,8 @@ Task:  7
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -47858,7 +48154,8 @@ Task:  7
 	 
     "id": "e3_semi2wf_t5573",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -47936,6 +48233,8 @@ Task:  10
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -48350,6 +48649,7 @@ Task:  10
     "id": "e3_semi2wf_t5825",
     "size": "12",
     "utilization": "2.016",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -48427,6 +48727,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -48841,6 +49143,7 @@ Task:  1
     "id": "e3_semi2wf_t6611",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -48918,6 +49221,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -49332,6 +49637,7 @@ Task:  1
     "id": "e3_semi2wf_t6617",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 1.61,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -49409,6 +49715,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 1.61
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -49823,6 +50131,7 @@ Task:  1
     "id": "e3_semi2wf_t6865",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -49900,6 +50209,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -50314,6 +50625,7 @@ Task:  1
     "id": "e3_semi2wf_t6873",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -50391,6 +50703,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -50805,6 +51119,7 @@ Task:  2
     "id": "e3_semi2wf_t6878",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -50882,6 +51197,8 @@ Task:  12
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -51295,7 +51612,8 @@ Task:  12
 	 
     "id": "e3_semi2wf_t6932",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 1.98,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -51373,6 +51691,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 1.98
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -51786,7 +52106,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t6990",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -51864,6 +52185,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -52277,7 +52600,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7141",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -52355,6 +52679,8 @@ Task:  10
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -52768,7 +53094,8 @@ Task:  10
 	 
     "id": "e3_semi2wf_t7162",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -52846,6 +53173,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -53259,7 +53588,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t7389",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -53337,6 +53667,8 @@ Task:  11
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -53750,7 +54082,8 @@ Task:  11
 	 
     "id": "e3_semi2wf_t7390",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -53828,6 +54161,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -54241,7 +54576,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t7747",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 1.73,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -54319,6 +54655,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 1.73
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -54732,7 +55070,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t8270",
     "size": "12",
-    "utilization": "2.04",
+    "utilization": "2.040",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -54810,6 +55149,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -55223,7 +55564,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t884",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -55301,6 +55643,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -55715,6 +56059,7 @@ Task:  1
     "id": "e3_semi2wf_t8877",
     "size": "12",
     "utilization": "1.848",
+    "realutilization": 1.98,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -55792,6 +56137,8 @@ Task:  5
 
 
 
+
+   Real Utilization: 1.98
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -56205,7 +56552,8 @@ Task:  5
 	 
     "id": "e3_semi2wf_t8934",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -56283,6 +56631,8 @@ Task:  4
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -56697,6 +57047,7 @@ Task:  4
     "id": "e3_semi2wf_t9055",
     "size": "12",
     "utilization": "1.872",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -56774,6 +57125,8 @@ Task:  5
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -57187,7 +57540,8 @@ Task:  5
 	 
     "id": "e3_semi2wf_t910",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -57265,6 +57619,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -57678,7 +58034,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9127",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -57756,6 +58113,8 @@ Task:  4
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -58169,7 +58528,8 @@ Task:  4
 	 
     "id": "e3_semi2wf_t9164",
     "size": "12",
-    "utilization": "1.8840000000000001",
+    "utilization": "1.884",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -58247,6 +58607,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -58660,7 +59022,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9407",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 1.96,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -58738,6 +59101,8 @@ Task:  9
 
 
 
+
+   Real Utilization: 1.96
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -59151,7 +59516,8 @@ Task:  9
 	 
     "id": "e3_semi2wf_t9465",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -59229,6 +59595,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -59642,7 +60010,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9493",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 0.87,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -59720,6 +60089,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 0.87
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -60133,7 +60504,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9545",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -60211,6 +60583,8 @@ Task:  3
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -60624,7 +60998,8 @@ Task:  3
 	 
     "id": "e3_semi2wf_t9616",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -60702,6 +61077,8 @@ Task:  7
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -61115,7 +61492,8 @@ Task:  7
 	 
     "id": "e3_semi2wf_t9686",
     "size": "12",
-    "utilization": "1.9440000000000002",
+    "utilization": "1.944",
+    "realutilization": 1.94,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -61193,6 +61571,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 1.94
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -61606,7 +61986,8 @@ Task:  1
 	 
     "id": "e3_semi2wf_t9724",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -61684,6 +62065,8 @@ Task:  2
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -62097,7 +62480,8 @@ Task:  2
 	 
     "id": "e3_semi2wf_t9904",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 2.0,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -62175,6 +62559,8 @@ Task:  1
 
 
 
+
+   Real Utilization: 2.0
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -62598,7 +62984,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t1138",
     "size": "12",
-    "utilization": "1.9800000000000002",
+    "utilization": "1.980",
+    "realutilization": 1.84,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -62636,6 +63023,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.84
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -63049,7 +63438,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t1280",
     "size": "12",
-    "utilization": "1.9920000000000002",
+    "utilization": "1.992",
+    "realutilization": 1.6,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -63087,6 +63477,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.6
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -63501,6 +63893,7 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": "e3_semi2wf_t1381",
     "size": "12",
     "utilization": "2.004",
+    "realutilization": 1.29,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -63538,6 +63931,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.29
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -63951,7 +64346,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t2357",
     "size": "12",
-    "utilization": "1.86",
+    "utilization": "1.860",
+    "realutilization": 1.56,
     "criticality_factor": "2",
     "hicrit_proportion": "0.6"
 
@@ -63989,6 +64385,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.56
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -64402,7 +64800,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t5117",
     "size": "12",
-    "utilization": "1.9320000000000002",
+    "utilization": "1.932",
+    "realutilization": 1.01,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -64440,6 +64839,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.01
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -64854,6 +65255,7 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
     "id": "e3_semi2wf_t5815",
     "size": "12",
     "utilization": "2.016",
+    "realutilization": 1.94,
     "criticality_factor": "2",
     "hicrit_proportion": "0.7"
 
@@ -64891,6 +65293,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.94
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -65304,7 +65708,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t583",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 1.78,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -65342,6 +65747,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.78
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -65755,7 +66162,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t659",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 1.55,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -65793,6 +66201,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.55
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -66206,7 +66616,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t672",
     "size": "12",
-    "utilization": "1.9200000000000002",
+    "utilization": "1.920",
+    "realutilization": 1.93,
     "criticality_factor": "2",
     "hicrit_proportion": "0.5"
 
@@ -66244,6 +66655,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.93
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -66657,7 +67070,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t7526",
     "size": "12",
-    "utilization": "1.9560000000000002",
+    "utilization": "1.956",
+    "realutilization": 1.29,
     "criticality_factor": "2",
     "hicrit_proportion": "0.8"
 
@@ -66695,6 +67109,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.29
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -67108,7 +67524,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t9364",
     "size": "12",
-    "utilization": "1.9080000000000001",
+    "utilization": "1.908",
+    "realutilization": 1.66,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -67146,6 +67563,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.66
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
@@ -67559,7 +67978,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 	 
     "id": "e3_semi2wf_t9820",
     "size": "12",
-    "utilization": "1.9680000000000002",
+    "utilization": "1.968",
+    "realutilization": 1.14,
     "criticality_factor": "2",
     "hicrit_proportion": "0.9"
 
@@ -67597,6 +68017,8 @@ Ovvero quando un taskset ha troppi core (2 nel contesto dual-core) eseguenti in 
 
 
 
+
+   Real Utilization: 1.14
    </details>
 
    <details> <summary markdown="span">Click here to see the whole tasksets.</summary>
