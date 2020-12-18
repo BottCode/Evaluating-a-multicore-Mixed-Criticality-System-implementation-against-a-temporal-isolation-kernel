@@ -431,9 +431,22 @@ def produce_results_experiment(experiment_id):
                         if int(task_XML.find('taskid').text) == int(execution_XML.find('guiltytask').text):
                             p = float (task_XML.find('period').text) * 1000
                             budget = float (task_XML.find('locritbudget').text) * 1000000  if task_XML.find('criticality') == 'LOW' else float (task_XML.find('hicritbudget').text) * 1000000
+                            
+                            if experiment_id == 2:
+                                # print("yes")
+                                # sum-up periods values for sake of the readability
+                                step = 15
+                                i = 0
+                                while i <= p:
+                                    if p in range(0+i+1, step+i):
+                                        p = math.trunc ((((0+i) + (step+i)) / 2))
+                                        break
+                                    i += step
 
-                            # sum-up budget value for sake of the readability
+                            # sum-up budgets values for sake of the readability
                             step = 21
+                            if experiment_id == 2:
+                                step = 82
                             i = 0
                             while i <= budget:
                                 if budget in range(0+i+1, step+i):
@@ -579,7 +592,7 @@ def produce_results_experiment(experiment_id):
     draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_histogram_' + str(experiment_id) + '.png')
     draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_' + str(experiment_id) + '.png')
     plot_BE_data (BE_tasks_group_by_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, BE_tasks_group_by_priority, BE_tasks_group_by_interfering_migrations, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png')
-    plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, NS_tasks_group_by_util, NS_tasks_group_by_priority, NS_tasks_group_by_interfering_migrations, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
+    #plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, NS_tasks_group_by_util, NS_tasks_group_by_priority, NS_tasks_group_by_interfering_migrations, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
 
     print ('Generated report about experiment ' + str(experiment_id) + ' at ' + config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_executions_e' + str(experiment_id) + '.md\n')
 
