@@ -43,10 +43,6 @@ NS + BE executions: 278/1080 = 25.74074074074074 %
 ![ALT](./BE_2.png)
 
 
-#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**
-
-![ALT](./NS_2.png)
-
 
 ### **Nominal utilizations VS Real utilizations about schedulable tasksets**
 
