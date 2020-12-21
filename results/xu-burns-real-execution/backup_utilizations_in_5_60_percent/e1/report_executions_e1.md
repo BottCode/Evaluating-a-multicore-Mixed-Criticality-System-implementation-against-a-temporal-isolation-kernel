@@ -54,6 +54,9 @@ NS + BE executions: 35/285 = 12.280701754385964 %
 
 ![ALT](./utilizations_histogram_1.png)
 
+| Average real utilizations | Variance real utilizations | Min | Max |
+| ------ | ------ | ------ | ------ |
+| 0.995 | 0.005 | 0.820 | 1.190 |
 ## Bad tasksets
 
 <details><summary markdown="span">Click here to expand this section.</summary>
