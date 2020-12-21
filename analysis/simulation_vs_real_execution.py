@@ -561,8 +561,12 @@ def produce_results_experiment(experiment_id):
     elif experiment_id == 4:
         exp_param += ' Taskset sizes = ' + str(config_sim_vs_real.TASKSETS_SIZE) + '\n\n'
  
-    overall_data_section = '\n\n   ## Overall data\n\n' + exp_param
-    overall_data_section += '  Number of executions: ' + str(total_executions) + '\n\n'
+    overall_data_section_markdown_table = '| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |\n| ------ | ------ | ------ | ------ |\n'
+    overall_data_section_markdown_table += '| ' + format((total_schedulable/total_executions)*100, '.2f') + '% | ' + format((total_NS/total_executions)*100, '.2f') + '% | ' + format((total_BE/total_executions)*100, '.2f') + '% | ' + format((total_SBE/total_executions)*100, '.2f') + '% |\n\n'
+
+    overall_data_section = '\n\n## Overall data\n\n' + exp_param
+    overall_data_section += overall_data_section_markdown_table
+    overall_data_section += 'Number of executions: ' + str(total_executions) + '\n\n'
     overall_data_section += 'Schedulable executions: ' + str(total_schedulable) + '/' + str(total_executions) + ' = ' + str((total_schedulable/total_executions)*100) + ' %\n\n'
     overall_data_section += '_Not_ schedulable executions: ' + str(total_NS) + '/' + str(total_executions) + ' = ' + str((total_NS/total_executions)*100) + ' %\n\n'
     overall_data_section += 'Budget Exceeded executions: ' + str(total_BE) + '/' + str(total_executions) + ' = '  + str((total_BE/total_executions)*100) + ' %\n\n'

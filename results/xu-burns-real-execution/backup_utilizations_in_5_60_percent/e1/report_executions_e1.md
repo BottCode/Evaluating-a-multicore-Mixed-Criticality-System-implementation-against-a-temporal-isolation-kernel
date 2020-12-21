@@ -2,11 +2,15 @@
 
 
 
-   ## Overall data
+## Overall data
 
    Utilization range = [1.848, 2.1] with step = 0.012
 
-  Number of executions: 285
+| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |
+| ------ | ------ | ------ | ------ |
+| 84.56% | 8.77% | 3.51% | 3.16% |
+
+Number of executions: 285
 
 Schedulable executions: 241/285 = 84.56140350877193 %
 
