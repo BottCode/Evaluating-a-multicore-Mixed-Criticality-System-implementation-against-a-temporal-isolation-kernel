@@ -2,13 +2,17 @@
 
 
 
-   ## Overall data
+## Overall data
 
    Utilization range = [1.848, 2.1] with step = 0.012
 
  Taskset sizes = [8, 10, 12, 15, 20, 25, 30, 35]
 
-  Number of executions: 376
+| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |
+| ------ | ------ | ------ | ------ |
+| 74.73% | 5.85% | 11.97% | 7.45% |
+
+Number of executions: 376
 
 Schedulable executions: 281/376 = 74.7340425531915 %
 
@@ -52,6 +56,9 @@ NS + BE executions: 67/376 = 17.819148936170212 %
 
 ![ALT](./utilizations_histogram_4.png)
 
+| Average real utilizations | Variance real utilizations | Min | Max |
+| ------ | ------ | ------ | ------ |
+| 0.979 | 0.009 | 0.750 | 1.270 |
 ## Bad tasksets
 
 <details><summary markdown="span">Click here to expand this section.</summary>
