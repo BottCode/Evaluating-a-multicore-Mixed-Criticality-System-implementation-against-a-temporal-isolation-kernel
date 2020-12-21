@@ -2,13 +2,17 @@
 
 
 
-   ## Overall data
+## Overall data
 
    Utilization range = [1.848, 2.1] with step = 0.012
 
-   Criticality factor range = [0.5, 0.9] with step = 0.1
+   HI-CRIT proportion range = [0.5, 0.9] with step = 0.1
 
-  Number of executions: 630
+| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |
+| ------ | ------ | ------ | ------ |
+| 77.94% | 13.81% | 6.35% | 1.90% |
+
+Number of executions: 630
 
 Schedulable executions: 491/630 = 77.93650793650794 %
 
@@ -52,6 +56,9 @@ NS + BE executions: 127/630 = 20.158730158730158 %
 
 ![ALT](./utilizations_histogram_3.png)
 
+| Average real utilizations | Variance real utilizations | Min | Max |
+| ------ | ------ | ------ | ------ |
+| 0.558 | 0.007 | 0.360 | 1.320 |
 ## Bad tasksets
 
 <details><summary markdown="span">Click here to expand this section.</summary>
