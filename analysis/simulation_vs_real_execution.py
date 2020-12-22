@@ -63,7 +63,7 @@ def draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, o
 
 def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, output_histogram):
     df = pd.DataFrame({'Nominal utilizations distribution for schedulable tasksets' : nominal_utilizations_schedulable_tasksets, 'Real utilizations distribution for schedulable tasksets' : real_utilizations_schedulable_tasksets})
-
+    
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
         df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
@@ -553,16 +553,24 @@ def produce_results_experiment(experiment_id):
             # overall_results['DM and BE']['values'].append ([float(level), perc_BE_and_NS])
             results_to_plot[approach].append([float(level), perc])
 
+    mean_real_util = format (sum (real_utilizations_schedulable_tasksets) / len (real_utilizations_schedulable_tasksets), '.3f')
+    var_real_util = format (sum ((x-float(mean_real_util))**2 for x in real_utilizations_schedulable_tasksets) / len(real_utilizations_schedulable_tasksets), '.3f')
+
     exp_param = '   Utilization range = [' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ', ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.UTIL_STEP) + '\n\n'
+    
     if experiment_id == 2:
         exp_param += '   Criticality factor range = [' + str(config_sim_vs_real.CRITICALITY_LOWER_BOUND) + ', ' + str(config_sim_vs_real.CRITICALITY_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.CRITICALITY_STEP) + '\n\n'
     elif experiment_id == 3:
-        exp_param += '   Criticality factor range = [' + str(config_sim_vs_real.PROPORTION_LOWER_BOUND) + ', ' + str(config_sim_vs_real.PROPORTION_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.PROPORTION_STEP) + '\n\n'
+        exp_param += '   HI-CRIT proportion range = [' + str(config_sim_vs_real.PROPORTION_LOWER_BOUND) + ', ' + str(config_sim_vs_real.PROPORTION_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.PROPORTION_STEP) + '\n\n'
     elif experiment_id == 4:
         exp_param += ' Taskset sizes = ' + str(config_sim_vs_real.TASKSETS_SIZE) + '\n\n'
  
-    overall_data_section = '\n\n   ## Overall data\n\n' + exp_param
-    overall_data_section += '  Number of executions: ' + str(total_executions) + '\n\n'
+    overall_data_section_markdown_table = '| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |\n| ------ | ------ | ------ | ------ |\n'
+    overall_data_section_markdown_table += '| ' + format((total_schedulable/total_executions)*100, '.2f') + '% | ' + format((total_NS/total_executions)*100, '.2f') + '% | ' + format((total_BE/total_executions)*100, '.2f') + '% | ' + format((total_SBE/total_executions)*100, '.2f') + '% |\n\n'
+
+    overall_data_section = '\n\n## Overall data\n\n' + exp_param
+    overall_data_section += overall_data_section_markdown_table
+    overall_data_section += 'Number of executions: ' + str(total_executions) + '\n\n'
     overall_data_section += 'Schedulable executions: ' + str(total_schedulable) + '/' + str(total_executions) + ' = ' + str((total_schedulable/total_executions)*100) + ' %\n\n'
     overall_data_section += '_Not_ schedulable executions: ' + str(total_NS) + '/' + str(total_executions) + ' = ' + str((total_NS/total_executions)*100) + ' %\n\n'
     overall_data_section += 'Budget Exceeded executions: ' + str(total_BE) + '/' + str(total_executions) + ' = '  + str((total_BE/total_executions)*100) + ' %\n\n'
@@ -574,6 +582,9 @@ def produce_results_experiment(experiment_id):
     overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**\n\n![ALT](./BE_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**\n\n![ALT](./NS_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '\n### **Nominal utilizations VS Real utilizations about schedulable tasksets**\n\n![ALT](./utilizations_histogram_' + str(experiment_id) + '.png)\n\n'
+
+    overall_data_section += '| Average real utilizations | Variance real utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_real_util + ' | ' + var_real_util + ' | ' + format (min(real_utilizations_schedulable_tasksets), '.3f') + ' | '  + format (max(real_utilizations_schedulable_tasksets), '.3f') + ' |\n' 
+
 
     copyfile (config_sim_vs_real.MAIN_LOG, config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/log_e' + str(experiment_id) + '.xml')
     copyfile(config_sim_vs_real.SIMULATIONS_RESULTS + 'result_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/result_' + str(experiment_id) + '.png')
