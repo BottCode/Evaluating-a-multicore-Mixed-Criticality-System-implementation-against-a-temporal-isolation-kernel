@@ -549,7 +549,11 @@ def produce_results_experiment(experiment_id):
             overall_results['Actually Schedulable']['values'].append ([float(level), perc])
             overall_results['Deadline Missed']['values'].append ([float(level), perc_NS])
             overall_results['Budget Exceeded']['values'].append ([float(level), perc_BE])
-            # overall_results['Safe Boundary Exceeded']['values'].append ([float(level), perc_SBE])
+            if experiment_id == 4:
+                if 'Safe Boundary Exceeded' not in overall_results:
+                    overall_results['Safe Boundary Exceeded'] = {'values': [], 'legend': 'SBE'}
+
+                overall_results['Safe Boundary Exceeded']['values'].append ([float(level), perc_SBE])
             # overall_results['DM and BE']['values'].append ([float(level), perc_BE_and_NS])
             results_to_plot[approach].append([float(level), perc])
 
