@@ -61,7 +61,18 @@ def draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, o
     plt.close()
     # print('Result saved: ' + output_histogram)
 
-def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, output_histogram):
+def draw_utils_hosting_mig (real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, output_histogram_hosting_mig):
+    df = pd.DataFrame({'Utili of that core that is NOT hosting migrating tasks, i.e: the other core is in LOW-CRIT mode' : real_utilizations_not_hosting_mig_tasks, 'Utilizations of that core that is hosting migrating tasks, i.e: the other core is in HI-CRIT mode' : real_utilizations_hosting_mig_tasks})
+    
+    fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
+    for col, ax in zip(df, axes):
+        df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
+
+    plt.tight_layout()    
+    plt.savefig(output_histogram_hosting_mig)
+    plt.close()
+
+def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, output_histogram, output_histogram_hosting_mig):
     df = pd.DataFrame({'Nominal utilizations distribution for schedulable tasksets' : nominal_utilizations_schedulable_tasksets, 'Real utilizations distribution for schedulable tasksets' : real_utilizations_schedulable_tasksets})
     
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
@@ -71,6 +82,10 @@ def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real
     plt.tight_layout()    
     plt.savefig(output_histogram)
     plt.close()
+
+    draw_utils_hosting_mig (real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, output_histogram_hosting_mig)
+
+    
 
 def plot_data (results, output, x_lab):
   fig, ax = plt.subplots(figsize=(12,9))
@@ -86,8 +101,8 @@ def plot_data (results, output, x_lab):
   plt.close()
   # print('Result saved: ' + output)
 
-def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, output):
-    df = pd.DataFrame({'Tasks BE by budget (microseconds)' : by_budget, 'Tasks BE by period (milliseconds)' : by_period, 'Tasks BE by migrability': by_migrability, 'Tasks BE by priority': by_priority, 'Tasks BE by interfering migrations': by_interfering_migrations})
+def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, by_locked_time, output):
+    df = pd.DataFrame({'Tasks BE by budget (microseconds)' : by_budget, 'Tasks BE by period (milliseconds)' : by_period, 'Tasks BE by migrability': by_migrability, 'Tasks BE by priority': by_priority, 'Tasks BE by interfering migrations': by_interfering_migrations, 'By percentage of locked time / budget': by_locked_time})
 
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
@@ -283,6 +298,8 @@ def produce_results_experiment(experiment_id):
     schedulable_histogram = []
     nominal_utilizations_schedulable_tasksets = []
     real_utilizations_schedulable_tasksets = []
+    real_utilizations_hosting_mig_tasks = []
+    real_utilizations_not_hosting_mig_tasks = []
     number_of_exec_for_each_level = {}
     # for each level => number of tasksets that exceed their budget
     BE_for_each_level = {}
@@ -302,6 +319,7 @@ def produce_results_experiment(experiment_id):
     BE_tasks_group_by_migrability = []
     BE_tasks_group_by_priority = []
     BE_tasks_group_by_interfering_migrations = []
+    BE_tasks_group_by_locked_time = []
 
     # for each period value => number of NS tasks
     NS_tasks_group_by_period = []
@@ -385,10 +403,18 @@ def produce_results_experiment(experiment_id):
                 curr_core['hightolow'] = core_XML.find('hightolow').text
                 curr_core['idletime'] = int(float(core_XML.find('idletime').text) * 1000000)
                 curr_core['util'] = 100 - ((curr_core['idletime'] / biggest_hyperperiod) * 100)
+                
+                curr_core['idletimeduringhostingmig'] = int(float(core_XML.find('idletimehostingmigs').text) * 1000000)
+                total_time_hosting_migs = int(float(core_XML.find('totaltimehostingmigs').text) * 1000000)
+                curr_core['utilduringhostingmig'] = None if total_time_hosting_migs == 0 else 100 - ((curr_core['idletimeduringhostingmig'] / total_time_hosting_migs) * 100)
 
                 real_taskset_utilization += float (format (curr_core['util'] / 100, '.2f'))
 
                 cores_info += '\n\n   CPU: ' + str(curr_core['id']) + '\n\n    ' + beautify_dict(curr_core) + '\n\n'
+
+                if str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE' and str(execution_XML.find('safeboundaryexceeded').text).upper() == 'FALSE' and str(execution_XML.find('tasksetisschedulable').text).upper() == 'TRUE' and curr_core['utilduringhostingmig'] is not None:
+                    real_utilizations_not_hosting_mig_tasks.append (float (format (curr_core['util']/100, '.2f')))
+                    real_utilizations_hosting_mig_tasks.append (float (format (curr_core['utilduringhostingmig']/100, '.2f')))
             
             execution_info['realutilization'] = float (format (real_taskset_utilization, '.2f'))
             cores_info += '\n\n   Real Utilization: ' + str(real_taskset_utilization) + '\n   </details>\n\n'
@@ -431,7 +457,8 @@ def produce_results_experiment(experiment_id):
                         if int(task_XML.find('taskid').text) == int(execution_XML.find('guiltytask').text):
                             p = float (task_XML.find('period').text) * 1000
                             budget = float (task_XML.find('locritbudget').text) * 1000000  if task_XML.find('criticality') == 'LOW' else float (task_XML.find('hicritbudget').text) * 1000000
-                            
+                            locked_time = format ((float (task_XML.find('lockedtime').text) / float (task_XML.find('locritbudget').text)) * 100, '.2f')
+
                             if experiment_id == 2:
                                 # print("yes")
                                 # sum-up periods values for sake of the readability
@@ -461,6 +488,8 @@ def produce_results_experiment(experiment_id):
                             BE_tasks_group_by_migrability.append (mig)
                             BE_tasks_group_by_priority.append (str(task_XML.find('priority').text))
                             BE_tasks_group_by_interfering_migrations.append (have_migrations_interfered)
+                            BE_tasks_group_by_locked_time.append (locked_time)
+
                     elif int(curr_task['deadlinesmissed']) > 0 and str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE':
                         dm_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + curr_task_string + '\n\n'
                         p = float (task_XML.find('period').text) * 1000
@@ -489,6 +518,7 @@ def produce_results_experiment(experiment_id):
                     schedulable_histogram.append (float(single_level))
                     nominal_utilizations_schedulable_tasksets.append (execution_info['utilization'])
                     real_utilizations_schedulable_tasksets.append (execution_info['realutilization'])
+
                 else:
                     not_schedulable_tasksets += '\n\n  ' + str(numbered_list_index_NS) +'. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
                     not_schedulable_tasksets += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n' + dm_tasks + '\n\n'
@@ -549,12 +579,22 @@ def produce_results_experiment(experiment_id):
             overall_results['Actually Schedulable']['values'].append ([float(level), perc])
             overall_results['Deadline Missed']['values'].append ([float(level), perc_NS])
             overall_results['Budget Exceeded']['values'].append ([float(level), perc_BE])
-            # overall_results['Safe Boundary Exceeded']['values'].append ([float(level), perc_SBE])
+            if experiment_id == 4:
+                if 'Safe Boundary Exceeded' not in overall_results:
+                    overall_results['Safe Boundary Exceeded'] = {'values': [], 'legend': 'SBE'}
+
+                overall_results['Safe Boundary Exceeded']['values'].append ([float(level), perc_SBE])
             # overall_results['DM and BE']['values'].append ([float(level), perc_BE_and_NS])
             results_to_plot[approach].append([float(level), perc])
 
     mean_real_util = format (sum (real_utilizations_schedulable_tasksets) / len (real_utilizations_schedulable_tasksets), '.3f')
     var_real_util = format (sum ((x-float(mean_real_util))**2 for x in real_utilizations_schedulable_tasksets) / len(real_utilizations_schedulable_tasksets), '.3f')
+
+    mean_hosting_mig_util = format (sum (real_utilizations_hosting_mig_tasks) / len (real_utilizations_hosting_mig_tasks), '.3f')
+    var_hosting_mig_util = format (sum ((x-float(mean_hosting_mig_util))**2 for x in real_utilizations_hosting_mig_tasks) / len(real_utilizations_hosting_mig_tasks), '.3f')
+    
+    mean_not_hosting_mig_util = format (sum (real_utilizations_not_hosting_mig_tasks) / len (real_utilizations_not_hosting_mig_tasks), '.3f')
+    var_not_hosting_mig_util = format (sum ((x-float(mean_not_hosting_mig_util))**2 for x in real_utilizations_not_hosting_mig_tasks) / len(real_utilizations_not_hosting_mig_tasks), '.3f')
 
     exp_param = '   Utilization range = [' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ', ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.UTIL_STEP) + '\n\n'
     
@@ -582,10 +622,14 @@ def produce_results_experiment(experiment_id):
     overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**\n\n![ALT](./BE_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**\n\n![ALT](./NS_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '\n### **Nominal utilizations VS Real utilizations about schedulable tasksets**\n\n![ALT](./utilizations_histogram_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '| Average real utilizations | Variance real utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_real_util + ' | ' + var_real_util + ' | ' + format (min(real_utilizations_schedulable_tasksets), '.3f') + ' | '  + format (max(real_utilizations_schedulable_tasksets), '.3f') + ' |\n\n'
 
-    overall_data_section += '| Average real utilizations | Variance real utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_real_util + ' | ' + var_real_util + ' | ' + format (min(real_utilizations_schedulable_tasksets), '.3f') + ' | '  + format (max(real_utilizations_schedulable_tasksets), '.3f') + ' |\n' 
-
-
+    overall_data_section += '\n### **Utils of the core that will have to accommodate migrating tasks VS Utils of the core when it is actually accomodating them**\n\n'
+    overall_data_section += 'These two graphs show the utilizations level of that core $`c_{i}`$ that, sooner or later, will have to accomodate migrating tasks of the other core $`c_{j}`$. The left one, shows the distribution utilizations levels when the core $`c_{i}`$ is **not** accomodating the other core\'s $`c_{j}`$ migrating tasks, i.e. $`c_{j}`$ is in **LOW-CRIT mode.**\nThe right one, shows the distribution utilizations levels when the core $`c_{i}`$ **is** accomodating the other core\'s $`c_{j}`$ migrating tasks, i.e. $`c_{j}`$ is in **HIGH-CRIT mode**.\n\n'
+    overall_data_section += '![ALT](./utilizations_histogram_hosting_mig_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '| Average utilizations **not** hosting migs | Variance utilizations **not** hosting migs | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_not_hosting_mig_util + ' | ' + var_not_hosting_mig_util + ' | ' + format (min(real_utilizations_not_hosting_mig_tasks), '.3f') + ' | '  + format (max(real_utilizations_not_hosting_mig_tasks), '.3f') + ' |\n\n'
+    overall_data_section += '| Average utilizations hosting migs | Variance utilizations hosting migs | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_hosting_mig_util + ' | ' + var_hosting_mig_util + ' | ' + format (min(real_utilizations_hosting_mig_tasks), '.3f') + ' | '  + format (max(real_utilizations_hosting_mig_tasks), '.3f') + ' |\n\n' 
+    
     copyfile (config_sim_vs_real.MAIN_LOG, config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/log_e' + str(experiment_id) + '.xml')
     copyfile(config_sim_vs_real.SIMULATIONS_RESULTS + 'result_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/result_' + str(experiment_id) + '.png')
     copyfile(config_sim_vs_real.SIMULATIONS_RESULTS + 'result_taskset_sched_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/result_taskset_sched_' + str(experiment_id) + '.png')
@@ -601,9 +645,9 @@ def produce_results_experiment(experiment_id):
     # plot_data(results_to_plot, output_path, x_lab)
     plot_two_or_more_functions(overall_results, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_' + str(experiment_id) + '.png', x_lab, experiment_id)
     draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_histogram_' + str(experiment_id) + '.png')
-    draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_' + str(experiment_id) + '.png')
-    plot_BE_data (BE_tasks_group_by_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, BE_tasks_group_by_priority, BE_tasks_group_by_interfering_migrations, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png')
-    #plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, NS_tasks_group_by_util, NS_tasks_group_by_priority, NS_tasks_group_by_interfering_migrations, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
+    draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_hosting_mig_' + str(experiment_id) + '.png')
+    plot_BE_data (BE_tasks_group_by_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, BE_tasks_group_by_priority, BE_tasks_group_by_interfering_migrations, BE_tasks_group_by_locked_time, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png')
+    plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, NS_tasks_group_by_util, NS_tasks_group_by_priority, NS_tasks_group_by_interfering_migrations, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
 
     print ('Generated report about experiment ' + str(experiment_id) + ' at ' + config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_executions_e' + str(experiment_id) + '.md\n')
 
