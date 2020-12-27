@@ -17,7 +17,7 @@ cd $REPO_ROOT
 
 cd $RUNTIME_NO_MIG_DIR
 echo $PWD
-sh build_runtime_zynq.sh
+#sh build_runtime_zynq.sh
 cd $REPO_ROOT
 
 cd $RTA_DIR

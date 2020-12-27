@@ -74,7 +74,7 @@ def draw_utils_hosting_mig (real_utilizations_hosting_mig_tasks, real_utilizatio
 
 def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, output_histogram, output_histogram_hosting_mig):
     df = pd.DataFrame({'Nominal utilizations distribution for schedulable tasksets' : nominal_utilizations_schedulable_tasksets, 'Real utilizations distribution for schedulable tasksets' : real_utilizations_schedulable_tasksets})
-
+    
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
         df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
@@ -597,7 +597,6 @@ def produce_results_experiment(experiment_id):
     
     mean_not_hosting_mig_util = format (sum (real_utilizations_not_hosting_mig_tasks) / len (real_utilizations_not_hosting_mig_tasks), '.3f')
     var_not_hosting_mig_util = format (sum ((x-float(mean_not_hosting_mig_util))**2 for x in real_utilizations_not_hosting_mig_tasks) / len(real_utilizations_not_hosting_mig_tasks), '.3f')
-    
 
     exp_param = '   Utilization range = [' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ', ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.UTIL_STEP) + '\n\n'
     
