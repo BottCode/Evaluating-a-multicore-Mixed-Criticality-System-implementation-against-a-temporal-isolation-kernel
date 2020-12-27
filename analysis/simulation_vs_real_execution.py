@@ -102,7 +102,7 @@ def plot_data (results, output, x_lab):
   # print('Result saved: ' + output)
 
 def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, by_locked_time, output):
-    df = pd.DataFrame({'Tasks BE by budget (microseconds)' : by_budget, 'Tasks BE by period (milliseconds)' : by_period, 'Tasks BE by migrability': by_migrability, 'Tasks BE by priority': by_priority, 'Tasks BE by interfering migrations': by_interfering_migrations, 'By percentage of locked time / budget': by_locked_time})
+    df = pd.DataFrame({'by budget (microseconds)' : by_budget, 'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations, 'y percentage of locked time / budget': by_locked_time})
 
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
@@ -113,7 +113,7 @@ def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfer
     plt.close()
 
 def plot_NS_data (by_period, by_migrability, by_util, by_priority, by_interfering_migrations, schedulable_histogram, output):
-    df = pd.DataFrame({'Tasks NS by period (milliseconds)' : by_period, 'Tasks NS by migrability': by_migrability, 'Tasks NS by utilization (percentage %)': by_util, 'Tasks NS by priority': by_priority, 'Tasks NS by interfering migrations': by_interfering_migrations})
+    df = pd.DataFrame({'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by utilization (percentage %)': by_util, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
 
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
@@ -407,14 +407,16 @@ def produce_results_experiment(experiment_id):
                 curr_core['idletimeduringhostingmig'] = int(float(core_XML.find('idletimehostingmigs').text) * 1000000)
                 total_time_hosting_migs = int(float(core_XML.find('totaltimehostingmigs').text) * 1000000)
                 curr_core['utilduringhostingmig'] = None if total_time_hosting_migs == 0 else 100 - ((curr_core['idletimeduringhostingmig'] / total_time_hosting_migs) * 100)
-
                 real_taskset_utilization += float (format (curr_core['util'] / 100, '.2f'))
 
                 cores_info += '\n\n   CPU: ' + str(curr_core['id']) + '\n\n    ' + beautify_dict(curr_core) + '\n\n'
 
                 if str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE' and str(execution_XML.find('safeboundaryexceeded').text).upper() == 'FALSE' and str(execution_XML.find('tasksetisschedulable').text).upper() == 'TRUE' and curr_core['utilduringhostingmig'] is not None:
-                    real_utilizations_not_hosting_mig_tasks.append (float (format (curr_core['util']/100, '.2f')))
-                    real_utilizations_hosting_mig_tasks.append (float (format (curr_core['utilduringhostingmig']/100, '.2f')))
+                    if curr_core['utilduringhostingmig'] <= 0:
+                        print ("Execution " + execution_info['id'] + " seems to have a not-well monitored idle time while a core is accomodating migrating tasks. You should check its <idletimehostingmigs> and <totaltimehostingmigs> XML log tags.")
+                    else:
+                        real_utilizations_not_hosting_mig_tasks.append (float (format (curr_core['util']/100, '.2f')))
+                        real_utilizations_hosting_mig_tasks.append (float (format (curr_core['utilduringhostingmig']/100, '.2f')))
             
             execution_info['realutilization'] = float (format (real_taskset_utilization, '.2f'))
             cores_info += '\n\n   Real Utilization: ' + str(real_taskset_utilization) + '\n   </details>\n\n'
@@ -619,9 +621,21 @@ def produce_results_experiment(experiment_id):
     overall_data_section += 'NS + BE executions: ' + str(total_BE+total_NS) + '/' + str(total_executions) + ' = '  + str(((total_BE+total_NS)/total_executions)*100) + ' %\n\n'
     overall_data_section += '### **Simulations**\n\n#### **Weighted schedulability experiment ' + str(experiment_id) + ' according to simulations.**\n\n![ALT](result_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '#### **Percentage of (schedulable tasksets with at least one migrating tasks / number of schedulable tasksets) of experiment ' + str(experiment_id) + ' according to simulations.** \n\n![ALT](result_taskset_sched_' + str(experiment_id) + '.png) \n\n'
-    overall_data_section += '\n### **Real Executions**\n\n#### **Schedulability for each level**\n\n![ALT](./overall_' + str(experiment_id) + '.png)\n\n'
-    overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**\n\n![ALT](./BE_' + str(experiment_id) + '.png)\n\n'
-    overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**\n\n![ALT](./NS_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '\n### **Real Executions**\n\n#### **Schedulability for each level**\n\n'
+    overall_data_section += 'The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "' + str(level) + '" level (x-axis), the percentage of:\n\n   - Actually schedulable tasksets, i.e. those that have all tasks that meet their deadlines;\n   - Deadline Missed tasksets, i.e. those in which (at least) a tasks did not meet (at least) one of its deadlines; \n   - Budget Exceeded tasksets, i.e. those in which a criticality-level budget exceeding is detected (LO-crit budget for LO-crit tasks and HI-crit budget for HI-crit tasks). This type of event makes experiment invalid' 
+    if experiment_id == 4:
+        overall_data_section += ';\n   - Safe Boundary Exceeded tasksets, i.e. those in which the number of core executing in HI-crit mode is too high. This type of event makes experiment invalid.\n\n'
+    else:
+        overall_data_section += '.\n\n'
+    
+    overall_data_section += 'We want to see, thanks to this graphs, how many tasksets remain schedulable in the real-world. The RTA does not take into account overhead time, so we expect that there will be some tasksets that are not actually schedulable.\n\n'
+    overall_data_section += '![ALT](./overall_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**\n\n'
+    overall_data_section += 'With the following graphs, we sum-up the features of the tasks that have occurred in a Criticality-level Budget Exceeded event. Each graph is like a "group-by" SQL operation.\n In the first one, "by budget", we can see, for each _criticality-level budget value_, how many tasks with that criticality-level budget has exceeded it. In the second one, we can see for each _period_ value, how many tasks has exceeded their criticality-level budget.\n\n'
+    overall_data_section += '![ALT](./BE_' + str(experiment_id) + '.png)\n\n'
+    overall_data_section += '\n#### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**\n\n'
+    overall_data_section += 'With the following graphs, we sum-up the features of the tasks that have missed (at least) one of them deadlines. As the Budget Exceeded graphs, each graph is like a "group-by" SQL operation.\n\n'
+    overall_data_section += '![ALT](./NS_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '\n### **Nominal utilizations VS Real utilizations about schedulable tasksets**\n\n![ALT](./utilizations_histogram_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '| Average real utilizations | Variance real utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + mean_real_util + ' | ' + var_real_util + ' | ' + format (min(real_utilizations_schedulable_tasksets), '.3f') + ' | '  + format (max(real_utilizations_schedulable_tasksets), '.3f') + ' |\n\n'
 
