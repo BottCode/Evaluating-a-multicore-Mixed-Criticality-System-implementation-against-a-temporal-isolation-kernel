@@ -14,7 +14,6 @@
 #include <assert.h>
 #include <pthread.h>
 #include <stdlib.h>
-//#include <xmconsole.h>
 
 #if defined(MAIN_USE_NETWORKING)
   #include <rtems/rtems_bsdnet.h>
@@ -133,7 +132,6 @@ void parse_arguments(
  
 void *start_gnat_main( void * argument )
 {
-  printf("hello!");
   extern int gnat_main ( int argc, char **argv, char **envp );
 
   #if defined(MAIN_USE_REQUIRES_COMMAND_LINE)
@@ -158,7 +156,6 @@ void *start_gnat_main( void * argument )
 
 void *POSIX_Init( void *argument )
 {
-  printf("hello posix!");
   pthread_t       thread_id;
   pthread_attr_t  attr;
   size_t          stacksize;

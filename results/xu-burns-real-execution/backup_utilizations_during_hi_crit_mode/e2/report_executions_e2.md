@@ -39,15 +39,28 @@ NS + BE executions: 237/1563 = 15.163147792706333 %
 
 #### **Schedulability for each level**
 
+The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "4.0" level (x-axis), the percentage of:
+
+   - Actually schedulable tasksets, i.e. those that have all tasks that meet their deadlines;
+   - Deadline Missed tasksets, i.e. those in which (at least) a tasks did not meet (at least) one of its deadlines; 
+   - Budget Exceeded tasksets, i.e. those in which a criticality-level budget exceeding is detected (LO-crit budget for LO-crit tasks and HI-crit budget for HI-crit tasks). This type of event makes experiment invalid.
+
+We want to see, thanks to this graphs, how many tasksets remain schedulable in the real-world. The RTA does not take into account overhead time, so we expect that there will be some tasksets that are not actually schedulable.
+
 ![ALT](./overall_2.png)
 
 
 #### **Tasksets, grouped by differents parameters, with a Budget_Exceeded task.**
 
+With the following graphs, we sum-up the features of the tasks that have occurred in a Criticality-level Budget Exceeded event. Each graph is like a "group-by" SQL operation.
+ In the first one, "by budget", we can see, for each _criticality-level budget value_, how many tasks with that criticality-level budget has exceeded it. In the second one, we can see for each _period_ value, how many tasks has exceeded their criticality-level budget.
+
 ![ALT](./BE_2.png)
 
 
 #### **Tasksets, grouped by differents parameters, with at least one task missing one (or more) of its deadlines.**
+
+With the following graphs, we sum-up the features of the tasks that have missed (at least) one of them deadlines. As the Budget Exceeded graphs, each graph is like a "group-by" SQL operation.
 
 ![ALT](./NS_2.png)
 
@@ -63,8 +76,8 @@ NS + BE executions: 237/1563 = 15.163147792706333 %
 
 ### **Utils of the core that will have to accommodate migrating tasks VS Utils of the core when it is actually accomodating them**
 
-These two graphs show the utilizations level of that core $`c_{i}`$ that, sooner or later, will have to accomodate migrating tasks of the other core $`c_{j}`$. The left one, shows the distribution utilizations levels when the core $`c_{i}`$ is **not** accomodating the other core's $`c_{j}`$ migrating tasks, i.e. $`c_{j}`$ is in **LOW-CRIT mode.**
-The right one, shows the distribution utilizations levels when the core $`c_{i}`$ **is** accomodating the other core's $`c_{j}`$ migrating tasks, i.e. $`c_{j}`$ is in **HIGH-CRIT mode**.
+These two graphs show the utilizations level of that core $`c_{i}`$ that, sooner or later, will have to accomodate migrating tasks of the other core $`c_{j}`$. The left one, shows the distribution utilizations levels when the core $`c_{i}`$ is **not** accomodating the other core's $`c_{j}`$ migrating tasks, i.e. $`c_{i}`$ and $`c_{j}`$ are both in **LOW-CRIT mode.**
+The right one, shows the distribution utilizations levels when the core $`c_{i}`$ **is** accomodating the other core's $`c_{j}`$ migrating tasks, i.e. $`c_{i}`$ in in LO-CRIT mode, while $`c_{j}`$ is in **HIGH-CRIT mode**.
 
 ![ALT](./utilizations_histogram_hosting_mig_2.png)
 
