@@ -425,7 +425,10 @@ def produce_results_experiment(experiment_id):
                     curr_task['basecpu'] = task_XML.find('basecpu').text
                     curr_task['priority'] = task_XML.find('priority').text
                     curr_task['period'] = (float(task_XML.find('period').text)) * 1000000 # to microseconds conversion
-                    curr_task['C(LO)'] = (float(task_XML.find('locritbudget').text)) * 1000000 # to microseconds conversion
+                    if task_XML.find('locritbudget') is not None:
+                        curr_task['C(LO)'] = (float(task_XML.find('locritbudget').text)) * 1000000 # to microseconds conversion
+                    else:
+                        print ("The following execution has no locritbudget in its XML log", execution_info)
                     curr_task['C(HI)'] = (float(task_XML.find('hicritbudget').text)) * 1000000 # to microseconds conversion
                     curr_task['criticality'] = task_XML.find('criticality').text
                     curr_task['migrable'] = task_XML.find('migrable').text
