@@ -1,6 +1,6 @@
 # Define PROGRAM variable
 
-NAME_PARTITION=first_partition
+NAME_PARTITION=partition0
 
 #
 #  Makefile for Empty Ada program example
