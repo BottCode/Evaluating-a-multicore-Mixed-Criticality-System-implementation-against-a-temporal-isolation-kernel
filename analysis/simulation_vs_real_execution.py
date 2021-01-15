@@ -592,39 +592,56 @@ def produce_results_experiment(experiment_id):
             # overall_results['DM and BE']['values'].append ([float(level), perc_BE_and_NS])
             results_to_plot[approach].append([float(level), perc])
 
-    mean_real_util = format (sum (real_utilizations_schedulable_tasksets) / len (real_utilizations_schedulable_tasksets), '.3f')
-    var_real_util = format (sum ((x-float(mean_real_util))**2 for x in real_utilizations_schedulable_tasksets) / len(real_utilizations_schedulable_tasksets), '.3f')
+    mean_real_util = 0 if len (real_utilizations_schedulable_tasksets) == 0 else format (sum (real_utilizations_schedulable_tasksets) / len (real_utilizations_schedulable_tasksets), '.3f')
+    var_real_util = 0 if len (real_utilizations_schedulable_tasksets) == 0 else format (sum ((x-float(mean_real_util))**2 for x in real_utilizations_schedulable_tasksets) / len(real_utilizations_schedulable_tasksets), '.3f')
 
-    mean_hosting_mig_util = format (sum (real_utilizations_hosting_mig_tasks) / len (real_utilizations_hosting_mig_tasks), '.3f')
-    var_hosting_mig_util = format (sum ((x-float(mean_hosting_mig_util))**2 for x in real_utilizations_hosting_mig_tasks) / len(real_utilizations_hosting_mig_tasks), '.3f')
+    mean_hosting_mig_util = 0 if len (real_utilizations_hosting_mig_tasks) == 0 else format (sum (real_utilizations_hosting_mig_tasks) / len (real_utilizations_hosting_mig_tasks), '.3f')
+    var_hosting_mig_util = 0 if len (real_utilizations_hosting_mig_tasks) == 0 else format (sum ((x-float(mean_hosting_mig_util))**2 for x in real_utilizations_hosting_mig_tasks) / len(real_utilizations_hosting_mig_tasks), '.3f')
     
-    mean_not_hosting_mig_util = format (sum (real_utilizations_not_hosting_mig_tasks) / len (real_utilizations_not_hosting_mig_tasks), '.3f')
-    var_not_hosting_mig_util = format (sum ((x-float(mean_not_hosting_mig_util))**2 for x in real_utilizations_not_hosting_mig_tasks) / len(real_utilizations_not_hosting_mig_tasks), '.3f')
+    mean_not_hosting_mig_util = 0 if len (real_utilizations_not_hosting_mig_tasks) == 0 else format (sum (real_utilizations_not_hosting_mig_tasks) / len (real_utilizations_not_hosting_mig_tasks), '.3f')
+    var_not_hosting_mig_util = 0 if len (real_utilizations_not_hosting_mig_tasks) == 0 else format (sum ((x-float(mean_not_hosting_mig_util))**2 for x in real_utilizations_not_hosting_mig_tasks) / len(real_utilizations_not_hosting_mig_tasks), '.3f')
+    
+    experiment_params_markdown_tables = '### Experiments input parameters\n\n**_Variable_ parameters**: those on which, in this experiment, we iterate.\n\n'
+    experiment_params_markdown_tables += '| Utilization lower bound | Utilization higher bound | Utilization step |\n| ------ | ------ | ------ |\n'
+    experiment_params_markdown_tables += '| ' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ' | ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + ' | ' + str(config_sim_vs_real.UTIL_STEP) + ' |\n\n'
 
-    exp_param = '   Utilization range = [' + str(config_sim_vs_real.UTIL_LOWER_BOUND) + ', ' + str(config_sim_vs_real.UTIL_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.UTIL_STEP) + '\n\n'
-    
     if experiment_id == 2:
-        exp_param += '   Criticality factor range = [' + str(config_sim_vs_real.CRITICALITY_LOWER_BOUND) + ', ' + str(config_sim_vs_real.CRITICALITY_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.CRITICALITY_STEP) + '\n\n'
+        experiment_params_markdown_tables += '| Criticality factor range | Step |\n| ------ | ------ |\n| [' + str(config_sim_vs_real.CRITICALITY_LOWER_BOUND) + ', ' + str(config_sim_vs_real.CRITICALITY_HIGHER_BOUND) + '] | ' + str(config_sim_vs_real.CRITICALITY_STEP) + ' |\n\n'
+        experiment_params_markdown_tables += '**_Static_ parameters**: those that have a constant value.\n\n'
+        experiment_params_markdown_tables += '| HI-CRIT proportion | Taskset size |\n| ------ | ------ |\n| 0.5 | 12 |\n\n'
     elif experiment_id == 3:
-        exp_param += '   HI-CRIT proportion range = [' + str(config_sim_vs_real.PROPORTION_LOWER_BOUND) + ', ' + str(config_sim_vs_real.PROPORTION_HIGHER_BOUND) + '] with step = ' + str(config_sim_vs_real.PROPORTION_STEP) + '\n\n'
+        experiment_params_markdown_tables += '| HI-CRIT proportion range | Step |\n| ------ | ------ |\n| [' + str(config_sim_vs_real.PROPORTION_LOWER_BOUND) + ', ' + str(config_sim_vs_real.PROPORTION_HIGHER_BOUND) + '] | ' + str(config_sim_vs_real.PROPORTION_STEP) + ' |\n\n'
+        experiment_params_markdown_tables += '**_Static_ parameters**: those that have a constant value.\n\n'
+        experiment_params_markdown_tables += '| Criticality factor | Taskset size |\n| ------ | ------ |\n| 2 | 12 |\n\n'
     elif experiment_id == 4:
-        exp_param += ' Taskset sizes = ' + str(config_sim_vs_real.TASKSETS_SIZE) + '\n\n'
- 
+        experiment_params_markdown_tables += '| Taskset sizes |\n| ------ |\n| ' + str(config_sim_vs_real.TASKSETS_SIZE) + ' |\n\n'
+        experiment_params_markdown_tables += '**_Static_ parameters**: those that have a constant value.\n\n'
+        experiment_params_markdown_tables += '| Criticality factor | HI-CRIT proportion | Number of repetition for each taskset |\n| ------ | ------ | ------ |\n| 2 | 0.5 | 10 (only for tasksets with size >= 25) |\n\n'
+    elif experiment_id == 1:
+        experiment_params_markdown_tables += '**_Static_ parameters**: those that have a constant value.\n\n'
+        experiment_params_markdown_tables += '| Criticality factor | HI-CRIT proportion | Taskset size |\n| ------ | ------ | ------ |\n| 2 | 0.5 | 12 |\n\n'
+
+    experiment_params_markdown_tables += '   Algorithm to generate tasks utilization: DRS algorithm <https://sigbed.org/2020/12/21/the-dirichlet-rescale-drs-algorithm-a-general-purpose-method-underpinning-synthetic-task-set-generation/>\n   Utilizations range generation: `[5%, 60%]`\n\n'
+    experiment_params_markdown_tables += '   **Normal** periods range from which to extract at random = `[10, 200] milliseconds`.\n\n'
+    experiment_params_markdown_tables += '   **Big** periods range from which to extract at random = `[400, 1000] milliseconds`.\n\n   From the latter, 1 or 2 periods are selected. The remaings, are selected from the former.\n\n   Max periods armonicity: ' + ('2' if experiment_id != 4 else '35') +'\n\n'
+
+    experiment_params_markdown_tables += '### Output\n\n'
+
     overall_data_section_markdown_table = '| Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |\n| ------ | ------ | ------ | ------ |\n'
     overall_data_section_markdown_table += '| ' + format((total_schedulable/total_executions)*100, '.2f') + '% | ' + format((total_NS/total_executions)*100, '.2f') + '% | ' + format((total_BE/total_executions)*100, '.2f') + '% | ' + format((total_SBE/total_executions)*100, '.2f') + '% |\n\n'
 
-    overall_data_section = '\n\n## Overall data\n\n' + exp_param
+    overall_data_section = '\n\n## Overall data\n\n' + experiment_params_markdown_tables
     overall_data_section += overall_data_section_markdown_table
     overall_data_section += 'Number of executions: ' + str(total_executions) + '\n\n'
-    overall_data_section += 'Schedulable executions: ' + str(total_schedulable) + '/' + str(total_executions) + ' = ' + str((total_schedulable/total_executions)*100) + ' %\n\n'
-    overall_data_section += '_Not_ schedulable executions: ' + str(total_NS) + '/' + str(total_executions) + ' = ' + str((total_NS/total_executions)*100) + ' %\n\n'
-    overall_data_section += 'Budget Exceeded executions: ' + str(total_BE) + '/' + str(total_executions) + ' = '  + str((total_BE/total_executions)*100) + ' %\n\n'
-    overall_data_section += 'Safe Boundary Exceeded executions: ' + str(total_SBE) + '/' + str(total_executions) + ' = '  + str((total_SBE/total_executions)*100) + ' %\n\n'
-    overall_data_section += 'NS + BE executions: ' + str(total_BE+total_NS) + '/' + str(total_executions) + ' = '  + str(((total_BE+total_NS)/total_executions)*100) + ' %\n\n'
+    overall_data_section += 'Schedulable executions: ' + str(total_schedulable) + '/' + str(total_executions) + ' = ' + format((total_schedulable/total_executions)*100, '.2f') + '%\n\n'
+    overall_data_section += '_Not_ schedulable executions: ' + str(total_NS) + '/' + str(total_executions) + ' = ' + format((total_NS/total_executions)*100, '.2f') + '%\n\n'
+    overall_data_section += 'Budget Exceeded executions: ' + str(total_BE) + '/' + str(total_executions) + ' = '  + format((total_BE/total_executions)*100, '.2f') + ' %\n\n'
+    overall_data_section += 'Safe Boundary Exceeded executions: ' + str(total_SBE) + '/' + str(total_executions) + ' = '  + format((total_SBE/total_executions)*100, '.2f') + ' %\n\n'
+    overall_data_section += 'NS + BE executions: ' + str(total_BE+total_NS) + '/' + str(total_executions) + ' = '  + format(((total_BE+total_NS)/total_executions)*100, '.2f') + ' %\n\n'
     overall_data_section += '### **Simulations**\n\n#### **Weighted schedulability experiment ' + str(experiment_id) + ' according to simulations.**\n\n![ALT](result_' + str(experiment_id) + '.png)\n\n'
     overall_data_section += '#### **Percentage of (schedulable tasksets with at least one migrating tasks / number of schedulable tasksets) of experiment ' + str(experiment_id) + ' according to simulations.** \n\n![ALT](result_taskset_sched_' + str(experiment_id) + '.png) \n\n'
     overall_data_section += '\n### **Real Executions**\n\n#### **Schedulability for each level**\n\n'
-    overall_data_section += 'The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "' + str(level) + '" level (x-axis), the percentage of:\n\n   - Actually schedulable tasksets, i.e. those that have all tasks that meet their deadlines;\n   - Deadline Missed tasksets, i.e. those in which (at least) a tasks did not meet (at least) one of its deadlines; \n   - Budget Exceeded tasksets, i.e. those in which a criticality-level budget exceeding is detected (LO-crit budget for LO-crit tasks and HI-crit budget for HI-crit tasks). This type of event makes experiment invalid' 
+    overall_data_section += 'The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "' + x_lab + '" level (x-axis), the percentage of:\n\n   - Actually schedulable tasksets, i.e. those that have all tasks that meet their deadlines;\n   - Deadline Missed tasksets, i.e. those in which (at least) a tasks did not meet (at least) one of its deadlines; \n   - Budget Exceeded tasksets, i.e. those in which a criticality-level budget exceeding is detected (LO-crit budget for LO-crit tasks and HI-crit budget for HI-crit tasks). This type of event makes experiment invalid' 
     if experiment_id == 4:
         overall_data_section += ';\n   - Safe Boundary Exceeded tasksets, i.e. those in which the number of core executing in HI-crit mode is too high. This type of event makes experiment invalid.\n\n'
     else:
