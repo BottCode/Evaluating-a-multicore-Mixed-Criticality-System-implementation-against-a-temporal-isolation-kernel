@@ -4,9 +4,36 @@
 
 ## Overall data
 
-   Utilization range = [1.848, 2.1] with step = 0.012
+### Experiments input parameters
 
-   HI-CRIT proportion range = [0.5, 0.9] with step = 0.1
+**_Variable_ parameters**: those on which, in this experiment, we iterate.
+
+| Utilization lower bound | Utilization higher bound | Utilization step |
+| ------ | ------ | ------ |
+| 1.848 | 2.1 | 0.012 |
+
+| HI-CRIT proportion range | Step |
+| ------ | ------ |
+| [0.5, 0.9] | 0.1 |
+
+**_Static_ parameters**: those that have a constant value.
+
+| Criticality factor | Taskset size |
+| ------ | ------ |
+| 2 | 12 |
+
+   Algorithm to generate tasks utilization: DRS algorithm <https://sigbed.org/2020/12/21/the-dirichlet-rescale-drs-algorithm-a-general-purpose-method-underpinning-synthetic-task-set-generation/>
+   Utilizations range generation: `[5%, 60%]`
+
+   **Normal** periods range from which to extract at random = `[10, 200] milliseconds`.
+
+   **Big** periods range from which to extract at random = `[400, 1000] milliseconds`.
+
+   From the latter, 1 or 2 periods are selected. The remaings, are selected from the former.
+
+   Max periods armonicity: 2
+
+### Output
 
 | Schedulable | Not schedulable | Budget Exceeded | Safe Boundary Exceeded |
 | ------ | ------ | ------ | ------ |
@@ -14,15 +41,15 @@
 
 Number of executions: 899
 
-Schedulable executions: 755/899 = 83.98220244716352 %
+Schedulable executions: 755/899 = 83.98%
 
-_Not_ schedulable executions: 66/899 = 7.341490545050055 %
+_Not_ schedulable executions: 66/899 = 7.34%
 
-Budget Exceeded executions: 46/899 = 5.116796440489433 %
+Budget Exceeded executions: 46/899 = 5.12 %
 
-Safe Boundary Exceeded executions: 32/899 = 3.5595105672969964 %
+Safe Boundary Exceeded executions: 32/899 = 3.56 %
 
-NS + BE executions: 112/899 = 12.458286985539488 %
+NS + BE executions: 112/899 = 12.46 %
 
 ### **Simulations**
 
@@ -39,7 +66,7 @@ NS + BE executions: 112/899 = 12.458286985539488 %
 
 #### **Schedulability for each level**
 
-The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "0.9" level (x-axis), the percentage of:
+The tasksets with i) at least one migrating task and ii) marked as schedulable by the RTA are executed on a real target, in order to see how many of them are also schedulable in a real-world scenario. The following graph shows, for each "HI-CRIT task proportion" level (x-axis), the percentage of:
 
    - Actually schedulable tasksets, i.e. those that have all tasks that meet their deadlines;
    - Deadline Missed tasksets, i.e. those in which (at least) a tasks did not meet (at least) one of its deadlines; 
