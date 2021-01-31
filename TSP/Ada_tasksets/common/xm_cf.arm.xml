@@ -21,7 +21,7 @@
             </Processor>	
         </ProcessorTable>	
         <Devices>	
-            <Uart id="1" baudRate="115200" name="Uart" />	
+            <Uart id="0" baudRate="115200" name="Uart" />	
         </Devices>	
     </HwDescription>	
     <XMHypervisor console="Uart">	

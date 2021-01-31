@@ -224,7 +224,7 @@ void *POSIX_Init( void *argument )
 #define CONFIGURE_MAXIMUM_SEMAPHORES                    20
 
 /* We want a clock tick every millisecond */
-#define CONFIGURE_MICROSECONDS_PER_TICK RTEMS_MILLISECONDS_TO_MICROSECONDS(1)
+#define CONFIGURE_MICROSECONDS_PER_TICK 250 //RTEMS_MILLISECONDS_TO_MICROSECONDS(1)
 
 /* The initialization task is a POSIX Initialization thread with default
  * attributes.
