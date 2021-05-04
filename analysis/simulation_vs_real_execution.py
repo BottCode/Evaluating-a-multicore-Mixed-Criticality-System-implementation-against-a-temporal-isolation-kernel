@@ -102,7 +102,8 @@ def plot_data (results, output, x_lab):
   # print('Result saved: ' + output)
 
 def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, by_locked_time, output):
-    df = pd.DataFrame({'by budget (microseconds)' : by_budget, 'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations, 'y percentage of locked time / budget': by_locked_time})
+    print(by_priority)
+    df = pd.DataFrame({'by budget (microseconds)' : by_budget, 'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
 
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
@@ -113,15 +114,16 @@ def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfer
     plt.close()
 
 def plot_NS_data (by_period, by_migrability, by_util, by_priority, by_interfering_migrations, schedulable_histogram, output):
-    df = pd.DataFrame({'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by utilization (percentage %)': by_util, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
+    if len(by_period) != 0:
+        df = pd.DataFrame({'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by utilization (percentage %)': by_util, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
 
-    fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
-    for col, ax in zip(df, axes):
-        df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
+        fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
+        for col, ax in zip(df, axes):
+            df[col].value_counts().sort_index().plot.bar(ax=ax, title=col)
 
-    plt.tight_layout()    
-    plt.savefig(output)
-    plt.close()
+        plt.tight_layout()    
+        plt.savefig(output)
+        plt.close()
 
 def CLEAN_ALL():
   for i in range(4):
@@ -262,6 +264,7 @@ def produce_results_experiment(experiment_id):
         stp = config_sim_vs_real.UTIL_STEP
         v = lb
         while v <= ub:
+            # print (str(v))
             level_list.append(str(v))
             v += stp
     elif experiment_id == 2:
@@ -381,8 +384,14 @@ def produce_results_experiment(experiment_id):
             list_of_tasks = []
 
             single_level = execution_XML.find(xml_level_to_analyze).text
+            print (single_level)
             if experiment_id == 4:
                 single_level = int(single_level)
+            # elif experiment_id == 1:
+            #     single_level = format (float (single_level), '.3f')
+            
+            # if single_level not in number_of_exec_for_each_level[approach]:
+            #     number_of_exec_for_each_level[approach][single_level] = 0
             
             number_of_exec_for_each_level[approach][single_level] += 1
             tasks_XML = execution_XML.find('tasks')
@@ -416,6 +425,9 @@ def produce_results_experiment(experiment_id):
                         print ("Execution " + execution_info['id'] + " seems to have a not-well monitored idle time while a core is accomodating migrating tasks. You should check its <idletimehostingmigs> and <totaltimehostingmigs> XML log tags.")
                     else:
                         real_utilizations_not_hosting_mig_tasks.append (float (format (curr_core['util']/100, '.2f')))
+                        if float (format (curr_core['utilduringhostingmig']/100, '.2f')) >= 1:
+                            print(execution_info)
+                            print("has util >= 1")
                         real_utilizations_hosting_mig_tasks.append (float (format (curr_core['utilduringhostingmig']/100, '.2f')))
             
             execution_info['realutilization'] = float (format (real_taskset_utilization, '.2f'))
@@ -467,7 +479,7 @@ def produce_results_experiment(experiment_id):
                             if experiment_id == 2:
                                 # print("yes")
                                 # sum-up periods values for sake of the readability
-                                step = 15
+                                step = 29
                                 i = 0
                                 while i <= p:
                                     if p in range(0+i+1, step+i):
@@ -476,9 +488,9 @@ def produce_results_experiment(experiment_id):
                                     i += step
 
                             # sum-up budgets values for sake of the readability
-                            step = 21
-                            if experiment_id == 2:
-                                step = 82
+                            step = 19
+                            if experiment_id == 2 or experiment_id == 3:
+                                step = 164*2
                             i = 0
                             while i <= budget:
                                 if budget in range(0+i+1, step+i):
@@ -489,9 +501,9 @@ def produce_results_experiment(experiment_id):
                             mig = str (task_XML.find('migrable').text)
                             have_migrations_interfered = "Migs interferences" if (int (task_XML.find('budgetexceededaftermigration').text)) > 0 else "No interferences"
                             BE_tasks_group_by_period.append (p)
-                            BE_tasks_group_by_budget.append (budget)
+                            BE_tasks_group_by_budget.append (float(format(budget, '.2f')))
                             BE_tasks_group_by_migrability.append (mig)
-                            BE_tasks_group_by_priority.append (str(task_XML.find('priority').text))
+                            BE_tasks_group_by_priority.append (int(str(task_XML.find('priority').text)))
                             BE_tasks_group_by_interfering_migrations.append (have_migrations_interfered)
                             BE_tasks_group_by_locked_time.append (locked_time)
 
@@ -505,7 +517,7 @@ def produce_results_experiment(experiment_id):
                         NS_tasks_group_by_period.append (p)
                         NS_tasks_group_by_migrability.append (mig)
                         NS_tasks_group_by_util.append (math.ceil ((budget / (p*1000)) * 100))
-                        NS_tasks_group_by_priority.append (str(task_XML.find('priority').text))
+                        NS_tasks_group_by_priority.append (int(str(task_XML.find('priority').text)))
                         NS_tasks_group_by_interfering_migrations.append (have_migrations_interfered)
 
                         '''if int(curr_task['deadlinemissedtargetcore']) > 0:
@@ -519,6 +531,8 @@ def produce_results_experiment(experiment_id):
             if str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE' and str(execution_XML.find('safeboundaryexceeded').text).upper() == 'FALSE':
 
                 if str(execution_XML.find('tasksetisschedulable').text).upper() == 'TRUE':
+                    # if single_level not in x_axis_levels[approach]:
+                    #     x_axis_levels[approach][single_level] = 0
                     x_axis_levels[approach][single_level] += 1
                     schedulable_histogram.append (float(single_level))
                     nominal_utilizations_schedulable_tasksets.append (execution_info['utilization'])
@@ -528,6 +542,8 @@ def produce_results_experiment(experiment_id):
                     not_schedulable_tasksets += '\n\n  ' + str(numbered_list_index_NS) +'. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
                     not_schedulable_tasksets += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n' + dm_tasks + '\n\n'
                     not_schedulable_tasksets += cores_info + collapse_menu_containing_tasks
+                    # if single_level not in NS_for_each_level[approach]:
+                    #     NS_for_each_level[approach][single_level] = 0
                     NS_for_each_level[approach][single_level] += 1
                     NS_histogram.append (float(single_level))
                     numbered_list_index_NS += 1
@@ -536,10 +552,14 @@ def produce_results_experiment(experiment_id):
                 bad_tasksets_safe_boundary += '\n\n  ' + str(numbered_list_index_safe_boundary) + '. Taskset **' + str(execution_XML.find('executionid').text) + '**\n'
                 bad_tasksets_safe_boundary += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n'
                 bad_tasksets_safe_boundary += cores_info + collapse_menu_containing_tasks
+                # if single_level not in SBE_for_each_level[approach]:
+                #     SBE_for_each_level[approach][single_level] = 0
                 SBE_for_each_level[approach][single_level] += 1
                 SBE_histogram.append (single_level)
                 numbered_list_index_safe_boundary += 1
             elif str(execution_XML.find('experimentisnotvalid').text).upper() == 'TRUE':
+                # if single_level not in BE_for_each_level[approach]:
+                #     BE_for_each_level[approach][single_level] = 0
                 BE_for_each_level[approach][single_level] += 1
                 BE_histogram.append (float(single_level))
                 numbered_list_index_BE += 1
@@ -547,7 +567,7 @@ def produce_results_experiment(experiment_id):
                 bad_tasksets_BE += '\n    Taskset execution params:\n\t ' + beautify_dict (execution_info) + '\n\n' + guilty_tasks + '\n\n'
                 bad_tasksets_BE += cores_info + collapse_menu_containing_tasks
 
-        overall_results = {'Actually Schedulable': {'values': [], 'legend': 'AS'}, 'Deadline Missed': {'values': [], 'legend': 'DM'}, 'Budget Exceeded': {'values': [], 'legend': 'BE'}} #, 'Safe Boundary Exceeded': {'values': [], 'legend': 'SBE'}, 'DM and BE': {'values': [], 'legend': 'DM+BE'}}
+        overall_results = {'Actually Schedulable': {'values': [], 'legend': 'AS'}, 'Deadline Missed': {'values': [], 'legend': 'DM'}, 'Budget Exceeded': {'values': [], 'legend': 'BE'}, 'Safe Boundary Exceeded': {'values': [], 'legend': 'SBE'}} # , 'DM and BE': {'values': [], 'legend': 'DM+BE'}}
         
         total_executions = 0
         total_schedulable = 0
@@ -565,6 +585,13 @@ def produce_results_experiment(experiment_id):
             else:
                 total_executions += number_of_exec_for_each_level[approach][level]
                 total_schedulable += x_axis_levels[approach][level]
+                # if level not in NS_for_each_level[approach]:
+                #     NS_for_each_level[approach][level] = 0
+                # if level not in BE_for_each_level[approach]:
+                #     BE_for_each_level[approach][level] = 0
+                # if level not in SBE_for_each_level[approach]:
+                #     SBE_for_each_level[approach][level] = 0
+                
                 total_NS += NS_for_each_level[approach][level]
                 total_BE += BE_for_each_level[approach][level]
                 total_SBE += SBE_for_each_level[approach][level]
@@ -584,7 +611,7 @@ def produce_results_experiment(experiment_id):
             overall_results['Actually Schedulable']['values'].append ([float(level), perc])
             overall_results['Deadline Missed']['values'].append ([float(level), perc_NS])
             overall_results['Budget Exceeded']['values'].append ([float(level), perc_BE])
-            if experiment_id == 4:
+            if experiment_id == 4 or True:
                 if 'Safe Boundary Exceeded' not in overall_results:
                     overall_results['Safe Boundary Exceeded'] = {'values': [], 'legend': 'SBE'}
 

@@ -88,7 +88,7 @@ def produce_results_TSP_experiment(experiment_id):
             utils_each_system.append (float (format (2-(t/100),'.3f')))
         
         AVG_util = float (format ((sum(utils_each_core) / len(utils_each_core)), '.3f'))
-        AVG_util_system = float (format ((sum(utils_each_system) / len(utils_each_system)), '.4f'))
+        AVG_util_system = float (format ((sum(utils_each_system) / len(utils_each_system)), '.3f'))
         
         variance_each_core = float (format (sum ((x-float(AVG_util))**2 for x in utils_each_core) / len(utils_each_core), '.3f'))
         variance_each_system = float (format (sum ((x-float(AVG_util_system))**2 for x in utils_each_system) / len(utils_each_system), '.3f'))

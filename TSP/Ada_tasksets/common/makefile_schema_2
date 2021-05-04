@@ -1,0 +1,78 @@
+.DEFAULT_GOAL := all
+
+###
+## XtratuM definitions
+#
+
+include rules.mk
+
+CONTAINER=container.bin
+RSW=resident_sw
+XCF_XEF=xm_cf.xef.xmc
+XCF_BIN=xm_cf.bin.xmc
+
+PART0LO=partition0LO
+PART0LO_BIN=$(PART0LO).bin
+PART0LO_XEF=$(PART0LO).xef
+
+PART0HI=partition0HI
+PART0HI_BIN=$(PART0HI).bin
+PART0HI_XEF=$(PART0HI).xef
+
+PART1LO=partition1LO
+PART1LO_BIN=$(PART1LO).bin
+PART1LO_XEF=$(PART1LO).xef
+
+PART1HI=partition1HI
+PART1HI_BIN=$(PART1HI).bin
+PART1HI_XEF=$(PART1HI).xef
+
+###
+## XM Application Rules
+#
+
+all: $(RSW)
+	# arm-rtems4.11-objdump -D $(RSW) > $(RSW)_DUMP.S
+
+APP_PATH0LO=c1LOW/app
+APP0LO=partition0LO
+
+APP_PATH0HI=c1HIGH/app
+APP0HI=partition0HI
+
+APP_PATH1LO=c2LOW/app
+APP1LO=partition1LO
+
+APP_PATH1HI=c2HIGH/app
+APP1HI=partition1HI
+
+$(PART0LO):
+	RAM_AREA_START=0x10000000 make -C $(APP_PATH0LO)
+	find ${APP_PATH0LO} -name ${APP0LO} -exec cp {} $@ \;
+
+$(PART0HI):
+	RAM_AREA_START=0x12000000 make -C $(APP_PATH0HI)
+	find ${APP_PATH0HI} -name ${APP0HI} -exec cp {} $@ \;
+
+$(PART1LO):
+	RAM_AREA_START=0x14000000 make -C $(APP_PATH1LO)
+	find ${APP_PATH1LO} -name ${APP1LO} -exec cp {} $@ \;
+
+$(PART1HI):
+	RAM_AREA_START=0x18000000 make -C $(APP_PATH1HI)
+	find ${APP_PATH1HI} -name ${APP1HI} -exec cp {} $@ \;
+
+clean:
+	rm -f resident_sw *.S
+	make clean -C $(APP_PATH0LO)
+	make clean -C $(APP_PATH0HI)
+	make clean -C $(APP_PATH1LO)
+	make clean -C $(APP_PATH1HI)
+
+PACK_ARGS=-h $(XMCORE):$(XCF_XEF) -p 0:$(PART0LO_XEF) -p 1:$(PART0HI_XEF) -p 2:$(PART1LO_XEF) -p 3:$(PART1HI_XEF)
+
+$(CONTAINER): $(PART0LO_XEF) $(PART0HI_XEF) $(PART1LO_XEF) $(PART1HI_XEF) $(XCF_XEF)
+	$(XMPACK) check $(XCF_XEF) $(PACK_ARGS)
+	$(XMPACK) build $(PACK_ARGS) $@
+
+.INTERMEDIATE: $(PART0LO) $(PART0LO_XEF) $(PART0HI) $(PART0HI_XEF) $(PART1LO) $(PART1LO_XEF) $(PART1HI) $(PART1HI_XEF) $(XCF_BIN) $(XCF_XEF) $(CONTAINER)

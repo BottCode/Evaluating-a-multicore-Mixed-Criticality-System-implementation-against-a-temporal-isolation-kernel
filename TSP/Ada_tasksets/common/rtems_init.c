@@ -219,11 +219,12 @@ void *POSIX_Init( void *argument )
 /* We need the full IMFS to pass the full ACATS */
 #define CONFIGURE_USE_IMFS_AS_BASE_FILESYSTEM
 
+/* the application requires a maximum of CONFIGURE_MAXIMUM_TASKS simultaneously existing Classic API tasks. */
 /* This is overkill but is definitely enough to run the network stack */
 #define CONFIGURE_MAXIMUM_TASKS                         20
 #define CONFIGURE_MAXIMUM_SEMAPHORES                    20
 
-/* We want a clock tick every millisecond */
+/* We want a clock tick every 250 microseconds */
 #define CONFIGURE_MICROSECONDS_PER_TICK 250 //RTEMS_MILLISECONDS_TO_MICROSECONDS(1)
 
 /* The initialization task is a POSIX Initialization thread with default

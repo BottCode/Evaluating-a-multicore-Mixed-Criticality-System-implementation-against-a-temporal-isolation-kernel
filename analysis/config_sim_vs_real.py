@@ -18,7 +18,7 @@ TSP_OUTPUT_DIR_PATH = '../results/mcs-vs-tsp/'
 SIMULATIONS_RESULTS = '../py-xu-burns-2019-rta/dual-core-version/results_dualcore_2/'
 
 MAIN_LOG = '../results/xu-burns-real-execution/log.xml'
-TSP_MAIN_LOG = '../results/mcs-vs-tsp/log.txt'
+TSP_MAIN_LOG = '../results/mcs-vs-tsp/TSP_log.txt'
 
 # Enable/disable tests to run
 RUN_FIRST_TEST = True
