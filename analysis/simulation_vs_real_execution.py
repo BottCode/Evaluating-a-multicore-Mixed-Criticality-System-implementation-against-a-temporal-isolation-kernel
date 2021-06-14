@@ -19,7 +19,10 @@ matplotlib.use('tkagg')
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import pandas as pd
+import numpy as np
 import json
+
+import seaborn as sns
 
 def beautify_dict (task):
     s = json.dumps(task, indent=4)
@@ -101,9 +104,36 @@ def plot_data (results, output, x_lab):
   plt.close()
   # print('Result saved: ' + output)
 
-def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, by_locked_time, output):
-    print(by_priority)
-    df = pd.DataFrame({'by budget (microseconds)' : by_budget, 'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
+def plot_cumulative_histogram (data, kind, number_of_bins, title, x_label, output, ticks, experiment_id, range = None):
+  if kind != "by_migrability" and kind != "by_interfering_migrations":
+      fig = plt.figure(figsize=(15, 8))
+      plt.xticks (np.arange(min(data), max(data)+min(data), ticks), rotation=45)
+  else:
+      fig = plt.figure(figsize=(7, 7))
+
+  ax = plt.axes()
+  plt.ylabel("Frequency")
+  plt.xlabel(x_label)
+  plt.grid(axis="x")
+  
+  values, base, _ = plt.hist( data  , bins = number_of_bins, alpha = 0.5, color = "green", range = range, label = "Frequencies histogram")
+  ax_bis = ax.twinx()
+  values = np.append(values,0)
+  ax_bis.plot( base, np.cumsum(values)/ np.cumsum(values)[-1], color='darkorange', marker='o', linestyle='-', markersize = 1, label = "Cumulative frequencies curve" )
+      
+  
+  plt.ylabel("Proportion")
+  plt.title(title)
+  ax_bis.grid()
+  ax_bis.legend();
+  ax.legend();
+  plt.yticks (np.arange(0, 1.01, 0.05))
+    
+  plt.savefig(output)
+
+def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfering_migrations, by_locked_time, by_util, output, output_path, experiment_id):
+    # print(by_priority)
+    '''df = pd.DataFrame({'by budget (microseconds)' : by_budget, 'by period (milliseconds)' : by_period, 'by migrability': by_migrability, 'by priority': by_priority, 'by interfering migrations': by_interfering_migrations})
 
     fig, axes = plt.subplots(ncols=len(df.columns), figsize=(16,6))
     for col, ax in zip(df, axes):
@@ -111,7 +141,39 @@ def plot_BE_data (by_budget, by_migrability, by_period, by_priority, by_interfer
 
     plt.tight_layout()    
     plt.savefig(output)
-    plt.close()
+    plt.close()'''
+
+    print(by_budget)
+    number_of_bins = int(len(set(by_budget))*1.4)
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by criticality-level budget"
+    plot_cumulative_histogram (data = by_budget, kind = "by_budget", number_of_bins = number_of_bins, title = title, x_label = "Microseconds", output = output_path  + "/BE_by_budget.png", range = [min(by_budget), max(by_budget)], experiment_id = experiment_id, ticks = 1500)
+
+    print(by_migrability)
+    number_of_bins = len(set(by_migrability))
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by migrability"
+    plot_cumulative_histogram (data = by_migrability, kind = "by_migrability", number_of_bins = 2, title = title, x_label = "Is migrabile: True or False", output = output_path  + "/BE_by_migrability.png", range = None, experiment_id = experiment_id, ticks = 1500)
+
+    print(by_period)
+    for i in range(0, len(by_period)):
+        by_period[i] *= 1000 # cast to microseconds
+    number_of_bins = len(set(by_period))
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by period"
+    plot_cumulative_histogram (data = by_period, kind = "by_period", number_of_bins = number_of_bins, title = title, x_label = "Microseconds", output = output_path  + "/BE_by_period.png", range = [min(by_period), max(by_period)], experiment_id = experiment_id, ticks = int ((max (by_period) - min (by_period)) / 22))
+
+    print(by_priority)
+    number_of_bins = len(set(by_priority))
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by priority level"
+    plot_cumulative_histogram (data = by_priority, kind = "by_priority", number_of_bins = number_of_bins, title = title, x_label = "Priority level", output = output_path  + "/BE_by_priority.png", range = [min(by_priority), max(by_priority)], experiment_id = experiment_id, ticks = 1)
+
+    print(by_interfering_migrations)
+    number_of_bins = len(set(by_interfering_migrations))
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by interfering migrations"
+    plot_cumulative_histogram (data = by_interfering_migrations, kind = "by_interfering_migrations", number_of_bins = 2, title = title, x_label = "Interference or not", output = output_path  + "/BE_by_interfering_migrations.png", range = None, experiment_id = experiment_id, ticks = int ((max (by_period) - min (by_period)) / 22))
+    
+    print(by_util)
+    number_of_bins = len(set(by_util))
+    title = "Experiment " + str(experiment_id) + "; BE tasks grouped by task's utilization (WCET)"
+    plot_cumulative_histogram (data = by_util, kind = "by_util", number_of_bins = len(set(by_util)), title = title, x_label = "Utilization in [0, 1]", output = output_path  + "/BE_by_util.png", range = [min(by_util), max(by_util)], experiment_id = experiment_id, ticks = 5)
 
 def plot_NS_data (by_period, by_migrability, by_util, by_priority, by_interfering_migrations, schedulable_histogram, output):
     if len(by_period) != 0:
@@ -323,6 +385,7 @@ def produce_results_experiment(experiment_id):
     BE_tasks_group_by_priority = []
     BE_tasks_group_by_interfering_migrations = []
     BE_tasks_group_by_locked_time = []
+    BE_tasks_group_by_util = []
 
     # for each period value => number of NS tasks
     NS_tasks_group_by_period = []
@@ -384,7 +447,7 @@ def produce_results_experiment(experiment_id):
             list_of_tasks = []
 
             single_level = execution_XML.find(xml_level_to_analyze).text
-            print (single_level)
+            # print (single_level)
             if experiment_id == 4:
                 single_level = int(single_level)
             # elif experiment_id == 1:
@@ -476,10 +539,11 @@ def produce_results_experiment(experiment_id):
                             budget = float (task_XML.find('locritbudget').text) * 1000000  if task_XML.find('criticality') == 'LOW' else float (task_XML.find('hicritbudget').text) * 1000000
                             locked_time = format ((float (task_XML.find('lockedtime').text) / float (task_XML.find('locritbudget').text)) * 100, '.2f')
 
-                            if experiment_id == 2:
+                            if experiment_id in [2, 4]:
                                 # print("yes")
                                 # sum-up periods values for sake of the readability
-                                step = 29
+                                # step = 29*2
+                                step = 1
                                 i = 0
                                 while i <= p:
                                     if p in range(0+i+1, step+i):
@@ -488,9 +552,10 @@ def produce_results_experiment(experiment_id):
                                     i += step
 
                             # sum-up budgets values for sake of the readability
-                            step = 19
-                            if experiment_id == 2 or experiment_id == 3:
-                                step = 164*2
+                            step = 25
+                            if experiment_id in [2, 3, 4]:
+                                step = 164*3
+                            step = 1
                             i = 0
                             while i <= budget:
                                 if budget in range(0+i+1, step+i):
@@ -506,6 +571,7 @@ def produce_results_experiment(experiment_id):
                             BE_tasks_group_by_priority.append (int(str(task_XML.find('priority').text)))
                             BE_tasks_group_by_interfering_migrations.append (have_migrations_interfered)
                             BE_tasks_group_by_locked_time.append (locked_time)
+                            BE_tasks_group_by_util.append (math.ceil ((budget / (p*1000)) * 100))
 
                     elif int(curr_task['deadlinesmissed']) > 0 and str(execution_XML.find('experimentisnotvalid').text).upper() == 'FALSE':
                         dm_tasks += 'Task: ' +  curr_task['id'] + '\n\n    ' + curr_task_string + '\n\n'
@@ -707,7 +773,7 @@ def produce_results_experiment(experiment_id):
     plot_two_or_more_functions(overall_results, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_' + str(experiment_id) + '.png', x_lab, experiment_id)
     draw_overall_histogram (schedulable_histogram, NS_histogram, BE_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/overall_histogram_' + str(experiment_id) + '.png')
     draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real_utilizations_schedulable_tasksets, real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_' + str(experiment_id) + '.png', config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/utilizations_histogram_hosting_mig_' + str(experiment_id) + '.png')
-    plot_BE_data (BE_tasks_group_by_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, BE_tasks_group_by_priority, BE_tasks_group_by_interfering_migrations, BE_tasks_group_by_locked_time, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png')
+    plot_BE_data (BE_tasks_group_by_budget, BE_tasks_group_by_migrability, BE_tasks_group_by_period, BE_tasks_group_by_priority, BE_tasks_group_by_interfering_migrations, BE_tasks_group_by_locked_time, BE_tasks_group_by_util, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/BE_' + str(experiment_id) + '.png', output_path = config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id), experiment_id = experiment_id)
     plot_NS_data (NS_tasks_group_by_period, NS_tasks_group_by_migrability, NS_tasks_group_by_util, NS_tasks_group_by_priority, NS_tasks_group_by_interfering_migrations, schedulable_histogram, config_sim_vs_real.OUTPUT_DIR_PATH  + 'exp_' + str(experiment_id) + '/NS_' + str(experiment_id) + '.png')
 
     print ('Generated report about experiment ' + str(experiment_id) + ' at ' + config_sim_vs_real.OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_executions_e' + str(experiment_id) + '.md\n')
