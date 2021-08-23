@@ -5,7 +5,7 @@ TSP_DIR="$REPO_ROOT/TSP/"
 
 PATH_TO_XSDB="/home/mattia/opt/XilinxSDK/SDK/2016.4/bin"
 
-sh build_runtime_zynq.sh
+# sh build_runtime_zynq.sh
 cd $REPO_ROOT
 
 ADA_TASKSETS_DIR="$TSP_DIR/Ada_tasksets"
@@ -32,7 +32,12 @@ then
         do
             echo "Executing \n"
             echo $taskset_dir
-            [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
+            [ -d "$taskset_dir" ] && if make -C $taskset_dir ; then
+                cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
+            else
+                echo "\n### Compilation failed! ###\n"
+            fi
+            # [ -d "$taskset_dir" ] && make -C $taskset_dir && cd $taskset_dir && "$PATH_TO_XSDB/xsdb" cora_xsdb.ini && make clean -C $taskset_dir
         done
     done
 fi

@@ -35,8 +35,8 @@ def draw_util_for_each_core (utilizations, output):
 
     print ("TSP result saved in " + output)
 
-def produce_results_TSP_experiment(experiment_id):
-    with open(config_sim_vs_real.TSP_MAIN_LOG,'r') as f:
+def produce_results_TSP_experiment_IWRR_MAST_schema2 (experiment_id):
+    with open(config_sim_vs_real.TSP_MAIN_LOG, 'r') as f:
         line = f.readline()
         idle_time = []
 
@@ -45,14 +45,58 @@ def produce_results_TSP_experiment(experiment_id):
         execution_idle_percentage = 0
 
         while line:
+
             # A new execution must be parsed.
-            
-            if 'New Execution' in line:
+            if 'Start Resident Software' in line:
                 partition_checked = 0
 
                 execution_idle_percentage = 0
                 line = f.readline()
-                while (line and 'New Execution' not in line):
+                while (line and 'Start Resident Software' not in line):
+                    if 'IDLE' in line:
+                        idle_percentage = []
+                        print("#### new\n", line, "\n")
+                        print ("REVERSE", "\n")
+                        for n in range(len(line) - 1, -1, -1):
+                            if line[n] == '|':
+                                idle_percentage = float(listToString(idle_percentage))
+                                print(idle_percentage, "\nend ####\n")
+                                idle_time.append(idle_percentage)
+                                execution_idle_percentage += idle_percentage
+                                partition_checked += 1
+
+                                if partition_checked == 4:
+                                    # the overall system has been analyzed
+                                    executions_idle_time.append(execution_idle_percentage)
+                                    
+                                
+                                break
+    
+                            if line[n] != ' ' and line[n] != '\n':
+                                idle_percentage = [line[n]] + idle_percentage
+                        
+                    line = f.readline()
+
+            line = f.readline()
+
+def produce_results_TSP_experiment (experiment_id):
+    with open(config_sim_vs_real.TSP_MAIN_LOG, 'r') as f:
+        line = f.readline()
+        idle_time = []
+
+        # execution means the idle time of both core. i.e. the overall system
+        executions_idle_time = []
+        execution_idle_percentage = 0
+
+        while line:
+
+            # A new execution must be parsed.
+            if 'Start Resident Software' in line:
+                partition_checked = 0
+
+                execution_idle_percentage = 0
+                line = f.readline()
+                while (line and 'Start Resident Software' not in line):
                     if 'IDLE' in line:
                         idle_percentage = []
                         # print(line)
@@ -191,16 +235,13 @@ def produce_results():
     parse_options()
     # organize_executions()
 
-    #produce_results_TSP_experiment_1()
-    #produce_results_TSP_experiment_2()
-
     if config_sim_vs_real.RUN_FIRST_TEST:
-        produce_results_TSP_experiment(1)
+        produce_results_TSP_experiment_IWRR_MAST_schema2 (1)
     if config_sim_vs_real.RUN_SECOND_TEST:
-        produce_results_TSP_experiment(2)
+        produce_results_TSP_experiment_IWRR_MAST_schema2 (2)
     if config_sim_vs_real.RUN_THIRD_TEST:
-        produce_results_TSP_experiment(3)
+        produce_results_TSP_experiment_IWRR_MAST_schema2 (3)
     if config_sim_vs_real.RUN_FOURTH_TEST:
-        produce_results_TSP_experiment(4)
+        produce_results_TSP_experiment_IWRR_MAST_schema2 (4)
 
 produce_results()
