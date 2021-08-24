@@ -22,6 +22,7 @@ def listToString(s):
 	return str1 
 
 def draw_util_for_each_system (utilizations, output):
+    print (utilizations, "\n#\n")
     plt.hist (utilizations, color = 'blue', alpha = 0.8, bins = 52, label = 'Schedulable tasksets')
     plt.savefig(output)
     plt.close()
@@ -36,6 +37,10 @@ def draw_util_for_each_core (utilizations, output):
     print ("TSP result saved in " + output)
 
 def produce_results_TSP_experiment_IWRR_MAST_schema2 (experiment_id):
+    number_of_partitions_for_each_core = 2
+    number_of_cores = 2
+    number_of_partitions = number_of_partitions_for_each_core * number_of_cores
+
     with open(config_sim_vs_real.TSP_MAIN_LOG, 'r') as f:
         line = f.readline()
         idle_time = []
@@ -55,8 +60,8 @@ def produce_results_TSP_experiment_IWRR_MAST_schema2 (experiment_id):
                 while (line and 'Start Resident Software' not in line):
                     if 'IDLE' in line:
                         idle_percentage = []
-                        print("#### new\n", line, "\n")
-                        print ("REVERSE", "\n")
+                        # print("#### new\n", line, "\n")
+                        # print ("REVERSE", "\n")
                         for n in range(len(line) - 1, -1, -1):
                             if line[n] == '|':
                                 idle_percentage = float(listToString(idle_percentage))
@@ -78,6 +83,37 @@ def produce_results_TSP_experiment_IWRR_MAST_schema2 (experiment_id):
                     line = f.readline()
 
             line = f.readline()
+
+        utils_each_core = []
+        utils_each_system = []
+
+        for t in idle_time:
+            utils_each_core.append (float (format (1-(t/100),'.3f')))
+        for t in executions_idle_time:
+            utils_each_system.append (float (format ((number_of_partitions)-(t/100),'.3f')))
+        
+        AVG_util = float (format ((sum(utils_each_core) / len(utils_each_core)), '.3f'))
+        AVG_util_system = float (format ((sum(utils_each_system) / len(utils_each_system)), '.3f'))
+        
+        variance_each_core = float (format (sum ((x-float(AVG_util))**2 for x in utils_each_core) / len(utils_each_core), '.3f'))
+        variance_each_system = float (format (sum ((x-float(AVG_util_system))**2 for x in utils_each_system) / len(utils_each_system), '.3f'))
+
+        draw_util_for_each_core (utils_each_core, config_sim_vs_real.TSP_OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/TSP_util_for_each_core.png')
+        draw_util_for_each_system (utils_each_system, config_sim_vs_real.TSP_OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/TSP_util_for_each_system.png')
+
+        TSP_report_markdown = '# TSP report Experiment ' + str (experiment_id) + '\n\n'
+        TSP_report_markdown += '## Utilizations distribution for each core\n\n'
+        TSP_report_markdown += '![ALT](./TSP_util_for_each_core.png)\n\n'
+        TSP_report_markdown += '| Average utilizations | Variance utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + str (AVG_util) + ' | ' + str (variance_each_core) + ' | ' + format (min(utils_each_core), '.3f') + ' | '  + format (max(utils_each_core), '.3f') + ' |\n\n'
+
+        TSP_report_markdown += '## Utilizations distribution for each system, i.e. for both cores\n\n'
+        TSP_report_markdown += '![ALT](./TSP_util_for_each_system.png)\n\n'
+        TSP_report_markdown += '| Average utilizations | Variance utilizations | Min | Max |\n| ------ | ------ | ------ | ------ |\n| ' + str (AVG_util_system) + ' | ' + str (variance_each_system) + ' | ' + format (min(utils_each_system), '.3f') + ' | '  + format (max(utils_each_system), '.3f') + ' |\n\n'
+
+        f = open(config_sim_vs_real.TSP_OUTPUT_DIR_PATH + 'exp_' + str(experiment_id) + '/report_TSP_e' + str(experiment_id) + '.md', 'w')
+        f.write(TSP_report_markdown)
+        f.close()
+
 
 def produce_results_TSP_experiment (experiment_id):
     with open(config_sim_vs_real.TSP_MAIN_LOG, 'r') as f:
