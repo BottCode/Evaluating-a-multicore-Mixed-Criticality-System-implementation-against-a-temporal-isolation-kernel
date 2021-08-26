@@ -22,7 +22,6 @@ import pandas as pd
 import numpy as np
 import json
 
-import seaborn as sns
 
 def beautify_dict (task):
     s = json.dumps(task, indent=4)
