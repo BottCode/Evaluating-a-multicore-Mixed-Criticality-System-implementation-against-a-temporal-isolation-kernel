@@ -47,7 +47,7 @@ cd $REPO_ROOT
 
 if [ "$Execute_E2" = True ]
 then
-    for approach_dir in $ADA_TASKSETS_E_1/*/
+    for approach_dir in $ADA_TASKSETS_E_2/*/
     do
         for taskset_dir in $approach_dir*/
         do
@@ -68,7 +68,7 @@ cd $REPO_ROOT
 
 if [ "$Execute_E3" = True ]
 then
-    for approach_dir in $ADA_TASKSETS_E_1/*/
+    for approach_dir in $ADA_TASKSETS_E_3/*/
     do
         for taskset_dir in $approach_dir*/
         do
@@ -89,7 +89,7 @@ cd $REPO_ROOT
 
 if [ "$Execute_E4" = True ]
 then
-    for approach_dir in $ADA_TASKSETS_E_1/*/
+    for approach_dir in $ADA_TASKSETS_E_4/*/
     do
         for taskset_dir in $approach_dir*/
         do
