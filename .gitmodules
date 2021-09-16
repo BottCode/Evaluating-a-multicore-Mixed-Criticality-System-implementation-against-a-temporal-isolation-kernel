@@ -1,10 +1,6 @@
-
 [submodule "py-xu-burns-2019-rta"]
 	path = py-xu-burns-2019-rta
 	url = https://gitlab.com/thesisBottaroMattia/py-xu-burns-2019-rta
 [submodule "ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems"]
 	path = ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems
 	url = https://gitlab.com/thesisBottaroMattia/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems
-[submodule "ada-ravenscar-runtime-for-zynq7000-dual-core-with-no-migrations"]
-	path = ada-ravenscar-runtime-for-zynq7000-dual-core-with-no-migrations
-	url = https://gitlab.com/thesisBottaroMattia/ada-ravenscar-runtime-for-zynq7000-dual-core-with-no-migrations.git
