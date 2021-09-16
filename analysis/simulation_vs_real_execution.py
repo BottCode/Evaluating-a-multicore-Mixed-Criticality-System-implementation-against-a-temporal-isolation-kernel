@@ -85,6 +85,10 @@ def draw_utilizations_histogram (nominal_utilizations_schedulable_tasksets, real
     plt.savefig(output_histogram)
     plt.close()
 
+    print ("\nreal_utilizations_schedulable_tasksets", real_utilizations_schedulable_tasksets)
+    print ("\nreal_utilizations_hosting_mig_tasks", real_utilizations_hosting_mig_tasks)
+    print ("\nreal_utilizations_not_hosting_mig_tasks", real_utilizations_not_hosting_mig_tasks)
+
     draw_utils_hosting_mig (real_utilizations_hosting_mig_tasks, real_utilizations_not_hosting_mig_tasks, output_histogram_hosting_mig)
 
     
