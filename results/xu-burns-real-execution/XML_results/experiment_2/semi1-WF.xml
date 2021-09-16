@@ -1,0 +1,5221 @@
+<tasksets>
+    <execution>
+        <executionid>-1</executionid>
+        <totalutil />
+        <experimentid />
+        <approach />
+        <tasksetid />
+        <tasksetsize />
+		<tasksetutilization />
+		<criticalityfactor />
+		<perc />
+        <experimentisnotvalid />
+        <safeboundaryexceeded />
+        <guiltytask />
+        <tasks>
+            <task>
+                <priority> </priority>
+                <basecpu> </basecpu>
+                <criticality />
+                <migrable />
+                <deadlinesmissed> </deadlinesmissed>
+                <budgetexceeded> </budgetexceeded>
+                <timesdiscarded> </timesdiscarded>
+                <timesmigrated> </timesmigrated>
+                <timesrestored> </timesrestored>
+                <timesonc1> </timesonc1>
+                <timesonc2> </timesonc2>
+                <lockedtime> </lockedtime>
+            </task>
+        </tasks>
+        <tasksetisschedulable />
+        <cores>
+            <cpu>
+                <id> </id>
+                <lowtohigh> </lowtohigh>
+                <hightolow> </hightolow>
+                <idletime> </idletime>
+            </cpu>
+            <cpu>
+                <id> </id>
+                <lowtohigh> </lowtohigh>
+                <hightolow> </hightolow>
+                <idletime> </idletime>
+            </cpu>
+        </cores>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t111</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 111</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.25</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 19</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 45</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 8</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000787</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 51</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 12</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 41</timesonc2>
+<lockedtime> 0.000000565</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000004853</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 53</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 16</timesonc2>
+<lockedtime> 0.000000829</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 23</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 32</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.528720964</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.514138168</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t112</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 112</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8840000000000001</tasksetutilization>
+<criticalityfactor>2.25</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 7</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000408</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 15</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 40</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 45</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000652</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 7</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000240</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000228</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000001171</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 30</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 34</timesonc2>
+<lockedtime> 0.000000610</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000004919</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494470327</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.579676607</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t132</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 132</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.812</tasksetutilization>
+<criticalityfactor>2.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 21</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 35</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 30</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000264</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 89</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 35</timesonc2>
+<lockedtime> 0.000001342</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 4</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 49</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 18</timesonc2>
+<lockedtime> 0.000001186</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000300</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 60</timesonc2>
+<lockedtime> 0.000002772</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.527371562</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.565848676</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t137</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 137</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 25</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 106</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 28</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 11</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 48</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000255</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 14</timesonc2>
+<lockedtime> 0.000000495</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 15</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 4</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 29</timesonc2>
+<lockedtime> 0.000000279</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.508209447</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.539872949</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t162</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 162</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.86</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 10</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000727</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 60</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000637</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 4</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000117</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000240</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 13</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000390</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 26</timesonc2>
+<lockedtime> 0.000000480</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000001039</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 45</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 100</timesonc2>
+<lockedtime> 0.000002018</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 42</timesonc2>
+<lockedtime> 0.000000381</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 77</timesonc2>
+<lockedtime> 0.000000775</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.498954273</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.549415216</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t163</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 163</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 71</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 5</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 11</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 31</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 7</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 58</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 47</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 8</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000246</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 41</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 25</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 24</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.529266829</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494675988</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t171</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 171</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9680000000000002</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000273</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 17</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 23</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000580</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000574</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 53</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000622</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 39</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 39</timesonc2>
+<lockedtime> 0.000000877</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 12</timesonc2>
+<lockedtime> 0.000000399</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 19</timesonc2>
+<lockedtime> 0.000000498</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 127</timesonc2>
+<lockedtime> 0.000003012</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 49</timesonc2>
+<lockedtime> 0.000000718</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 36</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.526897670</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.480192471</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t190</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 190</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8840000000000001</tasksetutilization>
+<criticalityfactor>3.0</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>TRUE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask> 6</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 2</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 2</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 1</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 0.000016598</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 0.000014303</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t235</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 235</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8</tasksetutilization>
+<criticalityfactor>3.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 201</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000733</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 79</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 12</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000315</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 41</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000883</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 28</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000727</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 12</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 22</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 106</timesonc2>
+<lockedtime> 0.000001387</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000001511</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000002333</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000000913</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.509445973</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.576621483</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t270</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 270</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9080000000000001</tasksetutilization>
+<criticalityfactor>3.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000243</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 49</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001102</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 5</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 14</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001216</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000970</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 127</timesonc2>
+<lockedtime> 0.000001228</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 71</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 37</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 39</timesonc2>
+<lockedtime> 0.000001135</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 38</timesonc2>
+<lockedtime> 0.000001072</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 31</timesonc2>
+<lockedtime> 0.000000922</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.502208817</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.541176580</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t273</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 273</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9440000000000002</tasksetutilization>
+<criticalityfactor>3.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 4</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 60</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000471</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 37</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000480</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 16</timesonc2>
+<lockedtime> 0.000000384</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 17</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 40</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 36</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 23</timesonc2>
+<lockedtime> 0.000000144</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 24</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.523675066</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494744751</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t62</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 62</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9080000000000001</tasksetutilization>
+<criticalityfactor>1.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 34</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 127</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000423</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000426</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 106</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000646</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 25</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000255</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000001123</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 60</timesonc2>
+<lockedtime> 0.000001045</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 7</timesonc2>
+<lockedtime> 0.000000781</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 34</timesonc2>
+<lockedtime> 0.000000474</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 15</timesonc2>
+<lockedtime> 0.000000231</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 19</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.534048168</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.505370171</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t83</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 83</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.848</tasksetutilization>
+<criticalityfactor>2.0</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 34</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 30</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 40</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 80</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001438</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 3</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 33</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 55</timesonc2>
+<lockedtime> 0.000001237</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 40</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 3</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 20</timesonc2>
+<lockedtime> 0.000000820</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.567560652</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.495957691</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t111</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 111</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.25</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 19</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 45</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 8</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000787</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 51</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 12</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 41</timesonc2>
+<lockedtime> 0.000000565</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000004853</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 53</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 16</timesonc2>
+<lockedtime> 0.000000829</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 23</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 32</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.528720964</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.514138168</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t112</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 112</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8840000000000001</tasksetutilization>
+<criticalityfactor>2.25</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 7</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000408</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 15</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 40</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 45</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000652</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 7</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000240</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000228</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000001171</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 30</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 34</timesonc2>
+<lockedtime> 0.000000610</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000004919</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494470327</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.579676607</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t132</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 132</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.812</tasksetutilization>
+<criticalityfactor>2.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 21</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 35</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 30</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 27</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000264</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 89</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000396</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 35</timesonc2>
+<lockedtime> 0.000001342</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 4</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 49</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 18</timesonc2>
+<lockedtime> 0.000001186</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000300</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 60</timesonc2>
+<lockedtime> 0.000002772</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.527371562</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.565848676</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t137</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 137</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 25</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 106</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 28</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 11</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 48</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000255</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 14</timesonc2>
+<lockedtime> 0.000000495</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 15</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 4</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 29</timesonc2>
+<lockedtime> 0.000000279</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.508209447</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.539872949</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t162</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 162</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.86</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 10</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000727</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 60</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000637</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 4</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000117</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000240</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 13</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000390</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 26</timesonc2>
+<lockedtime> 0.000000480</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000001039</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 45</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 100</timesonc2>
+<lockedtime> 0.000002018</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 42</timesonc2>
+<lockedtime> 0.000000381</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 77</timesonc2>
+<lockedtime> 0.000000775</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.498954273</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.549415216</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t163</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 163</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.872</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 71</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 5</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 11</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 31</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 7</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 58</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 47</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 8</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000246</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 6</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 41</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 25</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 24</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.529266829</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494675988</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t171</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 171</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9680000000000002</tasksetutilization>
+<criticalityfactor>2.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000273</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 17</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 23</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000580</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 77</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000574</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 53</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000622</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 39</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 39</timesonc2>
+<lockedtime> 0.000000877</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 12</timesonc2>
+<lockedtime> 0.000000399</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 19</timesonc2>
+<lockedtime> 0.000000498</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 127</timesonc2>
+<lockedtime> 0.000003012</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 49</timesonc2>
+<lockedtime> 0.000000718</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 36</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.526897670</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.480192471</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t190</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 190</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8840000000000001</tasksetutilization>
+<criticalityfactor>3.0</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>TRUE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask> 6</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 2</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 2</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 1</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 1</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 1</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 0.000016598</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 0.000014303</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t235</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 235</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.8</tasksetutilization>
+<criticalityfactor>3.5</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 201</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000733</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 79</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 12</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 38</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000315</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 41</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000883</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 28</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000727</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 12</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 22</timesonc2>
+<lockedtime> 0.000000135</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 106</timesonc2>
+<lockedtime> 0.000001387</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000001511</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000002333</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 28</timesonc2>
+<lockedtime> 0.000000913</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.509445973</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.576621483</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t270</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 270</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9080000000000001</tasksetutilization>
+<criticalityfactor>3.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000243</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 49</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001102</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 5</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 14</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001216</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000970</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 127</timesonc2>
+<lockedtime> 0.000001228</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 71</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 37</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 39</timesonc2>
+<lockedtime> 0.000001135</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 38</timesonc2>
+<lockedtime> 0.000001072</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 31</timesonc2>
+<lockedtime> 0.000000922</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.502208817</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.541176580</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t273</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 273</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9440000000000002</tasksetutilization>
+<criticalityfactor>3.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 24</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 4</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 5</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 29</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 60</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000471</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 37</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000480</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 16</timesonc2>
+<lockedtime> 0.000000384</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 17</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 40</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 36</timesonc2>
+<lockedtime> 0.000000309</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 23</timesonc2>
+<lockedtime> 0.000000144</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 24</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.523675066</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.494744751</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t62</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 62</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.9080000000000001</tasksetutilization>
+<criticalityfactor>1.75</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 5</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 34</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 127</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000423</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 26</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000426</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 106</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000646</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 25</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000255</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 36</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 27</timesonc2>
+<lockedtime> 0.000001123</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 60</timesonc2>
+<lockedtime> 0.000001045</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 7</timesonc2>
+<lockedtime> 0.000000781</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 34</timesonc2>
+<lockedtime> 0.000000474</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 15</timesonc2>
+<lockedtime> 0.000000231</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 19</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.534048168</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.505370171</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+<execution>
+<executionid>e2_semi1wf_t83</executionid>
+<experimentid> 2</experimentid>
+<approach>SEMI1WF</approach>
+<tasksetid> 83</tasksetid>
+<tasksetsize>12</tasksetsize>
+<tasksetutilization>1.848</tasksetutilization>
+<criticalityfactor>2.0</criticalityfactor>
+<perc>0.5</perc>
+<experimentisnotvalid>FALSE</experimentisnotvalid>
+<safeboundaryexceeded>FALSE</safeboundaryexceeded>
+<guiltytask>-2</guiltytask>
+<tasks>
+<task>
+<taskid> 5</taskid>
+<priority> 3</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 34</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 6</taskid>
+<priority> 2</priority><basecpu> 1</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 30</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000165</lockedtime>
+</task>
+<task>
+<taskid> 4</taskid>
+<priority> 4</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 40</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 1</taskid>
+<priority> 5</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 80</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000001438</lockedtime>
+</task>
+<task>
+<taskid> 8</taskid>
+<priority> 1</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 20</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 11</taskid>
+<priority> 0</priority><basecpu> 1</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 3</timesonc1>
+<timesonc2> 0</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 7</taskid>
+<priority> 2</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 33</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 2</taskid>
+<priority> 4</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 55</timesonc2>
+<lockedtime> 0.000001237</lockedtime>
+</task>
+<task>
+<taskid> 3</taskid>
+<priority> 3</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 40</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 10</taskid>
+<priority> 0</priority><basecpu> 2</basecpu>
+<criticality>HIGH</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 3</timesonc2>
+<lockedtime> 0.000000000</lockedtime>
+</task>
+<task>
+<taskid> 9</taskid>
+<priority> 1</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>False</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 20</timesonc2>
+<lockedtime> 0.000000820</lockedtime>
+</task>
+<task>
+<taskid> 0</taskid>
+<priority> 5</priority><basecpu> 2</basecpu>
+<criticality>LOW</criticality>
+<migrable>True</migrable>
+<deadlinesmissed> 0</deadlinesmissed>
+<budgetexceeded> 0</budgetexceeded>
+<timesdiscarded> 0</timesdiscarded>
+<timesmigrated> 0</timesmigrated>
+<timesrestored> 0</timesrestored>
+<timesonc1> 0</timesonc1>
+<timesonc2> 89</timesonc2>
+<lockedtime> 0.000000330</lockedtime>
+</task>
+</tasks>
+<tasksetisschedulable>TRUE</tasksetisschedulable>
+<cores>
+<cpu>
+<id> 1</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.567560652</idletime>
+</cpu>
+<cpu>
+<id> 2</id>
+<lowtohigh> 0</lowtohigh>
+<hightolow> 0</hightolow>
+<idletime> 1.495957691</idletime>
+</cpu>
+</cores>
+<experimentid> 2</experimentid>
+</execution>
+</tasksets>
