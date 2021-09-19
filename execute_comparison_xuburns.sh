@@ -1,3 +1,8 @@
+: '
+    This is the main script, i.e. the one orchestrating the others.
+    Explanation: work in progress...
+'
+
 UTIL_STEP=0.012
 UTIL_LOWER_BOUND=1.11
 UTIL_HIGHER_BOUND=1.875
