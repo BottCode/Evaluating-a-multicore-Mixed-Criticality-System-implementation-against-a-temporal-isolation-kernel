@@ -1,4 +1,4 @@
-# Exploring the viability of a MCS multicore runtime demonstrator: a comparison with a temporal isolation kernel
+# Evaluating a multicore Mixed-Criticality System implementation against a temporal isolation kernel
 
 This repository is the main reference for the article that [Professor T. Vardanega](https://orcid.org/0000-0002-0089-0889) and I published with the above title.
 
