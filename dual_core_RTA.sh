@@ -2,13 +2,13 @@
 
 REPO_ROOT=$PWD
 
-RUNTIME_PROJ_DIR="$REPO_ROOT/ada-ravenscar-runtime-for-zynq7000-dual-core-supporting-mixed-criticality-systems/"
+RUNTIME_PROJ_DIR="$REPO_ROOT/Ada-RTE-Platform/"
 RUNTIME_NO_MIG_DIR="$REPO_ROOT/ada-ravenscar-runtime-for-zynq7000-dual-core-with-no-migrations/"
 
 RUNTIME_INSTALLATION_DIR="$RUNTIME_PROJ_DIR/runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000"
 RUNTIME_NO_MIG_INSTALLATION_DIR="$RUNTIME_NO_MIG_DIR/runtime/arm-eabi/lib/gnat/ravenscar_full_zynq7000"
 
-RTA_DIR="$REPO_ROOT/py-xu-burns-2019-rta/dual-core-version/"
+RTA_DIR="$REPO_ROOT/schedulability-analysis_tasksets-generation/dual-core-version/"
 
 cd $RUNTIME_PROJ_DIR
 echo $PWD
