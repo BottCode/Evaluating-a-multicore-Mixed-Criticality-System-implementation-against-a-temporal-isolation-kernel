@@ -108,7 +108,7 @@ pipdeptree==2.2.1
 progress==1.5
 psutil==5.5.1
 pycups==1.9.73
-pycurl==7.43.0.2
+#pycurl==7.43.0.2
 PyGObject==3.36.0
   - pycairo [required: >=1.11.1, installed: 1.16.2]
 PyJWT==1.7.0
@@ -158,7 +158,7 @@ ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.24.1
 usb-creator==0.3.7
-vboxapi==1.0
+#vboxapi==1.0
 wheel==0.34.2
 xcffib==0.8.1
 xkit==0.0.0
