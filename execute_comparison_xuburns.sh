@@ -22,9 +22,6 @@ E4=True
 
 NUMBER_OF_TESTS=1
 
-
-sh get_submodules.sh
-
 sh dual_core_RTA.sh $UTIL_LOWER_BOUND $UTIL_HIGHER_BOUND $UTIL_STEP $CRITICALITY_LOWER_BOUND $CRITICALITY_HIGHER_BOUND $CRITICALITY_STEP $PROPORTION_LOWER_BOUND $PROPORTION_HIGHER_BOUND $PROPORTION_STEP $E1 $E2 $E3 $E4 $NUMBER_OF_TESTS
 # sh execute_ada_xu_burns.sh $E1 $E2 $E3 $E4 > log_execution_2.txt
 # sh execute_tsp.sh $E1 $E2 $E3 $E4 #> log_execution_tsp.txt
