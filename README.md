@@ -1,6 +1,6 @@
 # Evaluating a multicore Mixed-Criticality System implementation against a temporal isolation kernel
 
-This repository is the main reference for the article that [Professor T. Vardanega](https://orcid.org/0000-0002-0089-0889) and I published with the above title.
+This repository is the main reference for the article that [Professor T. Vardanega](https://orcid.org/0000-0002-0089-0889) and I published with the above title: https://doi.org/10.1016/j.sysarc.2022.102688
 
 The role of this repository is:
 - contain and execute some [bash scripts](https://github.com/BottCode/Exploring-the-viability-of-a-MCS-multicore-runtime-demonstrator-a-comparison-with-a-/blob/master/execute_comparison_xuburns.sh) that allow you to configure and execute python scripts correctly
