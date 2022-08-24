@@ -25,6 +25,73 @@ If you have not already, read the disclaimer [below](#disclaimer). Really.
  
 This section is still **work in progress**. Meanwhile, read the disclaimer [below](#disclaimer) :upside_down_face:
 ## Configuration
+You can manipulate the input data via the [configuration.ini](./configuration.ini) file. The following is an explanation for each file section.
+
+### ```[Experiments]```
+In this section you can choose which experiments you want to execute. Use `yes` to execute an experiment. For instance, the following configuration executes only experiments 1, 3 and 4.
+```
+exp_1 = yes
+exp_2 = no
+exp_3 = yes
+exp_4 = yes
+```
+
+### ```[Tasksets for each UL]```
+_This parameter is **across all experiments.**_
+
+In this section you can set how many tasksets to generate for each utilization level (see next section). We call this number $n$. For instance, if your utilizations range is $[1.6, 1.648]$ stepping $0.012$, you have $(1.648-1.6) / 0.012 = 4$ utilizations levels ($\{1.6, 1.612, 1.624, 1.636, 1.648\}$). If you set $n=10$, then you will generate $4 * 10=40$ tasksets.
+```
+n = 10
+```
+
+
+### ```[Utilization Levels]```
+_This parameter is **across all experiments.**_
+
+In this section you can set the utilizations range (explained above) you want to explore. For instance, the following configuration sets $[1.11, 1.875]$ range stepping $0.012$. This range is 
+```
+lower_bound = 1.11
+upper_bound = 1.875
+step        = 0.012
+```
+
+### ```[Criticality Factor Levels]```
+_This parameter is for **experiment 2**_
+
+In this section you can set the criticality factors range you want to explore. You can set this range as explained above. For instance, the following configuration generates $n$ tasksets for each criticality factor level in $\{1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4\}$.
+```
+lower_bound = 1.5
+upper_bound = 4
+step        = 0.25
+```
+_Please Note_: the _criticality factor_ concept does not apply to a tasksets thought for the TSP approach, since a (TSP) task can have only one criticality level.
+
+### ```[HI-crit Proportion Levels]```
+_This parameter is for **experiment 3**_
+
+In this section you can set the HI-crit proportions range you want to explore. You can set this range as explained above. For instance, the following configuration generates $n$ tasksets for each HI-crit proportion level in $\{0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8\}$.
+```
+lower_bound = 0.2
+upper_bound = 0.8
+step        = 0.1
+```
+
+### ```[Tasksets Size]```
+_This parameter is for **experiment 4**_
+
+In this section you can set the tasksets cardinality.  For instance, the following configuration generates $n$ tasksets for each taskset cardinality in $\{15, 20, 25, 30, 35\}$.
+```
+size_list = 15, 20, 25, 30, 35
+```
+
+### ```[Per-tasks utilization range]```
+_This parameter is **across all experiments.**_
+
+In this section you can set the Per-tasks **nominal** utilization range.
+```
+lower_bound = 0.048
+upper_bound = 0.6
+```
 
 ## Schedulability Analysis and tasksets generation
 ## Execution on real target
