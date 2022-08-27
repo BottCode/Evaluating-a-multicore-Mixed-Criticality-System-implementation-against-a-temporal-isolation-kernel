@@ -10,6 +10,11 @@ The role of this repository is:
   -  the [latter](https://github.com/BottCode/synthetic-Ada-tasksets-generation-for-a-MCS-semi-partitioned-model-or-RTEMS-on-XtratuM) contains some python scripts implementing the schedulability analysis (both for the RTE Platform and TSP Platform), synthetic tasksets generation (both for RTE Platform and TSP Platform) and storing the *interesting* Ada tasksets to be executed on the RTE Platform. Such tasksets are saved in XML format too.
 -  contains some python scripts that implement off-line data analysis resulting from real executions on the target HW.
 
+# Executing Ada application targetting RTEMS over XtratuM
+If you want to execute Ada tasksets on the TSP Platform, you need to install both [XtratuM](https://fentiss.com/products/hypervisor/) 2.0.5 and [RTEMS](https://www.rtems.org/) 4.9 (including its toolchain to compile Ada programs targetting RTEMS) targetting XtratuM itself. XtratuM is open-source, but you need to contact the [FentISS](https://fentiss.com/company/contact/) team if you want to get it. You also need a Board Support Package (BSP) in order to execute RTEMS over XtratuM. FentISS has developed one for their applications, but you need to ask them if they are willing to share it with you.
+
+# Collecting data coming from the target HW to the host
+The transition between automatic execution of Ada applications and analysis of log data is not automated. Before running the bash script, be sure that you have properly opened a terminal monitor (such as cutecom or HTerm) and connected to the target. 
 
 # Requirements
 First of all, **check each submodules' requirements**.
@@ -23,17 +28,19 @@ Then, for RTA and tasksets generation, you need:
 For the RTE Platform, you need:
 1. ... work in progress
 
-## Executing Ada application targetting RTEMS over XtratuM
-If you want to execute Ada tasksets on the TSP Platform, you need to install both [XtratuM](https://fentiss.com/products/hypervisor/) 2.0.5 and [RTEMS](https://www.rtems.org/) 4.9 (including its toolchain to compile Ada programs targetting RTEMS) targetting XtratuM itself. XtratuM is open-source, but you need to contact the [FentISS](https://fentiss.com/company/contact/) team if you want to get it. You also need a Board Support Package (BSP) in order to execute RTEMS over XtratuM. FentISS has developed one for their applications, but you need to ask them if they are willing to share it with you.
-
-## Collecting data coming from the target HW to the host
-The transition between automatic execution of Ada applications and analysis of log data is not automated. Before running the bash script, be sure that you have properly opened a terminal monitor (such as cutecom or HTerm) and connected to the target. 
-
 # How to use the whole infrastructure
 If you have not already, read the disclaimer [below](#disclaimer). Really.
  
 This section is still **work in progress**. Meanwhile, read the disclaimer [below](#disclaimer) :upside_down_face:
-## Configuration
+
+## 1. Repo configuration
+You need various git submodules and python modules.
+Before to use this infrastructure:
+1. execute ```sh setup_local_repo.sh```
+
+This script will set-up you repository.
+
+## 2. Configuration
 You can manipulate the input data via the [configuration.ini](./configuration.ini) file. The following is an explanation for each file section.
 
 ### ```[Experiments]```
@@ -102,7 +109,12 @@ lower_bound = 0.048
 upper_bound = 0.6
 ```
 
-## Schedulability Analysis and tasksets generation
+## 3. Schedulability Analysis and tasksets generation
+After the previous configuration setting:
+1. execute ```sh execute_comparison_xuburns.sh```
+
+This script will execute the experiments specified into the configuration file and (incrementally) plot the results.
+
 ## Execution on real target
 
 ## Off-line data analysis
