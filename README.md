@@ -14,6 +14,15 @@ The role of this repository is:
 # Requirements
 First of all, **check each submodules' requirements**.
 
+Then, for RTA and tasksets generation, you need:
+1. Ubuntu (any Linux distro should be Ok)
+2. Python3
+3. pip3 
+4. git (>= 2)
+
+For the RTE Platform, you need:
+1. ... work in progress
+
 ## Executing Ada application targetting RTEMS over XtratuM
 If you want to execute Ada tasksets on the TSP Platform, you need to install both [XtratuM](https://fentiss.com/products/hypervisor/) 2.0.5 and [RTEMS](https://www.rtems.org/) 4.9 (including its toolchain to compile Ada programs targetting RTEMS) targetting XtratuM itself. XtratuM is open-source, but you need to contact the [FentISS](https://fentiss.com/company/contact/) team if you want to get it. You also need a Board Support Package (BSP) in order to execute RTEMS over XtratuM. FentISS has developed one for their applications, but you need to ask them if they are willing to share it with you.
 
