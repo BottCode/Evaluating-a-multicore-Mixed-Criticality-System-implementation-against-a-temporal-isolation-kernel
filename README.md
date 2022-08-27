@@ -33,6 +33,12 @@ If you have not already, read the disclaimer [below](#disclaimer). Really.
  
 This section is still **work in progress**. Meanwhile, read the disclaimer [below](#disclaimer) :upside_down_face:
 
+## In a nutshell
+1. ```git clone https://github.com/BottCode/Evaluating-a-multicore-Mixed-Criticality-System-implementation-against-a-temporal-isolation-kernel.git```
+2. ```cd Evaluating-a-multicore-Mixed-Criticality-System-implementation-against-a-temporal-isolation-kernel/```
+3. ```sh setup_local_repo.sh```
+4. ```sh execute_comparison_xuburns.sh```
+
 ## 1. Repo configuration
 You need various git submodules and python modules.
 Before to use this infrastructure:
